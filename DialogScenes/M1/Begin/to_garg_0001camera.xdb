@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSceneCamera>
+	<Pos>
+		<Rod>401.763</Rod>
+		<Pitch>-0.207199</Pitch>
+		<Yaw>5.76957</Yaw>
+		<Roll>0</Roll>
+		<FOV>35</FOV>
+		<ClipDistanceMin>1</ClipDistanceMin>
+		<ClipDistanceMax>500</ClipDistanceMax>
+		<Anchor>
+			<x>222.846</x>
+			<y>421.474</y>
+			<z>24.4998</z>
+		</Anchor>
+	</Pos>
+	<Absolute>true</Absolute>
+	<Rot>0</Rot>
+	<NameFileRef href="to_garg_0001-name-camera.txt"/>
+</DSceneCamera>

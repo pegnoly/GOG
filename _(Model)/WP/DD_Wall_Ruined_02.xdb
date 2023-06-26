@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Model>
+	<Materials>
+		<Item href="/Arenas/CombatArena/NeutralArena/wall1_u1r1-W1_r1_Mat.1.(Material).xdb#xpointer(/Material)"/>
+		<Item href="/Arenas/CombatArena/NeutralArena/wall1_u1r1-W2_r2_Mat.(Material).xdb#xpointer(/Material)"/>
+		<Item href="/Arenas/CombatArena/NeutralArena/wall1_u1r1-W2_r2_Pod_Mat.(Material).xdb#xpointer(/Material)"/>
+	</Materials>
+	<Skeleton href="DD_Wall_Ruined_02-skel.xdb#xpointer(/Skeleton)"/>
+	<Geometry href="DD_Wall_Ruined_02-geom.xdb#xpointer(/Geometry)"/>
+	<Animations/>
+	<WindPower>1</WindPower>
+</Model>

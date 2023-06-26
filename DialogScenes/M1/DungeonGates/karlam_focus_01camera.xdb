@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSceneCamera>
+	<Pos>
+		<Rod>20.5798</Rod>
+		<Pitch>-0.279199</Pitch>
+		<Yaw>2.40483</Yaw>
+		<Roll>0</Roll>
+		<FOV>35</FOV>
+		<ClipDistanceMin>1</ClipDistanceMin>
+		<ClipDistanceMax>500</ClipDistanceMax>
+		<Anchor>
+			<x>43.1129</x>
+			<y>59.5212</y>
+			<z>16.4998</z>
+		</Anchor>
+	</Pos>
+	<Absolute>true</Absolute>
+	<Rot>0</Rot>
+	<NameFileRef href="karlam_focus_01-name-camera.txt"/>
+</DSceneCamera>

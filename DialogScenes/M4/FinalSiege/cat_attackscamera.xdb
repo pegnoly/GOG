@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSceneCamera>
+	<Pos>
+		<Rod>179.453</Rod>
+		<Pitch>-0.269603</Pitch>
+		<Yaw>0.643196</Yaw>
+		<Roll>0</Roll>
+		<FOV>47.5878</FOV>
+		<ClipDistanceMin>1</ClipDistanceMin>
+		<ClipDistanceMax>500</ClipDistanceMax>
+		<Anchor>
+			<x>-43.9187</x>
+			<y>280.694</y>
+			<z>0.999994</z>
+		</Anchor>
+	</Pos>
+	<Absolute>true</Absolute>
+	<Rot>0</Rot>
+	<NameFileRef href="cat_attacks-name-camera.txt"/>
+</DSceneCamera>

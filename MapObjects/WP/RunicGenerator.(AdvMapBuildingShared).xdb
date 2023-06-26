@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AdvMapBuildingShared>
+	<Model href="/_(Model)/WP/Gen3.xdb#xpointer(/Model)"/>
+	<AnimSet/>
+	<blockedTiles/>
+	<holeTiles/>
+	<activeTiles>
+		<Item>
+			<x>0</x>
+			<y>1</y>
+		</Item>
+	</activeTiles>
+	<passableTiles/>
+	<PossessionMarkerTile>
+		<x>0</x>
+		<y>0</y>
+	</PossessionMarkerTile>
+	<Effect href="Gen_Effect.(Effect).xdb#xpointer(/Effect)"/>
+	<EffectWhenOwned/>
+	<messagesFileRef>
+		<Item href="/Text/Game/Buildings/RunicGenerator/Name.txt"/>
+		<Item href="/Text/Game/Buildings/RunicGenerator/Description.txt"/>
+	</messagesFileRef>
+	<WaterBased>false</WaterBased>
+	<ApplyHeroTrace>false</ApplyHeroTrace>
+	<SoundEffect/>
+	<flybyMessageFileRef href=""/>
+	<ObjectTypeFileRef href=""/>
+	<TerrainAligned>false</TerrainAligned>
+	<FlyPassable>true</FlyPassable>
+	<AdventureSoundEffect/>
+	<RazedStatic/>
+	<Icon128/>
+	<Type>BUILDING_SANCTUARY</Type>
+</AdvMapBuildingShared>

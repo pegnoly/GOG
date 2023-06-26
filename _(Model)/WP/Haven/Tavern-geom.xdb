@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Geometry>
+	<SrcName href="/tavern_haven.mb"/>
+	<uid>691ABB62-AC83-4569-BE1B-1FA28BC686C1</uid>
+	<RootMesh/>
+	<RootJoint>A9B00BA_01Shape</RootJoint>
+	<Size>
+		<x>6.17392</x>
+		<y>5.6398</y>
+		<z>3.45963</z>
+	</Size>
+	<Center>
+		<x>0.0993328</x>
+		<y>3.21227</y>
+		<z>1.72106</z>
+	</Center>
+	<BestFitPoint>
+		<x>0</x>
+		<y>0</y>
+		<z>0</z>
+	</BestFitPoint>
+	<Dir>
+		<x>0</x>
+		<y>0</y>
+		<z>0</z>
+		<w>0</w>
+	</Dir>
+	<AIGeometry/>
+	<NumMeshes>1</NumMeshes>
+	<MaterialQuantities>
+		<Item>1</Item>
+	</MaterialQuantities>
+	<MeshNames>
+		<Item>A9B00BA_01Shape</Item>
+	</MeshNames>
+	<MeshAnimated/>
+	<MeshWindAffected/>
+</Geometry>

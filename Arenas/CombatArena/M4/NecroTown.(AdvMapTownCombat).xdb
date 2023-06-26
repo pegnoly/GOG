@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AdvMapTownCombat>
+	<walls>
+		<Item/>
+	</walls>
+	<ArenaDesc href="/Arenas/CombatArena/Necropolisarena/New Object.xdb#xpointer(/ArenaDesc)"/>
+	<ArenaMap/>
+	<GroundType>TT_DIRT</GroundType>
+</AdvMapTownCombat>

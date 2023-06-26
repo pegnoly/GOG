@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSceneCamera>
+	<Pos>
+		<Rod>34.2738</Rod>
+		<Pitch>-0.144804</Pitch>
+		<Yaw>5.36639</Yaw>
+		<Roll>0</Roll>
+		<FOV>35</FOV>
+		<ClipDistanceMin>1</ClipDistanceMin>
+		<ClipDistanceMax>500</ClipDistanceMax>
+		<Anchor>
+			<x>186.661</x>
+			<y>183.464</y>
+			<z>-1.07281e-007</z>
+		</Anchor>
+	</Pos>
+	<Absolute>true</Absolute>
+	<Rot>0</Rot>
+	<NameFileRef href="to_malg_wulf-name-camera.txt"/>
+</DSceneCamera>

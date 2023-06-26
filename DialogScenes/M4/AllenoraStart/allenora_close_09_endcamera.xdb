@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSceneCamera>
+	<Pos>
+		<Rod>51.9882</Rod>
+		<Pitch>-0.0151994</Pitch>
+		<Yaw>4.55518</Yaw>
+		<Roll>0</Roll>
+		<FOV>35</FOV>
+		<ClipDistanceMin>1</ClipDistanceMin>
+		<ClipDistanceMax>500</ClipDistanceMax>
+		<Anchor>
+			<x>107.572</x>
+			<y>132.251</y>
+			<z>3.49999</z>
+		</Anchor>
+	</Pos>
+	<Absolute>true</Absolute>
+	<Rot>0</Rot>
+	<NameFileRef href="allenora_close_09_end-name-camera.txt"/>
+</DSceneCamera>

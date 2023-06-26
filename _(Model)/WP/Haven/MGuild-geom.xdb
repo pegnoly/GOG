@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Geometry>
+	<SrcName href="/mguild_haven.mb"/>
+	<uid>D2343D6C-B4D4-4AD0-8FF6-B29A0E455EDC</uid>
+	<RootMesh/>
+	<RootJoint>polySurfaceShape1</RootJoint>
+	<Size>
+		<x>5.89282</x>
+		<y>46.8112</y>
+		<z>6.7912</z>
+	</Size>
+	<Center>
+		<x>-2.50014</x>
+		<y>10.4101</y>
+		<z>1.96366</z>
+	</Center>
+	<BestFitPoint>
+		<x>0</x>
+		<y>0</y>
+		<z>0</z>
+	</BestFitPoint>
+	<Dir>
+		<x>0</x>
+		<y>0</y>
+		<z>0</z>
+		<w>0</w>
+	</Dir>
+	<AIGeometry/>
+	<NumMeshes>1</NumMeshes>
+	<MaterialQuantities>
+		<Item>18</Item>
+	</MaterialQuantities>
+	<MeshNames>
+		<Item>polySurfaceShape1</Item>
+	</MeshNames>
+	<MeshAnimated/>
+	<MeshWindAffected/>
+</Geometry>

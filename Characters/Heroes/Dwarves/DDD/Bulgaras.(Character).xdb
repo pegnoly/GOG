@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Character>
+	<Model href="Bulgaras.xdb#xpointer(/Model)"/>
+	<ArenaAnimSet href="Bulgaras-arena.xdb#xpointer(/AnimSet)"/>
+	<AdvMapAnimSet href="/Characters/Heroes/DS/Tolghar_DS_M-arena.xdb#xpointer(/AnimSet)"/>
+	<ColourModels/>
+</Character>

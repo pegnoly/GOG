@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSceneCamera>
+	<Pos>
+		<Rod>270.055</Rod>
+		<Pitch>-0.423169</Pitch>
+		<Yaw>5.35655</Yaw>
+		<Roll>0</Roll>
+		<FOV>35</FOV>
+		<ClipDistanceMin>1</ClipDistanceMin>
+		<ClipDistanceMax>500</ClipDistanceMax>
+		<Anchor>
+			<x>284.964</x>
+			<y>443.974</y>
+			<z>-3.40381e-006</z>
+		</Anchor>
+	</Pos>
+	<Absolute>true</Absolute>
+	<Rot>0</Rot>
+	<NameFileRef href="vamp_house_to_clerics_start-name-camera.txt"/>
+</DSceneCamera>

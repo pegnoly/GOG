@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AdvMapTown>
+	<Pos>
+		<x>0</x>
+		<y>0</y>
+		<z>0</z>
+	</Pos>
+	<Rot>0</Rot>
+	<Floor>0</Floor>
+	<Name/>
+	<CombatScript/>
+	<pointLights/>
+	<Shared href="/MapObjects/Preserve.(AdvMapTownShared).xdb#xpointer(/AdvMapTownShared)"/>
+	<PlayerID>PLAYER_3</PlayerID>
+	<CaptureTrigger>
+		<Action>
+			<FunctionName/>
+		</Action>
+	</CaptureTrigger>
+	<HeroDeployTrigger>
+		<Action>
+			<FunctionName/>
+		</Action>
+	</HeroDeployTrigger>
+	<ShipTile>
+		<x>0</x>
+		<y>0</y>
+	</ShipTile>
+	<Specialization href="/GameMechanics/TownSpecialization/Preserve/Random/Luvin.xdb#xpointer(/TownSpecialization)"/>
+	<buildings>
+		<Item>
+			<Type>TB_TOWN_HALL</Type>
+			<InitialUpgrade>BLD_UPG_4</InitialUpgrade>
+			<MaxUpgrade>BLD_UPG_5</MaxUpgrade>
+		</Item>
+		<Item>
+			<Type>TB_FORT</Type>
+			<InitialUpgrade>BLD_UPG_2</InitialUpgrade>
+			<MaxUpgrade>BLD_UPG_5</MaxUpgrade>
+		</Item>
+	</buildings>
+	<Editable>
+		<NameFileRef href=""/>
+		<BiographyFileRef href=""/>
+	</Editable>
+	<armySlots>
+		<Item>
+			<Creature>CREATURE_WOOD_ELF</Creature>
+			<Count>1</Count>
+		</Item>
+	</armySlots>
+	<spellIDs/>
+	<CaptionFileRef href=""/>
+	<GarrisonHero/>
+	<Script/>
+	<RndSource>RND_NONE</RndSource>
+	<LinkToPlayer>PLAYER_NONE</LinkToPlayer>
+	<LinkToTown/>
+	<CanCaptureOnlyNotVisit>false</CanCaptureOnlyNotVisit>
+	<AllowQuickCombat>true</AllowQuickCombat>
+	<CreaturesUpgradesFilter>
+		<ForbiddenBasicUpgradeTiers/>
+		<ForbiddenAlterUpgradeTiers/>
+		<NotUpgradeable/>
+		<ForbiddenUpgrades/>
+	</CreaturesUpgradesFilter>
+	<GarrisonBlockedForAI>false</GarrisonBlockedForAI>
+	<BannedRaces/>
+</AdvMapTown>

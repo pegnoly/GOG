@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AdvMapDescBuilder>
+	<SizePreset>MAP_SIZE_256x256</SizePreset>
+	<AmbientLight href="/Lights/_(AmbientLight)/AdvMap/Addon/AC1M4.xdb#xpointer(/AmbientLight)"/>
+	<DefaultTile href="/MapObjects/_(AdvMapTile)/Snow/Snow_(2).xdb#xpointer(/AdvMapTile)"/>
+	<HasUnderground>true</HasUnderground>
+	<UndergroundAmbientLight href="/Lights/_(AmbientLight)/Scenes/dungeon (2).xdb#xpointer(/AmbientLight)"/>
+	<UndergroundDefaultTile/>
+</AdvMapDescBuilder>

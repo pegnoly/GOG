@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSceneCamera>
+	<Pos>
+		<Rod>85.1036</Rod>
+		<Pitch>-0.221603</Pitch>
+		<Yaw>1.5696</Yaw>
+		<Roll>0</Roll>
+		<FOV>35</FOV>
+		<ClipDistanceMin>1</ClipDistanceMin>
+		<ClipDistanceMax>500</ClipDistanceMax>
+		<Anchor>
+			<x>57.9551</x>
+			<y>90.6181</y>
+			<z>-1.52177e-009</z>
+		</Anchor>
+	</Pos>
+	<Absolute>true</Absolute>
+	<Rot>0</Rot>
+	<NameFileRef href="army_arrive_end-name-camera.txt"/>
+</DSceneCamera>

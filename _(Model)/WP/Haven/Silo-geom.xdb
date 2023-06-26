@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Geometry>
+	<SrcName href="/silo_haven.mb"/>
+	<uid>BA6E1628-9FF9-4523-8C29-2D745976C118</uid>
+	<RootMesh/>
+	<RootJoint>B85E_02Shape</RootJoint>
+	<Size>
+		<x>3.1965</x>
+		<y>3.55951</y>
+		<z>3.17514</z>
+	</Size>
+	<Center>
+		<x>0.0931482</x>
+		<y>0.071493</y>
+		<z>1.60875</z>
+	</Center>
+	<BestFitPoint>
+		<x>0</x>
+		<y>0</y>
+		<z>0</z>
+	</BestFitPoint>
+	<Dir>
+		<x>0</x>
+		<y>0</y>
+		<z>0</z>
+		<w>0</w>
+	</Dir>
+	<AIGeometry/>
+	<NumMeshes>1</NumMeshes>
+	<MaterialQuantities>
+		<Item>1</Item>
+	</MaterialQuantities>
+	<MeshNames>
+		<Item>B85E_02Shape</Item>
+	</MeshNames>
+	<MeshAnimated/>
+	<MeshWindAffected/>
+</Geometry>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSceneCamera>
+	<Pos>
+		<Rod>314.18</Rod>
+		<Pitch>-0.360801</Pitch>
+		<Yaw>4.21437</Yaw>
+		<Roll>0</Roll>
+		<FOV>35</FOV>
+		<ClipDistanceMin>1</ClipDistanceMin>
+		<ClipDistanceMax>500</ClipDistanceMax>
+		<Anchor>
+			<x>293.745</x>
+			<y>-56.296</y>
+			<z>-3.42659e-006</z>
+		</Anchor>
+	</Pos>
+	<Absolute>true</Absolute>
+	<Rot>0</Rot>
+	<NameFileRef href="to_terhiz-name-camera.txt"/>
+</DSceneCamera>

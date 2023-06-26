@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSceneCamera>
+	<Pos>
+		<Rod>316.172</Rod>
+		<Pitch>-0.1832</Pitch>
+		<Yaw>2.62075</Yaw>
+		<Roll>0</Roll>
+		<FOV>35</FOV>
+		<ClipDistanceMin>1</ClipDistanceMin>
+		<ClipDistanceMax>500</ClipDistanceMax>
+		<Anchor>
+			<x>-64.5784</x>
+			<y>-9.71282</y>
+			<z>3.02659e-007</z>
+		</Anchor>
+	</Pos>
+	<Absolute>true</Absolute>
+	<Rot>0</Rot>
+	<NameFileRef href="show_hum_army4-name-camera.txt"/>
+</DSceneCamera>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Model>
+	<Materials>
+		<Item href="/Arenas/Town/NewHaven/Angel_u2r0-Angel_M.(Material).xdb#xpointer(/Material)"/>
+		<Item href="/Arenas/Town/NewHaven/Angel_u2r0-Angel_M.(Material).xdb#xpointer(/Material)"/>
+		<Item href="/Arenas/Town/NewHaven/Angel_u2r0-Angel_M.(Material).xdb#xpointer(/Material)"/>
+	</Materials>
+	<Skeleton/>
+	<Geometry href="AngelL2-geom.xdb#xpointer(/Geometry)"/>
+	<Animations/>
+	<WindPower>1</WindPower>
+</Model>

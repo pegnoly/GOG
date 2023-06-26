@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSceneCamera>
+	<Pos>
+		<Rod>156.176</Rod>
+		<Pitch>-0.423186</Pitch>
+		<Yaw>5.76946</Yaw>
+		<Roll>0</Roll>
+		<FOV>35</FOV>
+		<ClipDistanceMin>1</ClipDistanceMin>
+		<ClipDistanceMax>500</ClipDistanceMax>
+		<Anchor>
+			<x>256.248</x>
+			<y>470.961</y>
+			<z>2.67878e-006</z>
+		</Anchor>
+	</Pos>
+	<Absolute>true</Absolute>
+	<Rot>0</Rot>
+	<NameFileRef href="karlam_cast_to_battle_begin-name-camera.txt"/>
+</DSceneCamera>

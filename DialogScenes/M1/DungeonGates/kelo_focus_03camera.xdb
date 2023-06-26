@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSceneCamera>
+	<Pos>
+		<Rod>55.9387</Rod>
+		<Pitch>-0.197593</Pitch>
+		<Yaw>5.69272</Yaw>
+		<Roll>0</Roll>
+		<FOV>47.5599</FOV>
+		<ClipDistanceMin>1</ClipDistanceMin>
+		<ClipDistanceMax>500</ClipDistanceMax>
+		<Anchor>
+			<x>89.7264</x>
+			<y>111.799</y>
+			<z>11.4997</z>
+		</Anchor>
+	</Pos>
+	<Absolute>true</Absolute>
+	<Rot>0</Rot>
+	<NameFileRef href="kelo_focus_03-name-camera.txt"/>
+</DSceneCamera>

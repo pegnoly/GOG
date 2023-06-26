@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AdvMapHeroShared>
+	<Model href="/Characters/Heroes/Wizard.xdb#xpointer(/Model)"/>
+	<AnimSet href="/Characters/Heroes/Wizard-arena.xdb#xpointer(/AnimSet)"/>
+	<blockedTiles/>
+	<holeTiles/>
+	<activeTiles/>
+	<passableTiles/>
+	<PossessionMarkerTile>
+		<x>0</x>
+		<y>0</y>
+	</PossessionMarkerTile>
+	<Effect/>
+	<EffectWhenOwned/>
+	<messagesFileRef>
+		<Item href=""/>
+	</messagesFileRef>
+	<WaterBased>false</WaterBased>
+	<ApplyHeroTrace>false</ApplyHeroTrace>
+	<SoundEffect/>
+	<flybyMessageFileRef href=""/>
+	<ObjectTypeFileRef href=""/>
+	<TerrainAligned>false</TerrainAligned>
+	<FlyPassable>true</FlyPassable>
+	<AdventureSoundEffect/>
+	<RazedStatic/>
+	<Icon128 href="/Textures/Icons/Heroes/Academy/Academy_Jhora_128x128.(Texture).xdb#xpointer(/Texture)"/>
+	<InternalName>MEglo</InternalName>
+	<Class>HERO_CLASS_WIZARDA</Class>
+	<Specialization>HERO_SPEC_WAR_MACHINES</Specialization>
+	<PrimarySkill>
+		<Mastery>MASTERY_BASIC</Mastery>
+		<SkillID>HERO_SKILL_WAR_MACHINES</SkillID>
+	</PrimarySkill>
+	<SpecializationNameFileRef href=""/>
+	<SpecializationDescFileRef href=""/>
+	<SpecializationIcon/>
+	<FaceTexture href="/Textures/Icons/Heroes/Academy/Academy_Jhora_128x128.(Texture).xdb#xpointer(/Texture)"/>
+	<FaceTextureSmall href="/Textures/Icons/Heroes/Academy/Academy_Jhora_128x128_64.(Texture).xdb#xpointer(/Texture)"/>
+	<HeroCharacterArena href="/Characters/Heroes/Wizard.(Character).xdb#xpointer(/Character)"/>
+	<HeroCharacterArenaMelee/>
+	<HeroCharacterAdventure href="/Characters/Heroes/Wizard_LOD.(Character).xdb#xpointer(/Character)"/>
+	<HeroIndividualCamera/>
+	<CombatVisual href="/GameMechanics/CreatureVisual/Heroes/Wizard.xdb#xpointer(/CreatureVisual)"/>
+	<TownType>TOWN_ACADEMY</TownType>
+	<Editable>
+		<NameFileRef href="/Text/Game/Heroes/Persons/Academy/Megle/Name.txt"/>
+		<BiographyFileRef href="/Text/Game/Heroes/Persons/Academy/Megle/Bio.txt"/>
+		<Offence>0</Offence>
+		<Defence>0</Defence>
+		<Spellpower>0</Spellpower>
+		<Knowledge>0</Knowledge>
+		<skills/>
+		<perkIDs/>
+		<spellIDs/>
+		<Ballista>false</Ballista>
+		<FirstAidTent>false</FirstAidTent>
+		<AmmoCart>false</AmmoCart>
+		<FavoriteEnemies/>
+		<TalismanLevel>0</TalismanLevel>
+	</Editable>
+	<ArrowButtonState>0</ArrowButtonState>
+	<Decal/>
+	<Selection/>
+	<Trace/>
+	<RaceTraitIcon/>
+	<RaceTraitDescFileRef href=""/>
+	<ScenarioHero>false</ScenarioHero>
+	<AdventureMusic/>
+	<HideInEditor>false</HideInEditor>
+	<PresetMinimalAttributes>
+		<Offence>2</Offence>
+		<Defence>2</Defence>
+		<Spellpower>2</Spellpower>
+		<Knowledge>2</Knowledge>
+	</PresetMinimalAttributes>
+</AdvMapHeroShared>

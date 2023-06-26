@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DialogScene>
+	<Map href="/Maps/SmallSpecialArenas/M4/NecroTownBig/map.xdb#xpointer(/AdvMapDesc)"/>
+	<SoundSet/>
+	<Music href="/Sounds/_(Music)/WP/AllenoraTheme.(Music).xdb#xpointer(/Music)"/>
+	<MusicVolume>800</MusicVolume>
+	<CustomSceneAmbientLight href="/Lights/_(AmbientLight)/M4/WP_M4_Rain_day.(AmbientLight).xdb#xpointer(/AmbientLight)"/>
+	<sentences>
+		<Item>
+			<text href=""/>
+			<sound/>
+			<heroLink href="#n:inline(AdvMapHero)" id="item_29174D19-3ABE-4F02-B867-C796DC423127">
+				<AdvMapHero>
+					<Pos>
+						<x>2</x>
+						<y>1</y>
+						<z>0</z>
+					</Pos>
+					<Rot>0</Rot>
+					<Floor>0</Floor>
+					<Name/>
+					<CombatScript/>
+					<pointLights/>
+					<Shared href="/MapObjects/Inferno/NewHeroes/Toghrul/Toghrul.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+					<PlayerID>PLAYER_1</PlayerID>
+					<Experience>0</Experience>
+					<armySlots/>
+					<artifactIDs/>
+					<isUntransferable/>
+					<Editable>
+						<NameFileRef href=""/>
+						<BiographyFileRef href=""/>
+						<Offence>0</Offence>
+						<Defence>0</Defence>
+						<Spellpower>0</Spellpower>
+						<Knowledge>0</Knowledge>
+						<skills/>
+						<perkIDs/>
+						<spellIDs/>
+						<Ballista>false</Ballista>
+						<FirstAidTent>false</FirstAidTent>
+						<AmmoCart>false</AmmoCart>
+						<FavoriteEnemies/>
+						<TalismanLevel>0</TalismanLevel>
+					</Editable>
+					<OverrideMask>0</OverrideMask>
+					<PrimarySkillMastery>MASTERY_NONE</PrimarySkillMastery>
+					<LossTrigger>
+						<Action>
+							<FunctionName/>
+						</Action>
+					</LossTrigger>
+					<AllowQuickCombat>true</AllowQuickCombat>
+					<Textures>
+						<Icon128x128/>
+						<Icon64x64/>
+						<RoundedFace/>
+						<LeftFace/>
+						<RightFace/>
+					</Textures>
+					<PresetPrice>0</PresetPrice>
+					<BannedRaces/>
+				</AdvMapHero>
+			</heroLink>
+			<monsterLink/>
+			<MonsterCustomName href=""/>
+			<cameraSet/>
+			<NewCameraSet href="IlshamAggarFlowcam-set.xdb#xpointer(/DSceneCameraSet)"/>
+			<StopAmbient>false</StopAmbient>
+			<StopMusic>false</StopMusic>
+			<DynamicCamera>true</DynamicCamera>
+			<duration>50</duration>
+			<soundDuration>0</soundDuration>
+			<CustomAmbientLight/>
+			<ActorAnimationIndex>-1</ActorAnimationIndex>
+			<AnimName/>
+			<AnimationDelay>0</AnimationDelay>
+			<CustomSounds/>
+			<CustomEffects/>
+			<CustomAnimations/>
+			<MusicVolumePercent>100</MusicVolumePercent>
+			<MusicFadeOutDuration>500</MusicFadeOutDuration>
+			<MusicOverride>
+				<Music/>
+				<StartTime>0</StartTime>
+				<TimeShift>0</TimeShift>
+			</MusicOverride>
+			<AdditionalCameras>
+				<Item>
+					<NewCameraSet href="IlshamAggarSecondFlowcam-set.xdb#xpointer(/DSceneCameraSet)"/>
+					<StartDelay>20</StartDelay>
+				</Item>
+				<Item>
+					<NewCameraSet href="IlshamAggarThirdFlowcam-set.xdb#xpointer(/DSceneCameraSet)"/>
+					<StartDelay>15</StartDelay>
+				</Item>
+			</AdditionalCameras>
+			<Anim3DSoundVolumeCustom>100</Anim3DSoundVolumeCustom>
+		</Item>
+		<Item>
+			<text href=""/>
+			<sound/>
+			<heroLink href="#xpointer(id(item_29174D19-3ABE-4F02-B867-C796DC423127)/AdvMapHero)"/>
+			<monsterLink/>
+			<MonsterCustomName href=""/>
+			<cameraSet/>
+			<NewCameraSet href="BlackHandCloseFirstcam-set.xdb#xpointer(/DSceneCameraSet)"/>
+			<StopAmbient>false</StopAmbient>
+			<StopMusic>false</StopMusic>
+			<DynamicCamera>true</DynamicCamera>
+			<duration>7</duration>
+			<soundDuration>0</soundDuration>
+			<CustomAmbientLight/>
+			<ActorAnimationIndex>-1</ActorAnimationIndex>
+			<AnimName/>
+			<AnimationDelay>0</AnimationDelay>
+			<CustomSounds/>
+			<CustomEffects/>
+			<CustomAnimations>
+				<Item>
+					<heroLink href="#n:inline(AdvMapHero)" id="item_E9B4266D-098A-4334-B506-4FE2C7DC4DBF">
+						<AdvMapHero>
+							<Pos>
+								<x>194.08</x>
+								<y>167.71</y>
+								<z>0</z>
+							</Pos>
+							<Rot>1.98088</Rot>
+							<Floor>0</Floor>
+							<Name/>
+							<CombatScript/>
+							<pointLights/>
+							<Shared href="/MapObjects/Necropolis/GOG/BlackHand_U.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+							<PlayerID>PLAYER_1</PlayerID>
+							<Experience>0</Experience>
+							<armySlots/>
+							<artifactIDs/>
+							<isUntransferable/>
+							<Editable>
+								<NameFileRef href=""/>
+								<BiographyFileRef href=""/>
+								<Offence>0</Offence>
+								<Defence>0</Defence>
+								<Spellpower>0</Spellpower>
+								<Knowledge>0</Knowledge>
+								<skills/>
+								<perkIDs/>
+								<spellIDs/>
+								<Ballista>false</Ballista>
+								<FirstAidTent>false</FirstAidTent>
+								<AmmoCart>false</AmmoCart>
+								<FavoriteEnemies/>
+								<TalismanLevel>0</TalismanLevel>
+							</Editable>
+							<OverrideMask>0</OverrideMask>
+							<PrimarySkillMastery>MASTERY_NONE</PrimarySkillMastery>
+							<LossTrigger>
+								<Action>
+									<FunctionName/>
+								</Action>
+							</LossTrigger>
+							<AllowQuickCombat>true</AllowQuickCombat>
+							<Textures>
+								<Icon128x128/>
+								<Icon64x64/>
+								<RoundedFace/>
+								<LeftFace/>
+								<RightFace/>
+							</Textures>
+							<PresetPrice>0</PresetPrice>
+							<BannedRaces/>
+						</AdvMapHero>
+					</heroLink>
+					<monsterLink/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>3</AnimationDelay>
+					<AnimName>move</AnimName>
+					<MovePoints>
+						<Item>
+							<x>198</x>
+							<y>171</y>
+						</Item>
+					</MovePoints>
+					<FinalAngle>118</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+			</CustomAnimations>
+			<MusicVolumePercent>100</MusicVolumePercent>
+			<MusicFadeOutDuration>500</MusicFadeOutDuration>
+			<MusicOverride>
+				<Music/>
+				<StartTime>0</StartTime>
+				<TimeShift>0</TimeShift>
+			</MusicOverride>
+			<AdditionalCameras/>
+			<Anim3DSoundVolumeCustom>100</Anim3DSoundVolumeCustom>
+		</Item>
+		<Item>
+			<text href=""/>
+			<sound/>
+			<heroLink href="#xpointer(id(item_29174D19-3ABE-4F02-B867-C796DC423127)/AdvMapHero)"/>
+			<monsterLink/>
+			<MonsterCustomName href=""/>
+			<cameraSet/>
+			<NewCameraSet href="BlackHandToShotcam-set.xdb#xpointer(/DSceneCameraSet)"/>
+			<StopAmbient>false</StopAmbient>
+			<StopMusic>false</StopMusic>
+			<DynamicCamera>true</DynamicCamera>
+			<duration>16</duration>
+			<soundDuration>0</soundDuration>
+			<CustomAmbientLight/>
+			<ActorAnimationIndex>-1</ActorAnimationIndex>
+			<AnimName/>
+			<AnimationDelay>0</AnimationDelay>
+			<CustomSounds/>
+			<CustomEffects/>
+			<CustomAnimations>
+				<Item>
+					<heroLink href="#xpointer(id(item_E9B4266D-098A-4334-B506-4FE2C7DC4DBF)/AdvMapHero)"/>
+					<monsterLink/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>3</AnimationDelay>
+					<AnimName>joke</AnimName>
+					<MovePoints/>
+					<FinalAngle>0</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink href="#xpointer(id(item_E9B4266D-098A-4334-B506-4FE2C7DC4DBF)/AdvMapHero)"/>
+					<monsterLink/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>8</AnimationDelay>
+					<AnimName>specability</AnimName>
+					<MovePoints/>
+					<FinalAngle>0</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+			</CustomAnimations>
+			<MusicVolumePercent>100</MusicVolumePercent>
+			<MusicFadeOutDuration>500</MusicFadeOutDuration>
+			<MusicOverride>
+				<Music/>
+				<StartTime>0</StartTime>
+				<TimeShift>0</TimeShift>
+			</MusicOverride>
+			<AdditionalCameras>
+				<Item>
+					<NewCameraSet href="BlackHandShotcam-set.xdb#xpointer(/DSceneCameraSet)"/>
+					<StartDelay>3</StartDelay>
+				</Item>
+			</AdditionalCameras>
+			<Anim3DSoundVolumeCustom>100</Anim3DSoundVolumeCustom>
+		</Item>
+	</sentences>
+	<objects>
+		<Item href="#n:inline(AdvMapMonster)" id="item_E160CF46-D3BD-4CF1-99A2-9B59575DD8FA">
+			<AdvMapMonster>
+				<Pos>
+					<x>1</x>
+					<y>1</y>
+					<z>0</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>0</Floor>
+				<Name/>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/Necropolis/Zombie.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
+				<Custom>false</Custom>
+				<Amount>0</Amount>
+				<Amount2>0</Amount2>
+				<AttackType>ATTACK_ANY</AttackType>
+				<MoveType>MOVE_ANY</MoveType>
+				<DoesNotGrow>false</DoesNotGrow>
+				<MessageFileRef href=""/>
+				<Script/>
+				<Resources>
+					<Wood>0</Wood>
+					<Ore>0</Ore>
+					<Mercury>0</Mercury>
+					<Crystal>0</Crystal>
+					<Sulfur>0</Sulfur>
+					<Gem>0</Gem>
+					<Gold>0</Gold>
+				</Resources>
+				<ArtifactID>ARTIFACT_NONE</ArtifactID>
+				<Mood>MONSTER_MOOD_AGGRESSIVE</Mood>
+				<Courage>MONSTER_COURAGE_CAN_FLEE_JOIN</Courage>
+				<AllowQuickCombat>true</AllowQuickCombat>
+				<DoesNotDependOnDifficulty>false</DoesNotDependOnDifficulty>
+				<AdditionalStacks/>
+				<SingleMonsterNameFileRef href=""/>
+				<MultipleMonstersNameFileRef href=""/>
+				<RacesRandomGroupID>0</RacesRandomGroupID>
+				<relationsOverrides/>
+			</AdvMapMonster>
+		</Item>
+		<Item href="#xpointer(id(item_29174D19-3ABE-4F02-B867-C796DC423127)/AdvMapHero)"/>
+		<Item href="#xpointer(id(item_E9B4266D-098A-4334-B506-4FE2C7DC4DBF)/AdvMapHero)"/>
+		<Item href="#n:inline(AdvMapHero)" id="item_6C82D9E3-EAD5-4319-9E98-20A4F45F5CCF">
+			<AdvMapHero>
+				<Pos>
+					<x>198</x>
+					<y>171</y>
+					<z>0</z>
+				</Pos>
+				<Rot>2.07597</Rot>
+				<Floor>0</Floor>
+				<Name/>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/Necropolis/GOG/BlackHand_U.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+				<PlayerID>PLAYER_1</PlayerID>
+				<Experience>0</Experience>
+				<armySlots/>
+				<artifactIDs/>
+				<isUntransferable/>
+				<Editable>
+					<NameFileRef href=""/>
+					<BiographyFileRef href=""/>
+					<Offence>0</Offence>
+					<Defence>0</Defence>
+					<Spellpower>0</Spellpower>
+					<Knowledge>0</Knowledge>
+					<skills/>
+					<perkIDs/>
+					<spellIDs/>
+					<Ballista>false</Ballista>
+					<FirstAidTent>false</FirstAidTent>
+					<AmmoCart>false</AmmoCart>
+					<FavoriteEnemies/>
+					<TalismanLevel>0</TalismanLevel>
+				</Editable>
+				<OverrideMask>0</OverrideMask>
+				<PrimarySkillMastery>MASTERY_NONE</PrimarySkillMastery>
+				<LossTrigger>
+					<Action>
+						<FunctionName/>
+					</Action>
+				</LossTrigger>
+				<AllowQuickCombat>true</AllowQuickCombat>
+				<Textures>
+					<Icon128x128/>
+					<Icon64x64/>
+					<RoundedFace/>
+					<LeftFace/>
+					<RightFace/>
+				</Textures>
+				<PresetPrice>0</PresetPrice>
+				<BannedRaces/>
+			</AdvMapHero>
+		</Item>
+	</objects>
+	<ModelsLOD/>
+	<CameraShiftZ>0.1</CameraShiftZ>
+	<Anim3DSoundVolume>100</Anim3DSoundVolume>
+	<Name href=""/>
+</DialogScene>

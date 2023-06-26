@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Geometry>
+	<SrcName href="/DD_Garrison.mb"/>
+	<uid>29CD4F6C-04D5-4033-ADE8-08EB5C5459AD</uid>
+	<RootMesh/>
+	<RootJoint>701506_01</RootJoint>
+	<Size>
+		<x>0</x>
+		<y>0</y>
+		<z>0</z>
+	</Size>
+	<Center>
+		<x>0</x>
+		<y>0</y>
+		<z>0</z>
+	</Center>
+	<BestFitPoint>
+		<x>0</x>
+		<y>0</y>
+		<z>0</z>
+	</BestFitPoint>
+	<Dir>
+		<x>0</x>
+		<y>0</y>
+		<z>0</z>
+		<w>0</w>
+	</Dir>
+	<AIGeometry/>
+	<NumMeshes>0</NumMeshes>
+	<MaterialQuantities/>
+	<MeshNames/>
+	<MeshAnimated/>
+	<MeshWindAffected/>
+</Geometry>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Geometry>
+	<SrcName href="/market_haven.mb"/>
+	<uid>3CCFF4F1-75F8-47ED-B42E-7CC7C8AE23B2</uid>
+	<RootMesh/>
+	<RootJoint>B85E_01Shape</RootJoint>
+	<Size>
+		<x>7.0889</x>
+		<y>7.66882</y>
+		<z>0.536839</z>
+	</Size>
+	<Center>
+		<x>0.719586</x>
+		<y>0.568924</y>
+		<z>0.205059</z>
+	</Center>
+	<BestFitPoint>
+		<x>0</x>
+		<y>0</y>
+		<z>0</z>
+	</BestFitPoint>
+	<Dir>
+		<x>0</x>
+		<y>0</y>
+		<z>0</z>
+		<w>0</w>
+	</Dir>
+	<AIGeometry/>
+	<NumMeshes>1</NumMeshes>
+	<MaterialQuantities>
+		<Item>1</Item>
+	</MaterialQuantities>
+	<MeshNames>
+		<Item>B85E_01Shape</Item>
+	</MeshNames>
+	<MeshAnimated/>
+	<MeshWindAffected/>
+</Geometry>

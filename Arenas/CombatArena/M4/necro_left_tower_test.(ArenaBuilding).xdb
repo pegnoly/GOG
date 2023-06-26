@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ArenaBuilding>
+	<Pos>
+		<x>8</x>
+		<y>8</y>
+	</Pos>
+	<Size>
+		<x>2</x>
+		<y>2</y>
+	</Size>
+	<Object href="/Arenas/CombatArena/Necropolisarena/s_tower_1.(ArenaModObject).xdb#xpointer(/ArenaModObject)"/>
+	<Locator href="/Arenas/CombatArena/Necropolisarena/shooter_s1.(ArenaLocObject).xdb#xpointer(/ArenaLocObject)"/>
+	<Shooter href="/Characters/Creatures/Necropolis/DemiLich.(Character).xdb#xpointer(/Character)"/>
+	<Shot href="/GameMechanics/Shot/Creatures/Necropolis/DemiLich.xdb#xpointer(/Shot)"/>
+	<Type>BUILDING_ANY</Type>
+	<HitEffect/>
+	<HitSound/>
+	<DestroyEffects/>
+	<blockedTiles/>
+	<blockedTilesForDestroyed/>
+	<NameFileRef href=""/>
+	<DescriptionFileRef href=""/>
+</ArenaBuilding>

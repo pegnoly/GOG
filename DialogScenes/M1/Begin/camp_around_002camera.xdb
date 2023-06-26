@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSceneCamera>
+	<Pos>
+		<Rod>646.561</Rod>
+		<Pitch>-0.164002</Pitch>
+		<Yaw>3.61438</Yaw>
+		<Roll>0</Roll>
+		<FOV>35</FOV>
+		<ClipDistanceMin>1</ClipDistanceMin>
+		<ClipDistanceMax>500</ClipDistanceMax>
+		<Anchor>
+			<x>307.959</x>
+			<y>-448.658</y>
+			<z>6.50003</z>
+		</Anchor>
+	</Pos>
+	<Absolute>true</Absolute>
+	<Rot>0</Rot>
+	<NameFileRef href="camp_around_002-name-camera.txt"/>
+</DSceneCamera>

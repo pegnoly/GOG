@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Geometry>
+	<SrcName href="/DD_Wall_Ruined_01.mb"/>
+	<uid>36FED051-5B2C-4091-992D-08C39A725D67</uid>
+	<RootMesh/>
+	<RootJoint>E1B63C3_01</RootJoint>
+	<Size>
+		<x>4.3988</x>
+		<y>5.5123</y>
+		<z>5.12897</z>
+	</Size>
+	<Center>
+		<x>0.320325</x>
+		<y>2.52441</y>
+		<z>2.5736</z>
+	</Center>
+	<BestFitPoint>
+		<x>0</x>
+		<y>0</y>
+		<z>0</z>
+	</BestFitPoint>
+	<Dir>
+		<x>0</x>
+		<y>0</y>
+		<z>0</z>
+		<w>0</w>
+	</Dir>
+	<AIGeometry/>
+	<NumMeshes>1</NumMeshes>
+	<MaterialQuantities>
+		<Item>1</Item>
+	</MaterialQuantities>
+	<MeshNames>
+		<Item>E1B63C3_01Shape</Item>
+	</MeshNames>
+	<MeshAnimated/>
+	<MeshWindAffected/>
+</Geometry>

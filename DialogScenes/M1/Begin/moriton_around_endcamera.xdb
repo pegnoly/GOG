@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSceneCamera>
+	<Pos>
+		<Rod>103.598</Rod>
+		<Pitch>-0.288887</Pitch>
+		<Yaw>3.72033</Yaw>
+		<Roll>0</Roll>
+		<FOV>47.5631</FOV>
+		<ClipDistanceMin>1</ClipDistanceMin>
+		<ClipDistanceMax>500</ClipDistanceMax>
+		<Anchor>
+			<x>303.839</x>
+			<y>226.644</y>
+			<z>-3.5032e-007</z>
+		</Anchor>
+	</Pos>
+	<Absolute>true</Absolute>
+	<Rot>0</Rot>
+	<NameFileRef href="moriton_around_end-name-camera.txt"/>
+</DSceneCamera>

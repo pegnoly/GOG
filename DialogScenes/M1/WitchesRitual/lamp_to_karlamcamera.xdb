@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSceneCamera>
+	<Pos>
+		<Rod>101.507</Rod>
+		<Pitch>-0.341603</Pitch>
+		<Yaw>0.839999</Yaw>
+		<Roll>0</Roll>
+		<FOV>35</FOV>
+		<ClipDistanceMin>1</ClipDistanceMin>
+		<ClipDistanceMax>500</ClipDistanceMax>
+		<Anchor>
+			<x>-2.52003</x>
+			<y>207.777</y>
+			<z>-8</z>
+		</Anchor>
+	</Pos>
+	<Absolute>true</Absolute>
+	<Rot>0</Rot>
+	<NameFileRef href="lamp_to_karlam-name-camera.txt"/>
+</DSceneCamera>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSceneCamera>
+	<Pos>
+		<Rod>48.6464</Rod>
+		<Pitch>-0.260003</Pitch>
+		<Yaw>4.78079</Yaw>
+		<Roll>0</Roll>
+		<FOV>35</FOV>
+		<ClipDistanceMin>1</ClipDistanceMin>
+		<ClipDistanceMax>500</ClipDistanceMax>
+		<Anchor>
+			<x>60.4761</x>
+			<y>89.6349</y>
+			<z>3.82444e-009</z>
+		</Anchor>
+	</Pos>
+	<Absolute>true</Absolute>
+	<Rot>0</Rot>
+	<NameFileRef href="road_to_heroes_start-name-camera.txt"/>
+</DSceneCamera>

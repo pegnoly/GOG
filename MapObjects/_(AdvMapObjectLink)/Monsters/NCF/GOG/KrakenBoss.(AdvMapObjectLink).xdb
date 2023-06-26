@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AdvMapObjectLink>
+	<Link href="/new_creatures/neutral/H7_KrakenBoss/creature.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
+	<RndGroup/>
+	<IconFile>Icons\Generated\MapObjects\_(AdvMapObjectLink)\Monsters\NCF\GOG\KrakenBoss.(AdvMapObjectLink)-icon.tga</IconFile>
+	<HideInEditor>false</HideInEditor>
+</AdvMapObjectLink>

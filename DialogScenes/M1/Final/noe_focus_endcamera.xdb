@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSceneCamera>
+	<Pos>
+		<Rod>64.3451</Rod>
+		<Pitch>-0.183199</Pitch>
+		<Yaw>4.656</Yaw>
+		<Roll>0</Roll>
+		<FOV>47.5882</FOV>
+		<ClipDistanceMin>1</ClipDistanceMin>
+		<ClipDistanceMax>500</ClipDistanceMax>
+		<Anchor>
+			<x>176.48</x>
+			<y>102.081</y>
+			<z>7.49997</z>
+		</Anchor>
+	</Pos>
+	<Absolute>true</Absolute>
+	<Rot>0</Rot>
+	<NameFileRef href="noe_focus_end-name-camera.txt"/>
+</DSceneCamera>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSceneCamera>
+	<Pos>
+		<Rod>516.28</Rod>
+		<Pitch>-0.344691</Pitch>
+		<Yaw>1.80266</Yaw>
+		<Roll>0</Roll>
+		<FOV>38.4171</FOV>
+		<ClipDistanceMin>1</ClipDistanceMin>
+		<ClipDistanceMax>500</ClipDistanceMax>
+		<Anchor>
+			<x>-378.241</x>
+			<y>185.301</y>
+			<z>-6.13535e-007</z>
+		</Anchor>
+	</Pos>
+	<Absolute>true</Absolute>
+	<Rot>0</Rot>
+	<NameFileRef href="sky_focus-name-camera.txt"/>
+</DSceneCamera>

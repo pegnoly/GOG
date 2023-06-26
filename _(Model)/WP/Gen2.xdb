@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Model>
+	<Materials>
+		<Item href="/Arenas/Town/Fortress/Special_3_u1r0-GuardPost_M.(Material).xdb#xpointer(/Material)"/>
+	</Materials>
+	<Skeleton href="Gen2-skel.xdb#xpointer(/Skeleton)"/>
+	<Geometry href="Gen2-geom.xdb#xpointer(/Geometry)"/>
+	<Animations/>
+	<WindPower>1</WindPower>
+</Model>

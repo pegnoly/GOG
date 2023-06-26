@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AdvMapTownExterior>
+	<ExpScene href="/models/TownsGlobalMap/Rampart/Rampart.mb"/>
+	<AnimSet/>
+	<upgrades>
+		<Item>
+			<Model href="/_(Model)/Buildings/Mausoleum.xdb#xpointer(/Model)"/>
+			<Effect href="/Effects/_(Effect)/TownsGlobalMap/Rampart/Level1.xdb#xpointer(/Effect)"/>
+		</Item>
+		<Item>
+			<Model href="/MapObjects/Preserve-town_wall1.xdb#xpointer(/Model)"/>
+			<Effect href="/Effects/_(Effect)/TownsGlobalMap/Rampart/Level1.xdb#xpointer(/Effect)"/>
+		</Item>
+		<Item>
+			<Model href="/MapObjects/Preserve-town_wall2.xdb#xpointer(/Model)"/>
+			<Effect href="/Effects/_(Effect)/TownsGlobalMap/Rampart/Level1.xdb#xpointer(/Effect)"/>
+		</Item>
+		<Item>
+			<Model href="/MapObjects/Preserve-town_mg.xdb#xpointer(/Model)"/>
+			<Effect href="/Effects/_(Effect)/TownsGlobalMap/Rampart/Level1.xdb#xpointer(/Effect)"/>
+		</Item>
+		<Item>
+			<Model href="/MapObjects/Preserve-town_mg_wall1.xdb#xpointer(/Model)"/>
+			<Effect href="/Effects/_(Effect)/TownsGlobalMap/Rampart/Level1.xdb#xpointer(/Effect)"/>
+		</Item>
+		<Item>
+			<Model href="/MapObjects/Preserve-town_mg_wall2.xdb#xpointer(/Model)"/>
+			<Effect href="/Effects/_(Effect)/TownsGlobalMap/Rampart/Level1.xdb#xpointer(/Effect)"/>
+		</Item>
+		<Item>
+			<Model href="/MapObjects/Preserve-city_mg.xdb#xpointer(/Model)"/>
+			<Effect href="/Effects/_(Effect)/TownsGlobalMap/Rampart/Level1.xdb#xpointer(/Effect)"/>
+		</Item>
+		<Item>
+			<Model href="/MapObjects/Preserve-city_mg_wall1.xdb#xpointer(/Model)"/>
+			<Effect href="/Effects/_(Effect)/TownsGlobalMap/Rampart/Level1.xdb#xpointer(/Effect)"/>
+		</Item>
+		<Item>
+			<Model href="/MapObjects/Preserve-city_mg_wall2.xdb#xpointer(/Model)"/>
+			<Effect href="/Effects/_(Effect)/TownsGlobalMap/Rampart/Level1.xdb#xpointer(/Effect)"/>
+		</Item>
+		<Item>
+			<Model href="/MapObjects/Preserve-capital_mg_wall2.xdb#xpointer(/Model)"/>
+			<Effect href="/Effects/_(Effect)/TownsGlobalMap/Rampart/Level1.xdb#xpointer(/Effect)"/>
+		</Item>
+	</upgrades>
+	<Gates href="/MapObjects/Preserve-Gate_AI.xdb#xpointer(/AIGeometry)"/>
+</AdvMapTownExterior>

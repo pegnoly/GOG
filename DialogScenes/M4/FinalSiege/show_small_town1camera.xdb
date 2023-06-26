@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSceneCamera>
+	<Pos>
+		<Rod>378.733</Rod>
+		<Pitch>-0.288481</Pitch>
+		<Yaw>1.96578</Yaw>
+		<Roll>0</Roll>
+		<FOV>63.2828</FOV>
+		<ClipDistanceMin>1</ClipDistanceMin>
+		<ClipDistanceMax>500</ClipDistanceMax>
+		<Anchor>
+			<x>-142.73</x>
+			<y>-36.535</y>
+			<z>-1.27248e-006</z>
+		</Anchor>
+	</Pos>
+	<Absolute>true</Absolute>
+	<Rot>0</Rot>
+	<NameFileRef href="show_small_town1-name-camera.txt"/>
+</DSceneCamera>

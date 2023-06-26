@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSceneCamera>
+	<Pos>
+		<Rod>296.293</Rod>
+		<Pitch>-0.644001</Pitch>
+		<Yaw>4.95839</Yaw>
+		<Roll>0</Roll>
+		<FOV>41.4924</FOV>
+		<ClipDistanceMin>1</ClipDistanceMin>
+		<ClipDistanceMax>500</ClipDistanceMax>
+		<Anchor>
+			<x>297.116</x>
+			<y>322.831</y>
+			<z>-27.9747</z>
+		</Anchor>
+	</Pos>
+	<Absolute>true</Absolute>
+	<Rot>0</Rot>
+	<NameFileRef href="IlshamAggarSecondFlow_End-name-camera.txt"/>
+</DSceneCamera>

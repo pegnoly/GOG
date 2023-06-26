@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSceneCamera>
+	<Pos>
+		<Rod>34.9232</Rod>
+		<Pitch>-0.250403</Pitch>
+		<Yaw>2.5296</Yaw>
+		<Roll>0</Roll>
+		<FOV>35</FOV>
+		<ClipDistanceMin>1</ClipDistanceMin>
+		<ClipDistanceMax>500</ClipDistanceMax>
+		<Anchor>
+			<x>84.7376</x>
+			<y>73.0567</y>
+			<z>-1.29792e-007</z>
+		</Anchor>
+	</Pos>
+	<Absolute>true</Absolute>
+	<Rot>0</Rot>
+	<NameFileRef href="elm_focus_02-name-camera.txt"/>
+</DSceneCamera>

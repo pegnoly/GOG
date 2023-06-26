@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSceneCamera>
+	<Pos>
+		<Rod>83.4467</Rod>
+		<Pitch>-0.452</Pitch>
+		<Yaw>3.7488</Yaw>
+		<Roll>0</Roll>
+		<FOV>35</FOV>
+		<ClipDistanceMin>1</ClipDistanceMin>
+		<ClipDistanceMax>500</ClipDistanceMax>
+		<Anchor>
+			<x>126.686</x>
+			<y>35.8934</y>
+			<z>7.47242e-007</z>
+		</Anchor>
+	</Pos>
+	<Absolute>true</Absolute>
+	<Rot>0</Rot>
+	<NameFileRef href="noe_tp_start-name-camera.txt"/>
+</DSceneCamera>

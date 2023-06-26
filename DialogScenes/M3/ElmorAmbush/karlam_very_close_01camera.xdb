@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSceneCamera>
+	<Pos>
+		<Rod>42.0199</Rod>
+		<Pitch>-0.207204</Pitch>
+		<Yaw>6.03839</Yaw>
+		<Roll>0</Roll>
+		<FOV>35</FOV>
+		<ClipDistanceMin>1</ClipDistanceMin>
+		<ClipDistanceMax>500</ClipDistanceMax>
+		<Anchor>
+			<x>109.498</x>
+			<y>134.708</y>
+			<z>-6.52658e-010</z>
+		</Anchor>
+	</Pos>
+	<Absolute>true</Absolute>
+	<Rot>0</Rot>
+	<NameFileRef href="karlam_very_close_01-name-camera.txt"/>
+</DSceneCamera>

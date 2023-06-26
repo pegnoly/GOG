@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSceneCamera>
+	<Pos>
+		<Rod>154.138</Rod>
+		<Pitch>-0.355972</Pitch>
+		<Yaw>6.236</Yaw>
+		<Roll>0</Roll>
+		<FOV>47.5878</FOV>
+		<ClipDistanceMin>1</ClipDistanceMin>
+		<ClipDistanceMax>500</ClipDistanceMax>
+		<Anchor>
+			<x>139.838</x>
+			<y>250.864</y>
+			<z>-8.06556e-007</z>
+		</Anchor>
+	</Pos>
+	<Absolute>true</Absolute>
+	<Rot>0</Rot>
+	<NameFileRef href="rotate_to_first_cat-name-camera.txt"/>
+</DSceneCamera>

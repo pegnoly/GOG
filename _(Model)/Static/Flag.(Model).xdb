@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Model>
+	<Materials>
+		<Item href="/_(Material)/Creatures______5903/Haven/Archangel/SwordGlow.(Material).xdb#xpointer(/Material)"/>
+	</Materials>
+	<Skeleton href="#n:inline(Skeleton)" id="item_6e0bcb69-20d2-4f37-8764-f963a0033970">
+		<Skeleton ObjectRecordID="419">
+			<SrcName href="/models/Buildings/GoldMine.mb"/>
+			<RootJoint>Goldmine</RootJoint>
+			<MSRFormat>true</MSRFormat>
+			<Animations/>
+			<uid>03D6BA3B-3A37-4CE6-B10B-9E393F4E7AB4</uid>
+		</Skeleton>
+	</Skeleton>
+	<Geometry href="#n:inline(Geometry)" id="item_a8ff463a-a56c-425a-999e-49968078eb11">
+		<Geometry ObjectRecordID="940">
+			<SrcName href="/models/Buildings/GoldMine.mb"/>
+			<uid>B629F335-3F36-4915-A928-9E0E921E760E</uid>
+			<RootMesh>Goldmine</RootMesh>
+			<RootJoint/>
+			<Size>
+				<x>10</x>
+				<y>10</y>
+				<z>8.97675</z>
+			</Size>
+			<Center>
+				<x>0</x>
+				<y>0</y>
+				<z>-1.51162</z>
+			</Center>
+			<BestFitPoint>
+				<x>-1.04274</x>
+				<y>-0.031622</y>
+				<z>2.87984</z>
+			</BestFitPoint>
+			<Dir>
+				<x>0</x>
+				<y>0</y>
+				<z>0</z>
+				<w>0</w>
+			</Dir>
+			<AIGeometry/>
+			<NumMeshes>1</NumMeshes>
+			<MaterialQuantities>
+				<Item>1</Item>
+			</MaterialQuantities>
+			<MeshNames/>
+			<MeshAnimated/>
+			<MeshWindAffected/>
+		</Geometry>
+	</Geometry>
+	<Animations/>
+	<WindPower>1</WindPower>
+</Model>

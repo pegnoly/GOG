@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSceneCamera>
+	<Pos>
+		<Rod>381.529</Rod>
+		<Pitch>-0.365602</Pitch>
+		<Yaw>4.45917</Yaw>
+		<Roll>0</Roll>
+		<FOV>35</FOV>
+		<ClipDistanceMin>1</ClipDistanceMin>
+		<ClipDistanceMax>500</ClipDistanceMax>
+		<Anchor>
+			<x>373.91</x>
+			<y>1.21127</y>
+			<z>-27</z>
+		</Anchor>
+	</Pos>
+	<Absolute>true</Absolute>
+	<Rot>0</Rot>
+	<NameFileRef href="terhiz_to_karlam-name-camera.txt"/>
+</DSceneCamera>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Effect>
+	<Instances/>
+	<Lights/>
+	<Models>
+		<Item href="Blacksmith.(ModelInstance).xdb#xpointer(/ModelInstance)"/>
+		<Item href="Crypt.(ModelInstance).xdb#xpointer(/ModelInstance)"/>
+		<Item href="dragons.(ModelInstance).xdb#xpointer(/ModelInstance)"/>
+		<Item href="dragonyard.(ModelInstance).xdb#xpointer(/ModelInstance)"/>
+		<Item href="estate.(ModelInstance).xdb#xpointer(/ModelInstance)"/>
+		<Item href="floor.(ModelInstance).xdb#xpointer(/ModelInstance)"/>
+		<Item href="fort.(ModelInstance).xdb#xpointer(/ModelInstance)"/>
+		<Item href="Grail.(ModelInstance).xdb#xpointer(/ModelInstance)"/>
+		<Item href="graveyard.(ModelInstance).xdb#xpointer(/ModelInstance)"/>
+		<Item href="hall_of_darkness.(ModelInstance).xdb#xpointer(/ModelInstance)"/>
+		<Item href="main_build.(ModelInstance).xdb#xpointer(/ModelInstance)"/>
+		<Item href="main_bld_base.(ModelInstance).xdb#xpointer(/ModelInstance)"/>
+		<Item href="market.(ModelInstance).xdb#xpointer(/ModelInstance)"/>
+		<Item href="mausoleum.(ModelInstance).xdb#xpointer(/ModelInstance)"/>
+		<Item href="guild.(ModelInstance).xdb#xpointer(/ModelInstance)"/>
+		<Item href="amplifier.(ModelInstance).xdb#xpointer(/ModelInstance)"/>
+		<Item href="dragon_rock.(ModelInstance).xdb#xpointer(/ModelInstance)"/>
+		<Item href="rock_env1.(ModelInstance).xdb#xpointer(/ModelInstance)"/>
+		<Item href="rock_env2.(ModelInstance).xdb#xpointer(/ModelInstance)"/>
+		<Item href="rock_env3.(ModelInstance).xdb#xpointer(/ModelInstance)"/>
+		<Item href="rock_env4.(ModelInstance).xdb#xpointer(/ModelInstance)"/>
+		<Item href="trees4.(ModelInstance).xdb#xpointer(/ModelInstance)"/>
+		<Item href="rock_env5.(ModelInstance).xdb#xpointer(/ModelInstance)"/>
+		<Item href="trees5.(ModelInstance).xdb#xpointer(/ModelInstance)"/>
+		<Item href="rock_env6.(ModelInstance).xdb#xpointer(/ModelInstance)"/>
+		<Item href="rock_env7.(ModelInstance).xdb#xpointer(/ModelInstance)"/>
+		<Item href="rock_env8.(ModelInstance).xdb#xpointer(/ModelInstance)"/>
+		<Item href="rock_env9.(ModelInstance).xdb#xpointer(/ModelInstance)"/>
+		<Item href="rock_env10.(ModelInstance).xdb#xpointer(/ModelInstance)"/>
+		<Item href="rock_env11.(ModelInstance).xdb#xpointer(/ModelInstance)"/>
+		<Item href="rock_env12.(ModelInstance).xdb#xpointer(/ModelInstance)"/>
+		<Item href="main_rock.(ModelInstance).xdb#xpointer(/ModelInstance)"/>
+		<Item href="main_rock_trees.(ModelInstance).xdb#xpointer(/ModelInstance)"/>
+		<Item href="rock_market.(ModelInstance).xdb#xpointer(/ModelInstance)"/>
+		<Item href="rock_mau.(ModelInstance).xdb#xpointer(/ModelInstance)"/>
+		<Item href="rock_guild.(ModelInstance).xdb#xpointer(/ModelInstance)"/>
+		<Item href="rock_amp.(ModelInstance).xdb#xpointer(/ModelInstance)"/>
+		<Item href="amp_trees.(ModelInstance).xdb#xpointer(/ModelInstance)"/>
+		<Item href="rock_rt.(ModelInstance).xdb#xpointer(/ModelInstance)"/>
+		<Item href="rock_ship.(ModelInstance).xdb#xpointer(/ModelInstance)"/>
+		<Item href="rock_utemple.(ModelInstance).xdb#xpointer(/ModelInstance)"/>
+		<Item href="ruined_tower.(ModelInstance).xdb#xpointer(/ModelInstance)"/>
+		<Item href="shipyard.(ModelInstance).xdb#xpointer(/ModelInstance)"/>
+		<Item href="tavern.(ModelInstance).xdb#xpointer(/ModelInstance)"/>
+		<Item href="townhall.(ModelInstance).xdb#xpointer(/ModelInstance)"/>
+		<Item href="trees_mau.(ModelInstance).xdb#xpointer(/ModelInstance)"/>
+		<Item href="ugraves.(ModelInstance).xdb#xpointer(/ModelInstance)"/>
+		<Item href="unholy_temple.(ModelInstance).xdb#xpointer(/ModelInstance)"/>
+	</Models>
+	<WindAffected>false</WindAffected>
+	<WindPower>1</WindPower>
+	<Duration>2.5</Duration>
+</Effect>

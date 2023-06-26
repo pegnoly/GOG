@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSceneCamera>
+	<Pos>
+		<Rod>139.764</Rod>
+		<Pitch>-0.442612</Pitch>
+		<Yaw>3.64311</Yaw>
+		<Roll>0</Roll>
+		<FOV>63.3165</FOV>
+		<ClipDistanceMin>1</ClipDistanceMin>
+		<ClipDistanceMax>500</ClipDistanceMax>
+		<Anchor>
+			<x>181.738</x>
+			<y>48.4005</y>
+			<z>-0.499643</z>
+		</Anchor>
+	</Pos>
+	<Absolute>true</Absolute>
+	<Rot>0</Rot>
+	<NameFileRef href="show_baelor_start2-name-camera.txt"/>
+</DSceneCamera>

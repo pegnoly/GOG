@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSceneCamera>
+	<Pos>
+		<Rod>30.0001</Rod>
+		<Pitch>-0.192799</Pitch>
+		<Yaw>2.92802</Yaw>
+		<Roll>0</Roll>
+		<FOV>35</FOV>
+		<ClipDistanceMin>1</ClipDistanceMin>
+		<ClipDistanceMax>500</ClipDistanceMax>
+		<Anchor>
+			<x>50.4147</x>
+			<y>51.9541</y>
+			<z>16.4999</z>
+		</Anchor>
+	</Pos>
+	<Absolute>true</Absolute>
+	<Rot>0</Rot>
+	<NameFileRef href="noe_to_karlam_end-name-camera.txt"/>
+</DSceneCamera>

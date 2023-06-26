@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSceneCamera>
+	<Pos>
+		<Rod>48.3357</Rod>
+		<Pitch>-0.336795</Pitch>
+		<Yaw>3.21597</Yaw>
+		<Roll>0</Roll>
+		<FOV>47.5767</FOV>
+		<ClipDistanceMin>1</ClipDistanceMin>
+		<ClipDistanceMax>500</ClipDistanceMax>
+		<Anchor>
+			<x>124.404</x>
+			<y>51.5571</y>
+			<z>0.999998</z>
+		</Anchor>
+	</Pos>
+	<Absolute>true</Absolute>
+	<Rot>0</Rot>
+	<NameFileRef href="baelor_to_allenora_02_start-name-camera.txt"/>
+</DSceneCamera>

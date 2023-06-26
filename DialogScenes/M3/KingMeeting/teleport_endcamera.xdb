@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSceneCamera>
+	<Pos>
+		<Rod>45.3703</Rod>
+		<Pitch>-0.0824075</Pitch>
+		<Yaw>0.41761</Yaw>
+		<Roll>0</Roll>
+		<FOV>47.5572</FOV>
+		<ClipDistanceMin>1</ClipDistanceMin>
+		<ClipDistanceMax>500</ClipDistanceMax>
+		<Anchor>
+			<x>170.067</x>
+			<y>200.249</y>
+			<z>-4.39566e-007</z>
+		</Anchor>
+	</Pos>
+	<Absolute>true</Absolute>
+	<Rot>0</Rot>
+	<NameFileRef href="teleport_end-name-camera.txt"/>
+</DSceneCamera>

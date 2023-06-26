@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Geometry>
+	<SrcName href="/DD_BigTower_Ruined.mb"/>
+	<uid>E39FFF11-FF12-4727-89F4-06D5F521BE69</uid>
+	<RootMesh/>
+	<RootJoint>C010D_5EAA_48E0_A418_02962985A178</RootJoint>
+	<Size>
+		<x>8.28122</x>
+		<y>7.9241</y>
+		<z>16.4506</z>
+	</Size>
+	<Center>
+		<x>0.295472</x>
+		<y>4.31674</y>
+		<z>7.1833</z>
+	</Center>
+	<BestFitPoint>
+		<x>0</x>
+		<y>0</y>
+		<z>0</z>
+	</BestFitPoint>
+	<Dir>
+		<x>0</x>
+		<y>0</y>
+		<z>0</z>
+		<w>0</w>
+	</Dir>
+	<AIGeometry/>
+	<NumMeshes>1</NumMeshes>
+	<MaterialQuantities>
+		<Item>2</Item>
+	</MaterialQuantities>
+	<MeshNames>
+		<Item>C010D_5EAA_48E0_A418_02962985A178Shape</Item>
+	</MeshNames>
+	<MeshAnimated/>
+	<MeshWindAffected/>
+</Geometry>

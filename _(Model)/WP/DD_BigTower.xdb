@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Model>
+	<Materials>
+		<Item href="/Arenas/CombatArena/NeutralArena/central_tower_u1r0-Tower_r0_Mt.(Material).xdb#xpointer(/Material)"/>
+	</Materials>
+	<Skeleton href="DD_BigTower-skel.xdb#xpointer(/Skeleton)"/>
+	<Geometry href="DD_BigTower-geom.xdb#xpointer(/Geometry)"/>
+	<Animations/>
+	<WindPower>1</WindPower>
+</Model>

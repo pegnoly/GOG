@@ -1,0 +1,3417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DialogScene>
+	<Map href="/Maps/SmallSpecialArenas/M1/WitchRitual/map.xdb#xpointer(/AdvMapDesc)"/>
+	<SoundSet href="/Sounds/_(Ambient)/TerrainAmbients/Dungeon.xdb#xpointer(/AmbientSoundSet)"/>
+	<Music href="/Sounds/_(Music)/Battle-Themes/Dungeon.xdb#xpointer(/Music)"/>
+	<MusicVolume>300</MusicVolume>
+	<CustomSceneAmbientLight href="/Lights/_(AmbientLight)/M1/WP_M1_Uground_darkness.(AmbientLight).xdb#xpointer(/AmbientLight)"/>
+	<sentences>
+		<Item>
+			<text href=""/>
+			<sound/>
+			<heroLink/>
+			<monsterLink href="#n:inline(AdvMapMonster)" id="item_4727A39D-6856-4D99-B854-9D893F03E63D">
+				<AdvMapMonster>
+					<Pos>
+						<x>68</x>
+						<y>3</y>
+						<z>0</z>
+					</Pos>
+					<Rot>0</Rot>
+					<Floor>1</Floor>
+					<Name/>
+					<CombatScript/>
+					<pointLights/>
+					<Shared href="/MapObjects/Academy/Genie.xdb#xpointer(/AdvMapMonsterShared)"/>
+					<Custom>false</Custom>
+					<Amount>0</Amount>
+					<Amount2>0</Amount2>
+					<AttackType>ATTACK_ANY</AttackType>
+					<MoveType>MOVE_ANY</MoveType>
+					<DoesNotGrow>false</DoesNotGrow>
+					<MessageFileRef href=""/>
+					<Script/>
+					<Resources>
+						<Wood>0</Wood>
+						<Ore>0</Ore>
+						<Mercury>0</Mercury>
+						<Crystal>0</Crystal>
+						<Sulfur>0</Sulfur>
+						<Gem>0</Gem>
+						<Gold>0</Gold>
+					</Resources>
+					<ArtifactID>ARTIFACT_NONE</ArtifactID>
+					<Mood>MONSTER_MOOD_AGGRESSIVE</Mood>
+					<Courage>MONSTER_COURAGE_CAN_FLEE_JOIN</Courage>
+					<AllowQuickCombat>true</AllowQuickCombat>
+					<DoesNotDependOnDifficulty>false</DoesNotDependOnDifficulty>
+					<AdditionalStacks/>
+					<SingleMonsterNameFileRef href=""/>
+					<MultipleMonstersNameFileRef href=""/>
+					<RacesRandomGroupID>0</RacesRandomGroupID>
+					<relationsOverrides/>
+				</AdvMapMonster>
+			</monsterLink>
+			<MonsterCustomName href=""/>
+			<cameraSet/>
+			<NewCameraSet href="hall_startcam-set.xdb#xpointer(/DSceneCameraSet)"/>
+			<StopAmbient>false</StopAmbient>
+			<StopMusic>false</StopMusic>
+			<DynamicCamera>true</DynamicCamera>
+			<duration>10</duration>
+			<soundDuration>0</soundDuration>
+			<CustomAmbientLight/>
+			<ActorAnimationIndex>-1</ActorAnimationIndex>
+			<AnimName/>
+			<AnimationDelay>0</AnimationDelay>
+			<CustomSounds/>
+			<CustomEffects>
+				<Item>
+					<Delay>4</Delay>
+					<Effect href="/Effects/_(Effect)/Towns/Inferno/MagicGuild.xdb#xpointer(/Effect)"/>
+					<Pos>
+						<x>109</x>
+						<y>81</y>
+						<z>27.5</z>
+					</Pos>
+					<Rot>0</Rot>
+					<MovementSpeed>0</MovementSpeed>
+					<MovePoints/>
+					<ConstantPitch>false</ConstantPitch>
+				</Item>
+				<Item>
+					<Delay>4</Delay>
+					<Effect href="/Effects/_(Effect)/Spells/FireGlow.(Effect).xdb#xpointer(/Effect)"/>
+					<Pos>
+						<x>109</x>
+						<y>81</y>
+						<z>30</z>
+					</Pos>
+					<Rot>0</Rot>
+					<MovementSpeed>0</MovementSpeed>
+					<MovePoints/>
+					<ConstantPitch>false</ConstantPitch>
+				</Item>
+				<Item>
+					<Delay>7</Delay>
+					<Effect href="/Effects/_(Effect)/Buildings/Objects_Sabterra/fakel.(Effect) (2).xdb#xpointer(/Effect)"/>
+					<Pos>
+						<x>58</x>
+						<y>76.2</y>
+						<z>18</z>
+					</Pos>
+					<Rot>0</Rot>
+					<MovementSpeed>0</MovementSpeed>
+					<MovePoints/>
+					<ConstantPitch>false</ConstantPitch>
+				</Item>
+				<Item>
+					<Delay>7</Delay>
+					<Effect href="/Effects/_(Effect)/Spells/FireGlow.(Effect).xdb#xpointer(/Effect)"/>
+					<Pos>
+						<x>58</x>
+						<y>76</y>
+						<z>20</z>
+					</Pos>
+					<Rot>0</Rot>
+					<MovementSpeed>0</MovementSpeed>
+					<MovePoints/>
+					<ConstantPitch>false</ConstantPitch>
+				</Item>
+				<Item>
+					<Delay>7</Delay>
+					<Effect href="/Effects/_(Effect)/Buildings/Objects_Sabterra/fakel.(Effect) (2).xdb#xpointer(/Effect)"/>
+					<Pos>
+						<x>58</x>
+						<y>64.5</y>
+						<z>18</z>
+					</Pos>
+					<Rot>0</Rot>
+					<MovementSpeed>0</MovementSpeed>
+					<MovePoints/>
+					<ConstantPitch>false</ConstantPitch>
+				</Item>
+				<Item>
+					<Delay>7</Delay>
+					<Effect href="/Effects/_(Effect)/Spells/FireGlow.(Effect).xdb#xpointer(/Effect)"/>
+					<Pos>
+						<x>58</x>
+						<y>64.5</y>
+						<z>20</z>
+					</Pos>
+					<Rot>0</Rot>
+					<MovementSpeed>0</MovementSpeed>
+					<MovePoints/>
+					<ConstantPitch>false</ConstantPitch>
+				</Item>
+				<Item>
+					<Delay>7</Delay>
+					<Effect href="/Effects/_(Effect)/Buildings/Objects_Sabterra/fakel.(Effect) (2).xdb#xpointer(/Effect)"/>
+					<Pos>
+						<x>69.9</x>
+						<y>76.5</y>
+						<z>18</z>
+					</Pos>
+					<Rot>0</Rot>
+					<MovementSpeed>0</MovementSpeed>
+					<MovePoints/>
+					<ConstantPitch>false</ConstantPitch>
+				</Item>
+				<Item>
+					<Delay>7</Delay>
+					<Effect href="/Effects/_(Effect)/Spells/FireGlow.(Effect).xdb#xpointer(/Effect)"/>
+					<Pos>
+						<x>69.9</x>
+						<y>76.3</y>
+						<z>20</z>
+					</Pos>
+					<Rot>0</Rot>
+					<MovementSpeed>0</MovementSpeed>
+					<MovePoints/>
+					<ConstantPitch>false</ConstantPitch>
+				</Item>
+				<Item>
+					<Delay>7</Delay>
+					<Effect href="/Effects/_(Effect)/Buildings/Objects_Sabterra/fakel.(Effect) (2).xdb#xpointer(/Effect)"/>
+					<Pos>
+						<x>69.9</x>
+						<y>64.5</y>
+						<z>18</z>
+					</Pos>
+					<Rot>0</Rot>
+					<MovementSpeed>0</MovementSpeed>
+					<MovePoints/>
+					<ConstantPitch>false</ConstantPitch>
+				</Item>
+				<Item>
+					<Delay>7</Delay>
+					<Effect href="/Effects/_(Effect)/Spells/FireGlow.(Effect).xdb#xpointer(/Effect)"/>
+					<Pos>
+						<x>69.9</x>
+						<y>64.5</y>
+						<z>20</z>
+					</Pos>
+					<Rot>0</Rot>
+					<MovementSpeed>0</MovementSpeed>
+					<MovePoints/>
+					<ConstantPitch>false</ConstantPitch>
+				</Item>
+				<Item>
+					<Delay>4</Delay>
+					<Effect href="/Effects/_(Effect)/Towns/Inferno/MagicGuild.xdb#xpointer(/Effect)"/>
+					<Pos>
+						<x>109</x>
+						<y>59</y>
+						<z>27.5</z>
+					</Pos>
+					<Rot>0</Rot>
+					<MovementSpeed>0</MovementSpeed>
+					<MovePoints/>
+					<ConstantPitch>false</ConstantPitch>
+				</Item>
+				<Item>
+					<Delay>4</Delay>
+					<Effect href="/Effects/_(Effect)/Spells/FireGlow.(Effect).xdb#xpointer(/Effect)"/>
+					<Pos>
+						<x>109</x>
+						<y>59</y>
+						<z>30</z>
+					</Pos>
+					<Rot>0</Rot>
+					<MovementSpeed>0</MovementSpeed>
+					<MovePoints/>
+					<ConstantPitch>false</ConstantPitch>
+				</Item>
+			</CustomEffects>
+			<CustomAnimations/>
+			<MusicVolumePercent>100</MusicVolumePercent>
+			<MusicFadeOutDuration>500</MusicFadeOutDuration>
+			<MusicOverride>
+				<Music/>
+				<StartTime>0</StartTime>
+				<TimeShift>0</TimeShift>
+			</MusicOverride>
+			<AdditionalCameras/>
+			<Anim3DSoundVolumeCustom>100</Anim3DSoundVolumeCustom>
+		</Item>
+		<Item>
+			<text href="karlam_text1.txt"/>
+			<sound/>
+			<heroLink/>
+			<monsterLink href="#xpointer(id(item_4727A39D-6856-4D99-B854-9D893F03E63D)/AdvMapMonster)"/>
+			<MonsterCustomName href="karlam_name.txt"/>
+			<cameraSet/>
+			<NewCameraSet href="to_karlam_focuscam-set.xdb#xpointer(/DSceneCameraSet)"/>
+			<StopAmbient>false</StopAmbient>
+			<StopMusic>false</StopMusic>
+			<DynamicCamera>true</DynamicCamera>
+			<duration>13</duration>
+			<soundDuration>0</soundDuration>
+			<CustomAmbientLight/>
+			<ActorAnimationIndex>-1</ActorAnimationIndex>
+			<AnimName/>
+			<AnimationDelay>0</AnimationDelay>
+			<CustomSounds>
+				<Item>
+					<Delay>11</Delay>
+					<sound href="/Sounds/_(Sound)/Spells/FireWall.xdb#xpointer(/Sound)"/>
+					<Duration>0</Duration>
+				</Item>
+			</CustomSounds>
+			<CustomEffects>
+				<Item>
+					<Delay>11</Delay>
+					<Effect href="/Effects/_(Effect)/Spells/FireWall.(Effect).xdb#xpointer(/Effect)"/>
+					<Pos>
+						<x>58</x>
+						<y>73.2</y>
+						<z>18</z>
+					</Pos>
+					<Rot>1.5</Rot>
+					<MovementSpeed>0</MovementSpeed>
+					<MovePoints/>
+					<ConstantPitch>false</ConstantPitch>
+				</Item>
+				<Item>
+					<Delay>11</Delay>
+					<Effect href="/Effects/_(Effect)/Spells/FireWall.(Effect).xdb#xpointer(/Effect)"/>
+					<Pos>
+						<x>58</x>
+						<y>67.6</y>
+						<z>18</z>
+					</Pos>
+					<Rot>1.5</Rot>
+					<MovementSpeed>0</MovementSpeed>
+					<MovePoints/>
+					<ConstantPitch>false</ConstantPitch>
+				</Item>
+				<Item>
+					<Delay>11</Delay>
+					<Effect href="/Effects/_(Effect)/Spells/FireWall.(Effect).xdb#xpointer(/Effect)"/>
+					<Pos>
+						<x>69.8</x>
+						<y>73.2</y>
+						<z>18</z>
+					</Pos>
+					<Rot>1.5</Rot>
+					<MovementSpeed>0</MovementSpeed>
+					<MovePoints/>
+					<ConstantPitch>false</ConstantPitch>
+				</Item>
+				<Item>
+					<Delay>11</Delay>
+					<Effect href="/Effects/_(Effect)/Spells/FireWall.(Effect).xdb#xpointer(/Effect)"/>
+					<Pos>
+						<x>69.8</x>
+						<y>67.6</y>
+						<z>18</z>
+					</Pos>
+					<Rot>1.5</Rot>
+					<MovementSpeed>0</MovementSpeed>
+					<MovePoints/>
+					<ConstantPitch>false</ConstantPitch>
+				</Item>
+				<Item>
+					<Delay>11</Delay>
+					<Effect href="/Effects/_(Effect)/Spells/FireWall.(Effect).xdb#xpointer(/Effect)"/>
+					<Pos>
+						<x>66.8</x>
+						<y>76.4</y>
+						<z>18</z>
+					</Pos>
+					<Rot>3.2</Rot>
+					<MovementSpeed>0</MovementSpeed>
+					<MovePoints/>
+					<ConstantPitch>false</ConstantPitch>
+				</Item>
+				<Item>
+					<Delay>11</Delay>
+					<Effect href="/Effects/_(Effect)/Spells/FireWall.(Effect).xdb#xpointer(/Effect)"/>
+					<Pos>
+						<x>60.8</x>
+						<y>76.2</y>
+						<z>18</z>
+					</Pos>
+					<Rot>3.2</Rot>
+					<MovementSpeed>0</MovementSpeed>
+					<MovePoints/>
+					<ConstantPitch>false</ConstantPitch>
+				</Item>
+				<Item>
+					<Delay>11</Delay>
+					<Effect href="/Effects/_(Effect)/Spells/FireWall.(Effect).xdb#xpointer(/Effect)"/>
+					<Pos>
+						<x>66.8</x>
+						<y>64.4</y>
+						<z>18</z>
+					</Pos>
+					<Rot>3.2</Rot>
+					<MovementSpeed>0</MovementSpeed>
+					<MovePoints/>
+					<ConstantPitch>false</ConstantPitch>
+				</Item>
+				<Item>
+					<Delay>11</Delay>
+					<Effect href="/Effects/_(Effect)/Spells/FireWall.(Effect).xdb#xpointer(/Effect)"/>
+					<Pos>
+						<x>60.8</x>
+						<y>64</y>
+						<z>18</z>
+					</Pos>
+					<Rot>3.2</Rot>
+					<MovementSpeed>0</MovementSpeed>
+					<MovePoints/>
+					<ConstantPitch>false</ConstantPitch>
+				</Item>
+			</CustomEffects>
+			<CustomAnimations>
+				<Item>
+					<heroLink href="#n:inline(AdvMapHero)" id="item_2CDF1DC4-B524-4BAF-B03A-A09AD301BEAD">
+						<AdvMapHero>
+							<Pos>
+								<x>33.4331</x>
+								<y>34.4966</y>
+								<z>0</z>
+							</Pos>
+							<Rot>4.61142</Rot>
+							<Floor>1</Floor>
+							<Name/>
+							<CombatScript/>
+							<pointLights/>
+							<Shared href="/MapObjects/DialogScenes/Zehir_DSU.xdb#xpointer(/AdvMapHeroShared)"/>
+							<PlayerID>PLAYER_1</PlayerID>
+							<Experience>0</Experience>
+							<armySlots/>
+							<artifactIDs/>
+							<isUntransferable/>
+							<Editable>
+								<NameFileRef href=""/>
+								<BiographyFileRef href=""/>
+								<Offence>0</Offence>
+								<Defence>0</Defence>
+								<Spellpower>0</Spellpower>
+								<Knowledge>0</Knowledge>
+								<skills/>
+								<perkIDs/>
+								<spellIDs/>
+								<Ballista>false</Ballista>
+								<FirstAidTent>false</FirstAidTent>
+								<AmmoCart>false</AmmoCart>
+								<FavoriteEnemies/>
+								<TalismanLevel>0</TalismanLevel>
+							</Editable>
+							<OverrideMask>0</OverrideMask>
+							<PrimarySkillMastery>MASTERY_NONE</PrimarySkillMastery>
+							<LossTrigger>
+								<Action>
+									<FunctionName/>
+								</Action>
+							</LossTrigger>
+							<AllowQuickCombat>true</AllowQuickCombat>
+							<Textures>
+								<Icon128x128/>
+								<Icon64x64/>
+								<RoundedFace/>
+								<LeftFace/>
+								<RightFace/>
+							</Textures>
+							<PresetPrice>0</PresetPrice>
+							<BannedRaces/>
+						</AdvMapHero>
+					</heroLink>
+					<monsterLink/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>0.1</AnimationDelay>
+					<AnimName>speech_orator</AnimName>
+					<MovePoints/>
+					<FinalAngle>0</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink href="#xpointer(id(item_2CDF1DC4-B524-4BAF-B03A-A09AD301BEAD)/AdvMapHero)"/>
+					<monsterLink/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>8</AnimationDelay>
+					<AnimName>move</AnimName>
+					<MovePoints>
+						<Item>
+							<x>29.4331</x>
+							<y>34.4966</y>
+						</Item>
+					</MovePoints>
+					<FinalAngle>264</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+			</CustomAnimations>
+			<MusicVolumePercent>100</MusicVolumePercent>
+			<MusicFadeOutDuration>500</MusicFadeOutDuration>
+			<MusicOverride>
+				<Music/>
+				<StartTime>0</StartTime>
+				<TimeShift>0</TimeShift>
+			</MusicOverride>
+			<AdditionalCameras>
+				<Item>
+					<NewCameraSet href="karlam_focuscam-set.xdb#xpointer(/DSceneCameraSet)"/>
+					<StartDelay>3</StartDelay>
+				</Item>
+				<Item>
+					<NewCameraSet href="karlam_movecam-set.xdb#xpointer(/DSceneCameraSet)"/>
+					<StartDelay>5</StartDelay>
+				</Item>
+			</AdditionalCameras>
+			<Anim3DSoundVolumeCustom>100</Anim3DSoundVolumeCustom>
+		</Item>
+		<Item>
+			<text href="noe_text1.txt"/>
+			<sound/>
+			<heroLink/>
+			<monsterLink href="#xpointer(id(item_4727A39D-6856-4D99-B854-9D893F03E63D)/AdvMapMonster)"/>
+			<MonsterCustomName href="noe_name.txt"/>
+			<cameraSet/>
+			<NewCameraSet href="noe_move_01cam-set.xdb#xpointer(/DSceneCameraSet)"/>
+			<StopAmbient>false</StopAmbient>
+			<StopMusic>false</StopMusic>
+			<DynamicCamera>true</DynamicCamera>
+			<duration>10</duration>
+			<soundDuration>0</soundDuration>
+			<CustomAmbientLight/>
+			<ActorAnimationIndex>-1</ActorAnimationIndex>
+			<AnimName/>
+			<AnimationDelay>0</AnimationDelay>
+			<CustomSounds>
+				<Item>
+					<Delay>0</Delay>
+					<sound href="/Sounds/_(Sound)/Spells/TownTeleportStart.xdb#xpointer(/Sound)"/>
+					<Duration>0</Duration>
+				</Item>
+			</CustomSounds>
+			<CustomEffects>
+				<Item>
+					<Delay>0</Delay>
+					<Effect href="/Effects/_(Effect)/Spells/townportal_start.xdb#xpointer(/Effect)"/>
+					<Pos>
+						<x>99.8</x>
+						<y>70.2</y>
+						<z>18</z>
+					</Pos>
+					<Rot>0</Rot>
+					<MovementSpeed>0</MovementSpeed>
+					<MovePoints/>
+					<ConstantPitch>false</ConstantPitch>
+				</Item>
+				<Item>
+					<Delay>7</Delay>
+					<Effect href="/Effects/_(Effect)/Buildings/Objects_Sabterra/fakel.(Effect) (2) (2) (2).xdb#xpointer(/Effect)"/>
+					<Pos>
+						<x>88.3</x>
+						<y>70.1</y>
+						<z>18</z>
+					</Pos>
+					<Rot>0</Rot>
+					<MovementSpeed>0</MovementSpeed>
+					<MovePoints/>
+					<ConstantPitch>false</ConstantPitch>
+				</Item>
+				<Item>
+					<Delay>7</Delay>
+					<Effect href="/Effects/_(Effect)/Spells/FireGlow.(Effect).xdb#xpointer(/Effect)"/>
+					<Pos>
+						<x>88.3</x>
+						<y>70.1</y>
+						<z>18</z>
+					</Pos>
+					<Rot>0</Rot>
+					<MovementSpeed>0</MovementSpeed>
+					<MovePoints/>
+					<ConstantPitch>false</ConstantPitch>
+				</Item>
+			</CustomEffects>
+			<CustomAnimations>
+				<Item>
+					<heroLink href="#n:inline(AdvMapHero)" id="item_A53F56BB-E904-49C8-9FCA-908CBBAA3C52">
+						<AdvMapHero>
+							<Pos>
+								<x>9</x>
+								<y>53</y>
+								<z>0</z>
+							</Pos>
+							<Rot>0</Rot>
+							<Floor>1</Floor>
+							<Name/>
+							<CombatScript/>
+							<pointLights/>
+							<Shared href="/MapObjects/DialogScenes/Ylaya_DSU.xdb#xpointer(/AdvMapHeroShared)"/>
+							<PlayerID>PLAYER_1</PlayerID>
+							<Experience>0</Experience>
+							<armySlots/>
+							<artifactIDs/>
+							<isUntransferable/>
+							<Editable>
+								<NameFileRef href=""/>
+								<BiographyFileRef href=""/>
+								<Offence>0</Offence>
+								<Defence>0</Defence>
+								<Spellpower>0</Spellpower>
+								<Knowledge>0</Knowledge>
+								<skills/>
+								<perkIDs/>
+								<spellIDs/>
+								<Ballista>false</Ballista>
+								<FirstAidTent>false</FirstAidTent>
+								<AmmoCart>false</AmmoCart>
+								<FavoriteEnemies/>
+								<TalismanLevel>0</TalismanLevel>
+							</Editable>
+							<OverrideMask>0</OverrideMask>
+							<PrimarySkillMastery>MASTERY_NONE</PrimarySkillMastery>
+							<LossTrigger>
+								<Action>
+									<FunctionName/>
+								</Action>
+							</LossTrigger>
+							<AllowQuickCombat>true</AllowQuickCombat>
+							<Textures>
+								<Icon128x128/>
+								<Icon64x64/>
+								<RoundedFace/>
+								<LeftFace/>
+								<RightFace/>
+							</Textures>
+							<PresetPrice>0</PresetPrice>
+							<BannedRaces/>
+						</AdvMapHero>
+					</heroLink>
+					<monsterLink/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>2</AnimationDelay>
+					<AnimName>move</AnimName>
+					<MovePoints>
+						<Item>
+							<x>49.4</x>
+							<y>34.6</y>
+						</Item>
+					</MovePoints>
+					<FinalAngle>263</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink href="#xpointer(id(item_A53F56BB-E904-49C8-9FCA-908CBBAA3C52)/AdvMapHero)"/>
+					<monsterLink/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>2.01</AnimationDelay>
+					<AnimName>idle00</AnimName>
+					<MovePoints/>
+					<FinalAngle>0</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink href="#xpointer(id(item_A53F56BB-E904-49C8-9FCA-908CBBAA3C52)/AdvMapHero)"/>
+					<monsterLink/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>2.02</AnimationDelay>
+					<AnimName>move</AnimName>
+					<MovePoints>
+						<Item>
+							<x>38.4</x>
+							<y>34.6</y>
+						</Item>
+					</MovePoints>
+					<FinalAngle>263</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+			</CustomAnimations>
+			<MusicVolumePercent>100</MusicVolumePercent>
+			<MusicFadeOutDuration>500</MusicFadeOutDuration>
+			<MusicOverride>
+				<Music/>
+				<StartTime>0</StartTime>
+				<TimeShift>0</TimeShift>
+			</MusicOverride>
+			<AdditionalCameras/>
+			<Anim3DSoundVolumeCustom>100</Anim3DSoundVolumeCustom>
+		</Item>
+		<Item>
+			<text href="noe_text2.txt"/>
+			<sound/>
+			<heroLink/>
+			<monsterLink href="#xpointer(id(item_4727A39D-6856-4D99-B854-9D893F03E63D)/AdvMapMonster)"/>
+			<MonsterCustomName href="noe_name.txt"/>
+			<cameraSet/>
+			<NewCameraSet href="to_karlam_backcam-set.xdb#xpointer(/DSceneCameraSet)"/>
+			<StopAmbient>false</StopAmbient>
+			<StopMusic>false</StopMusic>
+			<DynamicCamera>true</DynamicCamera>
+			<duration>8</duration>
+			<soundDuration>0</soundDuration>
+			<CustomAmbientLight/>
+			<ActorAnimationIndex>-1</ActorAnimationIndex>
+			<AnimName/>
+			<AnimationDelay>0</AnimationDelay>
+			<CustomSounds/>
+			<CustomEffects>
+				<Item>
+					<Delay>3</Delay>
+					<Effect href="/Effects/_(Effect)/Buildings/Objects_Sabterra/fakel.(Effect) (2) (2) (2).xdb#xpointer(/Effect)"/>
+					<Pos>
+						<x>77</x>
+						<y>70.2</y>
+						<z>18</z>
+					</Pos>
+					<Rot>0</Rot>
+					<MovementSpeed>0</MovementSpeed>
+					<MovePoints/>
+					<ConstantPitch>false</ConstantPitch>
+				</Item>
+				<Item>
+					<Delay>3</Delay>
+					<Effect href="/Effects/_(Effect)/Spells/FireGlow.(Effect).xdb#xpointer(/Effect)"/>
+					<Pos>
+						<x>77</x>
+						<y>70.2</y>
+						<z>18</z>
+					</Pos>
+					<Rot>0</Rot>
+					<MovementSpeed>0</MovementSpeed>
+					<MovePoints/>
+					<ConstantPitch>false</ConstantPitch>
+				</Item>
+			</CustomEffects>
+			<CustomAnimations>
+				<Item>
+					<heroLink href="#xpointer(id(item_2CDF1DC4-B524-4BAF-B03A-A09AD301BEAD)/AdvMapHero)"/>
+					<monsterLink/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>-10</AnimationDelay>
+					<AnimName>move</AnimName>
+					<MovePoints>
+						<Item>
+							<x>29.4331</x>
+							<y>34.4966</y>
+						</Item>
+					</MovePoints>
+					<FinalAngle>90.5</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink href="#xpointer(id(item_2CDF1DC4-B524-4BAF-B03A-A09AD301BEAD)/AdvMapHero)"/>
+					<monsterLink/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>0</AnimationDelay>
+					<AnimName>idle00</AnimName>
+					<MovePoints/>
+					<FinalAngle>0</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink href="#xpointer(id(item_2CDF1DC4-B524-4BAF-B03A-A09AD301BEAD)/AdvMapHero)"/>
+					<monsterLink/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>5</AnimationDelay>
+					<AnimName>move</AnimName>
+					<MovePoints>
+						<Item>
+							<x>32.7</x>
+							<y>34.5</y>
+						</Item>
+					</MovePoints>
+					<FinalAngle>90.5</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+			</CustomAnimations>
+			<MusicVolumePercent>100</MusicVolumePercent>
+			<MusicFadeOutDuration>500</MusicFadeOutDuration>
+			<MusicOverride>
+				<Music/>
+				<StartTime>0</StartTime>
+				<TimeShift>0</TimeShift>
+			</MusicOverride>
+			<AdditionalCameras/>
+			<Anim3DSoundVolumeCustom>100</Anim3DSoundVolumeCustom>
+		</Item>
+		<Item>
+			<text href="karlam_text2.txt"/>
+			<sound/>
+			<heroLink/>
+			<monsterLink href="#xpointer(id(item_4727A39D-6856-4D99-B854-9D893F03E63D)/AdvMapMonster)"/>
+			<MonsterCustomName href="karlam_name.txt"/>
+			<cameraSet/>
+			<NewCameraSet href="karlam_close_02cam-set.xdb#xpointer(/DSceneCameraSet)"/>
+			<StopAmbient>false</StopAmbient>
+			<StopMusic>false</StopMusic>
+			<DynamicCamera>true</DynamicCamera>
+			<duration>8</duration>
+			<soundDuration>0</soundDuration>
+			<CustomAmbientLight/>
+			<ActorAnimationIndex>-1</ActorAnimationIndex>
+			<AnimName/>
+			<AnimationDelay>0</AnimationDelay>
+			<CustomSounds/>
+			<CustomEffects/>
+			<CustomAnimations>
+				<Item>
+					<heroLink href="#xpointer(id(item_2CDF1DC4-B524-4BAF-B03A-A09AD301BEAD)/AdvMapHero)"/>
+					<monsterLink/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>1.1</AnimationDelay>
+					<AnimName>speech_bellicose</AnimName>
+					<MovePoints/>
+					<FinalAngle>0</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+			</CustomAnimations>
+			<MusicVolumePercent>100</MusicVolumePercent>
+			<MusicFadeOutDuration>500</MusicFadeOutDuration>
+			<MusicOverride>
+				<Music/>
+				<StartTime>0</StartTime>
+				<TimeShift>0</TimeShift>
+			</MusicOverride>
+			<AdditionalCameras/>
+			<Anim3DSoundVolumeCustom>100</Anim3DSoundVolumeCustom>
+		</Item>
+		<Item>
+			<text href="noe_text3.txt"/>
+			<sound/>
+			<heroLink/>
+			<monsterLink href="#xpointer(id(item_4727A39D-6856-4D99-B854-9D893F03E63D)/AdvMapMonster)"/>
+			<MonsterCustomName href="noe_name.txt"/>
+			<cameraSet/>
+			<NewCameraSet href="noe_close_01cam-set.xdb#xpointer(/DSceneCameraSet)"/>
+			<StopAmbient>false</StopAmbient>
+			<StopMusic>false</StopMusic>
+			<DynamicCamera>true</DynamicCamera>
+			<duration>20</duration>
+			<soundDuration>0</soundDuration>
+			<CustomAmbientLight/>
+			<ActorAnimationIndex>-1</ActorAnimationIndex>
+			<AnimName/>
+			<AnimationDelay>0</AnimationDelay>
+			<CustomSounds/>
+			<CustomEffects>
+				<Item>
+					<Delay>8.2</Delay>
+					<Effect href="/Effects/_(Effect)/Buildings/Objects_Sabterra/fakel.(Effect) (2) (2) (2).xdb#xpointer(/Effect)"/>
+					<Pos>
+						<x>92.2</x>
+						<y>52</y>
+						<z>22</z>
+					</Pos>
+					<Rot>0</Rot>
+					<MovementSpeed>0</MovementSpeed>
+					<MovePoints/>
+					<ConstantPitch>false</ConstantPitch>
+				</Item>
+				<Item>
+					<Delay>8.2</Delay>
+					<Effect href="/Effects/_(Effect)/Spells/FireGlow.(Effect).xdb#xpointer(/Effect)"/>
+					<Pos>
+						<x>92.2</x>
+						<y>52</y>
+						<z>22</z>
+					</Pos>
+					<Rot>0</Rot>
+					<MovementSpeed>0</MovementSpeed>
+					<MovePoints/>
+					<ConstantPitch>false</ConstantPitch>
+				</Item>
+				<Item>
+					<Delay>11</Delay>
+					<Effect href="/Effects/_(Effect)/Buildings/Objects_Sabterra/fakel.(Effect) (2) (2) (2).xdb#xpointer(/Effect)"/>
+					<Pos>
+						<x>82.2</x>
+						<y>42</y>
+						<z>22</z>
+					</Pos>
+					<Rot>0</Rot>
+					<MovementSpeed>0</MovementSpeed>
+					<MovePoints/>
+					<ConstantPitch>false</ConstantPitch>
+				</Item>
+				<Item>
+					<Delay>11</Delay>
+					<Effect href="/Effects/_(Effect)/Spells/FireGlow.(Effect).xdb#xpointer(/Effect)"/>
+					<Pos>
+						<x>82.2</x>
+						<y>42</y>
+						<z>22</z>
+					</Pos>
+					<Rot>0</Rot>
+					<MovementSpeed>0</MovementSpeed>
+					<MovePoints/>
+					<ConstantPitch>false</ConstantPitch>
+				</Item>
+				<Item>
+					<Delay>13.6</Delay>
+					<Effect href="/Effects/_(Effect)/Buildings/Objects_Sabterra/fakel.(Effect) (2) (2) (2).xdb#xpointer(/Effect)"/>
+					<Pos>
+						<x>66.2</x>
+						<y>40</y>
+						<z>21</z>
+					</Pos>
+					<Rot>0</Rot>
+					<MovementSpeed>0</MovementSpeed>
+					<MovePoints/>
+					<ConstantPitch>false</ConstantPitch>
+				</Item>
+				<Item>
+					<Delay>13.6</Delay>
+					<Effect href="/Effects/_(Effect)/Spells/FireGlow.(Effect).xdb#xpointer(/Effect)"/>
+					<Pos>
+						<x>66.2</x>
+						<y>40</y>
+						<z>21</z>
+					</Pos>
+					<Rot>0</Rot>
+					<MovementSpeed>0</MovementSpeed>
+					<MovePoints/>
+					<ConstantPitch>false</ConstantPitch>
+				</Item>
+				<Item>
+					<Delay>15.5</Delay>
+					<Effect href="/Effects/_(Effect)/Buildings/Objects_Sabterra/fakel.(Effect) (2) (2) (2).xdb#xpointer(/Effect)"/>
+					<Pos>
+						<x>54.2</x>
+						<y>42</y>
+						<z>18</z>
+					</Pos>
+					<Rot>0</Rot>
+					<MovementSpeed>0</MovementSpeed>
+					<MovePoints/>
+					<ConstantPitch>false</ConstantPitch>
+				</Item>
+				<Item>
+					<Delay>15.5</Delay>
+					<Effect href="/Effects/_(Effect)/Spells/FireGlow.(Effect).xdb#xpointer(/Effect)"/>
+					<Pos>
+						<x>54.2</x>
+						<y>42</y>
+						<z>18</z>
+					</Pos>
+					<Rot>0</Rot>
+					<MovementSpeed>0</MovementSpeed>
+					<MovePoints/>
+					<ConstantPitch>false</ConstantPitch>
+				</Item>
+				<Item>
+					<Delay>18</Delay>
+					<Effect href="/Effects/_(Effect)/Buildings/Objects_Sabterra/fakel.(Effect) (2) (2) (2).xdb#xpointer(/Effect)"/>
+					<Pos>
+						<x>38.2</x>
+						<y>56</y>
+						<z>18</z>
+					</Pos>
+					<Rot>0</Rot>
+					<MovementSpeed>0</MovementSpeed>
+					<MovePoints/>
+					<ConstantPitch>false</ConstantPitch>
+				</Item>
+				<Item>
+					<Delay>18</Delay>
+					<Effect href="/Effects/_(Effect)/Spells/FireGlow.(Effect).xdb#xpointer(/Effect)"/>
+					<Pos>
+						<x>38.2</x>
+						<y>56</y>
+						<z>18</z>
+					</Pos>
+					<Rot>0</Rot>
+					<MovementSpeed>0</MovementSpeed>
+					<MovePoints/>
+					<ConstantPitch>false</ConstantPitch>
+				</Item>
+			</CustomEffects>
+			<CustomAnimations>
+				<Item>
+					<heroLink href="#xpointer(id(item_2CDF1DC4-B524-4BAF-B03A-A09AD301BEAD)/AdvMapHero)"/>
+					<monsterLink/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>0</AnimationDelay>
+					<AnimName>idle00</AnimName>
+					<MovePoints/>
+					<FinalAngle>0</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink href="#xpointer(id(item_A53F56BB-E904-49C8-9FCA-908CBBAA3C52)/AdvMapHero)"/>
+					<monsterLink/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>0.1</AnimationDelay>
+					<AnimName>spneutral</AnimName>
+					<MovePoints/>
+					<FinalAngle>0</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+			</CustomAnimations>
+			<MusicVolumePercent>100</MusicVolumePercent>
+			<MusicFadeOutDuration>500</MusicFadeOutDuration>
+			<MusicOverride>
+				<Music/>
+				<StartTime>0</StartTime>
+				<TimeShift>0</TimeShift>
+			</MusicOverride>
+			<AdditionalCameras>
+				<Item>
+					<NewCameraSet href="witch_place_showcam-set.xdb#xpointer(/DSceneCameraSet)"/>
+					<StartDelay>8</StartDelay>
+				</Item>
+			</AdditionalCameras>
+			<Anim3DSoundVolumeCustom>100</Anim3DSoundVolumeCustom>
+		</Item>
+		<Item>
+			<text href="karlam_text3.txt"/>
+			<sound/>
+			<heroLink/>
+			<monsterLink href="#xpointer(id(item_4727A39D-6856-4D99-B854-9D893F03E63D)/AdvMapMonster)"/>
+			<MonsterCustomName href="karlam_name.txt"/>
+			<cameraSet/>
+			<NewCameraSet href="to_karlam_close_02cam-set.xdb#xpointer(/DSceneCameraSet)"/>
+			<StopAmbient>false</StopAmbient>
+			<StopMusic>false</StopMusic>
+			<DynamicCamera>true</DynamicCamera>
+			<duration>10</duration>
+			<soundDuration>0</soundDuration>
+			<CustomAmbientLight/>
+			<ActorAnimationIndex>-1</ActorAnimationIndex>
+			<AnimName/>
+			<AnimationDelay>0</AnimationDelay>
+			<CustomSounds/>
+			<CustomEffects>
+				<Item>
+					<Delay>0</Delay>
+					<Effect href="/Effects/_(Effect)/Buildings/Objects_Sabterra/fakel.(Effect) (2) (2) (2).xdb#xpointer(/Effect)"/>
+					<Pos>
+						<x>92.2</x>
+						<y>88</y>
+						<z>21</z>
+					</Pos>
+					<Rot>0</Rot>
+					<MovementSpeed>0</MovementSpeed>
+					<MovePoints/>
+					<ConstantPitch>false</ConstantPitch>
+				</Item>
+				<Item>
+					<Delay>0</Delay>
+					<Effect href="/Effects/_(Effect)/Spells/FireGlow.(Effect).xdb#xpointer(/Effect)"/>
+					<Pos>
+						<x>92.2</x>
+						<y>88</y>
+						<z>21</z>
+					</Pos>
+					<Rot>0</Rot>
+					<MovementSpeed>0</MovementSpeed>
+					<MovePoints/>
+					<ConstantPitch>false</ConstantPitch>
+				</Item>
+				<Item>
+					<Delay>0</Delay>
+					<Effect href="/Effects/_(Effect)/Buildings/Objects_Sabterra/fakel.(Effect) (2) (2) (2).xdb#xpointer(/Effect)"/>
+					<Pos>
+						<x>82.2</x>
+						<y>98</y>
+						<z>20</z>
+					</Pos>
+					<Rot>0</Rot>
+					<MovementSpeed>0</MovementSpeed>
+					<MovePoints/>
+					<ConstantPitch>false</ConstantPitch>
+				</Item>
+				<Item>
+					<Delay>0</Delay>
+					<Effect href="/Effects/_(Effect)/Spells/FireGlow.(Effect).xdb#xpointer(/Effect)"/>
+					<Pos>
+						<x>82.2</x>
+						<y>98</y>
+						<z>20</z>
+					</Pos>
+					<Rot>0</Rot>
+					<MovementSpeed>0</MovementSpeed>
+					<MovePoints/>
+					<ConstantPitch>false</ConstantPitch>
+				</Item>
+				<Item>
+					<Delay>0</Delay>
+					<Effect href="/Effects/_(Effect)/Buildings/Objects_Sabterra/fakel.(Effect) (2) (2) (2).xdb#xpointer(/Effect)"/>
+					<Pos>
+						<x>66.2</x>
+						<y>100</y>
+						<z>18</z>
+					</Pos>
+					<Rot>0</Rot>
+					<MovementSpeed>0</MovementSpeed>
+					<MovePoints/>
+					<ConstantPitch>false</ConstantPitch>
+				</Item>
+				<Item>
+					<Delay>0</Delay>
+					<Effect href="/Effects/_(Effect)/Spells/FireGlow.(Effect).xdb#xpointer(/Effect)"/>
+					<Pos>
+						<x>66.2</x>
+						<y>100</y>
+						<z>18</z>
+					</Pos>
+					<Rot>0</Rot>
+					<MovementSpeed>0</MovementSpeed>
+					<MovePoints/>
+					<ConstantPitch>false</ConstantPitch>
+				</Item>
+				<Item>
+					<Delay>0</Delay>
+					<Effect href="/Effects/_(Effect)/Buildings/Objects_Sabterra/fakel.(Effect) (2) (2) (2).xdb#xpointer(/Effect)"/>
+					<Pos>
+						<x>52.2</x>
+						<y>98</y>
+						<z>18</z>
+					</Pos>
+					<Rot>0</Rot>
+					<MovementSpeed>0</MovementSpeed>
+					<MovePoints/>
+					<ConstantPitch>false</ConstantPitch>
+				</Item>
+				<Item>
+					<Delay>0</Delay>
+					<Effect href="/Effects/_(Effect)/Spells/FireGlow.(Effect).xdb#xpointer(/Effect)"/>
+					<Pos>
+						<x>52.2</x>
+						<y>98</y>
+						<z>18</z>
+					</Pos>
+					<Rot>0</Rot>
+					<MovementSpeed>0</MovementSpeed>
+					<MovePoints/>
+					<ConstantPitch>false</ConstantPitch>
+				</Item>
+				<Item>
+					<Delay>0</Delay>
+					<Effect href="/Effects/_(Effect)/Buildings/Objects_Sabterra/fakel.(Effect) (2) (2) (2).xdb#xpointer(/Effect)"/>
+					<Pos>
+						<x>38.2</x>
+						<y>84</y>
+						<z>18</z>
+					</Pos>
+					<Rot>0</Rot>
+					<MovementSpeed>0</MovementSpeed>
+					<MovePoints/>
+					<ConstantPitch>false</ConstantPitch>
+				</Item>
+				<Item>
+					<Delay>0</Delay>
+					<Effect href="/Effects/_(Effect)/Spells/FireGlow.(Effect).xdb#xpointer(/Effect)"/>
+					<Pos>
+						<x>38.2</x>
+						<y>84</y>
+						<z>18</z>
+					</Pos>
+					<Rot>0</Rot>
+					<MovementSpeed>0</MovementSpeed>
+					<MovePoints/>
+					<ConstantPitch>false</ConstantPitch>
+				</Item>
+			</CustomEffects>
+			<CustomAnimations>
+				<Item>
+					<heroLink href="#xpointer(id(item_2CDF1DC4-B524-4BAF-B03A-A09AD301BEAD)/AdvMapHero)"/>
+					<monsterLink/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>0</AnimationDelay>
+					<AnimName>speech_orator</AnimName>
+					<MovePoints/>
+					<FinalAngle>0</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink href="#xpointer(id(item_2CDF1DC4-B524-4BAF-B03A-A09AD301BEAD)/AdvMapHero)"/>
+					<monsterLink/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>6</AnimationDelay>
+					<AnimName>cast</AnimName>
+					<MovePoints/>
+					<FinalAngle>0</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+			</CustomAnimations>
+			<MusicVolumePercent>100</MusicVolumePercent>
+			<MusicFadeOutDuration>500</MusicFadeOutDuration>
+			<MusicOverride>
+				<Music/>
+				<StartTime>0</StartTime>
+				<TimeShift>0</TimeShift>
+			</MusicOverride>
+			<AdditionalCameras/>
+			<Anim3DSoundVolumeCustom>100</Anim3DSoundVolumeCustom>
+		</Item>
+		<Item>
+			<text href="noe_text4.txt"/>
+			<sound/>
+			<heroLink/>
+			<monsterLink href="#xpointer(id(item_4727A39D-6856-4D99-B854-9D893F03E63D)/AdvMapMonster)"/>
+			<MonsterCustomName href="noe_name.txt"/>
+			<cameraSet/>
+			<NewCameraSet href="karlam_to_noe_001cam-set.xdb#xpointer(/DSceneCameraSet)"/>
+			<StopAmbient>false</StopAmbient>
+			<StopMusic>false</StopMusic>
+			<DynamicCamera>true</DynamicCamera>
+			<duration>27</duration>
+			<soundDuration>0</soundDuration>
+			<CustomAmbientLight/>
+			<ActorAnimationIndex>-1</ActorAnimationIndex>
+			<AnimName/>
+			<AnimationDelay>0</AnimationDelay>
+			<CustomSounds>
+				<Item>
+					<Delay>14.1</Delay>
+					<sound href="/Sounds/_(Sound)/Spells/TeleportStart.xdb#xpointer(/Sound)"/>
+					<Duration>0</Duration>
+				</Item>
+				<Item>
+					<Delay>15.3</Delay>
+					<sound href="/Sounds/_(Sound)/Spells/TeleportStart.xdb#xpointer(/Sound)"/>
+					<Duration>0</Duration>
+				</Item>
+				<Item>
+					<Delay>16.7</Delay>
+					<sound href="/Sounds/_(Sound)/Spells/TeleportStart.xdb#xpointer(/Sound)"/>
+					<Duration>0</Duration>
+				</Item>
+				<Item>
+					<Delay>18.1</Delay>
+					<sound href="/Sounds/_(Sound)/Spells/TeleportStart.xdb#xpointer(/Sound)"/>
+					<Duration>0</Duration>
+				</Item>
+				<Item>
+					<Delay>19.2</Delay>
+					<sound href="/Sounds/_(Sound)/Spells/TeleportStart.xdb#xpointer(/Sound)"/>
+					<Duration>0</Duration>
+				</Item>
+				<Item>
+					<Delay>20</Delay>
+					<sound href="/Sounds/_(Sound)/Spells/TeleportStart.xdb#xpointer(/Sound)"/>
+					<Duration>0</Duration>
+				</Item>
+				<Item>
+					<Delay>22.2</Delay>
+					<sound href="/Sounds/_(Sound)/Spells/TeleportStart.xdb#xpointer(/Sound)"/>
+					<Duration>0</Duration>
+				</Item>
+				<Item>
+					<Delay>23.8</Delay>
+					<sound href="/Sounds/_(Sound)/Spells/TeleportStart.xdb#xpointer(/Sound)"/>
+					<Duration>0</Duration>
+				</Item>
+			</CustomSounds>
+			<CustomEffects>
+				<Item>
+					<Delay>14.1</Delay>
+					<Effect href="/Effects/_(Effect)/Spells/Teleport_End.xdb#xpointer(/Effect)"/>
+					<Pos>
+						<x>91</x>
+						<y>87</y>
+						<z>20</z>
+					</Pos>
+					<Rot>0</Rot>
+					<MovementSpeed>0</MovementSpeed>
+					<MovePoints/>
+					<ConstantPitch>false</ConstantPitch>
+				</Item>
+				<Item>
+					<Delay>15.3</Delay>
+					<Effect href="/Effects/_(Effect)/Spells/Teleport_End.xdb#xpointer(/Effect)"/>
+					<Pos>
+						<x>89</x>
+						<y>97</y>
+						<z>20</z>
+					</Pos>
+					<Rot>0</Rot>
+					<MovementSpeed>0</MovementSpeed>
+					<MovePoints/>
+					<ConstantPitch>false</ConstantPitch>
+				</Item>
+				<Item>
+					<Delay>16.7</Delay>
+					<Effect href="/Effects/_(Effect)/Spells/Teleport_End.xdb#xpointer(/Effect)"/>
+					<Pos>
+						<x>81</x>
+						<y>97</y>
+						<z>19</z>
+					</Pos>
+					<Rot>0</Rot>
+					<MovementSpeed>0</MovementSpeed>
+					<MovePoints/>
+					<ConstantPitch>false</ConstantPitch>
+				</Item>
+				<Item>
+					<Delay>18.1</Delay>
+					<Effect href="/Effects/_(Effect)/Spells/Teleport_End.xdb#xpointer(/Effect)"/>
+					<Pos>
+						<x>73</x>
+						<y>103</y>
+						<z>19</z>
+					</Pos>
+					<Rot>0</Rot>
+					<MovementSpeed>0</MovementSpeed>
+					<MovePoints/>
+					<ConstantPitch>false</ConstantPitch>
+				</Item>
+				<Item>
+					<Delay>19.2</Delay>
+					<Effect href="/Effects/_(Effect)/Spells/Teleport_End.xdb#xpointer(/Effect)"/>
+					<Pos>
+						<x>65</x>
+						<y>97</y>
+						<z>17</z>
+					</Pos>
+					<Rot>0</Rot>
+					<MovementSpeed>0</MovementSpeed>
+					<MovePoints/>
+					<ConstantPitch>false</ConstantPitch>
+				</Item>
+				<Item>
+					<Delay>20</Delay>
+					<Effect href="/Effects/_(Effect)/Spells/Teleport_End.xdb#xpointer(/Effect)"/>
+					<Pos>
+						<x>53</x>
+						<y>97</y>
+						<z>17</z>
+					</Pos>
+					<Rot>0</Rot>
+					<MovementSpeed>0</MovementSpeed>
+					<MovePoints/>
+					<ConstantPitch>false</ConstantPitch>
+				</Item>
+				<Item>
+					<Delay>22.2</Delay>
+					<Effect href="/Effects/_(Effect)/Spells/Teleport_End.xdb#xpointer(/Effect)"/>
+					<Pos>
+						<x>45</x>
+						<y>91</y>
+						<z>17</z>
+					</Pos>
+					<Rot>0</Rot>
+					<MovementSpeed>0</MovementSpeed>
+					<MovePoints/>
+					<ConstantPitch>false</ConstantPitch>
+				</Item>
+				<Item>
+					<Delay>23.8</Delay>
+					<Effect href="/Effects/_(Effect)/Spells/Teleport_End.xdb#xpointer(/Effect)"/>
+					<Pos>
+						<x>39</x>
+						<y>83</y>
+						<z>17</z>
+					</Pos>
+					<Rot>0</Rot>
+					<MovementSpeed>0</MovementSpeed>
+					<MovePoints/>
+					<ConstantPitch>false</ConstantPitch>
+				</Item>
+			</CustomEffects>
+			<CustomAnimations>
+				<Item>
+					<heroLink/>
+					<monsterLink href="#n:inline(AdvMapMonster)" id="item_437CE9AE-DEF5-4CFE-A63F-82C574544D86">
+						<AdvMapMonster>
+							<Pos>
+								<x>9</x>
+								<y>52</y>
+								<z>0</z>
+							</Pos>
+							<Rot>5.49161</Rot>
+							<Floor>1</Floor>
+							<Name/>
+							<CombatScript/>
+							<pointLights/>
+							<Shared href="/MapObjects/Dungeon/Matron.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
+							<Custom>false</Custom>
+							<Amount>0</Amount>
+							<Amount2>0</Amount2>
+							<AttackType>ATTACK_ANY</AttackType>
+							<MoveType>MOVE_ANY</MoveType>
+							<DoesNotGrow>false</DoesNotGrow>
+							<MessageFileRef href=""/>
+							<Script/>
+							<Resources>
+								<Wood>0</Wood>
+								<Ore>0</Ore>
+								<Mercury>0</Mercury>
+								<Crystal>0</Crystal>
+								<Sulfur>0</Sulfur>
+								<Gem>0</Gem>
+								<Gold>0</Gold>
+							</Resources>
+							<ArtifactID>ARTIFACT_NONE</ArtifactID>
+							<Mood>MONSTER_MOOD_AGGRESSIVE</Mood>
+							<Courage>MONSTER_COURAGE_CAN_FLEE_JOIN</Courage>
+							<AllowQuickCombat>true</AllowQuickCombat>
+							<DoesNotDependOnDifficulty>false</DoesNotDependOnDifficulty>
+							<AdditionalStacks/>
+							<SingleMonsterNameFileRef href=""/>
+							<MultipleMonstersNameFileRef href=""/>
+							<RacesRandomGroupID>0</RacesRandomGroupID>
+							<relationsOverrides/>
+						</AdvMapMonster>
+					</monsterLink>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>15.6</AnimationDelay>
+					<AnimName>move</AnimName>
+					<MovePoints>
+						<Item>
+							<x>45</x>
+							<y>43</y>
+						</Item>
+					</MovePoints>
+					<FinalAngle>315</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink/>
+					<monsterLink href="#xpointer(id(item_437CE9AE-DEF5-4CFE-A63F-82C574544D86)/AdvMapMonster)"/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>15.61</AnimationDelay>
+					<AnimName>idle00</AnimName>
+					<MovePoints/>
+					<FinalAngle>0</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink/>
+					<monsterLink href="#n:inline(AdvMapMonster)" id="item_9919C549-690F-46E1-AD25-0589B20178B5">
+						<AdvMapMonster>
+							<Pos>
+								<x>9</x>
+								<y>51</y>
+								<z>0</z>
+							</Pos>
+							<Rot>5.49623</Rot>
+							<Floor>1</Floor>
+							<Name/>
+							<CombatScript/>
+							<pointLights/>
+							<Shared href="/MapObjects/Dungeon/Matriarch.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
+							<Custom>false</Custom>
+							<Amount>0</Amount>
+							<Amount2>0</Amount2>
+							<AttackType>ATTACK_ANY</AttackType>
+							<MoveType>MOVE_ANY</MoveType>
+							<DoesNotGrow>false</DoesNotGrow>
+							<MessageFileRef href=""/>
+							<Script/>
+							<Resources>
+								<Wood>0</Wood>
+								<Ore>0</Ore>
+								<Mercury>0</Mercury>
+								<Crystal>0</Crystal>
+								<Sulfur>0</Sulfur>
+								<Gem>0</Gem>
+								<Gold>0</Gold>
+							</Resources>
+							<ArtifactID>ARTIFACT_NONE</ArtifactID>
+							<Mood>MONSTER_MOOD_AGGRESSIVE</Mood>
+							<Courage>MONSTER_COURAGE_CAN_FLEE_JOIN</Courage>
+							<AllowQuickCombat>true</AllowQuickCombat>
+							<DoesNotDependOnDifficulty>false</DoesNotDependOnDifficulty>
+							<AdditionalStacks/>
+							<SingleMonsterNameFileRef href=""/>
+							<MultipleMonstersNameFileRef href=""/>
+							<RacesRandomGroupID>0</RacesRandomGroupID>
+							<relationsOverrides/>
+						</AdvMapMonster>
+					</monsterLink>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>17</AnimationDelay>
+					<AnimName>move</AnimName>
+					<MovePoints>
+						<Item>
+							<x>44</x>
+							<y>48</y>
+						</Item>
+					</MovePoints>
+					<FinalAngle>315</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink/>
+					<monsterLink href="#xpointer(id(item_9919C549-690F-46E1-AD25-0589B20178B5)/AdvMapMonster)"/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>17.01</AnimationDelay>
+					<AnimName>idle00</AnimName>
+					<MovePoints/>
+					<FinalAngle>0</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink/>
+					<monsterLink href="#n:inline(AdvMapMonster)" id="item_F7DA1966-C6E8-4924-B1D6-39543E3F2A3C">
+						<AdvMapMonster>
+							<Pos>
+								<x>9</x>
+								<y>50</y>
+								<z>0</z>
+							</Pos>
+							<Rot>5.6725</Rot>
+							<Floor>1</Floor>
+							<Name/>
+							<CombatScript/>
+							<pointLights/>
+							<Shared href="/MapObjects/Dungeon/Matriarch.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
+							<Custom>false</Custom>
+							<Amount>0</Amount>
+							<Amount2>0</Amount2>
+							<AttackType>ATTACK_ANY</AttackType>
+							<MoveType>MOVE_ANY</MoveType>
+							<DoesNotGrow>false</DoesNotGrow>
+							<MessageFileRef href=""/>
+							<Script/>
+							<Resources>
+								<Wood>0</Wood>
+								<Ore>0</Ore>
+								<Mercury>0</Mercury>
+								<Crystal>0</Crystal>
+								<Sulfur>0</Sulfur>
+								<Gem>0</Gem>
+								<Gold>0</Gold>
+							</Resources>
+							<ArtifactID>ARTIFACT_NONE</ArtifactID>
+							<Mood>MONSTER_MOOD_AGGRESSIVE</Mood>
+							<Courage>MONSTER_COURAGE_CAN_FLEE_JOIN</Courage>
+							<AllowQuickCombat>true</AllowQuickCombat>
+							<DoesNotDependOnDifficulty>false</DoesNotDependOnDifficulty>
+							<AdditionalStacks/>
+							<SingleMonsterNameFileRef href=""/>
+							<MultipleMonstersNameFileRef href=""/>
+							<RacesRandomGroupID>0</RacesRandomGroupID>
+							<relationsOverrides/>
+						</AdvMapMonster>
+					</monsterLink>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>18.2</AnimationDelay>
+					<AnimName>move</AnimName>
+					<MovePoints>
+						<Item>
+							<x>40</x>
+							<y>48</y>
+						</Item>
+					</MovePoints>
+					<FinalAngle>325</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink/>
+					<monsterLink href="#xpointer(id(item_F7DA1966-C6E8-4924-B1D6-39543E3F2A3C)/AdvMapMonster)"/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>18.21</AnimationDelay>
+					<AnimName>idle00</AnimName>
+					<MovePoints/>
+					<FinalAngle>0</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink/>
+					<monsterLink href="#n:inline(AdvMapMonster)" id="item_54A5BE39-55A9-45D9-8014-48C99B1FE725">
+						<AdvMapMonster>
+							<Pos>
+								<x>9</x>
+								<y>49</y>
+								<z>0</z>
+							</Pos>
+							<Rot>5.92446</Rot>
+							<Floor>1</Floor>
+							<Name/>
+							<CombatScript/>
+							<pointLights/>
+							<Shared href="/MapObjects/Dungeon/Shadow_Mistress.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
+							<Custom>false</Custom>
+							<Amount>0</Amount>
+							<Amount2>0</Amount2>
+							<AttackType>ATTACK_ANY</AttackType>
+							<MoveType>MOVE_ANY</MoveType>
+							<DoesNotGrow>false</DoesNotGrow>
+							<MessageFileRef href=""/>
+							<Script/>
+							<Resources>
+								<Wood>0</Wood>
+								<Ore>0</Ore>
+								<Mercury>0</Mercury>
+								<Crystal>0</Crystal>
+								<Sulfur>0</Sulfur>
+								<Gem>0</Gem>
+								<Gold>0</Gold>
+							</Resources>
+							<ArtifactID>ARTIFACT_NONE</ArtifactID>
+							<Mood>MONSTER_MOOD_AGGRESSIVE</Mood>
+							<Courage>MONSTER_COURAGE_CAN_FLEE_JOIN</Courage>
+							<AllowQuickCombat>true</AllowQuickCombat>
+							<DoesNotDependOnDifficulty>false</DoesNotDependOnDifficulty>
+							<AdditionalStacks/>
+							<SingleMonsterNameFileRef href=""/>
+							<MultipleMonstersNameFileRef href=""/>
+							<RacesRandomGroupID>0</RacesRandomGroupID>
+							<relationsOverrides/>
+						</AdvMapMonster>
+					</monsterLink>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>19.6</AnimationDelay>
+					<AnimName>move</AnimName>
+					<MovePoints>
+						<Item>
+							<x>36</x>
+							<y>51</y>
+						</Item>
+					</MovePoints>
+					<FinalAngle>339</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink/>
+					<monsterLink href="#xpointer(id(item_54A5BE39-55A9-45D9-8014-48C99B1FE725)/AdvMapMonster)"/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>19.61</AnimationDelay>
+					<AnimName>idle00</AnimName>
+					<MovePoints/>
+					<FinalAngle>0</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink/>
+					<monsterLink href="#n:inline(AdvMapMonster)" id="item_62436826-F5EE-4AFC-A20A-DA459021DC74">
+						<AdvMapMonster>
+							<Pos>
+								<x>10</x>
+								<y>53</y>
+								<z>0</z>
+							</Pos>
+							<Rot>0.28435</Rot>
+							<Floor>1</Floor>
+							<Name/>
+							<CombatScript/>
+							<pointLights/>
+							<Shared href="/MapObjects/Dungeon/Matriarch.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
+							<Custom>false</Custom>
+							<Amount>0</Amount>
+							<Amount2>0</Amount2>
+							<AttackType>ATTACK_ANY</AttackType>
+							<MoveType>MOVE_ANY</MoveType>
+							<DoesNotGrow>false</DoesNotGrow>
+							<MessageFileRef href=""/>
+							<Script/>
+							<Resources>
+								<Wood>0</Wood>
+								<Ore>0</Ore>
+								<Mercury>0</Mercury>
+								<Crystal>0</Crystal>
+								<Sulfur>0</Sulfur>
+								<Gem>0</Gem>
+								<Gold>0</Gold>
+							</Resources>
+							<ArtifactID>ARTIFACT_NONE</ArtifactID>
+							<Mood>MONSTER_MOOD_AGGRESSIVE</Mood>
+							<Courage>MONSTER_COURAGE_CAN_FLEE_JOIN</Courage>
+							<AllowQuickCombat>true</AllowQuickCombat>
+							<DoesNotDependOnDifficulty>false</DoesNotDependOnDifficulty>
+							<AdditionalStacks/>
+							<SingleMonsterNameFileRef href=""/>
+							<MultipleMonstersNameFileRef href=""/>
+							<RacesRandomGroupID>0</RacesRandomGroupID>
+							<relationsOverrides/>
+						</AdvMapMonster>
+					</monsterLink>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>20.7</AnimationDelay>
+					<AnimName>move</AnimName>
+					<MovePoints>
+						<Item>
+							<x>32</x>
+							<y>48</y>
+						</Item>
+					</MovePoints>
+					<FinalAngle>16</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink/>
+					<monsterLink href="#xpointer(id(item_62436826-F5EE-4AFC-A20A-DA459021DC74)/AdvMapMonster)"/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>20.71</AnimationDelay>
+					<AnimName>idle00</AnimName>
+					<MovePoints/>
+					<FinalAngle>0</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink/>
+					<monsterLink href="#n:inline(AdvMapMonster)" id="item_E0474C13-CDF2-4535-A4F0-740580728F5C">
+						<AdvMapMonster>
+							<Pos>
+								<x>10</x>
+								<y>52</y>
+								<z>0</z>
+							</Pos>
+							<Rot>0.32442</Rot>
+							<Floor>1</Floor>
+							<Name/>
+							<CombatScript/>
+							<pointLights/>
+							<Shared href="/MapObjects/Dungeon/Shadow_Mistress.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
+							<Custom>false</Custom>
+							<Amount>0</Amount>
+							<Amount2>0</Amount2>
+							<AttackType>ATTACK_ANY</AttackType>
+							<MoveType>MOVE_ANY</MoveType>
+							<DoesNotGrow>false</DoesNotGrow>
+							<MessageFileRef href=""/>
+							<Script/>
+							<Resources>
+								<Wood>0</Wood>
+								<Ore>0</Ore>
+								<Mercury>0</Mercury>
+								<Crystal>0</Crystal>
+								<Sulfur>0</Sulfur>
+								<Gem>0</Gem>
+								<Gold>0</Gold>
+							</Resources>
+							<ArtifactID>ARTIFACT_NONE</ArtifactID>
+							<Mood>MONSTER_MOOD_AGGRESSIVE</Mood>
+							<Courage>MONSTER_COURAGE_CAN_FLEE_JOIN</Courage>
+							<AllowQuickCombat>true</AllowQuickCombat>
+							<DoesNotDependOnDifficulty>false</DoesNotDependOnDifficulty>
+							<AdditionalStacks/>
+							<SingleMonsterNameFileRef href=""/>
+							<MultipleMonstersNameFileRef href=""/>
+							<RacesRandomGroupID>0</RacesRandomGroupID>
+							<relationsOverrides/>
+						</AdvMapMonster>
+					</monsterLink>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>21.5</AnimationDelay>
+					<AnimName>move</AnimName>
+					<MovePoints>
+						<Item>
+							<x>26</x>
+							<y>48</y>
+						</Item>
+					</MovePoints>
+					<FinalAngle>19</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink/>
+					<monsterLink href="#xpointer(id(item_E0474C13-CDF2-4535-A4F0-740580728F5C)/AdvMapMonster)"/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>21.51</AnimationDelay>
+					<AnimName>idle00</AnimName>
+					<MovePoints/>
+					<FinalAngle>0</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink/>
+					<monsterLink href="#n:inline(AdvMapMonster)" id="item_B4A9CCE0-C619-4EE5-AEE3-A787CB641866">
+						<AdvMapMonster>
+							<Pos>
+								<x>10</x>
+								<y>51</y>
+								<z>0</z>
+							</Pos>
+							<Rot>0.440443</Rot>
+							<Floor>1</Floor>
+							<Name/>
+							<CombatScript/>
+							<pointLights/>
+							<Shared href="/MapObjects/Dungeon/Matron.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
+							<Custom>false</Custom>
+							<Amount>0</Amount>
+							<Amount2>0</Amount2>
+							<AttackType>ATTACK_ANY</AttackType>
+							<MoveType>MOVE_ANY</MoveType>
+							<DoesNotGrow>false</DoesNotGrow>
+							<MessageFileRef href=""/>
+							<Script/>
+							<Resources>
+								<Wood>0</Wood>
+								<Ore>0</Ore>
+								<Mercury>0</Mercury>
+								<Crystal>0</Crystal>
+								<Sulfur>0</Sulfur>
+								<Gem>0</Gem>
+								<Gold>0</Gold>
+							</Resources>
+							<ArtifactID>ARTIFACT_NONE</ArtifactID>
+							<Mood>MONSTER_MOOD_AGGRESSIVE</Mood>
+							<Courage>MONSTER_COURAGE_CAN_FLEE_JOIN</Courage>
+							<AllowQuickCombat>true</AllowQuickCombat>
+							<DoesNotDependOnDifficulty>false</DoesNotDependOnDifficulty>
+							<AdditionalStacks/>
+							<SingleMonsterNameFileRef href=""/>
+							<MultipleMonstersNameFileRef href=""/>
+							<RacesRandomGroupID>0</RacesRandomGroupID>
+							<relationsOverrides/>
+						</AdvMapMonster>
+					</monsterLink>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>23.7</AnimationDelay>
+					<AnimName>move</AnimName>
+					<MovePoints>
+						<Item>
+							<x>22</x>
+							<y>45</y>
+						</Item>
+					</MovePoints>
+					<FinalAngle>25</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink/>
+					<monsterLink href="#xpointer(id(item_B4A9CCE0-C619-4EE5-AEE3-A787CB641866)/AdvMapMonster)"/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>23.71</AnimationDelay>
+					<AnimName>idle00</AnimName>
+					<MovePoints/>
+					<FinalAngle>0</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink/>
+					<monsterLink href="#n:inline(AdvMapMonster)" id="item_12FFEE16-B9B8-4243-8C3E-B5957B47E425">
+						<AdvMapMonster>
+							<Pos>
+								<x>10</x>
+								<y>50</y>
+								<z>0</z>
+							</Pos>
+							<Rot>0.554094</Rot>
+							<Floor>1</Floor>
+							<Name/>
+							<CombatScript/>
+							<pointLights/>
+							<Shared href="/MapObjects/Dungeon/Shadow_Mistress.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
+							<Custom>false</Custom>
+							<Amount>0</Amount>
+							<Amount2>0</Amount2>
+							<AttackType>ATTACK_ANY</AttackType>
+							<MoveType>MOVE_ANY</MoveType>
+							<DoesNotGrow>false</DoesNotGrow>
+							<MessageFileRef href=""/>
+							<Script/>
+							<Resources>
+								<Wood>0</Wood>
+								<Ore>0</Ore>
+								<Mercury>0</Mercury>
+								<Crystal>0</Crystal>
+								<Sulfur>0</Sulfur>
+								<Gem>0</Gem>
+								<Gold>0</Gold>
+							</Resources>
+							<ArtifactID>ARTIFACT_NONE</ArtifactID>
+							<Mood>MONSTER_MOOD_AGGRESSIVE</Mood>
+							<Courage>MONSTER_COURAGE_CAN_FLEE_JOIN</Courage>
+							<AllowQuickCombat>true</AllowQuickCombat>
+							<DoesNotDependOnDifficulty>false</DoesNotDependOnDifficulty>
+							<AdditionalStacks/>
+							<SingleMonsterNameFileRef href=""/>
+							<MultipleMonstersNameFileRef href=""/>
+							<RacesRandomGroupID>0</RacesRandomGroupID>
+							<relationsOverrides/>
+						</AdvMapMonster>
+					</monsterLink>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>25.3</AnimationDelay>
+					<AnimName>move</AnimName>
+					<MovePoints>
+						<Item>
+							<x>19</x>
+							<y>41</y>
+						</Item>
+					</MovePoints>
+					<FinalAngle>32</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink/>
+					<monsterLink href="#xpointer(id(item_12FFEE16-B9B8-4243-8C3E-B5957B47E425)/AdvMapMonster)"/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>25.31</AnimationDelay>
+					<AnimName>idle00</AnimName>
+					<MovePoints/>
+					<FinalAngle>0</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+			</CustomAnimations>
+			<MusicVolumePercent>100</MusicVolumePercent>
+			<MusicFadeOutDuration>500</MusicFadeOutDuration>
+			<MusicOverride>
+				<Music/>
+				<StartTime>0</StartTime>
+				<TimeShift>0</TimeShift>
+			</MusicOverride>
+			<AdditionalCameras>
+				<Item>
+					<NewCameraSet href="noe_close_002cam-set.xdb#xpointer(/DSceneCameraSet)"/>
+					<StartDelay>7</StartDelay>
+				</Item>
+				<Item>
+					<NewCameraSet href="witches_arrivecam-set.xdb#xpointer(/DSceneCameraSet)"/>
+					<StartDelay>7</StartDelay>
+				</Item>
+			</AdditionalCameras>
+			<Anim3DSoundVolumeCustom>100</Anim3DSoundVolumeCustom>
+		</Item>
+		<Item>
+			<text href="noe_text5.txt"/>
+			<sound/>
+			<heroLink/>
+			<monsterLink href="#xpointer(id(item_4727A39D-6856-4D99-B854-9D893F03E63D)/AdvMapMonster)"/>
+			<MonsterCustomName href="noe_name.txt"/>
+			<cameraSet/>
+			<NewCameraSet href="noe_cast_01cam-set.xdb#xpointer(/DSceneCameraSet)"/>
+			<StopAmbient>false</StopAmbient>
+			<StopMusic>false</StopMusic>
+			<DynamicCamera>true</DynamicCamera>
+			<duration>38</duration>
+			<soundDuration>0</soundDuration>
+			<CustomAmbientLight/>
+			<ActorAnimationIndex>-1</ActorAnimationIndex>
+			<AnimName/>
+			<AnimationDelay>0</AnimationDelay>
+			<CustomSounds>
+				<Item>
+					<Delay>36</Delay>
+					<sound href="/Sounds/_(Sound)/Spells/Berserk.xdb#xpointer(/Sound)"/>
+					<Duration>0</Duration>
+				</Item>
+				<Item>
+					<Delay>8.3</Delay>
+					<sound href="/Sounds/_(Sound)/Creatures/Dungeon/Matron/range_attack.xdb#xpointer(/Sound)"/>
+					<Duration>0</Duration>
+				</Item>
+				<Item>
+					<Delay>9.6</Delay>
+					<sound href="/Sounds/_(Sound)/Creatures/Dungeon/Matron/cast.xdb#xpointer(/Sound)"/>
+					<Duration>0</Duration>
+				</Item>
+				<Item>
+					<Delay>11.5</Delay>
+					<sound href="/Sounds/_(Sound)/Creatures/Dungeon/T6/cast.xdb#xpointer(/Sound)"/>
+					<Duration>0</Duration>
+				</Item>
+				<Item>
+					<Delay>15</Delay>
+					<sound href="/Sounds/_(Sound)/Creatures/Dungeon/T6/cast.xdb#xpointer(/Sound)"/>
+					<Duration>0</Duration>
+				</Item>
+				<Item>
+					<Delay>22</Delay>
+					<sound href="/Sounds/_(Sound)/Creatures/Dungeon/Matron/range_attack.xdb#xpointer(/Sound)"/>
+					<Duration>0</Duration>
+				</Item>
+				<Item>
+					<Delay>23</Delay>
+					<sound href="/Sounds/_(Sound)/Creatures/Dungeon/T6/cast.xdb#xpointer(/Sound)"/>
+					<Duration>0</Duration>
+				</Item>
+				<Item>
+					<Delay>25</Delay>
+					<sound href="/Sounds/_(Sound)/Creatures/Dungeon/Matron/cast.xdb#xpointer(/Sound)"/>
+					<Duration>0</Duration>
+				</Item>
+				<Item>
+					<Delay>27.5</Delay>
+					<sound href="/Sounds/_(Sound)/Creatures/Dungeon/T6/cast.xdb#xpointer(/Sound)"/>
+					<Duration>0</Duration>
+				</Item>
+			</CustomSounds>
+			<CustomEffects>
+				<Item>
+					<Delay>36</Delay>
+					<Effect href="/Effects/_(Effect)/Spells/Berserk.xdb#xpointer(/Effect)"/>
+					<Pos>
+						<x>66.4</x>
+						<y>70</y>
+						<z>18</z>
+					</Pos>
+					<Rot>0</Rot>
+					<MovementSpeed>0</MovementSpeed>
+					<MovePoints/>
+					<ConstantPitch>false</ConstantPitch>
+				</Item>
+			</CustomEffects>
+			<CustomAnimations>
+				<Item>
+					<heroLink/>
+					<monsterLink href="#n:inline(AdvMapMonster)" id="item_A63038DB-FE7C-4851-8515-72C52A6DC2CF">
+						<AdvMapMonster>
+							<Pos>
+								<x>65</x>
+								<y>26</y>
+								<z>0</z>
+							</Pos>
+							<Rot>4.13755</Rot>
+							<Floor>1</Floor>
+							<Name/>
+							<CombatScript/>
+							<pointLights/>
+							<Shared href="/MapObjects/Dungeon/Matron.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
+							<Custom>false</Custom>
+							<Amount>0</Amount>
+							<Amount2>0</Amount2>
+							<AttackType>ATTACK_ANY</AttackType>
+							<MoveType>MOVE_ANY</MoveType>
+							<DoesNotGrow>false</DoesNotGrow>
+							<MessageFileRef href=""/>
+							<Script/>
+							<Resources>
+								<Wood>0</Wood>
+								<Ore>0</Ore>
+								<Mercury>0</Mercury>
+								<Crystal>0</Crystal>
+								<Sulfur>0</Sulfur>
+								<Gem>0</Gem>
+								<Gold>0</Gold>
+							</Resources>
+							<ArtifactID>ARTIFACT_NONE</ArtifactID>
+							<Mood>MONSTER_MOOD_AGGRESSIVE</Mood>
+							<Courage>MONSTER_COURAGE_CAN_FLEE_JOIN</Courage>
+							<AllowQuickCombat>true</AllowQuickCombat>
+							<DoesNotDependOnDifficulty>false</DoesNotDependOnDifficulty>
+							<AdditionalStacks/>
+							<SingleMonsterNameFileRef href=""/>
+							<MultipleMonstersNameFileRef href=""/>
+							<RacesRandomGroupID>0</RacesRandomGroupID>
+							<relationsOverrides/>
+						</AdvMapMonster>
+					</monsterLink>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>-1</AnimationDelay>
+					<AnimName>move</AnimName>
+					<MovePoints>
+						<Item>
+							<x>45</x>
+							<y>26</y>
+						</Item>
+					</MovePoints>
+					<FinalAngle>237</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink/>
+					<monsterLink href="#n:inline(AdvMapMonster)" id="item_242B3293-7629-4D11-A106-B2AB9F632153">
+						<AdvMapMonster>
+							<Pos>
+								<x>65</x>
+								<y>25</y>
+								<z>0</z>
+							</Pos>
+							<Rot>3.9096</Rot>
+							<Floor>1</Floor>
+							<Name/>
+							<CombatScript/>
+							<pointLights/>
+							<Shared href="/MapObjects/Dungeon/Matriarch.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
+							<Custom>false</Custom>
+							<Amount>0</Amount>
+							<Amount2>0</Amount2>
+							<AttackType>ATTACK_ANY</AttackType>
+							<MoveType>MOVE_ANY</MoveType>
+							<DoesNotGrow>false</DoesNotGrow>
+							<MessageFileRef href=""/>
+							<Script/>
+							<Resources>
+								<Wood>0</Wood>
+								<Ore>0</Ore>
+								<Mercury>0</Mercury>
+								<Crystal>0</Crystal>
+								<Sulfur>0</Sulfur>
+								<Gem>0</Gem>
+								<Gold>0</Gold>
+							</Resources>
+							<ArtifactID>ARTIFACT_NONE</ArtifactID>
+							<Mood>MONSTER_MOOD_AGGRESSIVE</Mood>
+							<Courage>MONSTER_COURAGE_CAN_FLEE_JOIN</Courage>
+							<AllowQuickCombat>true</AllowQuickCombat>
+							<DoesNotDependOnDifficulty>false</DoesNotDependOnDifficulty>
+							<AdditionalStacks/>
+							<SingleMonsterNameFileRef href=""/>
+							<MultipleMonstersNameFileRef href=""/>
+							<RacesRandomGroupID>0</RacesRandomGroupID>
+							<relationsOverrides/>
+						</AdvMapMonster>
+					</monsterLink>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>-1</AnimationDelay>
+					<AnimName>move</AnimName>
+					<MovePoints>
+						<Item>
+							<x>45</x>
+							<y>21</y>
+						</Item>
+					</MovePoints>
+					<FinalAngle>224</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink/>
+					<monsterLink href="#n:inline(AdvMapMonster)" id="item_B9B14FC4-2EEE-4A24-94B7-A3134A63E5A8">
+						<AdvMapMonster>
+							<Pos>
+								<x>65</x>
+								<y>24</y>
+								<z>0</z>
+							</Pos>
+							<Rot>3.62101</Rot>
+							<Floor>1</Floor>
+							<Name/>
+							<CombatScript/>
+							<pointLights/>
+							<Shared href="/MapObjects/Dungeon/Shadow_Mistress.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
+							<Custom>false</Custom>
+							<Amount>0</Amount>
+							<Amount2>0</Amount2>
+							<AttackType>ATTACK_ANY</AttackType>
+							<MoveType>MOVE_ANY</MoveType>
+							<DoesNotGrow>false</DoesNotGrow>
+							<MessageFileRef href=""/>
+							<Script/>
+							<Resources>
+								<Wood>0</Wood>
+								<Ore>0</Ore>
+								<Mercury>0</Mercury>
+								<Crystal>0</Crystal>
+								<Sulfur>0</Sulfur>
+								<Gem>0</Gem>
+								<Gold>0</Gold>
+							</Resources>
+							<ArtifactID>ARTIFACT_NONE</ArtifactID>
+							<Mood>MONSTER_MOOD_AGGRESSIVE</Mood>
+							<Courage>MONSTER_COURAGE_CAN_FLEE_JOIN</Courage>
+							<AllowQuickCombat>true</AllowQuickCombat>
+							<DoesNotDependOnDifficulty>false</DoesNotDependOnDifficulty>
+							<AdditionalStacks/>
+							<SingleMonsterNameFileRef href=""/>
+							<MultipleMonstersNameFileRef href=""/>
+							<RacesRandomGroupID>0</RacesRandomGroupID>
+							<relationsOverrides/>
+						</AdvMapMonster>
+					</monsterLink>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>-1</AnimationDelay>
+					<AnimName>move</AnimName>
+					<MovePoints>
+						<Item>
+							<x>40</x>
+							<y>21</y>
+						</Item>
+					</MovePoints>
+					<FinalAngle>207</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink/>
+					<monsterLink href="#n:inline(AdvMapMonster)" id="item_4224C5F2-CA91-45EA-9EB3-B32A9CDB8C38">
+						<AdvMapMonster>
+							<Pos>
+								<x>66</x>
+								<y>22</y>
+								<z>0</z>
+							</Pos>
+							<Rot>3.19425</Rot>
+							<Floor>1</Floor>
+							<Name/>
+							<CombatScript/>
+							<pointLights/>
+							<Shared href="/MapObjects/Dungeon/Shadow_Mistress.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
+							<Custom>false</Custom>
+							<Amount>0</Amount>
+							<Amount2>0</Amount2>
+							<AttackType>ATTACK_ANY</AttackType>
+							<MoveType>MOVE_ANY</MoveType>
+							<DoesNotGrow>false</DoesNotGrow>
+							<MessageFileRef href=""/>
+							<Script/>
+							<Resources>
+								<Wood>0</Wood>
+								<Ore>0</Ore>
+								<Mercury>0</Mercury>
+								<Crystal>0</Crystal>
+								<Sulfur>0</Sulfur>
+								<Gem>0</Gem>
+								<Gold>0</Gold>
+							</Resources>
+							<ArtifactID>ARTIFACT_NONE</ArtifactID>
+							<Mood>MONSTER_MOOD_AGGRESSIVE</Mood>
+							<Courage>MONSTER_COURAGE_CAN_FLEE_JOIN</Courage>
+							<AllowQuickCombat>true</AllowQuickCombat>
+							<DoesNotDependOnDifficulty>false</DoesNotDependOnDifficulty>
+							<AdditionalStacks/>
+							<SingleMonsterNameFileRef href=""/>
+							<MultipleMonstersNameFileRef href=""/>
+							<RacesRandomGroupID>0</RacesRandomGroupID>
+							<relationsOverrides/>
+						</AdvMapMonster>
+					</monsterLink>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>-1</AnimationDelay>
+					<AnimName>move</AnimName>
+					<MovePoints>
+						<Item>
+							<x>36</x>
+							<y>18</y>
+						</Item>
+					</MovePoints>
+					<FinalAngle>183</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink href="#xpointer(id(item_A53F56BB-E904-49C8-9FCA-908CBBAA3C52)/AdvMapHero)"/>
+					<monsterLink/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>1.5</AnimationDelay>
+					<AnimName>idle_sp_knee</AnimName>
+					<MovePoints/>
+					<FinalAngle>0</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink/>
+					<monsterLink href="#xpointer(id(item_E0474C13-CDF2-4535-A4F0-740580728F5C)/AdvMapMonster)"/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>18.5</AnimationDelay>
+					<AnimName>cast</AnimName>
+					<MovePoints/>
+					<FinalAngle>0</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink/>
+					<monsterLink href="#xpointer(id(item_B4A9CCE0-C619-4EE5-AEE3-A787CB641866)/AdvMapMonster)"/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>19.5</AnimationDelay>
+					<AnimName>rangeattack</AnimName>
+					<MovePoints/>
+					<FinalAngle>0</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink/>
+					<monsterLink href="#xpointer(id(item_12FFEE16-B9B8-4243-8C3E-B5957B47E425)/AdvMapMonster)"/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>20.3</AnimationDelay>
+					<AnimName>cast</AnimName>
+					<MovePoints/>
+					<FinalAngle>0</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink/>
+					<monsterLink href="#n:inline(AdvMapMonster)" id="item_BA94A2BE-C3A2-409E-92F8-94060993D443">
+						<AdvMapMonster>
+							<Pos>
+								<x>66</x>
+								<y>18</y>
+								<z>0</z>
+							</Pos>
+							<Rot>2.09445</Rot>
+							<Floor>1</Floor>
+							<Name/>
+							<CombatScript/>
+							<pointLights/>
+							<Shared href="/MapObjects/Dungeon/Matriarch.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
+							<Custom>false</Custom>
+							<Amount>0</Amount>
+							<Amount2>0</Amount2>
+							<AttackType>ATTACK_ANY</AttackType>
+							<MoveType>MOVE_ANY</MoveType>
+							<DoesNotGrow>false</DoesNotGrow>
+							<MessageFileRef href=""/>
+							<Script/>
+							<Resources>
+								<Wood>0</Wood>
+								<Ore>0</Ore>
+								<Mercury>0</Mercury>
+								<Crystal>0</Crystal>
+								<Sulfur>0</Sulfur>
+								<Gem>0</Gem>
+								<Gold>0</Gold>
+							</Resources>
+							<ArtifactID>ARTIFACT_NONE</ArtifactID>
+							<Mood>MONSTER_MOOD_AGGRESSIVE</Mood>
+							<Courage>MONSTER_COURAGE_CAN_FLEE_JOIN</Courage>
+							<AllowQuickCombat>true</AllowQuickCombat>
+							<DoesNotDependOnDifficulty>false</DoesNotDependOnDifficulty>
+							<AdditionalStacks/>
+							<SingleMonsterNameFileRef href=""/>
+							<MultipleMonstersNameFileRef href=""/>
+							<RacesRandomGroupID>0</RacesRandomGroupID>
+							<relationsOverrides/>
+						</AdvMapMonster>
+					</monsterLink>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>-1</AnimationDelay>
+					<AnimName>move</AnimName>
+					<MovePoints>
+						<Item>
+							<x>30</x>
+							<y>20</y>
+						</Item>
+					</MovePoints>
+					<FinalAngle>170</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink/>
+					<monsterLink href="#n:inline(AdvMapMonster)" id="item_1C10EF80-AD95-4302-835B-6393E928BF63">
+						<AdvMapMonster>
+							<Pos>
+								<x>66</x>
+								<y>19</y>
+								<z>0</z>
+							</Pos>
+							<Rot>1.98647</Rot>
+							<Floor>1</Floor>
+							<Name/>
+							<CombatScript/>
+							<pointLights/>
+							<Shared href="/MapObjects/Dungeon/Shadow_Mistress.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
+							<Custom>false</Custom>
+							<Amount>0</Amount>
+							<Amount2>0</Amount2>
+							<AttackType>ATTACK_ANY</AttackType>
+							<MoveType>MOVE_ANY</MoveType>
+							<DoesNotGrow>false</DoesNotGrow>
+							<MessageFileRef href=""/>
+							<Script/>
+							<Resources>
+								<Wood>0</Wood>
+								<Ore>0</Ore>
+								<Mercury>0</Mercury>
+								<Crystal>0</Crystal>
+								<Sulfur>0</Sulfur>
+								<Gem>0</Gem>
+								<Gold>0</Gold>
+							</Resources>
+							<ArtifactID>ARTIFACT_NONE</ArtifactID>
+							<Mood>MONSTER_MOOD_AGGRESSIVE</Mood>
+							<Courage>MONSTER_COURAGE_CAN_FLEE_JOIN</Courage>
+							<AllowQuickCombat>true</AllowQuickCombat>
+							<DoesNotDependOnDifficulty>false</DoesNotDependOnDifficulty>
+							<AdditionalStacks/>
+							<SingleMonsterNameFileRef href=""/>
+							<MultipleMonstersNameFileRef href=""/>
+							<RacesRandomGroupID>0</RacesRandomGroupID>
+							<relationsOverrides/>
+						</AdvMapMonster>
+					</monsterLink>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>-1</AnimationDelay>
+					<AnimName>move</AnimName>
+					<MovePoints>
+						<Item>
+							<x>26</x>
+							<y>21</y>
+						</Item>
+					</MovePoints>
+					<FinalAngle>153</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink/>
+					<monsterLink href="#n:inline(AdvMapMonster)" id="item_5DA8A7F2-29A9-4202-9877-B3E1844A6451">
+						<AdvMapMonster>
+							<Pos>
+								<x>66</x>
+								<y>20</y>
+								<z>0</z>
+							</Pos>
+							<Rot>2.66532</Rot>
+							<Floor>1</Floor>
+							<Name/>
+							<CombatScript/>
+							<pointLights/>
+							<Shared href="/MapObjects/Dungeon/Matron.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
+							<Custom>false</Custom>
+							<Amount>0</Amount>
+							<Amount2>0</Amount2>
+							<AttackType>ATTACK_ANY</AttackType>
+							<MoveType>MOVE_ANY</MoveType>
+							<DoesNotGrow>false</DoesNotGrow>
+							<MessageFileRef href=""/>
+							<Script/>
+							<Resources>
+								<Wood>0</Wood>
+								<Ore>0</Ore>
+								<Mercury>0</Mercury>
+								<Crystal>0</Crystal>
+								<Sulfur>0</Sulfur>
+								<Gem>0</Gem>
+								<Gold>0</Gold>
+							</Resources>
+							<ArtifactID>ARTIFACT_NONE</ArtifactID>
+							<Mood>MONSTER_MOOD_AGGRESSIVE</Mood>
+							<Courage>MONSTER_COURAGE_CAN_FLEE_JOIN</Courage>
+							<AllowQuickCombat>true</AllowQuickCombat>
+							<DoesNotDependOnDifficulty>false</DoesNotDependOnDifficulty>
+							<AdditionalStacks/>
+							<SingleMonsterNameFileRef href=""/>
+							<MultipleMonstersNameFileRef href=""/>
+							<RacesRandomGroupID>0</RacesRandomGroupID>
+							<relationsOverrides/>
+						</AdvMapMonster>
+					</monsterLink>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>-1</AnimationDelay>
+					<AnimName>move</AnimName>
+					<MovePoints>
+						<Item>
+							<x>22</x>
+							<y>24</y>
+						</Item>
+					</MovePoints>
+					<FinalAngle>114</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink/>
+					<monsterLink href="#n:inline(AdvMapMonster)" id="item_0F2F199E-FFDD-48A4-96FC-128E97E38709">
+						<AdvMapMonster>
+							<Pos>
+								<x>66</x>
+								<y>21</y>
+								<z>0</z>
+							</Pos>
+							<Rot>2.96207</Rot>
+							<Floor>1</Floor>
+							<Name/>
+							<CombatScript/>
+							<pointLights/>
+							<Shared href="/MapObjects/Dungeon/Matriarch.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
+							<Custom>false</Custom>
+							<Amount>0</Amount>
+							<Amount2>0</Amount2>
+							<AttackType>ATTACK_ANY</AttackType>
+							<MoveType>MOVE_ANY</MoveType>
+							<DoesNotGrow>false</DoesNotGrow>
+							<MessageFileRef href=""/>
+							<Script/>
+							<Resources>
+								<Wood>0</Wood>
+								<Ore>0</Ore>
+								<Mercury>0</Mercury>
+								<Crystal>0</Crystal>
+								<Sulfur>0</Sulfur>
+								<Gem>0</Gem>
+								<Gold>0</Gold>
+							</Resources>
+							<ArtifactID>ARTIFACT_NONE</ArtifactID>
+							<Mood>MONSTER_MOOD_AGGRESSIVE</Mood>
+							<Courage>MONSTER_COURAGE_CAN_FLEE_JOIN</Courage>
+							<AllowQuickCombat>true</AllowQuickCombat>
+							<DoesNotDependOnDifficulty>false</DoesNotDependOnDifficulty>
+							<AdditionalStacks/>
+							<SingleMonsterNameFileRef href=""/>
+							<MultipleMonstersNameFileRef href=""/>
+							<RacesRandomGroupID>0</RacesRandomGroupID>
+							<relationsOverrides/>
+						</AdvMapMonster>
+					</monsterLink>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>-1</AnimationDelay>
+					<AnimName>move</AnimName>
+					<MovePoints>
+						<Item>
+							<x>18</x>
+							<y>28</y>
+						</Item>
+					</MovePoints>
+					<FinalAngle>120</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink href="#xpointer(id(item_A53F56BB-E904-49C8-9FCA-908CBBAA3C52)/AdvMapHero)"/>
+					<monsterLink/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>32.5</AnimationDelay>
+					<AnimName>rangeattack</AnimName>
+					<MovePoints/>
+					<FinalAngle>0</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink/>
+					<monsterLink href="#xpointer(id(item_A63038DB-FE7C-4851-8515-72C52A6DC2CF)/AdvMapMonster)"/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>0</AnimationDelay>
+					<AnimName>idle00</AnimName>
+					<MovePoints/>
+					<FinalAngle>0</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink/>
+					<monsterLink href="#xpointer(id(item_242B3293-7629-4D11-A106-B2AB9F632153)/AdvMapMonster)"/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>0</AnimationDelay>
+					<AnimName>idle00</AnimName>
+					<MovePoints/>
+					<FinalAngle>0</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink/>
+					<monsterLink href="#xpointer(id(item_B9B14FC4-2EEE-4A24-94B7-A3134A63E5A8)/AdvMapMonster)"/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>0</AnimationDelay>
+					<AnimName>idle00</AnimName>
+					<MovePoints/>
+					<FinalAngle>0</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink/>
+					<monsterLink href="#xpointer(id(item_4224C5F2-CA91-45EA-9EB3-B32A9CDB8C38)/AdvMapMonster)"/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>0</AnimationDelay>
+					<AnimName>idle00</AnimName>
+					<MovePoints/>
+					<FinalAngle>0</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink/>
+					<monsterLink href="#xpointer(id(item_0F2F199E-FFDD-48A4-96FC-128E97E38709)/AdvMapMonster)"/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>0</AnimationDelay>
+					<AnimName>idle00</AnimName>
+					<MovePoints/>
+					<FinalAngle>0</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink/>
+					<monsterLink href="#xpointer(id(item_5DA8A7F2-29A9-4202-9877-B3E1844A6451)/AdvMapMonster)"/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>0</AnimationDelay>
+					<AnimName>idle00</AnimName>
+					<MovePoints/>
+					<FinalAngle>0</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink/>
+					<monsterLink href="#xpointer(id(item_1C10EF80-AD95-4302-835B-6393E928BF63)/AdvMapMonster)"/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>0</AnimationDelay>
+					<AnimName>idle00</AnimName>
+					<MovePoints/>
+					<FinalAngle>0</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink/>
+					<monsterLink href="#xpointer(id(item_BA94A2BE-C3A2-409E-92F8-94060993D443)/AdvMapMonster)"/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>0</AnimationDelay>
+					<AnimName>idle00</AnimName>
+					<MovePoints/>
+					<FinalAngle>0</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink/>
+					<monsterLink href="#xpointer(id(item_A63038DB-FE7C-4851-8515-72C52A6DC2CF)/AdvMapMonster)"/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>8.3</AnimationDelay>
+					<AnimName>rangeattack</AnimName>
+					<MovePoints/>
+					<FinalAngle>0</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink/>
+					<monsterLink href="#xpointer(id(item_242B3293-7629-4D11-A106-B2AB9F632153)/AdvMapMonster)"/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>9.6</AnimationDelay>
+					<AnimName>cast</AnimName>
+					<MovePoints/>
+					<FinalAngle>0</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink/>
+					<monsterLink href="#xpointer(id(item_B9B14FC4-2EEE-4A24-94B7-A3134A63E5A8)/AdvMapMonster)"/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>11.5</AnimationDelay>
+					<AnimName>cast</AnimName>
+					<MovePoints/>
+					<FinalAngle>0</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink/>
+					<monsterLink href="#xpointer(id(item_4224C5F2-CA91-45EA-9EB3-B32A9CDB8C38)/AdvMapMonster)"/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>15</AnimationDelay>
+					<AnimName>cast</AnimName>
+					<MovePoints/>
+					<FinalAngle>0</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink/>
+					<monsterLink href="#xpointer(id(item_0F2F199E-FFDD-48A4-96FC-128E97E38709)/AdvMapMonster)"/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>22</AnimationDelay>
+					<AnimName>rangeattack</AnimName>
+					<MovePoints/>
+					<FinalAngle>0</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink/>
+					<monsterLink href="#xpointer(id(item_5DA8A7F2-29A9-4202-9877-B3E1844A6451)/AdvMapMonster)"/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>23</AnimationDelay>
+					<AnimName>cast</AnimName>
+					<MovePoints/>
+					<FinalAngle>0</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink/>
+					<monsterLink href="#xpointer(id(item_1C10EF80-AD95-4302-835B-6393E928BF63)/AdvMapMonster)"/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>25</AnimationDelay>
+					<AnimName>cast</AnimName>
+					<MovePoints/>
+					<FinalAngle>0</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink/>
+					<monsterLink href="#xpointer(id(item_BA94A2BE-C3A2-409E-92F8-94060993D443)/AdvMapMonster)"/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>27.5</AnimationDelay>
+					<AnimName>cast</AnimName>
+					<MovePoints/>
+					<FinalAngle>0</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+			</CustomAnimations>
+			<MusicVolumePercent>100</MusicVolumePercent>
+			<MusicFadeOutDuration>500</MusicFadeOutDuration>
+			<MusicOverride>
+				<Music/>
+				<StartTime>0</StartTime>
+				<TimeShift>0</TimeShift>
+			</MusicOverride>
+			<AdditionalCameras>
+				<Item>
+					<NewCameraSet href="witches_cast_1cam-set.xdb#xpointer(/DSceneCameraSet)"/>
+					<StartDelay>8</StartDelay>
+				</Item>
+				<Item>
+					<NewCameraSet href="witches_cast_2cam-set.xdb#xpointer(/DSceneCameraSet)"/>
+					<StartDelay>10</StartDelay>
+				</Item>
+				<Item>
+					<NewCameraSet href="noe_cast_endcam-set.xdb#xpointer(/DSceneCameraSet)"/>
+					<StartDelay>12</StartDelay>
+				</Item>
+			</AdditionalCameras>
+			<Anim3DSoundVolumeCustom>100</Anim3DSoundVolumeCustom>
+		</Item>
+		<Item>
+			<text href="karlam_text4.txt"/>
+			<sound/>
+			<heroLink/>
+			<monsterLink href="#xpointer(id(item_4727A39D-6856-4D99-B854-9D893F03E63D)/AdvMapMonster)"/>
+			<MonsterCustomName href="karlam_name.txt"/>
+			<cameraSet/>
+			<NewCameraSet href="transformcam-set.xdb#xpointer(/DSceneCameraSet)"/>
+			<StopAmbient>false</StopAmbient>
+			<StopMusic>false</StopMusic>
+			<DynamicCamera>true</DynamicCamera>
+			<duration>10</duration>
+			<soundDuration>0</soundDuration>
+			<CustomAmbientLight/>
+			<ActorAnimationIndex>-1</ActorAnimationIndex>
+			<AnimName/>
+			<AnimationDelay>0</AnimationDelay>
+			<CustomSounds>
+				<Item>
+					<Delay>1.5</Delay>
+					<sound href="/Sounds/_(Sound)/Spells/DispelFail.xdb#xpointer(/Sound)"/>
+					<Duration>0</Duration>
+				</Item>
+				<Item>
+					<Delay>3</Delay>
+					<sound href="/Sounds/_(Sound)/Spells/DisruptingRay.xdb#xpointer(/Sound)"/>
+					<Duration>0</Duration>
+				</Item>
+				<Item>
+					<Delay>5.5</Delay>
+					<sound href="/Sounds/_(Sound)/Spells/Implosion.xdb#xpointer(/Sound)"/>
+					<Duration>0</Duration>
+				</Item>
+			</CustomSounds>
+			<CustomEffects>
+				<Item>
+					<Delay>1.5</Delay>
+					<Effect href="/Effects/_(Effect)/Spells/Dispel_fail.xdb#xpointer(/Effect)"/>
+					<Pos>
+						<x>66.4</x>
+						<y>70</y>
+						<z>18</z>
+					</Pos>
+					<Rot>0</Rot>
+					<MovementSpeed>0</MovementSpeed>
+					<MovePoints/>
+					<ConstantPitch>false</ConstantPitch>
+				</Item>
+				<Item>
+					<Delay>3</Delay>
+					<Effect href="/Effects/_(Effect)/Spells/DisruptingRay.xdb#xpointer(/Effect)"/>
+					<Pos>
+						<x>66.4</x>
+						<y>70</y>
+						<z>18</z>
+					</Pos>
+					<Rot>0</Rot>
+					<MovementSpeed>0</MovementSpeed>
+					<MovePoints/>
+					<ConstantPitch>false</ConstantPitch>
+				</Item>
+				<Item>
+					<Delay>5.5</Delay>
+					<Effect href="/Effects/_(Effect)/Spells/Implosion.xdb#xpointer(/Effect)"/>
+					<Pos>
+						<x>66.4</x>
+						<y>70</y>
+						<z>18</z>
+					</Pos>
+					<Rot>0</Rot>
+					<MovementSpeed>0</MovementSpeed>
+					<MovePoints/>
+					<ConstantPitch>false</ConstantPitch>
+				</Item>
+			</CustomEffects>
+			<CustomAnimations>
+				<Item>
+					<heroLink href="#xpointer(id(item_A53F56BB-E904-49C8-9FCA-908CBBAA3C52)/AdvMapHero)"/>
+					<monsterLink/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>0</AnimationDelay>
+					<AnimName>sphaughtiness</AnimName>
+					<MovePoints/>
+					<FinalAngle>0</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink/>
+					<monsterLink href="#n:inline(AdvMapMonster)" id="item_3858C15D-0BFF-4665-962A-762514FA2027">
+						<AdvMapMonster>
+							<Pos>
+								<x>5.7</x>
+								<y>12.5</y>
+								<z>0</z>
+							</Pos>
+							<Rot>1.59622</Rot>
+							<Floor>1</Floor>
+							<Name/>
+							<CombatScript/>
+							<pointLights/>
+							<Shared href="/MapObjects/Chaos/Vicar/Vicar.xdb#xpointer(/AdvMapMonsterShared)"/>
+							<Custom>false</Custom>
+							<Amount>0</Amount>
+							<Amount2>0</Amount2>
+							<AttackType>ATTACK_ANY</AttackType>
+							<MoveType>MOVE_ANY</MoveType>
+							<DoesNotGrow>false</DoesNotGrow>
+							<MessageFileRef href=""/>
+							<Script/>
+							<Resources>
+								<Wood>0</Wood>
+								<Ore>0</Ore>
+								<Mercury>0</Mercury>
+								<Crystal>0</Crystal>
+								<Sulfur>0</Sulfur>
+								<Gem>0</Gem>
+								<Gold>0</Gold>
+							</Resources>
+							<ArtifactID>ARTIFACT_NONE</ArtifactID>
+							<Mood>MONSTER_MOOD_AGGRESSIVE</Mood>
+							<Courage>MONSTER_COURAGE_CAN_FLEE_JOIN</Courage>
+							<AllowQuickCombat>true</AllowQuickCombat>
+							<DoesNotDependOnDifficulty>false</DoesNotDependOnDifficulty>
+							<AdditionalStacks/>
+							<SingleMonsterNameFileRef href=""/>
+							<MultipleMonstersNameFileRef href=""/>
+							<RacesRandomGroupID>0</RacesRandomGroupID>
+							<relationsOverrides/>
+						</AdvMapMonster>
+					</monsterLink>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>9.5</AnimationDelay>
+					<AnimName>move</AnimName>
+					<MovePoints>
+						<Item>
+							<x>32.7</x>
+							<y>34.5</y>
+						</Item>
+					</MovePoints>
+					<FinalAngle>90</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink/>
+					<monsterLink href="#xpointer(id(item_3858C15D-0BFF-4665-962A-762514FA2027)/AdvMapMonster)"/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>9.51</AnimationDelay>
+					<AnimName>idle00</AnimName>
+					<MovePoints/>
+					<FinalAngle>0</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink href="#xpointer(id(item_2CDF1DC4-B524-4BAF-B03A-A09AD301BEAD)/AdvMapHero)"/>
+					<monsterLink/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>9</AnimationDelay>
+					<AnimName>move</AnimName>
+					<MovePoints>
+						<Item>
+							<x>9</x>
+							<y>48</y>
+						</Item>
+					</MovePoints>
+					<FinalAngle>0</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink href="#xpointer(id(item_2CDF1DC4-B524-4BAF-B03A-A09AD301BEAD)/AdvMapHero)"/>
+					<monsterLink/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>9.01</AnimationDelay>
+					<AnimName>idle00</AnimName>
+					<MovePoints/>
+					<FinalAngle>0</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+			</CustomAnimations>
+			<MusicVolumePercent>100</MusicVolumePercent>
+			<MusicFadeOutDuration>500</MusicFadeOutDuration>
+			<MusicOverride>
+				<Music/>
+				<StartTime>0</StartTime>
+				<TimeShift>0</TimeShift>
+			</MusicOverride>
+			<AdditionalCameras>
+				<Item>
+					<NewCameraSet href="transform_to_baalcam-set.xdb#xpointer(/DSceneCameraSet)"/>
+					<StartDelay>8.5</StartDelay>
+				</Item>
+			</AdditionalCameras>
+			<Anim3DSoundVolumeCustom>100</Anim3DSoundVolumeCustom>
+		</Item>
+		<Item>
+			<text href="baal_text1.txt"/>
+			<sound/>
+			<heroLink/>
+			<monsterLink href="#xpointer(id(item_4727A39D-6856-4D99-B854-9D893F03E63D)/AdvMapMonster)"/>
+			<MonsterCustomName href="baal_name.txt"/>
+			<cameraSet/>
+			<NewCameraSet href="baal_focus_01cam-set.xdb#xpointer(/DSceneCameraSet)"/>
+			<StopAmbient>false</StopAmbient>
+			<StopMusic>false</StopMusic>
+			<DynamicCamera>true</DynamicCamera>
+			<duration>4</duration>
+			<soundDuration>0</soundDuration>
+			<CustomAmbientLight/>
+			<ActorAnimationIndex>-1</ActorAnimationIndex>
+			<AnimName/>
+			<AnimationDelay>0</AnimationDelay>
+			<CustomSounds>
+				<Item>
+					<Delay>0.2</Delay>
+					<sound href="/Sounds/_(Sound)/Creatures/Inferno/Balor/happy.xdb#xpointer(/Sound)"/>
+					<Duration>0</Duration>
+				</Item>
+			</CustomSounds>
+			<CustomEffects/>
+			<CustomAnimations>
+				<Item>
+					<heroLink/>
+					<monsterLink href="#xpointer(id(item_3858C15D-0BFF-4665-962A-762514FA2027)/AdvMapMonster)"/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>0.2</AnimationDelay>
+					<AnimName>happy</AnimName>
+					<MovePoints/>
+					<FinalAngle>0</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+			</CustomAnimations>
+			<MusicVolumePercent>100</MusicVolumePercent>
+			<MusicFadeOutDuration>500</MusicFadeOutDuration>
+			<MusicOverride>
+				<Music/>
+				<StartTime>0</StartTime>
+				<TimeShift>0</TimeShift>
+			</MusicOverride>
+			<AdditionalCameras/>
+			<Anim3DSoundVolumeCustom>100</Anim3DSoundVolumeCustom>
+		</Item>
+		<Item>
+			<text href="baal_text2.txt"/>
+			<sound/>
+			<heroLink/>
+			<monsterLink href="#xpointer(id(item_4727A39D-6856-4D99-B854-9D893F03E63D)/AdvMapMonster)"/>
+			<MonsterCustomName href="baal_name.txt"/>
+			<cameraSet/>
+			<NewCameraSet href="baal_focus_01cam-set.xdb#xpointer(/DSceneCameraSet)"/>
+			<StopAmbient>false</StopAmbient>
+			<StopMusic>false</StopMusic>
+			<DynamicCamera>true</DynamicCamera>
+			<duration>8</duration>
+			<soundDuration>0</soundDuration>
+			<CustomAmbientLight/>
+			<ActorAnimationIndex>-1</ActorAnimationIndex>
+			<AnimName/>
+			<AnimationDelay>0</AnimationDelay>
+			<CustomSounds>
+				<Item>
+					<Delay>0</Delay>
+					<sound href="/Sounds/_(Sound)/Creatures/Inferno/Balor/stir00.xdb#xpointer(/Sound)"/>
+					<Duration>0</Duration>
+				</Item>
+				<Item>
+					<Delay>3.5</Delay>
+					<sound href="/Sounds/_(Sound)/Creatures/Inferno/Balor/cast.xdb#xpointer(/Sound)"/>
+					<Duration>0</Duration>
+				</Item>
+				<Item>
+					<Delay>3.5</Delay>
+					<sound href="/Sounds/_(Sound)/Spells/Mega_Spell.xdb#xpointer(/Sound)"/>
+					<Duration>0</Duration>
+				</Item>
+			</CustomSounds>
+			<CustomEffects>
+				<Item>
+					<Delay>3.5</Delay>
+					<Effect href="/Effects/_(Effect)/Spells/Megaspell.(Effect).xdb#xpointer(/Effect)"/>
+					<Pos>
+						<x>68</x>
+						<y>70</y>
+						<z>18</z>
+					</Pos>
+					<Rot>0</Rot>
+					<MovementSpeed>0</MovementSpeed>
+					<MovePoints/>
+					<ConstantPitch>false</ConstantPitch>
+				</Item>
+				<Item>
+					<Delay>3.5</Delay>
+					<Effect href="/Effects/_(Effect)/Spells/Megaspell.(Effect).xdb#xpointer(/Effect)"/>
+					<Pos>
+						<x>67</x>
+						<y>73</y>
+						<z>20</z>
+					</Pos>
+					<Rot>2</Rot>
+					<MovementSpeed>0</MovementSpeed>
+					<MovePoints/>
+					<ConstantPitch>false</ConstantPitch>
+				</Item>
+				<Item>
+					<Delay>3.5</Delay>
+					<Effect href="/Effects/_(Effect)/Spells/Megaspell.(Effect).xdb#xpointer(/Effect)"/>
+					<Pos>
+						<x>68</x>
+						<y>70</y>
+						<z>18</z>
+					</Pos>
+					<Rot>1.5</Rot>
+					<MovementSpeed>0</MovementSpeed>
+					<MovePoints/>
+					<ConstantPitch>false</ConstantPitch>
+				</Item>
+			</CustomEffects>
+			<CustomAnimations>
+				<Item>
+					<heroLink/>
+					<monsterLink href="#xpointer(id(item_3858C15D-0BFF-4665-962A-762514FA2027)/AdvMapMonster)"/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>0</AnimationDelay>
+					<AnimName>stir00</AnimName>
+					<MovePoints/>
+					<FinalAngle>0</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink/>
+					<monsterLink href="#xpointer(id(item_3858C15D-0BFF-4665-962A-762514FA2027)/AdvMapMonster)"/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>3.5</AnimationDelay>
+					<AnimName>cast</AnimName>
+					<MovePoints/>
+					<FinalAngle>0</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink/>
+					<monsterLink href="#xpointer(id(item_437CE9AE-DEF5-4CFE-A63F-82C574544D86)/AdvMapMonster)"/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>6.5</AnimationDelay>
+					<AnimName>death</AnimName>
+					<MovePoints/>
+					<FinalAngle>0</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink/>
+					<monsterLink href="#xpointer(id(item_9919C549-690F-46E1-AD25-0589B20178B5)/AdvMapMonster)"/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>6.5</AnimationDelay>
+					<AnimName>death</AnimName>
+					<MovePoints/>
+					<FinalAngle>0</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink/>
+					<monsterLink href="#xpointer(id(item_F7DA1966-C6E8-4924-B1D6-39543E3F2A3C)/AdvMapMonster)"/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>6.6</AnimationDelay>
+					<AnimName>death</AnimName>
+					<MovePoints/>
+					<FinalAngle>0</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink/>
+					<monsterLink href="#xpointer(id(item_54A5BE39-55A9-45D9-8014-48C99B1FE725)/AdvMapMonster)"/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>6.6</AnimationDelay>
+					<AnimName>death</AnimName>
+					<MovePoints/>
+					<FinalAngle>0</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink/>
+					<monsterLink href="#xpointer(id(item_A63038DB-FE7C-4851-8515-72C52A6DC2CF)/AdvMapMonster)"/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>6.5</AnimationDelay>
+					<AnimName>death</AnimName>
+					<MovePoints/>
+					<FinalAngle>0</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink/>
+					<monsterLink href="#xpointer(id(item_242B3293-7629-4D11-A106-B2AB9F632153)/AdvMapMonster)"/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>6.5</AnimationDelay>
+					<AnimName>death</AnimName>
+					<MovePoints/>
+					<FinalAngle>0</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink/>
+					<monsterLink href="#xpointer(id(item_B9B14FC4-2EEE-4A24-94B7-A3134A63E5A8)/AdvMapMonster)"/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>6.5</AnimationDelay>
+					<AnimName>death</AnimName>
+					<MovePoints/>
+					<FinalAngle>0</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink/>
+					<monsterLink href="#xpointer(id(item_4224C5F2-CA91-45EA-9EB3-B32A9CDB8C38)/AdvMapMonster)"/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>6.5</AnimationDelay>
+					<AnimName>death</AnimName>
+					<MovePoints/>
+					<FinalAngle>0</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink/>
+					<monsterLink href="#xpointer(id(item_0F2F199E-FFDD-48A4-96FC-128E97E38709)/AdvMapMonster)"/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>6.5</AnimationDelay>
+					<AnimName>death</AnimName>
+					<MovePoints/>
+					<FinalAngle>0</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink/>
+					<monsterLink href="#xpointer(id(item_5DA8A7F2-29A9-4202-9877-B3E1844A6451)/AdvMapMonster)"/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>6.5</AnimationDelay>
+					<AnimName>death</AnimName>
+					<MovePoints/>
+					<FinalAngle>0</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink/>
+					<monsterLink href="#xpointer(id(item_1C10EF80-AD95-4302-835B-6393E928BF63)/AdvMapMonster)"/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>6.5</AnimationDelay>
+					<AnimName>death</AnimName>
+					<MovePoints/>
+					<FinalAngle>0</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink/>
+					<monsterLink href="#xpointer(id(item_BA94A2BE-C3A2-409E-92F8-94060993D443)/AdvMapMonster)"/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>6.5</AnimationDelay>
+					<AnimName>death</AnimName>
+					<MovePoints/>
+					<FinalAngle>0</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink/>
+					<monsterLink href="#xpointer(id(item_62436826-F5EE-4AFC-A20A-DA459021DC74)/AdvMapMonster)"/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>6.6</AnimationDelay>
+					<AnimName>death</AnimName>
+					<MovePoints/>
+					<FinalAngle>0</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink/>
+					<monsterLink href="#xpointer(id(item_E0474C13-CDF2-4535-A4F0-740580728F5C)/AdvMapMonster)"/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>6.6</AnimationDelay>
+					<AnimName>death</AnimName>
+					<MovePoints/>
+					<FinalAngle>0</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink/>
+					<monsterLink href="#xpointer(id(item_B4A9CCE0-C619-4EE5-AEE3-A787CB641866)/AdvMapMonster)"/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>6.6</AnimationDelay>
+					<AnimName>death</AnimName>
+					<MovePoints/>
+					<FinalAngle>0</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink/>
+					<monsterLink href="#xpointer(id(item_12FFEE16-B9B8-4243-8C3E-B5957B47E425)/AdvMapMonster)"/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>6.6</AnimationDelay>
+					<AnimName>death</AnimName>
+					<MovePoints/>
+					<FinalAngle>0</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+			</CustomAnimations>
+			<MusicVolumePercent>100</MusicVolumePercent>
+			<MusicFadeOutDuration>500</MusicFadeOutDuration>
+			<MusicOverride>
+				<Music/>
+				<StartTime>0</StartTime>
+				<TimeShift>0</TimeShift>
+			</MusicOverride>
+			<AdditionalCameras>
+				<Item>
+					<NewCameraSet href="witches_deathcam-set.xdb#xpointer(/DSceneCameraSet)"/>
+					<StartDelay>3</StartDelay>
+				</Item>
+			</AdditionalCameras>
+			<Anim3DSoundVolumeCustom>100</Anim3DSoundVolumeCustom>
+		</Item>
+		<Item>
+			<text href="noe_text6.txt"/>
+			<sound/>
+			<heroLink/>
+			<monsterLink href="#xpointer(id(item_4727A39D-6856-4D99-B854-9D893F03E63D)/AdvMapMonster)"/>
+			<MonsterCustomName href="noe_name.txt"/>
+			<cameraSet/>
+			<NewCameraSet href="noe_to_baalcam-set.xdb#xpointer(/DSceneCameraSet)"/>
+			<StopAmbient>false</StopAmbient>
+			<StopMusic>false</StopMusic>
+			<DynamicCamera>true</DynamicCamera>
+			<duration>6</duration>
+			<soundDuration>0</soundDuration>
+			<CustomAmbientLight/>
+			<ActorAnimationIndex>-1</ActorAnimationIndex>
+			<AnimName/>
+			<AnimationDelay>0</AnimationDelay>
+			<CustomSounds/>
+			<CustomEffects/>
+			<CustomAnimations>
+				<Item>
+					<heroLink/>
+					<monsterLink href="#xpointer(id(item_3858C15D-0BFF-4665-962A-762514FA2027)/AdvMapMonster)"/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>3</AnimationDelay>
+					<AnimName>move</AnimName>
+					<MovePoints>
+						<Item>
+							<x>36.5</x>
+							<y>34.5</y>
+						</Item>
+					</MovePoints>
+					<FinalAngle>90</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink href="#xpointer(id(item_A53F56BB-E904-49C8-9FCA-908CBBAA3C52)/AdvMapHero)"/>
+					<monsterLink/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>0</AnimationDelay>
+					<AnimName>spbellicose</AnimName>
+					<MovePoints/>
+					<FinalAngle>0</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+			</CustomAnimations>
+			<MusicVolumePercent>100</MusicVolumePercent>
+			<MusicFadeOutDuration>500</MusicFadeOutDuration>
+			<MusicOverride>
+				<Music/>
+				<StartTime>0</StartTime>
+				<TimeShift>0</TimeShift>
+			</MusicOverride>
+			<AdditionalCameras/>
+			<Anim3DSoundVolumeCustom>100</Anim3DSoundVolumeCustom>
+		</Item>
+		<Item>
+			<text href=""/>
+			<sound/>
+			<heroLink/>
+			<monsterLink href="#xpointer(id(item_4727A39D-6856-4D99-B854-9D893F03E63D)/AdvMapMonster)"/>
+			<MonsterCustomName href=""/>
+			<cameraSet/>
+			<NewCameraSet href="baal_hit_noecam-set.xdb#xpointer(/DSceneCameraSet)"/>
+			<StopAmbient>false</StopAmbient>
+			<StopMusic>false</StopMusic>
+			<DynamicCamera>true</DynamicCamera>
+			<duration>4</duration>
+			<soundDuration>0</soundDuration>
+			<CustomAmbientLight/>
+			<ActorAnimationIndex>-1</ActorAnimationIndex>
+			<AnimName/>
+			<AnimationDelay>0</AnimationDelay>
+			<CustomSounds>
+				<Item>
+					<Delay>1</Delay>
+					<sound href="/Sounds/_(Sound)/Spells/DeflectArrows_Shield.xdb#xpointer(/Sound)"/>
+					<Duration>0</Duration>
+				</Item>
+				<Item>
+					<Delay>3.5</Delay>
+					<sound href="/Sounds/_(Sound)/Spells/Phantom-Out.xdb#xpointer(/Sound)"/>
+					<Duration>0</Duration>
+				</Item>
+				<Item>
+					<Delay>0.5</Delay>
+					<sound href="/Sounds/_(Sound)/Creatures/Inferno/Balor/attack01.xdb#xpointer(/Sound)"/>
+					<Duration>0</Duration>
+				</Item>
+			</CustomSounds>
+			<CustomEffects>
+				<Item>
+					<Delay>1</Delay>
+					<Effect href="/Effects/_(Effect)/Spells/DeflectArrows_shield.xdb#xpointer(/Effect)"/>
+					<Pos>
+						<x>77.8</x>
+						<y>70.2</y>
+						<z>18</z>
+					</Pos>
+					<Rot>1.5</Rot>
+					<MovementSpeed>0</MovementSpeed>
+					<MovePoints/>
+					<ConstantPitch>false</ConstantPitch>
+				</Item>
+				<Item>
+					<Delay>3.5</Delay>
+					<Effect href="/Effects/_(Effect)/Spells/Phantom_Out.xdb#xpointer(/Effect)"/>
+					<Pos>
+						<x>77.8</x>
+						<y>70.2</y>
+						<z>17</z>
+					</Pos>
+					<Rot>0</Rot>
+					<MovementSpeed>0</MovementSpeed>
+					<MovePoints/>
+					<ConstantPitch>false</ConstantPitch>
+				</Item>
+			</CustomEffects>
+			<CustomAnimations>
+				<Item>
+					<heroLink/>
+					<monsterLink href="#xpointer(id(item_3858C15D-0BFF-4665-962A-762514FA2027)/AdvMapMonster)"/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>0.1</AnimationDelay>
+					<AnimName>attack01</AnimName>
+					<MovePoints/>
+					<FinalAngle>0</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink href="#xpointer(id(item_A53F56BB-E904-49C8-9FCA-908CBBAA3C52)/AdvMapHero)"/>
+					<monsterLink/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>0.6</AnimationDelay>
+					<AnimName>hit</AnimName>
+					<MovePoints/>
+					<FinalAngle>0</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink href="#xpointer(id(item_A53F56BB-E904-49C8-9FCA-908CBBAA3C52)/AdvMapHero)"/>
+					<monsterLink/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>2.5</AnimationDelay>
+					<AnimName>cast</AnimName>
+					<MovePoints/>
+					<FinalAngle>0</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink/>
+					<monsterLink href="#xpointer(id(item_3858C15D-0BFF-4665-962A-762514FA2027)/AdvMapMonster)"/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>2</AnimationDelay>
+					<AnimName>hit</AnimName>
+					<MovePoints/>
+					<FinalAngle>0</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+			</CustomAnimations>
+			<MusicVolumePercent>100</MusicVolumePercent>
+			<MusicFadeOutDuration>500</MusicFadeOutDuration>
+			<MusicOverride>
+				<Music/>
+				<StartTime>0</StartTime>
+				<TimeShift>0</TimeShift>
+			</MusicOverride>
+			<AdditionalCameras/>
+			<Anim3DSoundVolumeCustom>100</Anim3DSoundVolumeCustom>
+		</Item>
+		<Item>
+			<text href="baal_text3.txt"/>
+			<sound/>
+			<heroLink/>
+			<monsterLink href="#xpointer(id(item_4727A39D-6856-4D99-B854-9D893F03E63D)/AdvMapMonster)"/>
+			<MonsterCustomName href="baal_name.txt"/>
+			<cameraSet/>
+			<NewCameraSet href="baal_final_closecam-set.xdb#xpointer(/DSceneCameraSet)"/>
+			<StopAmbient>false</StopAmbient>
+			<StopMusic>false</StopMusic>
+			<DynamicCamera>true</DynamicCamera>
+			<duration>3</duration>
+			<soundDuration>0</soundDuration>
+			<CustomAmbientLight/>
+			<ActorAnimationIndex>-1</ActorAnimationIndex>
+			<AnimName/>
+			<AnimationDelay>0</AnimationDelay>
+			<CustomSounds>
+				<Item>
+					<Delay>1</Delay>
+					<sound href="/Sounds/_(Sound)/Creatures/Inferno/Balor/stir00.xdb#xpointer(/Sound)"/>
+					<Duration>0</Duration>
+				</Item>
+			</CustomSounds>
+			<CustomEffects/>
+			<CustomAnimations>
+				<Item>
+					<heroLink/>
+					<monsterLink href="#xpointer(id(item_3858C15D-0BFF-4665-962A-762514FA2027)/AdvMapMonster)"/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>1</AnimationDelay>
+					<AnimName>stir00</AnimName>
+					<MovePoints/>
+					<FinalAngle>0</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink href="#xpointer(id(item_A53F56BB-E904-49C8-9FCA-908CBBAA3C52)/AdvMapHero)"/>
+					<monsterLink/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>0.1</AnimationDelay>
+					<AnimName>move</AnimName>
+					<MovePoints>
+						<Item>
+							<x>9</x>
+							<y>49</y>
+						</Item>
+					</MovePoints>
+					<FinalAngle>0</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+				<Item>
+					<heroLink href="#xpointer(id(item_A53F56BB-E904-49C8-9FCA-908CBBAA3C52)/AdvMapHero)"/>
+					<monsterLink/>
+					<AnimationIndex>0</AnimationIndex>
+					<AnimationDelay>0.11</AnimationDelay>
+					<AnimName>idle00</AnimName>
+					<MovePoints/>
+					<FinalAngle>0</FinalAngle>
+					<MovementSpeed>0</MovementSpeed>
+				</Item>
+			</CustomAnimations>
+			<MusicVolumePercent>100</MusicVolumePercent>
+			<MusicFadeOutDuration>500</MusicFadeOutDuration>
+			<MusicOverride>
+				<Music/>
+				<StartTime>0</StartTime>
+				<TimeShift>0</TimeShift>
+			</MusicOverride>
+			<AdditionalCameras/>
+			<Anim3DSoundVolumeCustom>100</Anim3DSoundVolumeCustom>
+		</Item>
+	</sentences>
+	<objects>
+		<Item href="#xpointer(id(item_4727A39D-6856-4D99-B854-9D893F03E63D)/AdvMapMonster)"/>
+		<Item href="#xpointer(id(item_2CDF1DC4-B524-4BAF-B03A-A09AD301BEAD)/AdvMapHero)"/>
+		<Item href="#xpointer(id(item_A53F56BB-E904-49C8-9FCA-908CBBAA3C52)/AdvMapHero)"/>
+		<Item href="#n:inline(AdvMapStatic)" id="item_F21E08BF-2D8C-45E1-AA9A-082D3B42BB6D">
+			<AdvMapStatic>
+				<Pos>
+					<x>38.0181</x>
+					<y>34.6205</y>
+					<z>0</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>1</Floor>
+				<Name/>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/Subterra/Fire.(AdvMapStaticShared) (2).xdb#xpointer(/AdvMapStaticShared)"/>
+				<IsRemovable>false</IsRemovable>
+				<TerrainAligned>false</TerrainAligned>
+				<ScalePercent>100</ScalePercent>
+			</AdvMapStatic>
+		</Item>
+		<Item href="#xpointer(id(item_62436826-F5EE-4AFC-A20A-DA459021DC74)/AdvMapMonster)"/>
+		<Item href="#xpointer(id(item_E0474C13-CDF2-4535-A4F0-740580728F5C)/AdvMapMonster)"/>
+		<Item href="#xpointer(id(item_12FFEE16-B9B8-4243-8C3E-B5957B47E425)/AdvMapMonster)"/>
+		<Item href="#xpointer(id(item_437CE9AE-DEF5-4CFE-A63F-82C574544D86)/AdvMapMonster)"/>
+		<Item href="#xpointer(id(item_9919C549-690F-46E1-AD25-0589B20178B5)/AdvMapMonster)"/>
+		<Item href="#xpointer(id(item_F7DA1966-C6E8-4924-B1D6-39543E3F2A3C)/AdvMapMonster)"/>
+		<Item href="#xpointer(id(item_54A5BE39-55A9-45D9-8014-48C99B1FE725)/AdvMapMonster)"/>
+		<Item href="#xpointer(id(item_B4A9CCE0-C619-4EE5-AEE3-A787CB641866)/AdvMapMonster)"/>
+		<Item href="#xpointer(id(item_A63038DB-FE7C-4851-8515-72C52A6DC2CF)/AdvMapMonster)"/>
+		<Item href="#xpointer(id(item_242B3293-7629-4D11-A106-B2AB9F632153)/AdvMapMonster)"/>
+		<Item href="#xpointer(id(item_B9B14FC4-2EEE-4A24-94B7-A3134A63E5A8)/AdvMapMonster)"/>
+		<Item href="#xpointer(id(item_4224C5F2-CA91-45EA-9EB3-B32A9CDB8C38)/AdvMapMonster)"/>
+		<Item href="#xpointer(id(item_0F2F199E-FFDD-48A4-96FC-128E97E38709)/AdvMapMonster)"/>
+		<Item href="#xpointer(id(item_5DA8A7F2-29A9-4202-9877-B3E1844A6451)/AdvMapMonster)"/>
+		<Item href="#xpointer(id(item_1C10EF80-AD95-4302-835B-6393E928BF63)/AdvMapMonster)"/>
+		<Item href="#xpointer(id(item_BA94A2BE-C3A2-409E-92F8-94060993D443)/AdvMapMonster)"/>
+		<Item href="#xpointer(id(item_3858C15D-0BFF-4665-962A-762514FA2027)/AdvMapMonster)"/>
+	</objects>
+	<ModelsLOD/>
+	<CameraShiftZ>0.1</CameraShiftZ>
+	<Anim3DSoundVolume>100</Anim3DSoundVolume>
+	<Name href=""/>
+</DialogScene>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSceneCamera>
+	<Pos>
+		<Rod>37.997</Rod>
+		<Pitch>-0.576799</Pitch>
+		<Yaw>5.25125</Yaw>
+		<Roll>0</Roll>
+		<FOV>47.5566</FOV>
+		<ClipDistanceMin>1</ClipDistanceMin>
+		<ClipDistanceMax>500</ClipDistanceMax>
+		<Anchor>
+			<x>181.075</x>
+			<y>173.881</y>
+			<z>1.96752e-007</z>
+		</Anchor>
+	</Pos>
+	<Absolute>true</Absolute>
+	<Rot>0</Rot>
+	<NameFileRef href="hall_focus-name-camera.txt"/>
+</DSceneCamera>

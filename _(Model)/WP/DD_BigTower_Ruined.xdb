@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Model>
+	<Materials>
+		<Item href="/Arenas/CombatArena/NeutralArena/central_tower_u1r1-Tower_r1_Mt.(Material).xdb#xpointer(/Material)"/>
+		<Item href="/Arenas/CombatArena/NeutralArena/central_tower_u1r1-Tower_r1_Pod_Mt.(Material).xdb#xpointer(/Material)"/>
+	</Materials>
+	<Skeleton href="DD_BigTower_Ruined-skel.xdb#xpointer(/Skeleton)"/>
+	<Geometry href="DD_BigTower_Ruined-geom.xdb#xpointer(/Geometry)"/>
+	<Animations/>
+	<WindPower>1</WindPower>
+</Model>

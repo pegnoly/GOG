@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSceneCamera>
+	<Pos>
+		<Rod>67.9388</Rod>
+		<Pitch>-0.0776028</Pitch>
+		<Yaw>1.6416</Yaw>
+		<Roll>0</Roll>
+		<FOV>35</FOV>
+		<ClipDistanceMin>1</ClipDistanceMin>
+		<ClipDistanceMax>500</ClipDistanceMax>
+		<Anchor>
+			<x>44.5905</x>
+			<y>90.9349</y>
+			<z>0.5</z>
+		</Anchor>
+	</Pos>
+	<Absolute>true</Absolute>
+	<Rot>0</Rot>
+	<NameFileRef href="kar_1st_flyby_end-name-camera.txt"/>
+</DSceneCamera>

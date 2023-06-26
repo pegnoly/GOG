@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AdvMapHeroShared>
+	<Model href="/_(Model)/Artefacts/Staff_of_Vexings.xdb#xpointer(/Model)"/>
+	<AnimSet href="/_(AnimSet)/Artefacts/General.(AnimSet).xdb#xpointer(/AnimSet)"/>
+	<blockedTiles/>
+	<holeTiles/>
+	<activeTiles/>
+	<passableTiles/>
+	<PossessionMarkerTile>
+		<x>0</x>
+		<y>0</y>
+	</PossessionMarkerTile>
+	<Effect/>
+	<EffectWhenOwned/>
+	<messagesFileRef>
+		<Item href=""/>
+	</messagesFileRef>
+	<WaterBased>false</WaterBased>
+	<ApplyHeroTrace>false</ApplyHeroTrace>
+	<SoundEffect/>
+	<flybyMessageFileRef href=""/>
+	<ObjectTypeFileRef href=""/>
+	<TerrainAligned>false</TerrainAligned>
+	<FlyPassable>true</FlyPassable>
+	<AdventureSoundEffect/>
+	<RazedStatic/>
+	<Icon128/>
+	<InternalName>staff</InternalName>
+	<Class>HERO_CLASS_NONE</Class>
+	<Specialization>HERO_SPEC_NONE</Specialization>
+	<PrimarySkill>
+		<Mastery>MASTERY_NONE</Mastery>
+		<SkillID>HERO_SKILL_NONE</SkillID>
+	</PrimarySkill>
+	<SpecializationNameFileRef href=""/>
+	<SpecializationDescFileRef href=""/>
+	<SpecializationIcon/>
+	<FaceTexture/>
+	<FaceTextureSmall/>
+	<HeroCharacterArena href="/Characters/Heroes/CARAVAN.(Character) (2).xdb#xpointer(/Character)"/>
+	<HeroCharacterArenaMelee/>
+	<HeroCharacterAdventure href="/Characters/Heroes/CARAVAN.(Character) (2).xdb#xpointer(/Character)"/>
+	<HeroIndividualCamera/>
+	<CombatVisual/>
+	<TownType>TOWN_SPECIAL</TownType>
+	<Editable>
+		<NameFileRef href=""/>
+		<BiographyFileRef href=""/>
+		<Offence>0</Offence>
+		<Defence>0</Defence>
+		<Spellpower>0</Spellpower>
+		<Knowledge>0</Knowledge>
+		<skills/>
+		<perkIDs/>
+		<spellIDs/>
+		<Ballista>false</Ballista>
+		<FirstAidTent>false</FirstAidTent>
+		<AmmoCart>false</AmmoCart>
+		<FavoriteEnemies/>
+		<TalismanLevel>0</TalismanLevel>
+	</Editable>
+	<ArrowButtonState>0</ArrowButtonState>
+	<Decal/>
+	<Selection/>
+	<Trace/>
+	<RaceTraitIcon/>
+	<RaceTraitDescFileRef href=""/>
+	<ScenarioHero>false</ScenarioHero>
+	<AdventureMusic/>
+	<HideInEditor>false</HideInEditor>
+	<PresetMinimalAttributes>
+		<Offence>2</Offence>
+		<Defence>2</Defence>
+		<Spellpower>2</Spellpower>
+		<Knowledge>2</Knowledge>
+	</PresetMinimalAttributes>
+</AdvMapHeroShared>

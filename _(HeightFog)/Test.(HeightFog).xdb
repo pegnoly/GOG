@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HeightFog ObjectRecordID="1">
+	<FogColor>
+		<x>0.752941</x>
+		<y>0.752941</y>
+		<z>0.752941</z>
+	</FogColor>
+	<MinHeight>100</MinHeight>
+	<MaxHeight>200</MaxHeight>
+</HeightFog>

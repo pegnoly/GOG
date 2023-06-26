@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSceneCamera>
+	<Pos>
+		<Rod>150.079</Rod>
+		<Pitch>-0.552765</Pitch>
+		<Yaw>0.417443</Yaw>
+		<Roll>0</Roll>
+		<FOV>47.5878</FOV>
+		<ClipDistanceMin>1</ClipDistanceMin>
+		<ClipDistanceMax>500</ClipDistanceMax>
+		<Anchor>
+			<x>325.632</x>
+			<y>329.65</y>
+			<z>2.77919e-008</z>
+		</Anchor>
+	</Pos>
+	<Absolute>true</Absolute>
+	<Rot>0</Rot>
+	<NameFileRef href="zombie_house_close-name-camera.txt"/>
+</DSceneCamera>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSceneCamera>
+	<Pos>
+		<Rod>53.4064</Rod>
+		<Pitch>-0.101603</Pitch>
+		<Yaw>4.75199</Yaw>
+		<Roll>0</Roll>
+		<FOV>35</FOV>
+		<ClipDistanceMin>1</ClipDistanceMin>
+		<ClipDistanceMax>500</ClipDistanceMax>
+		<Anchor>
+			<x>182.196</x>
+			<y>90.9767</y>
+			<z>10.9999</z>
+		</Anchor>
+	</Pos>
+	<Absolute>true</Absolute>
+	<Rot>0</Rot>
+	<NameFileRef href="karlam_to_baelor_01_start-name-camera.txt"/>
+</DSceneCamera>

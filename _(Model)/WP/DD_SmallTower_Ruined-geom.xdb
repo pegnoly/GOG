@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Geometry>
+	<SrcName href="/DD_SmallTower_Ruined.mb"/>
+	<uid>A35DC907-6438-4B62-AF4D-2735C16CB90A</uid>
+	<RootMesh/>
+	<RootJoint>FF6A8D0A_01</RootJoint>
+	<Size>
+		<x>4.02722</x>
+		<y>2.5553</y>
+		<z>8.68957</z>
+	</Size>
+	<Center>
+		<x>-0.42137</x>
+		<y>0.281164</y>
+		<z>4.37182</z>
+	</Center>
+	<BestFitPoint>
+		<x>0</x>
+		<y>0</y>
+		<z>0</z>
+	</BestFitPoint>
+	<Dir>
+		<x>0</x>
+		<y>0</y>
+		<z>0</z>
+		<w>0</w>
+	</Dir>
+	<AIGeometry/>
+	<NumMeshes>1</NumMeshes>
+	<MaterialQuantities>
+		<Item>1</Item>
+	</MaterialQuantities>
+	<MeshNames>
+		<Item>FF6A8D0A_01Shape</Item>
+	</MeshNames>
+	<MeshAnimated/>
+	<MeshWindAffected/>
+</Geometry>

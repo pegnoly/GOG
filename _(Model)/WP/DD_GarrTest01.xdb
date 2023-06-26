@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Model>
+	<Materials>
+		<Item href="/BearRider_body_mat.2.(Material).xdb#xpointer(/Material)"/>
+	</Materials>
+	<Skeleton href="DD_GarrTest01-skel.xdb#xpointer(/Skeleton)"/>
+	<Geometry href="DD_GarrTest01-geom.xdb#xpointer(/Geometry)"/>
+	<Animations/>
+	<WindPower>1</WindPower>
+</Model>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ArenaDesc>
+	<ExpScene href=""/>
+	<ExpSrcClipFolder href=""/>
+	<uid>1E3A9126-91AE-4612-872A-A8BDF47CB847</uid>
+	<objects>
+		<Item href="Wall_Locator.(ArenaLocObject).xdb#xpointer(/ArenaLocObject)"/>
+	</objects>
+	<lights/>
+	<effects/>
+	<sounds/>
+	<initialCamPos>
+		<Name/>
+		<Pos>
+			<x>0</x>
+			<y>0</y>
+			<z>0</z>
+		</Pos>
+		<Rot>
+			<x>0</x>
+			<y>0</y>
+			<z>0</z>
+		</Rot>
+		<Rod>0</Rod>
+		<FOV>0</FOV>
+		<ClipDistanceMin>1</ClipDistanceMin>
+		<ClipDistanceMax>1000</ClipDistanceMax>
+	</initialCamPos>
+	<ObstaclesGroup/>
+	<AmbientSound/>
+	<Music/>
+	<Wind/>
+	<CamerasSet/>
+	<AmbientLights/>
+	<cameraFlyupRole>
+		<Model/>
+		<AnimSet/>
+		<Player>PLAYER_NONE</Player>
+	</cameraFlyupRole>
+	<staticCameras/>
+	<CameraLimits/>
+	<CameraLimitsSet/>
+	<WidenPictureIfPossible>true</WidenPictureIfPossible>
+</ArenaDesc>

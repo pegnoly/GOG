@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AdvMapObjectLink>
+	<Link href="/new_creatures/Neutral/H7_Spider_2/creature.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
+	<RndGroup/>
+	<IconFile/>
+	<HideInEditor>false</HideInEditor>
+</AdvMapObjectLink>

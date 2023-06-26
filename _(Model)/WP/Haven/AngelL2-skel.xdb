@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Skeleton>
+	<SrcName href="/angels_l2.mb"/>
+	<RootJoint>polySurfaceShape1</RootJoint>
+	<MSRFormat>true</MSRFormat>
+	<Animations/>
+	<uid>B67D4474-3880-4A40-8801-35704779C124</uid>
+</Skeleton>

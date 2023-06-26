@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AdvMapTownCombat>
+	<walls>
+		<Item href="necro_left_tower_test.(ArenaBuilding).xdb#xpointer(/ArenaBuilding)"/>
+		<Item href="necro_right_tower_test.(ArenaBuilding).xdb#xpointer(/ArenaBuilding)"/>
+	</walls>
+	<ArenaDesc href="/Arenas/CombatArena/Necropolisarena/necropolisarena.xdb#xpointer(/ArenaDesc)"/>
+	<ArenaMap href="/Scenes/CombatArenas/Dirt_Big_02.xdb#xpointer(/AdventureFlybyScene)"/>
+	<GroundType>TT_DIRT</GroundType>
+</AdvMapTownCombat>

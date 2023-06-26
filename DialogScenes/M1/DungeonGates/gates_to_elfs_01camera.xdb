@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSceneCamera>
+	<Pos>
+		<Rod>92.15</Rod>
+		<Pitch>-0.144803</Pitch>
+		<Yaw>4.68959</Yaw>
+		<Roll>0</Roll>
+		<FOV>35</FOV>
+		<ClipDistanceMin>1</ClipDistanceMin>
+		<ClipDistanceMax>500</ClipDistanceMax>
+		<Anchor>
+			<x>158.125</x>
+			<y>68.9823</y>
+			<z>11</z>
+		</Anchor>
+	</Pos>
+	<Absolute>true</Absolute>
+	<Rot>0</Rot>
+	<NameFileRef href="gates_to_elfs_01-name-camera.txt"/>
+</DSceneCamera>

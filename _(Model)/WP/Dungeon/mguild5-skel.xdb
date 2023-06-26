@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Skeleton>
+	<SrcName href="/mguild_dungeoun.mb"/>
+	<RootJoint>polySurfaceShape1</RootJoint>
+	<MSRFormat>true</MSRFormat>
+	<Animations/>
+	<uid>14517705-83A7-4D7C-A6E2-92C8D25F7171</uid>
+</Skeleton>

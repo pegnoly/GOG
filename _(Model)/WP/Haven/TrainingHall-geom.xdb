@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Geometry>
+	<SrcName href="/training_hall.mb"/>
+	<uid>B583814D-C05E-4D8E-BB04-D9246AD7E762</uid>
+	<RootMesh/>
+	<RootJoint>B42E99B9_01Shape</RootJoint>
+	<Size>
+		<x>14.027</x>
+		<y>13.9756</y>
+		<z>14.1528</z>
+	</Size>
+	<Center>
+		<x>-0.555825</x>
+		<y>2.61156</y>
+		<z>4.61246</z>
+	</Center>
+	<BestFitPoint>
+		<x>0</x>
+		<y>0</y>
+		<z>0</z>
+	</BestFitPoint>
+	<Dir>
+		<x>0</x>
+		<y>0</y>
+		<z>0</z>
+		<w>0</w>
+	</Dir>
+	<AIGeometry/>
+	<NumMeshes>1</NumMeshes>
+	<MaterialQuantities>
+		<Item>1</Item>
+	</MaterialQuantities>
+	<MeshNames>
+		<Item>B42E99B9_01Shape</Item>
+	</MeshNames>
+	<MeshAnimated/>
+	<MeshWindAffected/>
+</Geometry>

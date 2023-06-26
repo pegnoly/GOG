@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Skeleton>
+	<SrcName href="/mguild_haven.mb"/>
+	<RootJoint>polySurfaceShape1</RootJoint>
+	<MSRFormat>true</MSRFormat>
+	<Animations/>
+	<uid>62D3AEF8-B7B8-4219-ADCD-1E903C2C33E0</uid>
+</Skeleton>

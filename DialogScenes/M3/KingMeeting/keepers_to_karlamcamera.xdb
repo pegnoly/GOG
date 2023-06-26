@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSceneCamera>
+	<Pos>
+		<Rod>27.7208</Rod>
+		<Pitch>-0.164003</Pitch>
+		<Yaw>0.0911983</Yaw>
+		<Roll>0</Roll>
+		<FOV>35</FOV>
+		<ClipDistanceMin>1</ClipDistanceMin>
+		<ClipDistanceMax>500</ClipDistanceMax>
+		<Anchor>
+			<x>182.83</x>
+			<y>187.52</y>
+			<z>1.92166e-007</z>
+		</Anchor>
+	</Pos>
+	<Absolute>true</Absolute>
+	<Rot>0</Rot>
+	<NameFileRef href="keepers_to_karlam-name-camera.txt"/>
+</DSceneCamera>

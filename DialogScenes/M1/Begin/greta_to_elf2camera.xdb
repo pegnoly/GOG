@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSceneCamera>
+	<Pos>
+		<Rod>53.7305</Rod>
+		<Pitch>-0.308</Pitch>
+		<Yaw>4.27677</Yaw>
+		<Roll>0</Roll>
+		<FOV>47.5631</FOV>
+		<ClipDistanceMin>1</ClipDistanceMin>
+		<ClipDistanceMax>500</ClipDistanceMax>
+		<Anchor>
+			<x>309.614</x>
+			<y>252.118</y>
+			<z>-4.29363e-007</z>
+		</Anchor>
+	</Pos>
+	<Absolute>true</Absolute>
+	<Rot>0</Rot>
+	<NameFileRef href="greta_to_elf2-name-camera.txt"/>
+</DSceneCamera>

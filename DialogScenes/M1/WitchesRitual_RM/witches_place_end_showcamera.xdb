@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSceneCamera>
+	<Pos>
+		<Rod>127.956</Rod>
+		<Pitch>-0.192799</Pitch>
+		<Yaw>4.3056</Yaw>
+		<Roll>0</Roll>
+		<FOV>35</FOV>
+		<ClipDistanceMin>1</ClipDistanceMin>
+		<ClipDistanceMax>500</ClipDistanceMax>
+		<Anchor>
+			<x>129.036</x>
+			<y>17.4014</y>
+			<z>-5.73764e-007</z>
+		</Anchor>
+	</Pos>
+	<Absolute>true</Absolute>
+	<Rot>0</Rot>
+	<NameFileRef href="witches_place_end_show-name-camera.txt"/>
+</DSceneCamera>

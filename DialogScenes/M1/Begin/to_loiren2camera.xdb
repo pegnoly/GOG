@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSceneCamera>
+	<Pos>
+		<Rod>53.7305</Rod>
+		<Pitch>-0.2408</Pitch>
+		<Yaw>4.29117</Yaw>
+		<Roll>0</Roll>
+		<FOV>47.5631</FOV>
+		<ClipDistanceMin>1</ClipDistanceMin>
+		<ClipDistanceMax>500</ClipDistanceMax>
+		<Anchor>
+			<x>320.287</x>
+			<y>246.627</y>
+			<z>-4.28402e-007</z>
+		</Anchor>
+	</Pos>
+	<Absolute>true</Absolute>
+	<Rot>0</Rot>
+	<NameFileRef href="to_loiren2-name-camera.txt"/>
+</DSceneCamera>

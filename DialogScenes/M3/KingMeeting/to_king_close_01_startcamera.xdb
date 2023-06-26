@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSceneCamera>
+	<Pos>
+		<Rod>44.8768</Rod>
+		<Pitch>-0.0920035</Pitch>
+		<Yaw>4.74719</Yaw>
+		<Roll>0</Roll>
+		<FOV>35</FOV>
+		<ClipDistanceMin>1</ClipDistanceMin>
+		<ClipDistanceMax>500</ClipDistanceMax>
+		<Anchor>
+			<x>218.251</x>
+			<y>169.33</y>
+			<z>-2.98375e-007</z>
+		</Anchor>
+	</Pos>
+	<Absolute>true</Absolute>
+	<Rot>0</Rot>
+	<NameFileRef href="to_king_close_01_start-name-camera.txt"/>
+</DSceneCamera>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSceneCamera>
+	<Pos>
+		<Rod>40.0181</Rod>
+		<Pitch>-0.101603</Pitch>
+		<Yaw>0.0048</Yaw>
+		<Roll>0</Roll>
+		<FOV>35</FOV>
+		<ClipDistanceMin>1</ClipDistanceMin>
+		<ClipDistanceMax>500</ClipDistanceMax>
+		<Anchor>
+			<x>158.312</x>
+			<y>206.459</y>
+			<z>-1.2418e-007</z>
+		</Anchor>
+	</Pos>
+	<Absolute>true</Absolute>
+	<Rot>0</Rot>
+	<NameFileRef href="dwarves_fly_start-name-camera.txt"/>
+</DSceneCamera>

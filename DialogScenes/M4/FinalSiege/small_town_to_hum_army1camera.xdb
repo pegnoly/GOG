@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSceneCamera>
+	<Pos>
+		<Rod>442.09</Rod>
+		<Pitch>-0.183202</Pitch>
+		<Yaw>1.91039</Yaw>
+		<Roll>0</Roll>
+		<FOV>35</FOV>
+		<ClipDistanceMin>1</ClipDistanceMin>
+		<ClipDistanceMax>500</ClipDistanceMax>
+		<Anchor>
+			<x>-227.654</x>
+			<y>-20.1422</y>
+			<z>-2.16828e-007</z>
+		</Anchor>
+	</Pos>
+	<Absolute>true</Absolute>
+	<Rot>0</Rot>
+	<NameFileRef href="small_town_to_hum_army1-name-camera.txt"/>
+</DSceneCamera>

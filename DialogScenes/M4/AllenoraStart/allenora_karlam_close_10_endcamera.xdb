@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSceneCamera>
+	<Pos>
+		<Rod>27.6221</Rod>
+		<Pitch>-0.144792</Pitch>
+		<Yaw>0.753684</Yaw>
+		<Roll>0</Roll>
+		<FOV>35</FOV>
+		<ClipDistanceMin>1</ClipDistanceMin>
+		<ClipDistanceMax>500</ClipDistanceMax>
+		<Anchor>
+			<x>45.5003</x>
+			<y>155.382</y>
+			<z>-7.03335e-006</z>
+		</Anchor>
+	</Pos>
+	<Absolute>true</Absolute>
+	<Rot>0</Rot>
+	<NameFileRef href="allenora_karlam_close_10_end-name-camera.txt"/>
+</DSceneCamera>

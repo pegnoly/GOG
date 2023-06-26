@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSceneCamera>
+	<Pos>
+		<Rod>49.3614</Rod>
+		<Pitch>-0.0535981</Pitch>
+		<Yaw>0.44161</Yaw>
+		<Roll>0</Roll>
+		<FOV>35</FOV>
+		<ClipDistanceMin>1</ClipDistanceMin>
+		<ClipDistanceMax>500</ClipDistanceMax>
+		<Anchor>
+			<x>165.028</x>
+			<y>212.502</y>
+			<z>1</z>
+		</Anchor>
+	</Pos>
+	<Absolute>true</Absolute>
+	<Rot>0</Rot>
+	<NameFileRef href="malgumol_close_to_keepers_start-name-camera.txt"/>
+</DSceneCamera>

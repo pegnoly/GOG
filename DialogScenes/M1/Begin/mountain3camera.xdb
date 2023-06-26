@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSceneCamera>
+	<Pos>
+		<Rod>515.495</Rod>
+		<Pitch>-0.293601</Pitch>
+		<Yaw>3.15839</Yaw>
+		<Roll>0</Roll>
+		<FOV>35</FOV>
+		<ClipDistanceMin>1</ClipDistanceMin>
+		<ClipDistanceMax>500</ClipDistanceMax>
+		<Anchor>
+			<x>36.555</x>
+			<y>-224.809</y>
+			<z>7.14377e-008</z>
+		</Anchor>
+	</Pos>
+	<Absolute>true</Absolute>
+	<Rot>0</Rot>
+	<NameFileRef href="mountain3-name-camera.txt"/>
+</DSceneCamera>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSceneCamera>
+	<Pos>
+		<Rod>30.0494</Rod>
+		<Pitch>-0.159202</Pitch>
+		<Yaw>3.59037</Yaw>
+		<Roll>0</Roll>
+		<FOV>35.1413</FOV>
+		<ClipDistanceMin>1</ClipDistanceMin>
+		<ClipDistanceMax>500</ClipDistanceMax>
+		<Anchor>
+			<x>194.135</x>
+			<y>151.474</y>
+			<z>9.5448e-007</z>
+		</Anchor>
+	</Pos>
+	<Absolute>true</Absolute>
+	<Rot>0</Rot>
+	<NameFileRef href="king_to_karlam_end-name-camera.txt"/>
+</DSceneCamera>

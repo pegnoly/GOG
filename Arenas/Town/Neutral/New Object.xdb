@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ArenaDesc>
+	<ExpScene href="/H5A1/Models/DwarvenTown/Fortress.mb"/>
+	<ExpSrcClipFolder href=""/>
+	<uid>55B3B1FC-CD97-45A6-AB46-7EF613089F52</uid>
+	<objects>
+		<Item href="Ground.(ArenaEnvObject).xdb#xpointer(/ArenaEnvObject)"/>
+		<Item href="Fort.(ArenaModObject).xdb#xpointer(/ArenaModObject)"/>
+		<Item href="Magic_Guild.(ArenaModObject).xdb#xpointer(/ArenaModObject)"/>
+		<Item href="MarketPlace.(ArenaModObject).xdb#xpointer(/ArenaModObject)"/>
+		<Item href="Tavern.(ArenaModObject).xdb#xpointer(/ArenaModObject)"/>
+		<Item href="BlackSmitth.(ArenaModObject).xdb#xpointer(/ArenaModObject)"/>
+		<Item href="Shipyard.(ArenaModObject).xdb#xpointer(/ArenaModObject)"/>
+		<Item href="Townhall.(ArenaModObject).xdb#xpointer(/ArenaModObject)"/>
+		<Item href="Dwelling_1.(ArenaModObject).xdb#xpointer(/ArenaModObject)"/>
+		<Item href="Dwelling_7.(ArenaModObject).xdb#xpointer(/ArenaModObject)"/>
+		<Item href="Dwelling_6.(ArenaModObject).xdb#xpointer(/ArenaModObject)"/>
+		<Item href="Dwelling_5.(ArenaModObject).xdb#xpointer(/ArenaModObject)"/>
+		<Item href="Dwelling_3.(ArenaModObject).xdb#xpointer(/ArenaModObject)"/>
+		<Item href="Dwelling_2.(ArenaModObject).xdb#xpointer(/ArenaModObject)"/>
+		<Item href="Special_1.(ArenaModObject).xdb#xpointer(/ArenaModObject)"/>
+		<Item href="Dwelling_4.(ArenaModObject).xdb#xpointer(/ArenaModObject)"/>
+		<Item href="Special_2.(ArenaModObject).xdb#xpointer(/ArenaModObject)"/>
+		<Item href="Special_3.(ArenaModObject).xdb#xpointer(/ArenaModObject)"/>
+		<Item href="Special_4.(ArenaModObject).xdb#xpointer(/ArenaModObject)"/>
+		<Item href="Special_5.(ArenaModObject).xdb#xpointer(/ArenaModObject)"/>
+		<Item href="Grail.(ArenaModObject).xdb#xpointer(/ArenaModObject)"/>
+		<Item href="Stones.(ArenaEnvObject).xdb#xpointer(/ArenaEnvObject)"/>
+		<Item href="river_noLM.(ArenaEnvObject).xdb#xpointer(/ArenaEnvObject)"/>
+		<Item href="Snowstone_O.(ArenaEnvObject).xdb#xpointer(/ArenaEnvObject)"/>
+		<Item href="riverpod_noLM.(ArenaEnvObject).xdb#xpointer(/ArenaEnvObject)"/>
+		<Item href="BlackSmith_Locator.(ArenaLocObject).xdb#xpointer(/ArenaLocObject)"/>
+		<Item href="Dwelling1_Locator.(ArenaLocObject).xdb#xpointer(/ArenaLocObject)"/>
+		<Item href="Dwelling2_Locator.(ArenaLocObject).xdb#xpointer(/ArenaLocObject)"/>
+		<Item href="Dwelling3_Locator.(ArenaLocObject).xdb#xpointer(/ArenaLocObject)"/>
+		<Item href="Dwelling4_Locator.(ArenaLocObject).xdb#xpointer(/ArenaLocObject)"/>
+		<Item href="Dwelling5_Locator.(ArenaLocObject).xdb#xpointer(/ArenaLocObject)"/>
+		<Item href="Dwelling6_Locator.(ArenaLocObject).xdb#xpointer(/ArenaLocObject)"/>
+		<Item href="Dwelling7_Locator.(ArenaLocObject).xdb#xpointer(/ArenaLocObject)"/>
+		<Item href="Fort_Locator.(ArenaLocObject).xdb#xpointer(/ArenaLocObject)"/>
+		<Item href="Grail_Locator.(ArenaLocObject).xdb#xpointer(/ArenaLocObject)"/>
+		<Item href="Magic_Guild_Locator.(ArenaLocObject).xdb#xpointer(/ArenaLocObject)"/>
+		<Item href="MarketPlace_Locator.(ArenaLocObject).xdb#xpointer(/ArenaLocObject)"/>
+		<Item href="ShipYard_Locator.(ArenaLocObject).xdb#xpointer(/ArenaLocObject)"/>
+		<Item href="Special1_Locator.(ArenaLocObject).xdb#xpointer(/ArenaLocObject)"/>
+		<Item href="Special2_Locator.(ArenaLocObject).xdb#xpointer(/ArenaLocObject)"/>
+		<Item href="Special3_Locator.(ArenaLocObject).xdb#xpointer(/ArenaLocObject)"/>
+		<Item href="Special4_Locator.(ArenaLocObject).xdb#xpointer(/ArenaLocObject)"/>
+		<Item href="Special5_Locator.(ArenaLocObject).xdb#xpointer(/ArenaLocObject)"/>
+		<Item href="Tavern_Locator.(ArenaLocObject).xdb#xpointer(/ArenaLocObject)"/>
+		<Item href="TownHall_Locator.(ArenaLocObject).xdb#xpointer(/ArenaLocObject)"/>
+		<Item href="Lava_Locator.(ArenaLocObject).xdb#xpointer(/ArenaLocObject)"/>
+		<Item href="river2.(ArenaEnvObject).xdb#xpointer(/ArenaEnvObject)"/>
+	</objects>
+	<lights/>
+	<effects>
+		<Item>
+			<Effect href="/Effects/_(Effect)/Towns/Fortrest/Lava/1LavaFX.(Effect).xdb#xpointer(/Effect)"/>
+			<Locator>Lava_Locator</Locator>
+		</Item>
+	</effects>
+	<sounds/>
+	<initialCamPos>
+		<Name/>
+		<Pos>
+			<x>334</x>
+			<y>282</y>
+			<z>100</z>
+		</Pos>
+		<Rot>
+			<x>-65</x>
+			<y>66</y>
+			<z>0</z>
+		</Rot>
+		<Rod>90</Rod>
+		<FOV>54.4322</FOV>
+		<ClipDistanceMin>0.2</ClipDistanceMin>
+		<ClipDistanceMax>1000</ClipDistanceMax>
+	</initialCamPos>
+	<ObstaclesGroup/>
+	<AmbientSound/>
+	<Music/>
+	<Wind/>
+	<CamerasSet/>
+	<AmbientLights>
+		<Item href="sanctuary_light.xdb#xpointer(/AmbientLight)"/>
+	</AmbientLights>
+	<cameraFlyupRole>
+		<Model href="/_(Model)/Cutscenes/CameraUpAim.(Model).xdb#xpointer(/Model)"/>
+		<AnimSet href="/_(AnimSet)/AdventureFlyby/TownFlyups/FortressFlyup.(AnimSet).xdb#xpointer(/AnimSet)"/>
+		<Player>PLAYER_NONE</Player>
+	</cameraFlyupRole>
+	<staticCameras>
+		<Item href="Townhall_cam.(Camera).xdb#xpointer(/Camera)"/>
+		<Item href="Fort_cam.(Camera).xdb#xpointer(/Camera)"/>
+		<Item href="Magic_Guild_cam.(Camera).xdb#xpointer(/Camera)"/>
+		<Item href="MarketPlace_cam.(Camera).xdb#xpointer(/Camera)"/>
+		<Item href="BlackSmitth_cam.(Camera).xdb#xpointer(/Camera)"/>
+		<Item href="Shipyard_cam.(Camera).xdb#xpointer(/Camera)"/>
+		<Item href="Tavern_cam.(Camera).xdb#xpointer(/Camera)"/>
+		<Item href="Dwelling_1_cam.(Camera).xdb#xpointer(/Camera)"/>
+		<Item href="Dwelling_2_cam.(Camera).xdb#xpointer(/Camera)"/>
+		<Item href="Dwelling_3_cam.(Camera).xdb#xpointer(/Camera)"/>
+		<Item href="Dwelling_4_cam.(Camera).xdb#xpointer(/Camera)"/>
+		<Item href="Dwelling_5_cam.(Camera).xdb#xpointer(/Camera)"/>
+		<Item href="Dwelling_6_cam.(Camera).xdb#xpointer(/Camera)"/>
+		<Item href="Dwelling_7_cam.(Camera).xdb#xpointer(/Camera)"/>
+		<Item href="Special_1_cam.(Camera).xdb#xpointer(/Camera)"/>
+		<Item href="Special_2_cam.(Camera).xdb#xpointer(/Camera)"/>
+		<Item href="Special_3_cam.(Camera).xdb#xpointer(/Camera)"/>
+		<Item href="Special_4_cam.(Camera).xdb#xpointer(/Camera)"/>
+		<Item href="Special_5_cam.(Camera).xdb#xpointer(/Camera)"/>
+		<Item href="Grail_cam.(Camera).xdb#xpointer(/Camera)"/>
+	</staticCameras>
+	<CameraLimits href="CL_of_Fortress.xdb#xpointer(/CameraLimits)"/>
+	<CameraLimitsSet>
+		<Item href="CL_of_Fortress1.xdb#xpointer(/CameraLimits)"/>
+		<Item href="CL_of_Fortress2.xdb#xpointer(/CameraLimits)"/>
+	</CameraLimitsSet>
+	<WidenPictureIfPossible>false</WidenPictureIfPossible>
+</ArenaDesc>

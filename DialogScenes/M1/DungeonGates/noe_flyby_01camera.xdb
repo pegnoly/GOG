@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSceneCamera>
+	<Pos>
+		<Rod>37.8361</Rod>
+		<Pitch>-0.317592</Pitch>
+		<Yaw>1.54545</Yaw>
+		<Roll>0</Roll>
+		<FOV>63.249</FOV>
+		<ClipDistanceMin>1</ClipDistanceMin>
+		<ClipDistanceMax>500</ClipDistanceMax>
+		<Anchor>
+			<x>34.5141</x>
+			<y>71.6089</y>
+			<z>10.5003</z>
+		</Anchor>
+	</Pos>
+	<Absolute>true</Absolute>
+	<Rot>0</Rot>
+	<NameFileRef href="noe_flyby_01-name-camera.txt"/>
+</DSceneCamera>

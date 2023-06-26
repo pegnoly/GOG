@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Geometry>
+	<SrcName href="/RunicGenerator.mb"/>
+	<uid>E440091D-2097-445C-8D43-E6CA30AE6188</uid>
+	<RootMesh/>
+	<RootJoint>FDBCBA0_01</RootJoint>
+	<Size>
+		<x>4.68075</x>
+		<y>3.39153</y>
+		<z>18.0734</z>
+	</Size>
+	<Center>
+		<x>-0.0326897</x>
+		<y>0.0606242</y>
+		<z>0.150295</z>
+	</Center>
+	<BestFitPoint>
+		<x>0</x>
+		<y>0</y>
+		<z>0</z>
+	</BestFitPoint>
+	<Dir>
+		<x>0</x>
+		<y>0</y>
+		<z>0</z>
+		<w>0</w>
+	</Dir>
+	<AIGeometry/>
+	<NumMeshes>1</NumMeshes>
+	<MaterialQuantities>
+		<Item>1</Item>
+	</MaterialQuantities>
+	<MeshNames>
+		<Item>FDBCBA0_01Shape</Item>
+	</MeshNames>
+	<MeshAnimated/>
+	<MeshWindAffected/>
+</Geometry>

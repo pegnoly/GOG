@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Geometry>
+	<SrcName href="/blacksmith_haven.mb"/>
+	<uid>85C61648-4E8F-4CB2-93BB-8190BE2ECE41</uid>
+	<RootMesh/>
+	<RootJoint>DA11F65_01Shape</RootJoint>
+	<Size>
+		<x>7.29291</x>
+		<y>3.68549</y>
+		<z>5.27942</z>
+	</Size>
+	<Center>
+		<x>0.384557</x>
+		<y>0.0035553</y>
+		<z>2.67244</z>
+	</Center>
+	<BestFitPoint>
+		<x>0</x>
+		<y>0</y>
+		<z>0</z>
+	</BestFitPoint>
+	<Dir>
+		<x>0</x>
+		<y>0</y>
+		<z>0</z>
+		<w>0</w>
+	</Dir>
+	<AIGeometry/>
+	<NumMeshes>1</NumMeshes>
+	<MaterialQuantities>
+		<Item>1</Item>
+	</MaterialQuantities>
+	<MeshNames>
+		<Item>DA11F65_01Shape</Item>
+	</MeshNames>
+	<MeshAnimated/>
+	<MeshWindAffected/>
+</Geometry>

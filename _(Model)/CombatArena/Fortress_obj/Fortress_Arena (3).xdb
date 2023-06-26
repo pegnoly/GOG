@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Model>
+	<Materials>
+		<Item href="/_(Model)/CombatArena/Necropolis_obj/Invisible.(Material).xdb#xpointer(/Material)"/>
+		<Item href="/_(Model)/CombatArena/Necropolis_obj/Invisible.(Material).xdb#xpointer(/Material)"/>
+		<Item href="/_(Model)/CombatArena/Necropolis_obj/Invisible.(Material).xdb#xpointer(/Material)"/>
+		<Item href="/_(Model)/CombatArena/Necropolis_obj/Invisible.(Material).xdb#xpointer(/Material)"/>
+	</Materials>
+	<Skeleton/>
+	<Geometry href="Fortress_Arena-geom.xdb#xpointer(/Geometry)"/>
+	<Animations/>
+	<WindPower>1</WindPower>
+</Model>

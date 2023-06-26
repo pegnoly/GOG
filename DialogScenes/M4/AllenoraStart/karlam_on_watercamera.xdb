@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSceneCamera>
+	<Pos>
+		<Rod>18.7353</Rod>
+		<Pitch>-0.235919</Pitch>
+		<Yaw>1.21</Yaw>
+		<Roll>0</Roll>
+		<FOV>47.5453</FOV>
+		<ClipDistanceMin>1</ClipDistanceMin>
+		<ClipDistanceMax>500</ClipDistanceMax>
+		<Anchor>
+			<x>47.0935</x>
+			<y>143.278</y>
+			<z>0.0467987</z>
+		</Anchor>
+	</Pos>
+	<Absolute>true</Absolute>
+	<Rot>0</Rot>
+	<NameFileRef href="karlam_on_water-name-camera.txt"/>
+</DSceneCamera>

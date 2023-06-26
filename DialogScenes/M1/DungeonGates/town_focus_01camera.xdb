@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSceneCamera>
+	<Pos>
+		<Rod>68.7857</Rod>
+		<Pitch>-0.941594</Pitch>
+		<Yaw>5.44794</Yaw>
+		<Roll>0</Roll>
+		<FOV>47.5599</FOV>
+		<ClipDistanceMin>1</ClipDistanceMin>
+		<ClipDistanceMax>500</ClipDistanceMax>
+		<Anchor>
+			<x>105.779</x>
+			<y>73.1052</y>
+			<z>10.9998</z>
+		</Anchor>
+	</Pos>
+	<Absolute>true</Absolute>
+	<Rot>0</Rot>
+	<NameFileRef href="town_focus_01-name-camera.txt"/>
+</DSceneCamera>

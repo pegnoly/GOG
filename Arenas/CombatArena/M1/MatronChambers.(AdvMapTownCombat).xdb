@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AdvMapTownCombat>
+	<walls/>
+	<ArenaDesc href="MatronChambers.(ArenaDesc).xdb#xpointer(/ArenaDesc)"/>
+	<ArenaMap href="/Scenes/CombatArenas/M1/MatronChambers.(AdventureFlybyScene).xdb#xpointer(/AdventureFlybyScene)"/>
+	<GroundType>TT_SUBTERRANEAN</GroundType>
+</AdvMapTownCombat>

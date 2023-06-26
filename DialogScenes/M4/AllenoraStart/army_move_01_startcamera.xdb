@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSceneCamera>
+	<Pos>
+		<Rod>61.0763</Rod>
+		<Pitch>-1.16238</Pitch>
+		<Yaw>1.2239</Yaw>
+		<Roll>0</Roll>
+		<FOV>47.5874</FOV>
+		<ClipDistanceMin>1</ClipDistanceMin>
+		<ClipDistanceMax>500</ClipDistanceMax>
+		<Anchor>
+			<x>20.1356</x>
+			<y>100.002</y>
+			<z>1.49997</z>
+		</Anchor>
+	</Pos>
+	<Absolute>true</Absolute>
+	<Rot>0</Rot>
+	<NameFileRef href="army_move_01_start-name-camera.txt"/>
+</DSceneCamera>

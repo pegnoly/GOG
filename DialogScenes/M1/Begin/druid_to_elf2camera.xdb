@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSceneCamera>
+	<Pos>
+		<Rod>74.0472</Rod>
+		<Pitch>-0.183203</Pitch>
+		<Yaw>5.01599</Yaw>
+		<Roll>0</Roll>
+		<FOV>35</FOV>
+		<ClipDistanceMin>1</ClipDistanceMin>
+		<ClipDistanceMax>500</ClipDistanceMax>
+		<Anchor>
+			<x>325.725</x>
+			<y>274.748</y>
+			<z>-9.3776e-008</z>
+		</Anchor>
+	</Pos>
+	<Absolute>true</Absolute>
+	<Rot>0</Rot>
+	<NameFileRef href="druid_to_elf2-name-camera.txt"/>
+</DSceneCamera>

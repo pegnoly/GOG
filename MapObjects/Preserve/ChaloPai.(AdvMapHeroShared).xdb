@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AdvMapHeroShared>
+	<Model href="/Characters/Creatures/Orcs/T2_Orc/T2c_CentaurMaradeur.xdb#xpointer(/Model)"/>
+	<AnimSet href="/Characters/Creatures/Orcs/T2_Orc/T2c_CentaurMaradeur-arena.xdb#xpointer(/AnimSet)"/>
+	<blockedTiles/>
+	<holeTiles/>
+	<activeTiles/>
+	<passableTiles/>
+	<PossessionMarkerTile>
+		<x>0</x>
+		<y>0</y>
+	</PossessionMarkerTile>
+	<Effect/>
+	<EffectWhenOwned/>
+	<messagesFileRef>
+		<Item href=""/>
+	</messagesFileRef>
+	<WaterBased>false</WaterBased>
+	<ApplyHeroTrace>false</ApplyHeroTrace>
+	<SoundEffect/>
+	<flybyMessageFileRef href=""/>
+	<ObjectTypeFileRef href=""/>
+	<TerrainAligned>false</TerrainAligned>
+	<FlyPassable>true</FlyPassable>
+	<AdventureSoundEffect/>
+	<RazedStatic/>
+	<Icon128/>
+	<InternalName>ChaloPai</InternalName>
+	<Class>HERO_CLASS_RANGERA</Class>
+	<Specialization>HERO_SPEC_CENTAUR_MISTRESS</Specialization>
+	<PrimarySkill>
+		<Mastery>MASTERY_BASIC</Mastery>
+		<SkillID>HERO_SKILL_OFFENCE</SkillID>
+	</PrimarySkill>
+	<SpecializationNameFileRef href=""/>
+	<SpecializationDescFileRef href=""/>
+	<SpecializationIcon/>
+	<FaceTexture/>
+	<FaceTextureSmall/>
+	<HeroCharacterArena href="/Characters/Creatures/Orcs/T2_Orc/T2c_CentaurMaradeur.(Character).xdb#xpointer(/Character)"/>
+	<HeroCharacterArenaMelee/>
+	<HeroCharacterAdventure href="/Characters/Creatures/Orcs/T2_Orc/T2c_CentaurMaradeur.(Character).xdb#xpointer(/Character)"/>
+	<HeroIndividualCamera/>
+	<CombatVisual href="/GameMechanics/CreatureVisual/Creatures/Orcs/3rd/CentaurMaradeur.(CreatureVisual).xdb#xpointer(/CreatureVisual)"/>
+	<TownType>TOWN_PRESERVE</TownType>
+	<Editable>
+		<NameFileRef href="/Text/Game/Heroes/Persons/Preserve/ChaloPai/Name.txt"/>
+		<BiographyFileRef href="/Text/Game/Heroes/Persons/Preserve/ChaloPai/Bio.txt"/>
+		<Offence>0</Offence>
+		<Defence>0</Defence>
+		<Spellpower>0</Spellpower>
+		<Knowledge>0</Knowledge>
+		<skills/>
+		<perkIDs/>
+		<spellIDs/>
+		<Ballista>false</Ballista>
+		<FirstAidTent>false</FirstAidTent>
+		<AmmoCart>false</AmmoCart>
+		<FavoriteEnemies/>
+		<TalismanLevel>0</TalismanLevel>
+	</Editable>
+	<ArrowButtonState>0</ArrowButtonState>
+	<Decal/>
+	<Selection/>
+	<Trace/>
+	<RaceTraitIcon/>
+	<RaceTraitDescFileRef href=""/>
+	<ScenarioHero>false</ScenarioHero>
+	<AdventureMusic/>
+	<HideInEditor>false</HideInEditor>
+	<PresetMinimalAttributes>
+		<Offence>2</Offence>
+		<Defence>2</Defence>
+		<Spellpower>2</Spellpower>
+		<Knowledge>2</Knowledge>
+	</PresetMinimalAttributes>
+</AdvMapHeroShared>

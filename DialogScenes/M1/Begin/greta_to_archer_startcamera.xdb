@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSceneCamera>
+	<Pos>
+		<Rod>57.1193</Rod>
+		<Pitch>-0.322402</Pitch>
+		<Yaw>5.65919</Yaw>
+		<Roll>0</Roll>
+		<FOV>35</FOV>
+		<ClipDistanceMin>1</ClipDistanceMin>
+		<ClipDistanceMax>500</ClipDistanceMax>
+		<Anchor>
+			<x>302.578</x>
+			<y>306.757</y>
+			<z>-0.5</z>
+		</Anchor>
+	</Pos>
+	<Absolute>true</Absolute>
+	<Rot>0</Rot>
+	<NameFileRef href="greta_to_archer_start-name-camera.txt"/>
+</DSceneCamera>

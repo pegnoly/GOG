@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Geometry>
+	<SrcName href="/test_gen.mb"/>
+	<uid>81A90A85-D998-4A62-8F5E-7519EDADB76E</uid>
+	<RootMesh/>
+	<RootJoint>g</RootJoint>
+	<Size>
+		<x>0</x>
+		<y>0</y>
+		<z>0</z>
+	</Size>
+	<Center>
+		<x>0</x>
+		<y>0</y>
+		<z>0</z>
+	</Center>
+	<BestFitPoint>
+		<x>0</x>
+		<y>0</y>
+		<z>0</z>
+	</BestFitPoint>
+	<Dir>
+		<x>0</x>
+		<y>0</y>
+		<z>0</z>
+		<w>0</w>
+	</Dir>
+	<AIGeometry/>
+	<NumMeshes>0</NumMeshes>
+	<MaterialQuantities/>
+	<MeshNames/>
+	<MeshAnimated/>
+	<MeshWindAffected/>
+</Geometry>

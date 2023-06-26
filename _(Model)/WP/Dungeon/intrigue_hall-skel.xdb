@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Skeleton>
+	<SrcName href="/intrigue_hall.mb"/>
+	<RootJoint>polySurface1</RootJoint>
+	<MSRFormat>true</MSRFormat>
+	<Animations/>
+	<uid>5C95B000-E5ED-434A-A332-3C878E6B7FD6</uid>
+</Skeleton>

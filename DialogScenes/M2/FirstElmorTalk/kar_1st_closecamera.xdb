@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSceneCamera>
+	<Pos>
+		<Rod>67.9388</Rod>
+		<Pitch>-0.0488027</Pitch>
+		<Yaw>1.65119</Yaw>
+		<Roll>0</Roll>
+		<FOV>35</FOV>
+		<ClipDistanceMin>1</ClipDistanceMin>
+		<ClipDistanceMax>500</ClipDistanceMax>
+		<Anchor>
+			<x>28.4012</x>
+			<y>88.7962</y>
+			<z>2</z>
+		</Anchor>
+	</Pos>
+	<Absolute>true</Absolute>
+	<Rot>0</Rot>
+	<NameFileRef href="kar_1st_close-name-camera.txt"/>
+</DSceneCamera>

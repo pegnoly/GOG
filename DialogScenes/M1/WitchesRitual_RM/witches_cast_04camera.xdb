@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSceneCamera>
+	<Pos>
+		<Rod>99.0393</Rod>
+		<Pitch>-0.303203</Pitch>
+		<Yaw>5.08321</Yaw>
+		<Roll>0</Roll>
+		<FOV>35</FOV>
+		<ClipDistanceMin>1</ClipDistanceMin>
+		<ClipDistanceMax>500</ClipDistanceMax>
+		<Anchor>
+			<x>104.003</x>
+			<y>68.2325</y>
+			<z>-7.92862e-008</z>
+		</Anchor>
+	</Pos>
+	<Absolute>true</Absolute>
+	<Rot>0</Rot>
+	<NameFileRef href="witches_cast_04-name-camera.txt"/>
+</DSceneCamera>

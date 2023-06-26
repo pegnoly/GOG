@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ModelInstance>
+	<Model href="rockDragonT_O.xdb#xpointer(/Model)"/>
+	<SkelAnim/>
+	<Position>
+		<x>-3000</x>
+		<y>-3000</y>
+		<z>-200</z>
+	</Position>
+	<Rotation>
+		<x>0</x>
+		<y>0</y>
+		<z>0</z>
+		<w>1</w>
+	</Rotation>
+	<Scale>10</Scale>
+	<Offset>0</Offset>
+	<CycleLength>0</CycleLength>
+	<CycleCount>0</CycleCount>
+	<GlueToBone>0</GlueToBone>
+	<GlueToNamedBone/>
+</ModelInstance>

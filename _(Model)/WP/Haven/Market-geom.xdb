@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Geometry>
+	<SrcName href="/market_haven.mb"/>
+	<uid>8110EB43-82B7-4337-95E7-79871595E373</uid>
+	<RootMesh/>
+	<RootJoint>polySurfaceShape1</RootJoint>
+	<Size>
+		<x>7.814</x>
+		<y>11.054</y>
+		<z>3.17514</z>
+	</Size>
+	<Center>
+		<x>0.593969</x>
+		<y>0.69141</y>
+		<z>1.35339</z>
+	</Center>
+	<BestFitPoint>
+		<x>0</x>
+		<y>0</y>
+		<z>0</z>
+	</BestFitPoint>
+	<Dir>
+		<x>0</x>
+		<y>0</y>
+		<z>0</z>
+		<w>0</w>
+	</Dir>
+	<AIGeometry/>
+	<NumMeshes>0</NumMeshes>
+	<MaterialQuantities/>
+	<MeshNames/>
+	<MeshAnimated/>
+	<MeshWindAffected/>
+</Geometry>

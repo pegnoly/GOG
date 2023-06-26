@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSceneCamera>
+	<Pos>
+		<Rod>54.7598</Rod>
+		<Pitch>-0.226404</Pitch>
+		<Yaw>3.1776</Yaw>
+		<Roll>0</Roll>
+		<FOV>35</FOV>
+		<ClipDistanceMin>1</ClipDistanceMin>
+		<ClipDistanceMax>500</ClipDistanceMax>
+		<Anchor>
+			<x>282.625</x>
+			<y>221.922</y>
+			<z>1.71357e-009</z>
+		</Anchor>
+	</Pos>
+	<Absolute>true</Absolute>
+	<Rot>0</Rot>
+	<NameFileRef href="moriton_around_to_druid-name-camera.txt"/>
+</DSceneCamera>

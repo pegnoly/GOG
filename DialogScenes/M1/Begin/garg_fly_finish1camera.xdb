@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSceneCamera>
+	<Pos>
+		<Rod>91.9861</Rod>
+		<Pitch>-0.221601</Pitch>
+		<Yaw>1.5984</Yaw>
+		<Roll>0</Roll>
+		<FOV>35</FOV>
+		<ClipDistanceMin>1</ClipDistanceMin>
+		<ClipDistanceMax>500</ClipDistanceMax>
+		<Anchor>
+			<x>202.889</x>
+			<y>277.924</y>
+			<z>-1.03463e-007</z>
+		</Anchor>
+	</Pos>
+	<Absolute>true</Absolute>
+	<Rot>0</Rot>
+	<NameFileRef href="garg_fly_finish1-name-camera.txt"/>
+</DSceneCamera>

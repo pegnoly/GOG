@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSceneCamera>
+	<Pos>
+		<Rod>90.4724</Rod>
+		<Pitch>-0.21679</Pitch>
+		<Yaw>6.18754</Yaw>
+		<Roll>0</Roll>
+		<FOV>47.5729</FOV>
+		<ClipDistanceMin>1</ClipDistanceMin>
+		<ClipDistanceMax>500</ClipDistanceMax>
+		<Anchor>
+			<x>100.148</x>
+			<y>99.4003</y>
+			<z>1.99998</z>
+		</Anchor>
+	</Pos>
+	<Absolute>true</Absolute>
+	<Rot>0</Rot>
+	<NameFileRef href="armies_all_02-name-camera.txt"/>
+</DSceneCamera>

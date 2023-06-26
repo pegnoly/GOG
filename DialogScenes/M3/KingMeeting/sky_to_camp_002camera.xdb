@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSceneCamera>
+	<Pos>
+		<Rod>289.361</Rod>
+		<Pitch>-0.164001</Pitch>
+		<Yaw>4.69439</Yaw>
+		<Roll>0</Roll>
+		<FOV>35</FOV>
+		<ClipDistanceMin>1</ClipDistanceMin>
+		<ClipDistanceMax>500</ClipDistanceMax>
+		<Anchor>
+			<x>438.779</x>
+			<y>49.1011</y>
+			<z>-18.5</z>
+		</Anchor>
+	</Pos>
+	<Absolute>true</Absolute>
+	<Rot>0</Rot>
+	<NameFileRef href="sky_to_camp_002-name-camera.txt"/>
+</DSceneCamera>

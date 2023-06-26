@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSceneCamera>
+	<Pos>
+		<Rod>64.4338</Rod>
+		<Pitch>-0.120804</Pitch>
+		<Yaw>3.13919</Yaw>
+		<Roll>0</Roll>
+		<FOV>35</FOV>
+		<ClipDistanceMin>1</ClipDistanceMin>
+		<ClipDistanceMax>500</ClipDistanceMax>
+		<Anchor>
+			<x>100.674</x>
+			<y>36.9983</y>
+			<z>-1.19209e-007</z>
+		</Anchor>
+	</Pos>
+	<Absolute>true</Absolute>
+	<Rot>0</Rot>
+	<NameFileRef href="elm_move_02-name-camera.txt"/>
+</DSceneCamera>

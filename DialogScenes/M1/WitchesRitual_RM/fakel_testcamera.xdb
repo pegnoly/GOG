@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSceneCamera>
+	<Pos>
+		<Rod>84.0232</Rod>
+		<Pitch>-1.5032</Pitch>
+		<Yaw>2.37487e-008</Yaw>
+		<Roll>0</Roll>
+		<FOV>35</FOV>
+		<ClipDistanceMin>1</ClipDistanceMin>
+		<ClipDistanceMax>500</ClipDistanceMax>
+		<Anchor>
+			<x>64.8644</x>
+			<y>75.7383</y>
+			<z>-2.34758e-010</z>
+		</Anchor>
+	</Pos>
+	<Absolute>true</Absolute>
+	<Rot>0</Rot>
+	<NameFileRef href="fakel_test-name-camera.txt"/>
+</DSceneCamera>

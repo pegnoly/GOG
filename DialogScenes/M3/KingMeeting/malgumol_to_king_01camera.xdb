@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSceneCamera>
+	<Pos>
+		<Rod>20.1503</Rod>
+		<Pitch>-0.197602</Pitch>
+		<Yaw>5.27521</Yaw>
+		<Roll>0</Roll>
+		<FOV>35</FOV>
+		<ClipDistanceMin>1</ClipDistanceMin>
+		<ClipDistanceMax>500</ClipDistanceMax>
+		<Anchor>
+			<x>197.356</x>
+			<y>173.155</y>
+			<z>0.499996</z>
+		</Anchor>
+	</Pos>
+	<Absolute>true</Absolute>
+	<Rot>0</Rot>
+	<NameFileRef href="malgumol_to_king_01-name-camera.txt"/>
+</DSceneCamera>

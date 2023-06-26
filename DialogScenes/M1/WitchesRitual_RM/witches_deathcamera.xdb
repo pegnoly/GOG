@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSceneCamera>
+	<Pos>
+		<Rod>95.7497</Rod>
+		<Pitch>-0.288798</Pitch>
+		<Yaw>2.15998</Yaw>
+		<Roll>0</Roll>
+		<FOV>35</FOV>
+		<ClipDistanceMin>1</ClipDistanceMin>
+		<ClipDistanceMax>500</ClipDistanceMax>
+		<Anchor>
+			<x>32.6075</x>
+			<y>51.6953</y>
+			<z>-3.35345e-007</z>
+		</Anchor>
+	</Pos>
+	<Absolute>true</Absolute>
+	<Rot>0</Rot>
+	<NameFileRef href="witches_death-name-camera.txt"/>
+</DSceneCamera>

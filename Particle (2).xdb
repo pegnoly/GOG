@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Particle ObjectRecordID="1000811">
+	<SrcName href="/Effects/Arenas/HavenSiedge_General/HavenSiedge_Fog.mb"/>
+	<ExportPrefix>Fog</ExportPrefix>
+	<WrapSize>
+		<x>0</x>
+		<y>0</y>
+	</WrapSize>
+	<Bound>dce5e64110949e3f00f811bcb05c8242927f3342a02a3042ed718941</Bound>
+	<PerParticleFog>false</PerParticleFog>
+	<uid>9D8D0FEE-3D10-4944-80D8-A13C7C00AFDF</uid>
+</Particle>
