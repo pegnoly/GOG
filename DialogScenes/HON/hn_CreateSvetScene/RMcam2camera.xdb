@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSceneCamera>
+	<Pos>
+		<Rod>38.1243</Rod>
+		<Pitch>-0.31279</Pitch>
+		<Yaw>4.66083</Yaw>
+		<Roll>0</Roll>
+		<FOV>40.2681</FOV>
+		<ClipDistanceMin>1</ClipDistanceMin>
+		<ClipDistanceMax>500</ClipDistanceMax>
+		<Anchor>
+			<x>73.7897</x>
+			<y>115.373</y>
+			<z>36</z>
+		</Anchor>
+	</Pos>
+	<Absolute>true</Absolute>
+	<Rot>0</Rot>
+	<NameFileRef href="RMcam2-name-camera.txt"/>
+</DSceneCamera>

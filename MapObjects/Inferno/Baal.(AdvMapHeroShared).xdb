@@ -24,7 +24,7 @@
 	<FlyPassable>true</FlyPassable>
 	<AdventureSoundEffect/>
 	<RazedStatic/>
-	<Icon128 href="/Textures/Icons/Heroes/Inferno/Baal_128.(Texture).xdb#xpointer(/Texture)"/>
+	<Icon128 href="baal_128.(Texture).xdb#xpointer(/Texture)"/>
 	<InternalName>Baal</InternalName>
 	<Class>HERO_CLASS_DEMON_LORD</Class>
 	<Specialization>HERO_SPEC_IMPREGNABLE</Specialization>
@@ -34,14 +34,14 @@
 	</PrimarySkill>
 	<SpecializationNameFileRef href="baal_spec_name.txt"/>
 	<SpecializationDescFileRef href="baal_spec_desc.txt"/>
-	<SpecializationIcon href="/Textures/Icons/Heroes/Inferno/Baal_spec.(Texture).xdb#xpointer(/Texture)"/>
-	<FaceTexture href="/Textures/Icons/Heroes/Inferno/Baal_128.(Texture).xdb#xpointer(/Texture)"/>
-	<FaceTextureSmall href="/Textures/Icons/Heroes/Inferno/Baal_64.(Texture).xdb#xpointer(/Texture)"/>
-	<HeroCharacterArena href="/Characters/Creatures/Chaos/Sower/Sower.(Character).xdb#xpointer(/Character)"/>
-	<HeroCharacterArenaMelee href="/Characters/Creatures/Chaos/Sower/Sower.(Character).xdb#xpointer(/Character)"/>
-	<HeroCharacterAdventure href="/Characters/Creatures/Chaos/Sower/Sower.(Character).xdb#xpointer(/Character)"/>
+	<SpecializationIcon href="baal_spec.(Texture).xdb#xpointer(/Texture)"/>
+	<FaceTexture href="baal_128.(Texture).xdb#xpointer(/Texture)"/>
+	<FaceTextureSmall href="baal_64.(Texture).xdb#xpointer(/Texture)"/>
+	<HeroCharacterArena href="/Characters/Creatures/Inferno/Balor.(Character).xdb#xpointer(/Character)"/>
+	<HeroCharacterArenaMelee href="/Characters/Creatures/Inferno/Balor.(Character) (2).xdb#xpointer(/Character)"/>
+	<HeroCharacterAdventure href="/Characters/Creatures/Inferno/Balor.(Character).xdb#xpointer(/Character)"/>
 	<HeroIndividualCamera/>
-	<CombatVisual href="/GameMechanics/CreatureVisual/Creatures/Chaos/Sower/Sower.xdb#xpointer(/CreatureVisual)"/>
+	<CombatVisual href="/GameMechanics/CreatureVisual/Creatures/Inferno/Balor.xdb#xpointer(/CreatureVisual)"/>
 	<TownType>TOWN_INFERNO</TownType>
 	<Editable>
 		<NameFileRef href="baal_name.txt"/>

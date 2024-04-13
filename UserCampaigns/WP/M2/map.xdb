@@ -3167,544 +3167,6 @@
 				<TownType>TOWN_NO_TYPE</TownType>
 			</AdvMapGarrison>
 		</Item>
-		<Item href="#n:inline(AdvMapTown)" id="item_F525E687-8DA5-4A7D-B2F3-C4F744CF1E0B">
-			<AdvMapTown>
-				<Pos>
-					<x>117</x>
-					<y>109</y>
-					<z>0</z>
-				</Pos>
-				<Rot>4.71239</Rot>
-				<Floor>0</Floor>
-				<Name>gologurs</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Orc_Stronghold.(AdvMapTownShared).xdb#xpointer(/AdvMapTownShared)"/>
-				<PlayerID>PLAYER_2</PlayerID>
-				<CaptureTrigger>
-					<Action>
-						<FunctionName/>
-					</Action>
-				</CaptureTrigger>
-				<HeroDeployTrigger>
-					<Action>
-						<FunctionName/>
-					</Action>
-				</HeroDeployTrigger>
-				<ShipTile>
-					<x>0</x>
-					<y>0</y>
-				</ShipTile>
-				<Specialization href="/GameMechanics/TownSpecialization/Stronghold/Random/Taurot.(TownSpecialization).xdb#xpointer(/TownSpecialization)"/>
-				<buildings>
-					<Item>
-						<Type>TB_TOWN_HALL</Type>
-						<InitialUpgrade>BLD_UPG_1</InitialUpgrade>
-						<MaxUpgrade>BLD_UPG_1</MaxUpgrade>
-					</Item>
-					<Item>
-						<Type>TB_FORT</Type>
-						<InitialUpgrade>BLD_UPG_NONE</InitialUpgrade>
-						<MaxUpgrade>BLD_UPG_NONE</MaxUpgrade>
-					</Item>
-					<Item>
-						<Type>TB_MARKETPLACE</Type>
-						<InitialUpgrade>BLD_UPG_NONE</InitialUpgrade>
-						<MaxUpgrade>BLD_UPG_NONE</MaxUpgrade>
-					</Item>
-					<Item>
-						<Type>TB_SHIPYARD</Type>
-						<InitialUpgrade>BLD_UPG_NONE</InitialUpgrade>
-						<MaxUpgrade>BLD_UPG_NONE</MaxUpgrade>
-					</Item>
-					<Item>
-						<Type>TB_TAVERN</Type>
-						<InitialUpgrade>BLD_UPG_NONE</InitialUpgrade>
-						<MaxUpgrade>BLD_UPG_NONE</MaxUpgrade>
-					</Item>
-					<Item>
-						<Type>TB_BLACKSMITH</Type>
-						<InitialUpgrade>BLD_UPG_NONE</InitialUpgrade>
-						<MaxUpgrade>BLD_UPG_NONE</MaxUpgrade>
-					</Item>
-					<Item>
-						<Type>TB_MAGIC_GUILD</Type>
-						<InitialUpgrade>BLD_UPG_NONE</InitialUpgrade>
-						<MaxUpgrade>BLD_UPG_NONE</MaxUpgrade>
-					</Item>
-					<Item>
-						<Type>TB_DWELLING_1</Type>
-						<InitialUpgrade>BLD_UPG_NONE</InitialUpgrade>
-						<MaxUpgrade>BLD_UPG_NONE</MaxUpgrade>
-					</Item>
-					<Item>
-						<Type>TB_DWELLING_2</Type>
-						<InitialUpgrade>BLD_UPG_NONE</InitialUpgrade>
-						<MaxUpgrade>BLD_UPG_NONE</MaxUpgrade>
-					</Item>
-					<Item>
-						<Type>TB_DWELLING_3</Type>
-						<InitialUpgrade>BLD_UPG_NONE</InitialUpgrade>
-						<MaxUpgrade>BLD_UPG_NONE</MaxUpgrade>
-					</Item>
-					<Item>
-						<Type>TB_DWELLING_4</Type>
-						<InitialUpgrade>BLD_UPG_NONE</InitialUpgrade>
-						<MaxUpgrade>BLD_UPG_NONE</MaxUpgrade>
-					</Item>
-					<Item>
-						<Type>TB_DWELLING_5</Type>
-						<InitialUpgrade>BLD_UPG_NONE</InitialUpgrade>
-						<MaxUpgrade>BLD_UPG_NONE</MaxUpgrade>
-					</Item>
-					<Item>
-						<Type>TB_DWELLING_6</Type>
-						<InitialUpgrade>BLD_UPG_NONE</InitialUpgrade>
-						<MaxUpgrade>BLD_UPG_NONE</MaxUpgrade>
-					</Item>
-					<Item>
-						<Type>TB_DWELLING_7</Type>
-						<InitialUpgrade>BLD_UPG_NONE</InitialUpgrade>
-						<MaxUpgrade>BLD_UPG_NONE</MaxUpgrade>
-					</Item>
-					<Item>
-						<Type>TB_GRAIL</Type>
-						<InitialUpgrade>BLD_UPG_NONE</InitialUpgrade>
-						<MaxUpgrade>BLD_UPG_NONE</MaxUpgrade>
-					</Item>
-					<Item>
-						<Type>TB_WONDER</Type>
-						<InitialUpgrade>BLD_UPG_NONE</InitialUpgrade>
-						<MaxUpgrade>BLD_UPG_5</MaxUpgrade>
-					</Item>
-					<Item>
-						<Type>TB_SPECIAL_0</Type>
-						<InitialUpgrade>BLD_UPG_NONE</InitialUpgrade>
-						<MaxUpgrade>BLD_UPG_5</MaxUpgrade>
-					</Item>
-					<Item>
-						<Type>TB_SPECIAL_1</Type>
-						<InitialUpgrade>BLD_UPG_NONE</InitialUpgrade>
-						<MaxUpgrade>BLD_UPG_NONE</MaxUpgrade>
-					</Item>
-					<Item>
-						<Type>TB_SPECIAL_2</Type>
-						<InitialUpgrade>BLD_UPG_NONE</InitialUpgrade>
-						<MaxUpgrade>BLD_UPG_NONE</MaxUpgrade>
-					</Item>
-					<Item>
-						<Type>TB_SPECIAL_3</Type>
-						<InitialUpgrade>BLD_UPG_NONE</InitialUpgrade>
-						<MaxUpgrade>BLD_UPG_NONE</MaxUpgrade>
-					</Item>
-					<Item>
-						<Type>TB_SPECIAL_4</Type>
-						<InitialUpgrade>BLD_UPG_NONE</InitialUpgrade>
-						<MaxUpgrade>BLD_UPG_NONE</MaxUpgrade>
-					</Item>
-					<Item>
-						<Type>TB_SPECIAL_5</Type>
-						<InitialUpgrade>BLD_UPG_NONE</InitialUpgrade>
-						<MaxUpgrade>BLD_UPG_NONE</MaxUpgrade>
-					</Item>
-				</buildings>
-				<Editable>
-					<NameFileRef href="TownName.3.txt"/>
-					<BiographyFileRef href="TownBiography.3.txt"/>
-				</Editable>
-				<armySlots/>
-				<spellIDs>
-					<Item>SPELL_MAGIC_ARROW</Item>
-					<Item>SPELL_MAGIC_FIST</Item>
-					<Item>SPELL_LIGHTNING_BOLT</Item>
-					<Item>SPELL_ICE_BOLT</Item>
-					<Item>SPELL_FIREBALL</Item>
-					<Item>SPELL_FROST_RING</Item>
-					<Item>SPELL_CHAIN_LIGHTNING</Item>
-					<Item>SPELL_METEOR_SHOWER</Item>
-					<Item>SPELL_IMPLOSION</Item>
-					<Item>SPELL_ARMAGEDDON</Item>
-					<Item>SPELL_CURSE</Item>
-					<Item>SPELL_SLOW</Item>
-					<Item>SPELL_DISRUPTING_RAY</Item>
-					<Item>SPELL_PLAGUE</Item>
-					<Item>SPELL_WEAKNESS</Item>
-					<Item>SPELL_FORGETFULNESS</Item>
-					<Item>SPELL_BERSERK</Item>
-					<Item>SPELL_BLIND</Item>
-					<Item>SPELL_HYPNOTIZE</Item>
-					<Item>SPELL_UNHOLY_WORD</Item>
-					<Item>SPELL_BLESS</Item>
-					<Item>SPELL_HASTE</Item>
-					<Item>SPELL_STONESKIN</Item>
-					<Item>SPELL_DISPEL</Item>
-					<Item>SPELL_BLOODLUST</Item>
-					<Item>SPELL_DEFLECT_ARROWS</Item>
-					<Item>SPELL_ANTI_MAGIC</Item>
-					<Item>SPELL_TELEPORT</Item>
-					<Item>SPELL_CELESTIAL_SHIELD</Item>
-					<Item>SPELL_HOLY_WORD</Item>
-					<Item>SPELL_LAND_MINE</Item>
-					<Item>SPELL_WASP_SWARM</Item>
-					<Item>SPELL_PHANTOM</Item>
-					<Item>SPELL_EARTHQUAKE</Item>
-					<Item>SPELL_ANIMATE_DEAD</Item>
-					<Item>SPELL_SUMMON_ELEMENTALS</Item>
-					<Item>SPELL_RESURRECT</Item>
-					<Item>SPELL_SUMMON_BOAT</Item>
-					<Item>SPELL_DIMENSION_DOOR</Item>
-					<Item>SPELL_TOWN_PORTAL</Item>
-					<Item>SPELL_ABILITY_DARK_RITUAL</Item>
-					<Item>SPELL_MASS_CURSE</Item>
-					<Item>SPELL_MASS_DISRUPTING_RAY</Item>
-					<Item>SPELL_MASS_SLOW</Item>
-					<Item>SPELL_MASS_FORGETFULNESS</Item>
-					<Item>SPELL_MASS_PLAGUE</Item>
-					<Item>SPELL_MASS_WEAKNESS</Item>
-					<Item>SPELL_MASS_BLESS</Item>
-					<Item>SPELL_MASS_DISPEL</Item>
-					<Item>SPELL_MASS_STONESKIN</Item>
-					<Item>SPELL_MASS_DEFLECT_ARROWS</Item>
-					<Item>SPELL_MASS_BLOODLUST</Item>
-					<Item>SPELL_MASS_HASTE</Item>
-					<Item>SPELL_EMPOWERED_MAGIC_ARROW</Item>
-					<Item>SPELL_EMPOWERED_MAGIC_FIST</Item>
-					<Item>SPELL_EMPOWERED_LIGHTNING_BOLT</Item>
-					<Item>SPELL_EMPOWERED_ICE_BOLT</Item>
-					<Item>SPELL_EMPOWERED_FIREBALL</Item>
-					<Item>SPELL_EMPOWERED_FROST_RING</Item>
-					<Item>SPELL_EMPOWERED_CHAIN_LIGHTNING</Item>
-					<Item>SPELL_EMPOWERED_METEOR_SHOWER</Item>
-					<Item>SPELL_EMPOWERED_IMPLOSION</Item>
-					<Item>SPELL_EMPOWERED_ARMAGEDDON</Item>
-					<Item>SPELL_EMPOWERED_STONE_SPIKES</Item>
-					<Item>SPELL_SUMMON_CREATURES</Item>
-					<Item>SPELL_CONJURE_PHOENIX</Item>
-					<Item>SPELL_FIREWALL</Item>
-					<Item>SPELL_STONE_SPIKES</Item>
-					<Item>SPELL_GHOST_DISPELL</Item>
-					<Item>SPELL_GHOST_GUARD</Item>
-					<Item>SPELL_RUNE_OF_CHARGE</Item>
-					<Item>SPELL_RUNE_OF_BERSERKING</Item>
-					<Item>SPELL_RUNE_OF_MAGIC_CONTROL</Item>
-					<Item>SPELL_RUNE_OF_EXORCISM</Item>
-					<Item>SPELL_RUNE_OF_ELEMENTAL_IMMUNITY</Item>
-					<Item>SPELL_RUNE_OF_STUNNING</Item>
-					<Item>SPELL_RUNE_OF_BATTLERAGE</Item>
-					<Item>SPELL_RUNE_OF_ETHEREALNESS</Item>
-					<Item>SPELL_RUNE_OF_REVIVE</Item>
-					<Item>SPELL_RUNE_OF_DRAGONFORM</Item>
-					<Item>SPELL_SORROW</Item>
-					<Item>SPELL_VAMPIRISM</Item>
-					<Item>SPELL_DEEP_FREEZE</Item>
-					<Item>SPELL_REGENERATION</Item>
-					<Item>SPELL_DIVINE_VENGEANCE</Item>
-					<Item>SPELL_ARCANE_CRYSTAL</Item>
-					<Item>SPELL_SUMMON_HIVE</Item>
-					<Item>SPELL_BLADE_BARRIER</Item>
-					<Item>SPELL_WARCRY_RALLING_CRY</Item>
-					<Item>SPELL_WARCRY_CALL_OF_BLOOD</Item>
-					<Item>SPELL_WARCRY_WORD_OF_THE_CHIEF</Item>
-					<Item>SPELL_WARCRY_FEAR_MY_ROAR</Item>
-					<Item>SPELL_WARCRY_BATTLECRY</Item>
-					<Item>SPELL_WARCRY_SHOUT_OF_MANY</Item>
-					<Item>SPELL_EMPOWERED_DEEP_FREEZE</Item>
-					<Item>SPELL_ABILITY_CUSTOM1</Item>
-					<Item>SPELL_ABILITY_CUSTOM2</Item>
-					<Item>SPELL_ABILITY_CUSTOM3</Item>
-					<Item>SPELL_ABILITY_CUSTOM4</Item>
-				</spellIDs>
-				<CaptionFileRef href=""/>
-				<GarrisonHero/>
-				<Script/>
-				<RndSource>RND_NONE</RndSource>
-				<LinkToPlayer>PLAYER_NONE</LinkToPlayer>
-				<LinkToTown/>
-				<CanCaptureOnlyNotVisit>false</CanCaptureOnlyNotVisit>
-				<AllowQuickCombat>true</AllowQuickCombat>
-				<CreaturesUpgradesFilter>
-					<ForbiddenBasicUpgradeTiers/>
-					<ForbiddenAlterUpgradeTiers/>
-					<NotUpgradeable/>
-					<ForbiddenUpgrades/>
-				</CreaturesUpgradesFilter>
-				<GarrisonBlockedForAI>false</GarrisonBlockedForAI>
-				<BannedRaces>
-					<Item>TOWN_HEAVEN</Item>
-					<Item>TOWN_PRESERVE</Item>
-					<Item>TOWN_ACADEMY</Item>
-					<Item>TOWN_DUNGEON</Item>
-					<Item>TOWN_NECROMANCY</Item>
-					<Item>TOWN_INFERNO</Item>
-					<Item>TOWN_FORTRESS</Item>
-				</BannedRaces>
-			</AdvMapTown>
-		</Item>
-		<Item href="#n:inline(AdvMapTown)" id="item_6F5A4930-188B-4E70-88FB-84D31A5F9B02">
-			<AdvMapTown>
-				<Pos>
-					<x>136</x>
-					<y>5</y>
-					<z>0</z>
-				</Pos>
-				<Rot>3.14159</Rot>
-				<Floor>0</Floor>
-				<Name>ulkeron</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Orc_Stronghold.(AdvMapTownShared).xdb#xpointer(/AdvMapTownShared)"/>
-				<PlayerID>PLAYER_3</PlayerID>
-				<CaptureTrigger>
-					<Action>
-						<FunctionName/>
-					</Action>
-				</CaptureTrigger>
-				<HeroDeployTrigger>
-					<Action>
-						<FunctionName/>
-					</Action>
-				</HeroDeployTrigger>
-				<ShipTile>
-					<x>0</x>
-					<y>0</y>
-				</ShipTile>
-				<Specialization href="/GameMechanics/TownSpecialization/Stronghold/Random/Ar_Raman.(TownSpecialization).xdb#xpointer(/TownSpecialization)"/>
-				<buildings>
-					<Item>
-						<Type>TB_TOWN_HALL</Type>
-						<InitialUpgrade>BLD_UPG_1</InitialUpgrade>
-						<MaxUpgrade>BLD_UPG_4</MaxUpgrade>
-					</Item>
-					<Item>
-						<Type>TB_FORT</Type>
-						<InitialUpgrade>BLD_UPG_NONE</InitialUpgrade>
-						<MaxUpgrade>BLD_UPG_5</MaxUpgrade>
-					</Item>
-					<Item>
-						<Type>TB_MARKETPLACE</Type>
-						<InitialUpgrade>BLD_UPG_NONE</InitialUpgrade>
-						<MaxUpgrade>BLD_UPG_5</MaxUpgrade>
-					</Item>
-					<Item>
-						<Type>TB_SHIPYARD</Type>
-						<InitialUpgrade>BLD_UPG_NONE</InitialUpgrade>
-						<MaxUpgrade>BLD_UPG_5</MaxUpgrade>
-					</Item>
-					<Item>
-						<Type>TB_TAVERN</Type>
-						<InitialUpgrade>BLD_UPG_NONE</InitialUpgrade>
-						<MaxUpgrade>BLD_UPG_5</MaxUpgrade>
-					</Item>
-					<Item>
-						<Type>TB_BLACKSMITH</Type>
-						<InitialUpgrade>BLD_UPG_NONE</InitialUpgrade>
-						<MaxUpgrade>BLD_UPG_5</MaxUpgrade>
-					</Item>
-					<Item>
-						<Type>TB_MAGIC_GUILD</Type>
-						<InitialUpgrade>BLD_UPG_NONE</InitialUpgrade>
-						<MaxUpgrade>BLD_UPG_5</MaxUpgrade>
-					</Item>
-					<Item>
-						<Type>TB_DWELLING_1</Type>
-						<InitialUpgrade>BLD_UPG_NONE</InitialUpgrade>
-						<MaxUpgrade>BLD_UPG_5</MaxUpgrade>
-					</Item>
-					<Item>
-						<Type>TB_DWELLING_2</Type>
-						<InitialUpgrade>BLD_UPG_NONE</InitialUpgrade>
-						<MaxUpgrade>BLD_UPG_5</MaxUpgrade>
-					</Item>
-					<Item>
-						<Type>TB_DWELLING_3</Type>
-						<InitialUpgrade>BLD_UPG_NONE</InitialUpgrade>
-						<MaxUpgrade>BLD_UPG_5</MaxUpgrade>
-					</Item>
-					<Item>
-						<Type>TB_DWELLING_4</Type>
-						<InitialUpgrade>BLD_UPG_NONE</InitialUpgrade>
-						<MaxUpgrade>BLD_UPG_5</MaxUpgrade>
-					</Item>
-					<Item>
-						<Type>TB_DWELLING_5</Type>
-						<InitialUpgrade>BLD_UPG_NONE</InitialUpgrade>
-						<MaxUpgrade>BLD_UPG_5</MaxUpgrade>
-					</Item>
-					<Item>
-						<Type>TB_DWELLING_6</Type>
-						<InitialUpgrade>BLD_UPG_NONE</InitialUpgrade>
-						<MaxUpgrade>BLD_UPG_5</MaxUpgrade>
-					</Item>
-					<Item>
-						<Type>TB_DWELLING_7</Type>
-						<InitialUpgrade>BLD_UPG_NONE</InitialUpgrade>
-						<MaxUpgrade>BLD_UPG_5</MaxUpgrade>
-					</Item>
-					<Item>
-						<Type>TB_GRAIL</Type>
-						<InitialUpgrade>BLD_UPG_NONE</InitialUpgrade>
-						<MaxUpgrade>BLD_UPG_5</MaxUpgrade>
-					</Item>
-					<Item>
-						<Type>TB_WONDER</Type>
-						<InitialUpgrade>BLD_UPG_NONE</InitialUpgrade>
-						<MaxUpgrade>BLD_UPG_5</MaxUpgrade>
-					</Item>
-					<Item>
-						<Type>TB_SPECIAL_0</Type>
-						<InitialUpgrade>BLD_UPG_NONE</InitialUpgrade>
-						<MaxUpgrade>BLD_UPG_5</MaxUpgrade>
-					</Item>
-					<Item>
-						<Type>TB_SPECIAL_1</Type>
-						<InitialUpgrade>BLD_UPG_NONE</InitialUpgrade>
-						<MaxUpgrade>BLD_UPG_5</MaxUpgrade>
-					</Item>
-					<Item>
-						<Type>TB_SPECIAL_2</Type>
-						<InitialUpgrade>BLD_UPG_NONE</InitialUpgrade>
-						<MaxUpgrade>BLD_UPG_5</MaxUpgrade>
-					</Item>
-					<Item>
-						<Type>TB_SPECIAL_3</Type>
-						<InitialUpgrade>BLD_UPG_NONE</InitialUpgrade>
-						<MaxUpgrade>BLD_UPG_5</MaxUpgrade>
-					</Item>
-					<Item>
-						<Type>TB_SPECIAL_4</Type>
-						<InitialUpgrade>BLD_UPG_NONE</InitialUpgrade>
-						<MaxUpgrade>BLD_UPG_5</MaxUpgrade>
-					</Item>
-					<Item>
-						<Type>TB_SPECIAL_5</Type>
-						<InitialUpgrade>BLD_UPG_NONE</InitialUpgrade>
-						<MaxUpgrade>BLD_UPG_5</MaxUpgrade>
-					</Item>
-				</buildings>
-				<Editable>
-					<NameFileRef href="TownName.5.txt"/>
-					<BiographyFileRef href="TownBiography.5.txt"/>
-				</Editable>
-				<armySlots/>
-				<spellIDs>
-					<Item>SPELL_MAGIC_ARROW</Item>
-					<Item>SPELL_MAGIC_FIST</Item>
-					<Item>SPELL_LIGHTNING_BOLT</Item>
-					<Item>SPELL_ICE_BOLT</Item>
-					<Item>SPELL_FIREBALL</Item>
-					<Item>SPELL_FROST_RING</Item>
-					<Item>SPELL_CHAIN_LIGHTNING</Item>
-					<Item>SPELL_METEOR_SHOWER</Item>
-					<Item>SPELL_IMPLOSION</Item>
-					<Item>SPELL_ARMAGEDDON</Item>
-					<Item>SPELL_CURSE</Item>
-					<Item>SPELL_SLOW</Item>
-					<Item>SPELL_DISRUPTING_RAY</Item>
-					<Item>SPELL_PLAGUE</Item>
-					<Item>SPELL_WEAKNESS</Item>
-					<Item>SPELL_FORGETFULNESS</Item>
-					<Item>SPELL_BERSERK</Item>
-					<Item>SPELL_BLIND</Item>
-					<Item>SPELL_HYPNOTIZE</Item>
-					<Item>SPELL_UNHOLY_WORD</Item>
-					<Item>SPELL_BLESS</Item>
-					<Item>SPELL_HASTE</Item>
-					<Item>SPELL_STONESKIN</Item>
-					<Item>SPELL_DISPEL</Item>
-					<Item>SPELL_BLOODLUST</Item>
-					<Item>SPELL_DEFLECT_ARROWS</Item>
-					<Item>SPELL_ANTI_MAGIC</Item>
-					<Item>SPELL_TELEPORT</Item>
-					<Item>SPELL_CELESTIAL_SHIELD</Item>
-					<Item>SPELL_HOLY_WORD</Item>
-					<Item>SPELL_LAND_MINE</Item>
-					<Item>SPELL_WASP_SWARM</Item>
-					<Item>SPELL_PHANTOM</Item>
-					<Item>SPELL_EARTHQUAKE</Item>
-					<Item>SPELL_ANIMATE_DEAD</Item>
-					<Item>SPELL_SUMMON_ELEMENTALS</Item>
-					<Item>SPELL_RESURRECT</Item>
-					<Item>SPELL_SUMMON_BOAT</Item>
-					<Item>SPELL_DIMENSION_DOOR</Item>
-					<Item>SPELL_TOWN_PORTAL</Item>
-					<Item>SPELL_ABILITY_DARK_RITUAL</Item>
-					<Item>SPELL_MASS_CURSE</Item>
-					<Item>SPELL_MASS_DISRUPTING_RAY</Item>
-					<Item>SPELL_MASS_SLOW</Item>
-					<Item>SPELL_MASS_FORGETFULNESS</Item>
-					<Item>SPELL_MASS_PLAGUE</Item>
-					<Item>SPELL_MASS_WEAKNESS</Item>
-					<Item>SPELL_MASS_BLESS</Item>
-					<Item>SPELL_MASS_DISPEL</Item>
-					<Item>SPELL_MASS_STONESKIN</Item>
-					<Item>SPELL_MASS_DEFLECT_ARROWS</Item>
-					<Item>SPELL_MASS_BLOODLUST</Item>
-					<Item>SPELL_MASS_HASTE</Item>
-					<Item>SPELL_EMPOWERED_MAGIC_ARROW</Item>
-					<Item>SPELL_EMPOWERED_MAGIC_FIST</Item>
-					<Item>SPELL_EMPOWERED_LIGHTNING_BOLT</Item>
-					<Item>SPELL_EMPOWERED_ICE_BOLT</Item>
-					<Item>SPELL_EMPOWERED_FIREBALL</Item>
-					<Item>SPELL_EMPOWERED_FROST_RING</Item>
-					<Item>SPELL_EMPOWERED_CHAIN_LIGHTNING</Item>
-					<Item>SPELL_EMPOWERED_METEOR_SHOWER</Item>
-					<Item>SPELL_EMPOWERED_IMPLOSION</Item>
-					<Item>SPELL_EMPOWERED_ARMAGEDDON</Item>
-					<Item>SPELL_EMPOWERED_STONE_SPIKES</Item>
-					<Item>SPELL_SUMMON_CREATURES</Item>
-					<Item>SPELL_CONJURE_PHOENIX</Item>
-					<Item>SPELL_FIREWALL</Item>
-					<Item>SPELL_STONE_SPIKES</Item>
-					<Item>SPELL_GHOST_DISPELL</Item>
-					<Item>SPELL_GHOST_GUARD</Item>
-					<Item>SPELL_RUNE_OF_CHARGE</Item>
-					<Item>SPELL_RUNE_OF_BERSERKING</Item>
-					<Item>SPELL_RUNE_OF_MAGIC_CONTROL</Item>
-					<Item>SPELL_RUNE_OF_EXORCISM</Item>
-					<Item>SPELL_RUNE_OF_ELEMENTAL_IMMUNITY</Item>
-					<Item>SPELL_RUNE_OF_STUNNING</Item>
-					<Item>SPELL_RUNE_OF_BATTLERAGE</Item>
-					<Item>SPELL_RUNE_OF_ETHEREALNESS</Item>
-					<Item>SPELL_RUNE_OF_REVIVE</Item>
-					<Item>SPELL_RUNE_OF_DRAGONFORM</Item>
-					<Item>SPELL_SORROW</Item>
-					<Item>SPELL_VAMPIRISM</Item>
-					<Item>SPELL_DEEP_FREEZE</Item>
-					<Item>SPELL_REGENERATION</Item>
-					<Item>SPELL_DIVINE_VENGEANCE</Item>
-					<Item>SPELL_ARCANE_CRYSTAL</Item>
-					<Item>SPELL_SUMMON_HIVE</Item>
-					<Item>SPELL_BLADE_BARRIER</Item>
-					<Item>SPELL_WARCRY_RALLING_CRY</Item>
-					<Item>SPELL_WARCRY_CALL_OF_BLOOD</Item>
-					<Item>SPELL_WARCRY_WORD_OF_THE_CHIEF</Item>
-					<Item>SPELL_WARCRY_FEAR_MY_ROAR</Item>
-					<Item>SPELL_WARCRY_BATTLECRY</Item>
-					<Item>SPELL_WARCRY_SHOUT_OF_MANY</Item>
-					<Item>SPELL_EMPOWERED_DEEP_FREEZE</Item>
-					<Item>SPELL_ABILITY_CUSTOM1</Item>
-					<Item>SPELL_ABILITY_CUSTOM2</Item>
-					<Item>SPELL_ABILITY_CUSTOM3</Item>
-					<Item>SPELL_ABILITY_CUSTOM4</Item>
-				</spellIDs>
-				<CaptionFileRef href=""/>
-				<GarrisonHero/>
-				<Script/>
-				<RndSource>RND_NONE</RndSource>
-				<LinkToPlayer>PLAYER_NONE</LinkToPlayer>
-				<LinkToTown/>
-				<CanCaptureOnlyNotVisit>false</CanCaptureOnlyNotVisit>
-				<AllowQuickCombat>true</AllowQuickCombat>
-				<CreaturesUpgradesFilter>
-					<ForbiddenBasicUpgradeTiers/>
-					<ForbiddenAlterUpgradeTiers/>
-					<NotUpgradeable/>
-					<ForbiddenUpgrades/>
-				</CreaturesUpgradesFilter>
-				<GarrisonBlockedForAI>false</GarrisonBlockedForAI>
-				<BannedRaces/>
-			</AdvMapTown>
-		</Item>
 		<Item href="#n:inline(AdvMapStatic)" id="item_43C29B21-905D-4387-9551-85CD705FABB6">
 			<AdvMapStatic>
 				<Pos>
@@ -13174,166 +12636,6 @@
 				<BannedRaces/>
 			</AdvMapTown>
 		</Item>
-		<Item href="#n:inline(AdvMapTown)" id="item_A694BC12-5FC2-44F7-8E8B-A18EB828A7C3">
-			<AdvMapTown>
-				<Pos>
-					<x>69</x>
-					<y>166</y>
-					<z>0</z>
-				</Pos>
-				<Rot>1.5708</Rot>
-				<Floor>0</Floor>
-				<Name>homodor</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Orc_Stronghold.(AdvMapTownShared).xdb#xpointer(/AdvMapTownShared)"/>
-				<PlayerID>PLAYER_3</PlayerID>
-				<CaptureTrigger>
-					<Action>
-						<FunctionName/>
-					</Action>
-				</CaptureTrigger>
-				<HeroDeployTrigger>
-					<Action>
-						<FunctionName/>
-					</Action>
-				</HeroDeployTrigger>
-				<ShipTile>
-					<x>0</x>
-					<y>0</y>
-				</ShipTile>
-				<Specialization/>
-				<buildings>
-					<Item>
-						<Type>TB_TOWN_HALL</Type>
-						<InitialUpgrade>BLD_UPG_1</InitialUpgrade>
-						<MaxUpgrade>BLD_UPG_4</MaxUpgrade>
-					</Item>
-				</buildings>
-				<Editable>
-					<NameFileRef href=""/>
-					<BiographyFileRef href=""/>
-				</Editable>
-				<armySlots/>
-				<spellIDs>
-					<Item>SPELL_MAGIC_ARROW</Item>
-					<Item>SPELL_MAGIC_FIST</Item>
-					<Item>SPELL_LIGHTNING_BOLT</Item>
-					<Item>SPELL_ICE_BOLT</Item>
-					<Item>SPELL_FIREBALL</Item>
-					<Item>SPELL_FROST_RING</Item>
-					<Item>SPELL_CHAIN_LIGHTNING</Item>
-					<Item>SPELL_METEOR_SHOWER</Item>
-					<Item>SPELL_IMPLOSION</Item>
-					<Item>SPELL_ARMAGEDDON</Item>
-					<Item>SPELL_CURSE</Item>
-					<Item>SPELL_SLOW</Item>
-					<Item>SPELL_DISRUPTING_RAY</Item>
-					<Item>SPELL_PLAGUE</Item>
-					<Item>SPELL_WEAKNESS</Item>
-					<Item>SPELL_FORGETFULNESS</Item>
-					<Item>SPELL_BERSERK</Item>
-					<Item>SPELL_BLIND</Item>
-					<Item>SPELL_HYPNOTIZE</Item>
-					<Item>SPELL_UNHOLY_WORD</Item>
-					<Item>SPELL_BLESS</Item>
-					<Item>SPELL_HASTE</Item>
-					<Item>SPELL_STONESKIN</Item>
-					<Item>SPELL_DISPEL</Item>
-					<Item>SPELL_BLOODLUST</Item>
-					<Item>SPELL_DEFLECT_ARROWS</Item>
-					<Item>SPELL_ANTI_MAGIC</Item>
-					<Item>SPELL_TELEPORT</Item>
-					<Item>SPELL_CELESTIAL_SHIELD</Item>
-					<Item>SPELL_HOLY_WORD</Item>
-					<Item>SPELL_LAND_MINE</Item>
-					<Item>SPELL_WASP_SWARM</Item>
-					<Item>SPELL_PHANTOM</Item>
-					<Item>SPELL_EARTHQUAKE</Item>
-					<Item>SPELL_ANIMATE_DEAD</Item>
-					<Item>SPELL_SUMMON_ELEMENTALS</Item>
-					<Item>SPELL_RESURRECT</Item>
-					<Item>SPELL_SUMMON_BOAT</Item>
-					<Item>SPELL_DIMENSION_DOOR</Item>
-					<Item>SPELL_TOWN_PORTAL</Item>
-					<Item>SPELL_ABILITY_DARK_RITUAL</Item>
-					<Item>SPELL_MASS_CURSE</Item>
-					<Item>SPELL_MASS_DISRUPTING_RAY</Item>
-					<Item>SPELL_MASS_SLOW</Item>
-					<Item>SPELL_MASS_FORGETFULNESS</Item>
-					<Item>SPELL_MASS_PLAGUE</Item>
-					<Item>SPELL_MASS_WEAKNESS</Item>
-					<Item>SPELL_MASS_BLESS</Item>
-					<Item>SPELL_MASS_DISPEL</Item>
-					<Item>SPELL_MASS_STONESKIN</Item>
-					<Item>SPELL_MASS_DEFLECT_ARROWS</Item>
-					<Item>SPELL_MASS_BLOODLUST</Item>
-					<Item>SPELL_MASS_HASTE</Item>
-					<Item>SPELL_EMPOWERED_MAGIC_ARROW</Item>
-					<Item>SPELL_EMPOWERED_MAGIC_FIST</Item>
-					<Item>SPELL_EMPOWERED_LIGHTNING_BOLT</Item>
-					<Item>SPELL_EMPOWERED_ICE_BOLT</Item>
-					<Item>SPELL_EMPOWERED_FIREBALL</Item>
-					<Item>SPELL_EMPOWERED_FROST_RING</Item>
-					<Item>SPELL_EMPOWERED_CHAIN_LIGHTNING</Item>
-					<Item>SPELL_EMPOWERED_METEOR_SHOWER</Item>
-					<Item>SPELL_EMPOWERED_IMPLOSION</Item>
-					<Item>SPELL_EMPOWERED_ARMAGEDDON</Item>
-					<Item>SPELL_EMPOWERED_STONE_SPIKES</Item>
-					<Item>SPELL_SUMMON_CREATURES</Item>
-					<Item>SPELL_CONJURE_PHOENIX</Item>
-					<Item>SPELL_FIREWALL</Item>
-					<Item>SPELL_STONE_SPIKES</Item>
-					<Item>SPELL_GHOST_DISPELL</Item>
-					<Item>SPELL_GHOST_GUARD</Item>
-					<Item>SPELL_RUNE_OF_CHARGE</Item>
-					<Item>SPELL_RUNE_OF_BERSERKING</Item>
-					<Item>SPELL_RUNE_OF_MAGIC_CONTROL</Item>
-					<Item>SPELL_RUNE_OF_EXORCISM</Item>
-					<Item>SPELL_RUNE_OF_ELEMENTAL_IMMUNITY</Item>
-					<Item>SPELL_RUNE_OF_STUNNING</Item>
-					<Item>SPELL_RUNE_OF_BATTLERAGE</Item>
-					<Item>SPELL_RUNE_OF_ETHEREALNESS</Item>
-					<Item>SPELL_RUNE_OF_REVIVE</Item>
-					<Item>SPELL_RUNE_OF_DRAGONFORM</Item>
-					<Item>SPELL_SORROW</Item>
-					<Item>SPELL_VAMPIRISM</Item>
-					<Item>SPELL_DEEP_FREEZE</Item>
-					<Item>SPELL_REGENERATION</Item>
-					<Item>SPELL_DIVINE_VENGEANCE</Item>
-					<Item>SPELL_ARCANE_CRYSTAL</Item>
-					<Item>SPELL_SUMMON_HIVE</Item>
-					<Item>SPELL_BLADE_BARRIER</Item>
-					<Item>SPELL_WARCRY_RALLING_CRY</Item>
-					<Item>SPELL_WARCRY_CALL_OF_BLOOD</Item>
-					<Item>SPELL_WARCRY_WORD_OF_THE_CHIEF</Item>
-					<Item>SPELL_WARCRY_FEAR_MY_ROAR</Item>
-					<Item>SPELL_WARCRY_BATTLECRY</Item>
-					<Item>SPELL_WARCRY_SHOUT_OF_MANY</Item>
-					<Item>SPELL_EMPOWERED_DEEP_FREEZE</Item>
-					<Item>SPELL_ABILITY_CUSTOM1</Item>
-					<Item>SPELL_ABILITY_CUSTOM2</Item>
-					<Item>SPELL_ABILITY_CUSTOM3</Item>
-					<Item>SPELL_ABILITY_CUSTOM4</Item>
-				</spellIDs>
-				<CaptionFileRef href=""/>
-				<GarrisonHero/>
-				<Script/>
-				<RndSource>RND_NONE</RndSource>
-				<LinkToPlayer>PLAYER_NONE</LinkToPlayer>
-				<LinkToTown/>
-				<CanCaptureOnlyNotVisit>false</CanCaptureOnlyNotVisit>
-				<AllowQuickCombat>true</AllowQuickCombat>
-				<CreaturesUpgradesFilter>
-					<ForbiddenBasicUpgradeTiers/>
-					<ForbiddenAlterUpgradeTiers/>
-					<NotUpgradeable/>
-					<ForbiddenUpgrades/>
-				</CreaturesUpgradesFilter>
-				<GarrisonBlockedForAI>false</GarrisonBlockedForAI>
-				<BannedRaces/>
-			</AdvMapTown>
-		</Item>
 		<Item href="#n:inline(AdvMapStatic)" id="item_14444427-4485-4188-BF5B-97765197E0E3">
 			<AdvMapStatic>
 				<Pos>
@@ -13401,7 +12703,7 @@
 		<Item href="#n:inline(AdvMapHero)" id="item_F097F500-073C-4718-A304-2D3F253A31C4">
 			<AdvMapHero>
 				<Pos>
-					<x>110</x>
+					<x>111</x>
 					<y>108</y>
 					<z>0</z>
 				</Pos>
@@ -13411,7 +12713,7 @@
 				<CombatScript/>
 				<pointLights/>
 				<Shared href="/MapObjects/Stronghold/Malgumol.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
-				<PlayerID>PLAYER_2</PlayerID>
+				<PlayerID>PLAYER_1</PlayerID>
 				<Experience>0</Experience>
 				<armySlots/>
 				<artifactIDs/>
@@ -13423,9 +12725,32 @@
 					<Defence>0</Defence>
 					<Spellpower>0</Spellpower>
 					<Knowledge>0</Knowledge>
-					<skills/>
+					<skills>
+						<Item>
+							<Mastery>MASTERY_BASIC</Mastery>
+							<SkillID>HERO_SKILL_SORCERY</SkillID>
+						</Item>
+						<Item>
+							<Mastery>MASTERY_BASIC</Mastery>
+							<SkillID>HERO_SKILL_DESTRUCTIVE_MAGIC</SkillID>
+						</Item>
+						<Item>
+							<Mastery>MASTERY_BASIC</Mastery>
+							<SkillID>HERO_SKILL_DARK_MAGIC</SkillID>
+						</Item>
+						<Item>
+							<Mastery>MASTERY_BASIC</Mastery>
+							<SkillID>HERO_SKILL_SUMMONING_MAGIC</SkillID>
+						</Item>
+						<Item>
+							<Mastery>MASTERY_BASIC</Mastery>
+							<SkillID>HERO_SKILL_LIGHT_MAGIC</SkillID>
+						</Item>
+					</skills>
 					<perkIDs/>
-					<spellIDs/>
+					<spellIDs>
+						<Item>SPELL_WARCRY_CALL_OF_BLOOD</Item>
+					</spellIDs>
 					<Ballista>false</Ballista>
 					<FirstAidTent>false</FirstAidTent>
 					<AmmoCart>false</AmmoCart>
@@ -13433,7 +12758,7 @@
 					<TalismanLevel>0</TalismanLevel>
 				</Editable>
 				<OverrideMask>0</OverrideMask>
-				<PrimarySkillMastery>MASTERY_NONE</PrimarySkillMastery>
+				<PrimarySkillMastery>MASTERY_ADVANCED</PrimarySkillMastery>
 				<LossTrigger>
 					<Action>
 						<FunctionName/>
@@ -50398,166 +49723,6 @@
 				<ScalePercent>100</ScalePercent>
 			</AdvMapStatic>
 		</Item>
-		<Item href="#n:inline(AdvMapTown)" id="item_A0641F11-9252-4371-A784-D2B7F2619B72">
-			<AdvMapTown>
-				<Pos>
-					<x>140</x>
-					<y>170</y>
-					<z>0</z>
-				</Pos>
-				<Rot>0</Rot>
-				<Floor>0</Floor>
-				<Name>veliros</Name>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Orc_Stronghold.(AdvMapTownShared).xdb#xpointer(/AdvMapTownShared)"/>
-				<PlayerID>PLAYER_3</PlayerID>
-				<CaptureTrigger>
-					<Action>
-						<FunctionName/>
-					</Action>
-				</CaptureTrigger>
-				<HeroDeployTrigger>
-					<Action>
-						<FunctionName/>
-					</Action>
-				</HeroDeployTrigger>
-				<ShipTile>
-					<x>0</x>
-					<y>0</y>
-				</ShipTile>
-				<Specialization/>
-				<buildings>
-					<Item>
-						<Type>TB_TOWN_HALL</Type>
-						<InitialUpgrade>BLD_UPG_1</InitialUpgrade>
-						<MaxUpgrade>BLD_UPG_4</MaxUpgrade>
-					</Item>
-				</buildings>
-				<Editable>
-					<NameFileRef href=""/>
-					<BiographyFileRef href=""/>
-				</Editable>
-				<armySlots/>
-				<spellIDs>
-					<Item>SPELL_MAGIC_ARROW</Item>
-					<Item>SPELL_MAGIC_FIST</Item>
-					<Item>SPELL_LIGHTNING_BOLT</Item>
-					<Item>SPELL_ICE_BOLT</Item>
-					<Item>SPELL_FIREBALL</Item>
-					<Item>SPELL_FROST_RING</Item>
-					<Item>SPELL_CHAIN_LIGHTNING</Item>
-					<Item>SPELL_METEOR_SHOWER</Item>
-					<Item>SPELL_IMPLOSION</Item>
-					<Item>SPELL_ARMAGEDDON</Item>
-					<Item>SPELL_CURSE</Item>
-					<Item>SPELL_SLOW</Item>
-					<Item>SPELL_DISRUPTING_RAY</Item>
-					<Item>SPELL_PLAGUE</Item>
-					<Item>SPELL_WEAKNESS</Item>
-					<Item>SPELL_FORGETFULNESS</Item>
-					<Item>SPELL_BERSERK</Item>
-					<Item>SPELL_BLIND</Item>
-					<Item>SPELL_HYPNOTIZE</Item>
-					<Item>SPELL_UNHOLY_WORD</Item>
-					<Item>SPELL_BLESS</Item>
-					<Item>SPELL_HASTE</Item>
-					<Item>SPELL_STONESKIN</Item>
-					<Item>SPELL_DISPEL</Item>
-					<Item>SPELL_BLOODLUST</Item>
-					<Item>SPELL_DEFLECT_ARROWS</Item>
-					<Item>SPELL_ANTI_MAGIC</Item>
-					<Item>SPELL_TELEPORT</Item>
-					<Item>SPELL_CELESTIAL_SHIELD</Item>
-					<Item>SPELL_HOLY_WORD</Item>
-					<Item>SPELL_LAND_MINE</Item>
-					<Item>SPELL_WASP_SWARM</Item>
-					<Item>SPELL_PHANTOM</Item>
-					<Item>SPELL_EARTHQUAKE</Item>
-					<Item>SPELL_ANIMATE_DEAD</Item>
-					<Item>SPELL_SUMMON_ELEMENTALS</Item>
-					<Item>SPELL_RESURRECT</Item>
-					<Item>SPELL_SUMMON_BOAT</Item>
-					<Item>SPELL_DIMENSION_DOOR</Item>
-					<Item>SPELL_TOWN_PORTAL</Item>
-					<Item>SPELL_ABILITY_DARK_RITUAL</Item>
-					<Item>SPELL_MASS_CURSE</Item>
-					<Item>SPELL_MASS_DISRUPTING_RAY</Item>
-					<Item>SPELL_MASS_SLOW</Item>
-					<Item>SPELL_MASS_FORGETFULNESS</Item>
-					<Item>SPELL_MASS_PLAGUE</Item>
-					<Item>SPELL_MASS_WEAKNESS</Item>
-					<Item>SPELL_MASS_BLESS</Item>
-					<Item>SPELL_MASS_DISPEL</Item>
-					<Item>SPELL_MASS_STONESKIN</Item>
-					<Item>SPELL_MASS_DEFLECT_ARROWS</Item>
-					<Item>SPELL_MASS_BLOODLUST</Item>
-					<Item>SPELL_MASS_HASTE</Item>
-					<Item>SPELL_EMPOWERED_MAGIC_ARROW</Item>
-					<Item>SPELL_EMPOWERED_MAGIC_FIST</Item>
-					<Item>SPELL_EMPOWERED_LIGHTNING_BOLT</Item>
-					<Item>SPELL_EMPOWERED_ICE_BOLT</Item>
-					<Item>SPELL_EMPOWERED_FIREBALL</Item>
-					<Item>SPELL_EMPOWERED_FROST_RING</Item>
-					<Item>SPELL_EMPOWERED_CHAIN_LIGHTNING</Item>
-					<Item>SPELL_EMPOWERED_METEOR_SHOWER</Item>
-					<Item>SPELL_EMPOWERED_IMPLOSION</Item>
-					<Item>SPELL_EMPOWERED_ARMAGEDDON</Item>
-					<Item>SPELL_EMPOWERED_STONE_SPIKES</Item>
-					<Item>SPELL_SUMMON_CREATURES</Item>
-					<Item>SPELL_CONJURE_PHOENIX</Item>
-					<Item>SPELL_FIREWALL</Item>
-					<Item>SPELL_STONE_SPIKES</Item>
-					<Item>SPELL_GHOST_DISPELL</Item>
-					<Item>SPELL_GHOST_GUARD</Item>
-					<Item>SPELL_RUNE_OF_CHARGE</Item>
-					<Item>SPELL_RUNE_OF_BERSERKING</Item>
-					<Item>SPELL_RUNE_OF_MAGIC_CONTROL</Item>
-					<Item>SPELL_RUNE_OF_EXORCISM</Item>
-					<Item>SPELL_RUNE_OF_ELEMENTAL_IMMUNITY</Item>
-					<Item>SPELL_RUNE_OF_STUNNING</Item>
-					<Item>SPELL_RUNE_OF_BATTLERAGE</Item>
-					<Item>SPELL_RUNE_OF_ETHEREALNESS</Item>
-					<Item>SPELL_RUNE_OF_REVIVE</Item>
-					<Item>SPELL_RUNE_OF_DRAGONFORM</Item>
-					<Item>SPELL_SORROW</Item>
-					<Item>SPELL_VAMPIRISM</Item>
-					<Item>SPELL_DEEP_FREEZE</Item>
-					<Item>SPELL_REGENERATION</Item>
-					<Item>SPELL_DIVINE_VENGEANCE</Item>
-					<Item>SPELL_ARCANE_CRYSTAL</Item>
-					<Item>SPELL_SUMMON_HIVE</Item>
-					<Item>SPELL_BLADE_BARRIER</Item>
-					<Item>SPELL_WARCRY_RALLING_CRY</Item>
-					<Item>SPELL_WARCRY_CALL_OF_BLOOD</Item>
-					<Item>SPELL_WARCRY_WORD_OF_THE_CHIEF</Item>
-					<Item>SPELL_WARCRY_FEAR_MY_ROAR</Item>
-					<Item>SPELL_WARCRY_BATTLECRY</Item>
-					<Item>SPELL_WARCRY_SHOUT_OF_MANY</Item>
-					<Item>SPELL_EMPOWERED_DEEP_FREEZE</Item>
-					<Item>SPELL_ABILITY_CUSTOM1</Item>
-					<Item>SPELL_ABILITY_CUSTOM2</Item>
-					<Item>SPELL_ABILITY_CUSTOM3</Item>
-					<Item>SPELL_ABILITY_CUSTOM4</Item>
-				</spellIDs>
-				<CaptionFileRef href=""/>
-				<GarrisonHero/>
-				<Script/>
-				<RndSource>RND_NONE</RndSource>
-				<LinkToPlayer>PLAYER_NONE</LinkToPlayer>
-				<LinkToTown/>
-				<CanCaptureOnlyNotVisit>false</CanCaptureOnlyNotVisit>
-				<AllowQuickCombat>true</AllowQuickCombat>
-				<CreaturesUpgradesFilter>
-					<ForbiddenBasicUpgradeTiers/>
-					<ForbiddenAlterUpgradeTiers/>
-					<NotUpgradeable/>
-					<ForbiddenUpgrades/>
-				</CreaturesUpgradesFilter>
-				<GarrisonBlockedForAI>false</GarrisonBlockedForAI>
-				<BannedRaces/>
-			</AdvMapTown>
-		</Item>
 		<Item href="#n:inline(AdvMapStatic)" id="item_3AB4EBCB-D94D-47E1-8714-2D6647EB11A5">
 			<AdvMapStatic>
 				<Pos>
@@ -63373,6 +62538,102 @@
 				<BannedRaces/>
 			</AdvMapHero>
 		</Item>
+		<Item href="#n:inline(AdvMapHero)" id="item_1D0BAE63-D4AD-44DD-B74A-DA139C4F79B8">
+			<AdvMapHero>
+				<Pos>
+					<x>26</x>
+					<y>11</y>
+					<z>0</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>0</Floor>
+				<Name/>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/Stronghold/Hero3.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+				<PlayerID>PLAYER_1</PlayerID>
+				<Experience>0</Experience>
+				<armySlots/>
+				<artifactIDs/>
+				<isUntransferable/>
+				<Editable>
+					<NameFileRef href=""/>
+					<BiographyFileRef href=""/>
+					<Offence>0</Offence>
+					<Defence>0</Defence>
+					<Spellpower>0</Spellpower>
+					<Knowledge>0</Knowledge>
+					<skills>
+						<Item>
+							<Mastery>MASTERY_EXPERT</Mastery>
+							<SkillID>HERO_SKILL_SORCERY</SkillID>
+						</Item>
+						<Item>
+							<Mastery>MASTERY_BASIC</Mastery>
+							<SkillID>HERO_SKILL_DESTRUCTIVE_MAGIC</SkillID>
+						</Item>
+					</skills>
+					<perkIDs/>
+					<spellIDs>
+						<Item>SPELL_WARCRY_CALL_OF_BLOOD</Item>
+					</spellIDs>
+					<Ballista>false</Ballista>
+					<FirstAidTent>false</FirstAidTent>
+					<AmmoCart>false</AmmoCart>
+					<FavoriteEnemies/>
+					<TalismanLevel>0</TalismanLevel>
+				</Editable>
+				<OverrideMask>8</OverrideMask>
+				<PrimarySkillMastery>MASTERY_BASIC</PrimarySkillMastery>
+				<LossTrigger>
+					<Action>
+						<FunctionName/>
+					</Action>
+				</LossTrigger>
+				<AllowQuickCombat>true</AllowQuickCombat>
+				<Textures>
+					<Icon128x128/>
+					<Icon64x64/>
+					<RoundedFace/>
+					<LeftFace/>
+					<RightFace/>
+				</Textures>
+				<PresetPrice>0</PresetPrice>
+				<BannedRaces/>
+			</AdvMapHero>
+		</Item>
+		<Item href="#n:inline(AdvMapShrine)" id="item_6294F65C-8B1A-40F4-8638-0B6E47F8712D">
+			<AdvMapShrine>
+				<Pos>
+					<x>24</x>
+					<y>7</y>
+					<z>0</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>0</Floor>
+				<Name/>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/Shrine_Of_Magic_2.(AdvMapShrineShared).xdb#xpointer(/AdvMapShrineShared)"/>
+				<SpellID>SPELL_NONE</SpellID>
+			</AdvMapShrine>
+		</Item>
+		<Item href="#n:inline(AdvMapShrine)" id="item_81200356-8CA3-4C83-B9CE-DE21346DAB05">
+			<AdvMapShrine>
+				<Pos>
+					<x>24</x>
+					<y>14</y>
+					<z>0</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>0</Floor>
+				<Name/>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/Shrine_Of_Magic_2.(AdvMapShrineShared).xdb#xpointer(/AdvMapShrineShared)"/>
+				<SpellID>SPELL_NONE</SpellID>
+			</AdvMapShrine>
+		</Item>
 	</objects>
 	<Resources>
 		<PointLights/>
@@ -65562,7 +64823,7 @@
 						<Name/>
 						<CombatScript/>
 						<pointLights/>
-						<Shared href="/MapObjects/Inferno/Agulnobar.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+						<Shared href="/MapObjects/Inferno/GOG/Isfet_Heroic.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
 						<PlayerID>PLAYER_1</PlayerID>
 						<Experience>0</Experience>
 						<armySlots/>
@@ -65575,8 +64836,42 @@
 							<Defence>0</Defence>
 							<Spellpower>0</Spellpower>
 							<Knowledge>0</Knowledge>
-							<skills/>
-							<perkIDs/>
+							<skills>
+								<Item>
+									<Mastery>MASTERY_EXPERT</Mastery>
+									<SkillID>HERO_SKILL_WAR_MACHINES</SkillID>
+								</Item>
+								<Item>
+									<Mastery>MASTERY_EXPERT</Mastery>
+									<SkillID>HERO_SKILL_LEADERSHIP</SkillID>
+								</Item>
+								<Item>
+									<Mastery>MASTERY_EXPERT</Mastery>
+									<SkillID>HERO_SKILL_LUCK</SkillID>
+								</Item>
+								<Item>
+									<Mastery>MASTERY_EXPERT</Mastery>
+									<SkillID>HERO_SKILL_OFFENCE</SkillID>
+								</Item>
+								<Item>
+									<Mastery>MASTERY_EXPERT</Mastery>
+									<SkillID>HERO_SKILL_LOGISTICS</SkillID>
+								</Item>
+							</skills>
+							<perkIDs>
+								<Item>HERO_SKILL_CRITICAL_STRIKE</Item>
+								<Item>HERO_SKILL_RECRUITMENT</Item>
+								<Item>HERO_SKILL_RESISTANCE</Item>
+								<Item>HERO_SKILL_PATHFINDING</Item>
+								<Item>HERO_SKILL_PATH_OF_WAR</Item>
+								<Item>HERO_SKILL_QUICK_GATING</Item>
+								<Item>HERO_SKILL_TACTICS</Item>
+								<Item>HERO_SKILL_TRIPLE_BALLISTA</Item>
+								<Item>HERO_SKILL_FRENZY</Item>
+								<Item>HERO_SKILL_ENCOURAGE</Item>
+								<Item>HERO_SKILL_BALLISTA</Item>
+								<Item>HERO_SKILL_FAST_AND_FURIOUS</Item>
+							</perkIDs>
 							<spellIDs/>
 							<Ballista>false</Ballista>
 							<FirstAidTent>false</FirstAidTent>
@@ -65584,8 +64879,8 @@
 							<FavoriteEnemies/>
 							<TalismanLevel>0</TalismanLevel>
 						</Editable>
-						<OverrideMask>0</OverrideMask>
-						<PrimarySkillMastery>MASTERY_NONE</PrimarySkillMastery>
+						<OverrideMask>8</OverrideMask>
+						<PrimarySkillMastery>MASTERY_EXPERT</PrimarySkillMastery>
 						<LossTrigger>
 							<Action>
 								<FunctionName/>
@@ -65774,7 +65069,7 @@
 						<Name/>
 						<CombatScript/>
 						<pointLights/>
-						<Shared href="/MapObjects/Inferno/Grok.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+						<Shared href="/MapObjects/Inferno/GOG/Isfet.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
 						<PlayerID>PLAYER_1</PlayerID>
 						<Experience>0</Experience>
 						<armySlots/>
@@ -65787,8 +65082,42 @@
 							<Defence>0</Defence>
 							<Spellpower>0</Spellpower>
 							<Knowledge>0</Knowledge>
-							<skills/>
-							<perkIDs/>
+							<skills>
+								<Item>
+									<Mastery>MASTERY_BASIC</Mastery>
+									<SkillID>HERO_SKILL_LUCK</SkillID>
+								</Item>
+								<Item>
+									<Mastery>MASTERY_EXPERT</Mastery>
+									<SkillID>HERO_SKILL_WAR_MACHINES</SkillID>
+								</Item>
+								<Item>
+									<Mastery>MASTERY_ADVANCED</Mastery>
+									<SkillID>HERO_SKILL_OFFENCE</SkillID>
+								</Item>
+								<Item>
+									<Mastery>MASTERY_EXPERT</Mastery>
+									<SkillID>HERO_SKILL_LOGISTICS</SkillID>
+								</Item>
+								<Item>
+									<Mastery>MASTERY_ADVANCED</Mastery>
+									<SkillID>HERO_SKILL_LEADERSHIP</SkillID>
+								</Item>
+							</skills>
+							<perkIDs>
+								<Item>HERO_SKILL_CRITICAL_STRIKE</Item>
+								<Item>HERO_SKILL_RECRUITMENT</Item>
+								<Item>HERO_SKILL_RESISTANCE</Item>
+								<Item>HERO_SKILL_PATHFINDING</Item>
+								<Item>HERO_SKILL_CONSUME_CORPSE</Item>
+								<Item>HERO_SKILL_DEMONIC_STRIKE</Item>
+								<Item>HERO_SKILL_QUICK_GATING</Item>
+								<Item>HERO_SKILL_PATH_OF_WAR</Item>
+								<Item>HERO_SKILL_TACTICS</Item>
+								<Item>HERO_SKILL_TRIPLE_BALLISTA</Item>
+								<Item>HERO_SKILL_BALLISTA</Item>
+								<Item>HERO_SKILL_FAST_AND_FURIOUS</Item>
+							</perkIDs>
 							<spellIDs/>
 							<Ballista>false</Ballista>
 							<FirstAidTent>false</FirstAidTent>
@@ -65796,8 +65125,8 @@
 							<FavoriteEnemies/>
 							<TalismanLevel>0</TalismanLevel>
 						</Editable>
-						<OverrideMask>0</OverrideMask>
-						<PrimarySkillMastery>MASTERY_NONE</PrimarySkillMastery>
+						<OverrideMask>8</OverrideMask>
+						<PrimarySkillMastery>MASTERY_ADVANCED</PrimarySkillMastery>
 						<LossTrigger>
 							<Action>
 								<FunctionName/>
@@ -66305,7 +65634,7 @@
 			</RemoveHeroTrigger>
 			<VictoryMessageRef href=""/>
 			<DefeatMessageRef href=""/>
-			<Race>TOWN_NO_TYPE</Race>
+			<Race>TOWN_INFERNO</Race>
 			<Colour>PCOLOR_RED</Colour>
 			<CanBeDisabled>true</CanBeDisabled>
 			<Attractors/>

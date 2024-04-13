@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <AmbientLight>
-	<InternalName>WP_M1_Ground_dark_day</InternalName>
-	<Name>WP_M1_Ground_dark_day</Name>
+	<InternalName>GOG_M1_Ground_dark_morning</InternalName>
+	<Name>GOG_M1_Ground_dark_morning</Name>
 	<NameFileRef href=""/>
 	<LightColor>
-		<x>0.513726</x>
-		<y>0.45098</y>
-		<z>0.360784</z>
+		<x>0.443137</x>
+		<y>0.490196</y>
+		<z>0.384314</z>
 	</LightColor>
 	<AmbientColor>
 		<x>0.294118</x>
@@ -29,10 +29,10 @@
 		<z>0.25</z>
 	</ParticlesColor>
 	<Whitening>true</Whitening>
-	<Pitch>35</Pitch>
+	<Pitch>58</Pitch>
 	<Yaw>40</Yaw>
-	<ShadowPitch>100</ShadowPitch>
-	<ShadowYaw>100</ShadowYaw>
+	<ShadowPitch>132</ShadowPitch>
+	<ShadowYaw>111</ShadowYaw>
 	<Sky href="/Textures/_(CubeTexture)/Sky.xdb#xpointer(/CubeTexture)"/>
 	<GlossColor>
 		<x>1</x>
@@ -92,7 +92,7 @@
 	<HeightFog/>
 	<DepthOfField/>
 	<DistanceFog href="/_(DistanceFog)/cutscene_c1m4.xdb#xpointer(/DistanceFog)"/>
-	<SkyDome href="/_(Model)/SkyDomes/SkyDome_Ramp_Sphere_ARENA.xdb#xpointer(/Model)"/>
+	<SkyDome/>
 	<DymanicLightsModifications>
 		<x>1</x>
 		<y>1</y>

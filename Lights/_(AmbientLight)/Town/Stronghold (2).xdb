@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <DistanceFog>
 	<Color>
-		<x>0.454902</x>
-		<y>0.454902</y>
-		<z>0.454902</z>
+		<x>0.309804</x>
+		<y>0.368627</y>
+		<z>0.407843</z>
 	</Color>
-	<MinDist>10</MinDist>
-	<MaxDist>180</MaxDist>
+	<MinDist>30</MinDist>
+	<MaxDist>160</MaxDist>
 	<MinZDis>30</MinZDis>
 	<MaxZDis>-10</MaxZDis>
 	<ColorTexture/>

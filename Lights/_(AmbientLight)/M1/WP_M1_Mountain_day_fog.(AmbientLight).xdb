@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <AmbientLight>
-	<InternalName>WP_M1_Mountain_day_fog</InternalName>
-	<Name>WP_M1_Mountain_day_fog</Name>
+	<InternalName>GOG_M1_Mountain_day_fog</InternalName>
+	<Name>GOG_M1_Mountain_day_fog</Name>
 	<NameFileRef href=""/>
 	<LightColor>
 		<x>0.545098</x>
@@ -44,7 +44,7 @@
 		<y>0</y>
 		<z>0</z>
 	</FogColor>
-	<FogStartDistance>1000</FogStartDistance>
+	<FogStartDistance>300</FogStartDistance>
 	<FogDistance>2000</FogDistance>
 	<VapourHeight>0</VapourHeight>
 	<VapourDensity>0</VapourDensity>

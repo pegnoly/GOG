@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <AmbientLight>
-	<InternalName>WP_M1_Foggy_night</InternalName>
-	<Name>WP_M1_Foggy_night</Name>
+	<InternalName>GOG_M1_Foggy_night</InternalName>
+	<Name>GOG_M1_Foggy_night</Name>
 	<NameFileRef href=""/>
 	<LightColor>
 		<x>0.215686</x>
@@ -91,7 +91,7 @@
 	<ShadowsMaxDetailLength>10</ShadowsMaxDetailLength>
 	<HeightFog/>
 	<DepthOfField/>
-	<DistanceFog href="/Lights/_(AmbientLight)/Town/Stronghold.xdb#xpointer(/DistanceFog)"/>
+	<DistanceFog href="/Lights/_(AmbientLight)/Town/Stronghold (2).xdb#xpointer(/DistanceFog)"/>
 	<SkyDome href="/_(Model)/SkyDomes/SkyDome_Strongold_Sphere.xdb#xpointer(/Model)"/>
 	<DymanicLightsModifications>
 		<x>1</x>

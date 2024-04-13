@@ -5,8 +5,8 @@
 		<y>1</y>
 		<z>1</z>
 	</Color>
-	<MinDist>40</MinDist>
-	<MaxDist>80</MaxDist>
+	<MinDist>10</MinDist>
+	<MaxDist>150</MaxDist>
 	<MinZDis>-100</MinZDis>
 	<MaxZDis>-101</MaxZDis>
 	<ColorTexture href="For_Heven_Sphere.(Texture).xdb#xpointer(/Texture)"/>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <AdvMapHeroShared>
-	<Model href="/Characters/Heroes/Zehir.xdb#xpointer(/Model)"/>
+	<Model href="/Characters/Heroes/Zehir_LOD.xdb#xpointer(/Model)"/>
 	<AnimSet href="/Characters/Heroes/Zehir-arena.xdb#xpointer(/AnimSet)"/>
 	<blockedTiles/>
 	<holeTiles/>
@@ -24,7 +24,7 @@
 	<FlyPassable>true</FlyPassable>
 	<AdventureSoundEffect/>
 	<RazedStatic/>
-	<Icon128 href="/Textures/Icons/Heroes/Academy/Karlam_128.(Texture).xdb#xpointer(/Texture)"/>
+	<Icon128 href="karlam_128.(Texture).xdb#xpointer(/Texture)"/>
 	<InternalName>Karlam</InternalName>
 	<Class>HERO_CLASS_WIZARD</Class>
 	<Specialization>HERO_SPEC_GREMLINS</Specialization>
@@ -32,20 +32,20 @@
 		<Mastery>MASTERY_BASIC</Mastery>
 		<SkillID>HERO_SKILL_ARTIFICIER</SkillID>
 	</PrimarySkill>
-	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Academy/Assistance/Name.txt"/>
-	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Academy/Assistance/Description.txt"/>
-	<SpecializationIcon href="/Textures/Icons/Heroes/Academy/Karlam_spec.(Texture).xdb#xpointer(/Texture)"/>
-	<FaceTexture href="/Textures/Icons/Heroes/Academy/Karlam_128.(Texture).xdb#xpointer(/Texture)"/>
-	<FaceTextureSmall href="/Textures/Icons/Heroes/Academy/Karlam_64.(Texture).xdb#xpointer(/Texture)"/>
+	<SpecializationNameFileRef href="karlam_spec_name.txt"/>
+	<SpecializationDescFileRef href="karlam_spec_desc.txt"/>
+	<SpecializationIcon href="karlam_spec.(Texture).xdb#xpointer(/Texture)"/>
+	<FaceTexture href="karlam_128.(Texture).xdb#xpointer(/Texture)"/>
+	<FaceTextureSmall href="karlam_64.(Texture).xdb#xpointer(/Texture)"/>
 	<HeroCharacterArena href="/Characters/Heroes/Zehir.(Character).xdb#xpointer(/Character)"/>
 	<HeroCharacterArenaMelee/>
-	<HeroCharacterAdventure href="/Characters/Heroes/Zehir.(Character).xdb#xpointer(/Character)"/>
+	<HeroCharacterAdventure href="/Characters/Heroes/Zehir_LOD.(Character).xdb#xpointer(/Character)"/>
 	<HeroIndividualCamera/>
 	<CombatVisual href="/GameMechanics/CreatureVisual/Heroes/Wizard.xdb#xpointer(/CreatureVisual)"/>
 	<TownType>TOWN_ACADEMY</TownType>
 	<Editable>
-		<NameFileRef href="/Text/Game/Heroes/Persons/Academy/Karlam/Name.txt"/>
-		<BiographyFileRef href="/Text/Game/Heroes/Persons/Academy/Karlam/Bio.txt"/>
+		<NameFileRef href="karlam_name.txt"/>
+		<BiographyFileRef href="karlam_bio.txt"/>
 		<Offence>3</Offence>
 		<Defence>2</Defence>
 		<Spellpower>4</Spellpower>

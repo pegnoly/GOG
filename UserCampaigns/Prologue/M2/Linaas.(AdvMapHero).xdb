@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AdvMapHero>
+	<Pos>
+		<x>0</x>
+		<y>0</y>
+		<z>0</z>
+	</Pos>
+	<Rot>0</Rot>
+	<Floor>0</Floor>
+	<Name/>
+	<CombatScript/>
+	<pointLights/>
+	<Shared href="/MapObjects/Preserve/Linaas.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+	<PlayerID>PLAYER_3</PlayerID>
+	<Experience>30000</Experience>
+	<armySlots/>
+	<artifactIDs/>
+	<isUntransferable/>
+	<Editable>
+		<NameFileRef href=""/>
+		<BiographyFileRef href=""/>
+		<Offence>7</Offence>
+		<Defence>5</Defence>
+		<Spellpower>4</Spellpower>
+		<Knowledge>8</Knowledge>
+		<skills/>
+		<perkIDs/>
+		<spellIDs/>
+		<Ballista>true</Ballista>
+		<FirstAidTent>true</FirstAidTent>
+		<AmmoCart>true</AmmoCart>
+		<FavoriteEnemies/>
+		<TalismanLevel>0</TalismanLevel>
+	</Editable>
+	<OverrideMask>48</OverrideMask>
+	<PrimarySkillMastery>MASTERY_EXPERT</PrimarySkillMastery>
+	<LossTrigger>
+		<Action>
+			<FunctionName/>
+		</Action>
+	</LossTrigger>
+	<AllowQuickCombat>false</AllowQuickCombat>
+	<Textures>
+		<Icon128x128/>
+		<Icon64x64/>
+		<RoundedFace/>
+		<LeftFace/>
+		<RightFace/>
+	</Textures>
+	<PresetPrice>0</PresetPrice>
+	<BannedRaces/>
+</AdvMapHero>
