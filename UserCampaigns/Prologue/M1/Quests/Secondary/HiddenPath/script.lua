@@ -77,9 +77,9 @@ hidden_path = {
         if Quest.IsActive(hidden_path.name) then
             local progress = Quest.GetProgress(hidden_path.name) + 1
             local exp_to_remove = (hidden_path.base_exp_to_remove + hidden_path.exp_remove_per_difficulty * initialDifficulty) * progress
-            local current_exp = GetHeroStat(hero, STAT_EXPERIENCE)
-            if current_exp >= exp_to_remove then
-                if MCCS_QuestionBoxForPlayers(PLAYER_1, {hidden_path.path.text.."give_exp_to_fairy.txt"; exp_count = exp_to_remove}) then
+            if MCCS_QuestionBoxForPlayers(PLAYER_1, {hidden_path.path.text.."give_exp_to_fairy.txt"; exp_count = exp_to_remove}) then
+                local current_exp = GetHeroStat(hero, STAT_EXPERIENCE)
+                if current_exp >= exp_to_remove then
                     Quest.ResetObjectQuestmark(object)
                     TakeAwayHeroExp(hero, exp_to_remove)
                     Quest.Update(hidden_path.name, progress, hero)
@@ -90,10 +90,10 @@ hidden_path = {
                     RemoveObject(object)
                     hidden_path.CheckFinish(hero, progress)
                     return
+                else
+                    ShowFlyingSign(hidden_path.path.text.."not_enough_exp.txt", hero, PLAYER_1, 7.0)
+                    return
                 end
-            else
-                ShowFlyingSign(hidden_path.path.text.."not_enough_exp.txt", hero, PLAYER_1, 7.0)
-                return
             end
         end
     end,
