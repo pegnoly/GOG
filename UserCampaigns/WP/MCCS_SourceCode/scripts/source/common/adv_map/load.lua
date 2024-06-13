@@ -1,6 +1,0 @@
-doFile("/scripts/common/adv_map/threads.lua")
-doFile("/scripts/common/adv_map/player.lua")
-doFile("/scripts/common/adv_map/fx.lua")
---doFile("/common/adv_map/animations.lua")
-doFile("/scripts/common/adv_map/message_queue.lua")
-doFile("/scripts/common/adv_map/combat_connection.lua")

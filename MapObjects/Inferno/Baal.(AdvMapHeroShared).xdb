@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <AdvMapHeroShared>
 	<Model href="/_(Model)/Creatures/Inferno/Balor_LOD.(Model).xdb#xpointer(/Model)"/>
-	<AnimSet href="/_(AnimSet)/Creatures/Inferno/Balor-arena.(AnimSet).xdb#xpointer(/AnimSet)"/>
+	<AnimSet href="/new_creatures/Inferno/Pit Fiend/animset/creature.(AnimSet).xdb#xpointer(/AnimSet)"/>
 	<blockedTiles/>
 	<holeTiles/>
 	<activeTiles/>
@@ -24,7 +24,7 @@
 	<FlyPassable>true</FlyPassable>
 	<AdventureSoundEffect/>
 	<RazedStatic/>
-	<Icon128 href="baal_128.(Texture).xdb#xpointer(/Texture)"/>
+	<Icon128 href="/new_creatures/Inferno/Pit Fiend/icon_text/icon.(Texture).xdb#xpointer(/Texture)"/>
 	<InternalName>Baal</InternalName>
 	<Class>HERO_CLASS_DEMON_LORD</Class>
 	<Specialization>HERO_SPEC_IMPREGNABLE</Specialization>
@@ -35,13 +35,13 @@
 	<SpecializationNameFileRef href="baal_spec_name.txt"/>
 	<SpecializationDescFileRef href="baal_spec_desc.txt"/>
 	<SpecializationIcon href="baal_spec.(Texture).xdb#xpointer(/Texture)"/>
-	<FaceTexture href="baal_128.(Texture).xdb#xpointer(/Texture)"/>
-	<FaceTextureSmall href="baal_64.(Texture).xdb#xpointer(/Texture)"/>
-	<HeroCharacterArena href="/Characters/Creatures/Inferno/Balor.(Character).xdb#xpointer(/Character)"/>
-	<HeroCharacterArenaMelee href="/Characters/Creatures/Inferno/Balor.(Character) (2).xdb#xpointer(/Character)"/>
-	<HeroCharacterAdventure href="/Characters/Creatures/Inferno/Balor.(Character).xdb#xpointer(/Character)"/>
+	<FaceTexture href="/new_creatures/Inferno/Pit Fiend/icon_text/icon.(Texture).xdb#xpointer(/Texture)"/>
+	<FaceTextureSmall href="/new_creatures/Inferno/Pit Fiend/icon_text/icon.(Texture).xdb#xpointer(/Texture)"/>
+	<HeroCharacterArena href="/new_creatures/Inferno/Pit Fiend/creature.(Character).xdb#xpointer(/Character)"/>
+	<HeroCharacterArenaMelee href="/new_creatures/Inferno/Pit Fiend/creature.(Character).xdb#xpointer(/Character)"/>
+	<HeroCharacterAdventure href="/new_creatures/Inferno/Pit Fiend/creature.(Character).xdb#xpointer(/Character)"/>
 	<HeroIndividualCamera/>
-	<CombatVisual href="/GameMechanics/CreatureVisual/Creatures/Inferno/Balor.xdb#xpointer(/CreatureVisual)"/>
+	<CombatVisual href="/new_creatures/Inferno/Pit Fiend/creature.(CreatureVisual).xdb#xpointer(/CreatureVisual)"/>
 	<TownType>TOWN_INFERNO</TownType>
 	<Editable>
 		<NameFileRef href="baal_name.txt"/>

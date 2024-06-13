@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSceneCamera>
+	<Pos>
+		<Rod>24.6856</Rod>
+		<Pitch>-0.024733</Pitch>
+		<Yaw>4.72836</Yaw>
+		<Roll>0</Roll>
+		<FOV>47.5516</FOV>
+		<ClipDistanceMin>1</ClipDistanceMin>
+		<ClipDistanceMax>500</ClipDistanceMax>
+		<Anchor>
+			<x>152.045</x>
+			<y>79.1868</y>
+			<z>2.99999</z>
+		</Anchor>
+	</Pos>
+	<Absolute>true</Absolute>
+	<Rot>0</Rot>
+	<NameFileRef href="cam1_5-name-camera.txt"/>
+</DSceneCamera>

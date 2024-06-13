@@ -1,1 +1,0 @@
-SetGameVar('MCCS_IsHotseat', 'true')

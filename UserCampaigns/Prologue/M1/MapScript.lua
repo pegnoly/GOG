@@ -1,383 +1,404 @@
--------------------------Сердце ночи by Gerter----------------------------------
+-------------------------пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ by Gerter----------------------------------
 --------------------------owafe001@gmail.com------------------------------------
 
 --------------------------------------------------------------------------------
--- стартовая чушь и просто всякие вещи, которые больше некуда засунуть
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 
-mPath = GetMapDataPath()
-qPath = mPath..'Quests/'
-wPath = mPath..'Warnings/'
-oPath = mPath..'Overrides/'
+-- mPath = GetMapDataPath()
+-- qPath = mPath..'Quests/'
+-- wPath = mPath..'Warnings/'
+-- oPath = mPath..'Overrides/'
 
--- библиотеки
-doFile('lualib.lua')
-doFile('global.lua')
-doFile('touch.lua')
-doFile('qBase.lua')
-doFile('advMapFX.lua')
-doFile('common_funcs.lua')
+-- -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+-- doFile('lualib.lua')
+-- doFile('global.lua')
+-- doFile('touch.lua')
+-- doFile('qBase.lua')
+-- doFile('advMapFX.lua')
+-- doFile('common_funcs.lua')
 
-doFile(mPath..'main_quest.lua')
-doFile(mPath..'karlamQuests.lua')
-doFile(mPath..'moriton.lua')
-doFile(mPath..'global_triggers.lua')
+-- doFile(mPath..'main_quest.lua')
+-- doFile(mPath..'karlamQuests.lua')
+-- doFile(mPath..'moriton.lua')
+-- doFile(mPath..'global_triggers.lua')
 
-SetHeroCombatScript('Karlam', '/BaseCombatScript.xdb#xpointer(/Script)')
-SetHeroCombatScript('Baal', '/BaseCombatScript.xdb#xpointer(/Script)')
-SetHeroCombatScript('Karlam_copy', '/BaseCombatScript.xdb#xpointer(/Script)')
-SetHeroCombatScript('Baal_copy', '/BaseCombatScript.xdb#xpointer(/Script)')
-SetHeroCombatScript('Greta', '/BaseCombatScript.xdb#xpointer(/Script)')
-SetHeroCombatScript('ainur', '/BaseCombatScript.xdb#xpointer(/Script)')
-SetHeroCombatScript('Gilva', '/BaseCombatScript.xdb#xpointer(/Script)')
-SetHeroCombatScript('Orris', '/BaseCombatScript.xdb#xpointer(/Script)')
-SetHeroCombatScript('Klem', '/BaseCombatScript.xdb#xpointer(/Script)')
-SetHeroCombatScript('Mordrakar', '/BaseCombatScript.xdb#xpointer(/Script)')
-SetHeroCombatScript('Inagost', '/BaseCombatScript.xdb#xpointer(/Script)')
-SetHeroCombatScript('Keeper', '/BaseCombatScript.xdb#xpointer(/Script)')
-SetHeroCombatScript('Linaas', '/BaseCombatScript.xdb#xpointer(/Script)')
+-- SetHeroCombatScript('Karlam', '/BaseCombatScript.xdb#xpointer(/Script)')
+-- SetHeroCombatScript('Baal', '/BaseCombatScript.xdb#xpointer(/Script)')
+-- SetHeroCombatScript('Karlam_copy', '/BaseCombatScript.xdb#xpointer(/Script)')
+-- SetHeroCombatScript('Baal_copy', '/BaseCombatScript.xdb#xpointer(/Script)')
+-- SetHeroCombatScript('Greta', '/BaseCombatScript.xdb#xpointer(/Script)')
+-- SetHeroCombatScript('ainur', '/BaseCombatScript.xdb#xpointer(/Script)')
+-- SetHeroCombatScript('Gilva', '/BaseCombatScript.xdb#xpointer(/Script)')
+-- SetHeroCombatScript('Orris', '/BaseCombatScript.xdb#xpointer(/Script)')
+-- SetHeroCombatScript('Klem', '/BaseCombatScript.xdb#xpointer(/Script)')
+-- SetHeroCombatScript('Mordrakar', '/BaseCombatScript.xdb#xpointer(/Script)')
+-- SetHeroCombatScript('Inagost', '/BaseCombatScript.xdb#xpointer(/Script)')
+-- SetHeroCombatScript('Keeper', '/BaseCombatScript.xdb#xpointer(/Script)')
+-- SetHeroCombatScript('Linaas', '/BaseCombatScript.xdb#xpointer(/Script)')
 
-SetGameVar('svetoch', 0) -- наличие Светоча
-SetGameVar('sandro_cape', 0) -- наличие плаща Сандро
-SetGameVar('greta_coef', 0) -- уровень Греты
-SetGameVar('karlam_coef', 0) -- чародейство Карлама
+-- SetGameVar('svetoch', 0) -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+-- SetGameVar('sandro_cape', 0) -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+-- SetGameVar('greta_coef', 0) -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+-- SetGameVar('karlam_coef', 0) -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 
-SetRegionBlocked('crystal1', not nil, PLAYER_2) -- кристаллы для тюрем(хотя вероятность захода ИИ туда весьма невысока)
-SetRegionBlocked('crystal2', not nil, PLAYER_2)
-SetRegionBlocked('crystal3', not nil, PLAYER_2)
-SetRegionBlocked('townBlock1', not nil, PLAYER_2) -- блокировка Моритона для ИИ(и частично для игрока)
-SetRegionBlocked('townBlock2', not nil, PLAYER_2)
-SetRegionBlocked('townBlock3', not nil, PLAYER_2)
-SetRegionBlocked('townBlock4', not nil, PLAYER_2)
-SetRegionBlocked('undeadAttack', not nil)
-SetRegionBlocked('cemeteryBlock', not nil, PLAYER_1)
-SetRegionBlocked('ai_block1', not nil, PLAYER_2) -- здесь ИИ может непонятным образом застрять, лучше заблочить
+-- SetRegionBlocked('crystal1', not nil, PLAYER_2) -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ(пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ)
+-- SetRegionBlocked('crystal2', not nil, PLAYER_2)
+-- SetRegionBlocked('crystal3', not nil, PLAYER_2)
+-- SetRegionBlocked('townBlock1', not nil, PLAYER_2) -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅ(пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ)
+-- SetRegionBlocked('townBlock2', not nil, PLAYER_2)
+-- SetRegionBlocked('townBlock3', not nil, PLAYER_2)
+-- SetRegionBlocked('townBlock4', not nil, PLAYER_2)
+-- SetRegionBlocked('undeadAttack', not nil)
+-- SetRegionBlocked('cemeteryBlock', not nil, PLAYER_1)
+-- SetRegionBlocked('ai_block1', not nil, PLAYER_2) -- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 
--- некоторые блоки для Баала
-SetRegionBlocked('portalBlock2', not nil, PLAYER_2)
-SetRegionBlocked('portalBlock1', not nil, PLAYER_2)
-for i = 1, 6 do
-  SetRegionBlocked('bblock'..i, not nil, PLAYER_2)
-end
+-- -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+-- SetRegionBlocked('portalBlock2', not nil, PLAYER_2)
+-- SetRegionBlocked('portalBlock1', not nil, PLAYER_2)
+-- for i = 1, 6 do
+--   SetRegionBlocked('bblock'..i, not nil, PLAYER_2)
+-- end
 
--- изменения описаний...
-OverrideObjectTooltipNameAndDescription('enter_artTown', oPath..'Art_name.txt', oPath..'Art_desc.txt')
-OverrideObjectTooltipNameAndDescription('war_lord', oPath..'ranger_name.txt', oPath..'ranger_desc.txt')
-OverrideObjectTooltipNameAndDescription('witch2', oPath..'witch2_name.txt', oPath..'witch2_desc.txt')
-OverrideObjectTooltipNameAndDescription('baal_point', oPath..'crypt_name.txt', oPath..'crypt_desc.txt')
-OverrideObjectTooltipNameAndDescription('mageTower', oPath..'mageTower_name.txt', oPath..'mageTower_desc.txt')
-OverrideObjectTooltipNameAndDescription('tavern1', oPath..'tavern_name.txt', oPath..'tavern_desc.txt')
-OverrideObjectTooltipNameAndDescription('libraryTui', oPath..'lib_name.txt', oPath..'lib_desc.txt')
-OverrideObjectTooltipNameAndDescription('qAstro', oPath..'astro_desc.txt', oPath..'astro_name.txt')
+-- -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ...
+-- OverrideObjectTooltipNameAndDescription('enter_artTown', oPath..'Art_name.txt', oPath..'Art_desc.txt')
+-- OverrideObjectTooltipNameAndDescription('war_lord', oPath..'ranger_name.txt', oPath..'ranger_desc.txt')
+-- OverrideObjectTooltipNameAndDescription('witch2', oPath..'witch2_name.txt', oPath..'witch2_desc.txt')
+-- OverrideObjectTooltipNameAndDescription('baal_point', oPath..'crypt_name.txt', oPath..'crypt_desc.txt')
+-- OverrideObjectTooltipNameAndDescription('mageTower', oPath..'mageTower_name.txt', oPath..'mageTower_desc.txt')
+-- OverrideObjectTooltipNameAndDescription('tavern1', oPath..'tavern_name.txt', oPath..'tavern_desc.txt')
+-- OverrideObjectTooltipNameAndDescription('libraryTui', oPath..'lib_name.txt', oPath..'lib_desc.txt')
+-- OverrideObjectTooltipNameAndDescription('qAstro', oPath..'astro_desc.txt', oPath..'astro_name.txt')
 
--- табличка сценок
-DIALOG_SCENES =
-{
-  START = '/DialogScenes/HON/hn_StartScene/DialogScene.xdb#xpointer(/DialogScene)',
-  BAAL_SPAWN = '/DialogScenes/HON/hn_BaalResScene/DialogScene.xdb#xpointer(/DialogScene)',
-  MORITON_ENTER = '/DialogScenes/HON/hn_EnterMoritonScene/DialogScene.xdb#xpointer(/DialogScene)',
-  CREATE_SVET = '/DialogScenes/HON/hn_createSvetScene/DialogScene.xdb#xpointer(/DialogScene)',
-  BAAL_FIGHT = '/DialogScenes/HON/hn_BaalFightScene/DialogScene.xdb#xpointer(/DialogScene)',
-  MIND_CONTROL = '/DialogScenes/HON/hn_MindControlScene/DialogScene.xdb#xpointer(/DialogScene)',
-  FINAL = '/DialogScenes/HON/hn_FinalScene/DialogScene.xdb#xpointer(/DialogScene)',
-  TURGAL = '/DialogScenes/HON/hn_TurgalRitualScene/DialogScene.xdb#xpointer(/DialogScene)',
-  TURGAL2 = '/DialogScenes/HON/hn_TurgalRitualScene2/DialogScene.xdb#xpointer(/DialogScene)'
-}
+-- -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+-- DIALOG_SCENES =
+-- {
+--   START = '/DialogScenes/HON/hn_StartScene/DialogScene.xdb#xpointer(/DialogScene)',
+--   BAAL_SPAWN = '/DialogScenes/HON/hn_BaalResScene/DialogScene.xdb#xpointer(/DialogScene)',
+--   MORITON_ENTER = '/DialogScenes/HON/hn_EnterMoritonScene/DialogScene.xdb#xpointer(/DialogScene)',
+--   CREATE_SVET = '/DialogScenes/HON/hn_createSvetScene/DialogScene.xdb#xpointer(/DialogScene)',
+--   BAAL_FIGHT = '/DialogScenes/HON/hn_BaalFightScene/DialogScene.xdb#xpointer(/DialogScene)',
+--   MIND_CONTROL = '/DialogScenes/HON/hn_MindControlScene/DialogScene.xdb#xpointer(/DialogScene)',
+--   FINAL = '/DialogScenes/HON/hn_FinalScene/DialogScene.xdb#xpointer(/DialogScene)',
+--   TURGAL = '/DialogScenes/HON/hn_TurgalRitualScene/DialogScene.xdb#xpointer(/DialogScene)',
+--   TURGAL2 = '/DialogScenes/HON/hn_TurgalRitualScene2/DialogScene.xdb#xpointer(/DialogScene)'
+-- }
 
--- одинокая кастомная аренка
-ARENAS =
-{
-  -- KEEPER_ARENA = '/Scenes/CombatArenas/heartofnight/keeperArena.xdb#xpointer(/AdventureFlybyScene)',
-  MIND_FIGHT = '/Scenes/CombatArenas/heartofnight/mindBattleArena.(AdventureFlybyScene).xdb#xpointer(/AdventureFlybyScene)'
-}
+-- -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+-- ARENAS =
+-- {
+--   -- KEEPER_ARENA = '/Scenes/CombatArenas/heartofnight/keeperArena.xdb#xpointer(/AdventureFlybyScene)',
+--   MIND_FIGHT = '/Scenes/CombatArenas/heartofnight/mindBattleArena.(AdventureFlybyScene).xdb#xpointer(/AdventureFlybyScene)'
+-- }
 
--- освещения для боевых арен
-COMBAT_LIGHTS =
-{
-  MORNING = '/Lights/_(AmbientLight)/Town/Day_light_Haven01(VicTest).xdb#xpointer(/AmbientLight)',
-  DAY = '/Lights/_(AmbientLight)/Town/Day_light_Haven01(PanovTest).xdb#xpointer(/AmbientLight)',
-  NIGHT = '/Lights/_(AmbientLight)/AdvMap/Addon/A1SM3.xdb#xpointer(/AmbientLight)',
-  UGROUND = '/Lights/_(AmbientLight)/Scenes/dungeon (3) (4).xdb#xpointer(/AmbientLight)',
-  FINAL = '/Lights/_(AmbientLight)/Scenes/Taiga_Forest_Fog.xdb#xpointer(/AmbientLight)',
-  CURRENT = ' '
-}
+-- -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+-- COMBAT_LIGHTS =
+-- {
+--   MORNING = '/Lights/_(AmbientLight)/Town/Day_light_Haven01(VicTest).xdb#xpointer(/AmbientLight)',
+--   DAY = '/Lights/_(AmbientLight)/Town/Day_light_Haven01(PanovTest).xdb#xpointer(/AmbientLight)',
+--   NIGHT = '/Lights/_(AmbientLight)/AdvMap/Addon/A1SM3.xdb#xpointer(/AmbientLight)',
+--   UGROUND = '/Lights/_(AmbientLight)/Scenes/dungeon (3) (4).xdb#xpointer(/AmbientLight)',
+--   FINAL = '/Lights/_(AmbientLight)/Scenes/Taiga_Forest_Fog.xdb#xpointer(/AmbientLight)',
+--   CURRENT = ' '
+-- }
 
--- скриптовые - текстовые имена квестов(см. qBase)
-Q_NAMES =
-{
-  ['INTRO_QUEST'] = 'Ошибка в расчетах',
-  ['KILL_BAAL'] = 'Личный демон',
-  ['STAY_ALIVE'] = 'Герои не умирают',
-  ['ASHA_TEAR'] = 'Божественная частица',
-  ['PHOENIX'] = 'Эссенция жизни',
-  ['ETERNAL_NIGHT'] = 'Наступление Тьмы',
-  ['FINAL_QUEST'] = 'Огонь безумия',
-  ['TAVERN_QUEST1'] = 'Заказное убийство',
-  ['TAVERN_QUEST2'] = 'Ключ к тайне',
-  ['MAGE_QUEST'] = 'Пропавший сын',
-  ['SECRET_PATH'] = 'Тайные тропы',
-  ['DRAGON_QUEST'] = 'Испытание дракона',
-  ['ASTRO_QUEST'] = 'Секрет производства',
-  ['MAID_QUEST'] = 'Проблемы хвостатых',
-  ['DEFEND_TOWN'] = 'Оплот света',
-  ['UNDEAD_ATTACK'] = 'Атака мертвецов',
-  ['UNDERGROUND_PATH'] = 'Путь под горой',
-  ['KILL_KLEM'] = 'Искажающая магию',
-  ['WITCH_QUEST'] = 'Страх пустоты'
-}
+-- -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ(пїЅпїЅ. qBase)
+-- Q_NAMES =
+-- {
+--   ['INTRO_QUEST'] = 'пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ',
+--   ['KILL_BAAL'] = 'пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ',
+--   ['STAY_ALIVE'] = 'пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ',
+--   ['ASHA_TEAR'] = 'пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ',
+--   ['PHOENIX'] = 'пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ',
+--   ['ETERNAL_NIGHT'] = 'пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ',
+--   ['FINAL_QUEST'] = 'пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ',
+--   ['TAVERN_QUEST1'] = 'пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ',
+--   ['TAVERN_QUEST2'] = 'пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ',
+--   ['MAGE_QUEST'] = 'пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ',
+--   ['SECRET_PATH'] = 'пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ',
+--   ['DRAGON_QUEST'] = 'пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ',
+--   ['ASTRO_QUEST'] = 'пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ',
+--   ['MAID_QUEST'] = 'пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ',
+--   ['DEFEND_TOWN'] = 'пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ',
+--   ['UNDEAD_ATTACK'] = 'пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ',
+--   ['UNDERGROUND_PATH'] = 'пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ',
+--   ['KILL_KLEM'] = 'пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ',
+--   ['WITCH_QUEST'] = 'пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ'
+-- }
 
--- передает в боевой скрипт информацию о нужных параметрах героев
-function UpdateCombatStats()
-  while 1 do
-    if HasArtefact('Karlam', ARTIFACT_SHAWL_OF_GREAT_LICH, 1) then
-      SetGameVar('sandro_cape', 1)
-    else
-      SetGameVar('sandro_cape', 0)
-    end
-    if HasArtefact('Karlam', ARTIFACT_PRINCESS, 1) then
-      SetGameVar('svetoch', 1)
-    else
-      SetGameVar('svetoch', 0)
-    end
-    if HasHeroSkill('Karlam', PERK_LUCKY_STRIKE) then
-      SetGameVar('karlam_soldier_luck', 1)
-    else
-      SetGameVar('karlam_soldier_luck', 0)
-    end
-    SetGameVar('greta_coef', GetHeroLevel('Greta'))
-    SetGameVar('karlam_coef', GetHeroLevel('Karlam'))
-    sleep()
-  end
-end
+-- -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+-- function UpdateCombatStats()
+--   while 1 do
+--     if HasArtefact('Karlam', ARTIFACT_SHAWL_OF_GREAT_LICH, 1) then
+--       SetGameVar('sandro_cape', 1)
+--     else
+--       SetGameVar('sandro_cape', 0)
+--     end
+--     if HasArtefact('Karlam', ARTIFACT_PRINCESS, 1) then
+--       SetGameVar('svetoch', 1)
+--     else
+--       SetGameVar('svetoch', 0)
+--     end
+--     if HasHeroSkill('Karlam', PERK_LUCKY_STRIKE) then
+--       SetGameVar('karlam_soldier_luck', 1)
+--     else
+--       SetGameVar('karlam_soldier_luck', 0)
+--     end
+--     SetGameVar('greta_coef', GetHeroLevel('Greta'))
+--     SetGameVar('karlam_coef', GetHeroLevel('Karlam'))
+--     sleep()
+--   end
+-- end
 
--- тупой поток изъятия золота у 3 игрока, чтобы не мог строить
-function RemovePlayer3Gold()
-  while GetObjectOwner('Moriton') == PLAYER_3 do
-    local gold = GetPlayerResource(PLAYER_3, 6)
-    if gold > 0 then
-      -- print(gold, ' gold removed')
-      SetPlayerResource(PLAYER_3, 6, 0)
-    end
-    sleep()
-  end
-end
+-- -- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ 3 пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+-- function RemovePlayer3Gold()
+--   while GetObjectOwner('Moriton') == PLAYER_3 do
+--     local gold = GetPlayerResource(PLAYER_3, 6)
+--     if gold > 0 then
+--       -- print(gold, ' gold removed')
+--       SetPlayerResource(PLAYER_3, 6, 0)
+--     end
+--     sleep()
+--   end
+-- end
 
--- определяет стартовые параметры героев, которым это нужно
-function SetupHeroes()
-  EnableHeroAI('Baal', nil)
-  -- EnableHeroAI('Baal_copy', nil)
-  -- EnableHeroAI('Karlam_copy', nil)
-  EnableHeroAI('Greta', nil)
-  EnableHeroAI('Inagost', nil)
-  -- EnableHeroAI('Keeper', nil)
+-- -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+-- function SetupHeroes()
+--   EnableHeroAI('Baal', nil)
+--   -- EnableHeroAI('Baal_copy', nil)
+--   -- EnableHeroAI('Karlam_copy', nil)
+--   EnableHeroAI('Greta', nil)
+--   EnableHeroAI('Inagost', nil)
+--   -- EnableHeroAI('Keeper', nil)
   
-  SetHeroLootable('Baal', nil)
-  SetHeroLootable('Inagost', nil)
-  SetHeroLootable('Greta', nil)
-  SetHeroLootable('Keeper', nil)
+--   SetHeroLootable('Baal', nil)
+--   SetHeroLootable('Inagost', nil)
+--   SetHeroLootable('Greta', nil)
+--   SetHeroLootable('Keeper', nil)
   
-  AddHeroCreatures('Karlam', CREATURE_GREMLIN_SABOTEUR, 74 + random(5))
-  AddHeroCreatures('Karlam', CREATURE_OBSIDIAN_GARGOYLE, 18 + random(3))
-  AddHeroCreatures('Karlam', CREATURE_IRON_GOLEM, 12 + random(4))
+--   AddHeroCreatures('Karlam', CREATURE_GREMLIN_SABOTEUR, 74 + random(5))
+--   AddHeroCreatures('Karlam', CREATURE_OBSIDIAN_GARGOYLE, 18 + random(3))
+--   AddHeroCreatures('Karlam', CREATURE_IRON_GOLEM, 12 + random(4))
 
-  AddHeroCreatures('Greta', CREATURE_DRYAD, 80)
-  AddHeroCreatures('Greta', CREATURE_WAR_DANCER, 55)
-  AddHeroCreatures('Greta', CREATURE_GRAND_ELF, 42)
-  AddHeroCreatures('Greta', CREATURE_HIGH_DRUID, 17)
-  AddHeroCreatures('Greta', CREATURE_WHITE_UNICORN, 6)
+--   AddHeroCreatures('Greta', CREATURE_DRYAD, 80)
+--   AddHeroCreatures('Greta', CREATURE_WAR_DANCER, 55)
+--   AddHeroCreatures('Greta', CREATURE_GRAND_ELF, 42)
+--   AddHeroCreatures('Greta', CREATURE_HIGH_DRUID, 17)
+--   AddHeroCreatures('Greta', CREATURE_WHITE_UNICORN, 6)
 
-  AddHeroCreatures('Inagost', CREATURE_STALKER, 97 + 37 * diff + random(8))
-  AddHeroCreatures('Inagost', CREATURE_BLOOD_WITCH_2, 72 + 29 * diff + random(7))
-  AddHeroCreatures('Inagost', CREATURE_BLADE_SINGER, 75 + 43 * diff + random(6))
-  AddHeroCreatures('Inagost', CREATURE_BLACK_RIDER, 29 + 15 * diff + random(5))
-  AddHeroCreatures('Inagost', CREATURE_CHAOS_HYDRA, 25 + 10 * DIFF + random(4))
-  AddHeroCreatures('Inagost', CREATURE_MATRIARCH, 9 + 5 * diff + random(3))
-  AddHeroCreatures('Inagost', CREATURE_BLACK_DRAGON, 2 + 2 * diff + random(2))
-  ChangeHeroStat('Inagost', 0, LEVELS[25 + diff])
+--   AddHeroCreatures('Inagost', CREATURE_STALKER, 97 + 37 * diff + random(8))
+--   AddHeroCreatures('Inagost', CREATURE_BLOOD_WITCH_2, 72 + 29 * diff + random(7))
+--   AddHeroCreatures('Inagost', CREATURE_BLADE_SINGER, 75 + 43 * diff + random(6))
+--   AddHeroCreatures('Inagost', CREATURE_BLACK_RIDER, 29 + 15 * diff + random(5))
+--   AddHeroCreatures('Inagost', CREATURE_CHAOS_HYDRA, 25 + 10 * DIFF + random(4))
+--   AddHeroCreatures('Inagost', CREATURE_MATRIARCH, 9 + 5 * diff + random(3))
+--   AddHeroCreatures('Inagost', CREATURE_BLACK_DRAGON, 2 + 2 * diff + random(2))
+--   ChangeHeroStat('Inagost', 0, LEVELS[25 + diff])
   
-  AddHeroCreatures('Baal', CREATURE_IMP, 750 + 75 * diff + random(8))
-  AddHeroCreatures('Baal', CREATURE_HORNED_LEAPER, 475 + 40 * diff + random(7))
-  AddHeroCreatures('Baal', CREATURE_FIREBREATHER_HOUND, 300 + 25 * diff + random(6))
-  AddHeroCreatures('Baal', CREATURE_SUCCUBUS_SEDUCER, 92 + 12 * diff + random(5))
-  AddHeroCreatures('Baal', CREATURE_HELLMARE, 48 + 8 * diff + random(4))
-  AddHeroCreatures('Baal', CREATURE_PIT_SPAWN, 25 + 4 * diff + random(3))
-  AddHeroCreatures('Baal', CREATURE_ARCHDEVIL, 17 + 2 * diff + random(3))
-  WarpHeroExp('Baal', LEVELS[40])
-end
+--   AddHeroCreatures('Baal', CREATURE_IMP, 750 + 75 * diff + random(8))
+--   AddHeroCreatures('Baal', CREATURE_HORNED_LEAPER, 475 + 40 * diff + random(7))
+--   AddHeroCreatures('Baal', CREATURE_FIREBREATHER_HOUND, 300 + 25 * diff + random(6))
+--   AddHeroCreatures('Baal', CREATURE_SUCCUBUS_SEDUCER, 92 + 12 * diff + random(5))
+--   AddHeroCreatures('Baal', CREATURE_HELLMARE, 48 + 8 * diff + random(4))
+--   AddHeroCreatures('Baal', CREATURE_PIT_SPAWN, 25 + 4 * diff + random(3))
+--   AddHeroCreatures('Baal', CREATURE_ARCHDEVIL, 17 + 2 * diff + random(3))
+--   WarpHeroExp('Baal', LEVELS[40])
+-- end
 
-function KarlamAlive()
-  while IsHeroAlive('Karlam') do sleep(10) end
-  Loose()
-end
+-- function KarlamAlive()
+--   while IsHeroAlive('Karlam') do sleep(10) end
+--   Loose()
+-- end
 
---
---------------------------------------------------------------------------------
--- тестовые функции
---
-unlim_move = 1
+-- --
+-- --------------------------------------------------------------------------------
+-- -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+-- --
+-- unlim_move = 1
 
-function KarlamTest()
-  OpenCircleFog(33, 27, 0, 9999, 1)
-  OpenCircleFog(33, 27, 1, 9999, 1)
-  consoleCmd('enable_cheats')
-  consoleCmd('add_army 3 2 1000')
-  WarpHeroExp('Karlam', LEVELS[25])
-  startThread(
-   function()
-     while 1 do
-      if unlim_move == 1 then
-        ChangeHeroStat('Karlam', STAT_MOVE_POINTS, 10000)
-      end
-      sleep()
-    end
-  end)
-  --GiveArtifact('Karlam', ARTIFACT_PRINCESS)
-  --MakeHeroInteractWithObject('Karlam', 'Baal')
-end
+-- function KarlamTest()
+--   OpenCircleFog(33, 27, 0, 9999, 1)
+--   OpenCircleFog(33, 27, 1, 9999, 1)
+--   consoleCmd('enable_cheats')
+--   consoleCmd('add_army 3 2 1000')
+--   WarpHeroExp('Karlam', LEVELS[25])
+--   startThread(
+--    function()
+--      while 1 do
+--       if unlim_move == 1 then
+--         ChangeHeroStat('Karlam', STAT_MOVE_POINTS, 10000)
+--       end
+--       sleep()
+--     end
+--   end)
+--   --GiveArtifact('Karlam', ARTIFACT_PRINCESS)
+--   --MakeHeroInteractWithObject('Karlam', 'Baal')
+-- end
 
-function SpecTest()
-  consoleCmd('enable_cheats')
-  consoleCmd('add_army 3 2 100')
-  for i = 1, 2 do
-    GiveHeroSkill('Karlam', SKILL_LEADERSHIP)
-    GiveHeroSkill('Karlam', SKILL_LIGHT_MAGIC)
-    GiveArtifact('Karlam', ARTIFACT_RING_OF_HASTE)
-  end
-  sleep()
-  --GiveHeroSkill('Karlam', HERO_SKILL_EMPATHY)
-  GiveHeroSkill('Karlam', SKILL_WAR_MACHINES)
-  sleep()
-  GiveHeroSkill('Karlam', PERK_BALLISTA)
-  WarpHeroExp('Karlam', LEVELS[25])
-  ChangeHeroStat('Karlam', 3, 100)
-  SetGameVar('spec_test', 1)
-end
--- тест: устанавливает параметры Греты в средние к моменту приходв некроманта под номером boss
---function GretaTest(boss)
---  GiveArtifact('Greta', ARTIFACT_DRAGON_EYE_RING)
---  for i, spell in {SPELL_REGENERATION, SPELL_BLESS, SPELL_SLOW, SPELL_HASTE, SPELL_DISPEL} do
---    TeachHeroSpell('Greta', spell)
---  end
---  SetObjectOwner('ore_m', PLAYER_1)
---  SetObjectOwner('wood_m', PLAYER_1)
---  SetObjectOwner('gold_m', PLAYER_1)
---  moriton.deadStacks = 7
---  if boss == 1 then
---    ChangeHeroStat('Greta', 0, LEVELS[19])
---    AddHeroCreatures('Greta', CREATURE_DRYAD, 180)
---    AddHeroCreatures('Greta', CREATURE_BLADE_SINGER, 130)
---    AddHeroCreatures('Greta', CREATURE_SHARP_SHOOTER, 125)
---    AddHeroCreatures('Greta', CREATURE_HIGH_DRUID, 50)
---    AddHeroCreatures('Greta', CREATURE_UNICORN, 12)
---    AddHeroCreatures('Greta', CREATURE_TREANT, 3)
---  elseif boss == 2 then
---    AddHeroCreatures('Greta', CREATURE_DRYAD, 250)
---    AddHeroCreatures('Greta', CREATURE_BLADE_SINGER, 90)
---    AddHeroCreatures('Greta', CREATURE_SHARP_SHOOTER, 170)
---    AddHeroCreatures('Greta', CREATURE_HIGH_DRUID, 60)
---    AddHeroCreatures('Greta', CREATURE_WAR_UNICORN, 16)
---    AddHeroCreatures('Greta', CREATURE_TREANT_GUARDIAN, 4)
---    Award('Greta', nil, {[0] = LEVELS[26]},
---         {
---           ARTIFACT_SWORD_OF_RUINS,
---           ARTIFACT_LION_HIDE_CAPE,
---           ARTIFACT_BOOTS_OF_SWIFTNESS,
---           ARTIFACT_SKULL_HELMET
---         },
---         {
---           {SPELL_FIREBALL, SPELL_CHAIN_LIGHTNING, SPELL_METEOR_SHOWER},
---           {SPELL_WEAKNESS, SPELL_FORGETFULNESS},
---           {SPELL_DEFLECT_ARROWS, SPELL_RESURRECT},
---           {SPELL_PHANTOM, SPELL_CELESTIAL_SHIELD}
---         })
---  end
---end
+-- function SpecTest()
+--   consoleCmd('enable_cheats')
+--   consoleCmd('add_army 3 2 100')
+--   for i = 1, 2 do
+--     GiveHeroSkill('Karlam', SKILL_LEADERSHIP)
+--     GiveHeroSkill('Karlam', SKILL_LIGHT_MAGIC)
+--     GiveArtifact('Karlam', ARTIFACT_RING_OF_HASTE)
+--   end
+--   sleep()
+--   --GiveHeroSkill('Karlam', HERO_SKILL_EMPATHY)
+--   GiveHeroSkill('Karlam', SKILL_WAR_MACHINES)
+--   sleep()
+--   GiveHeroSkill('Karlam', PERK_BALLISTA)
+--   WarpHeroExp('Karlam', LEVELS[25])
+--   ChangeHeroStat('Karlam', 3, 100)
+--   SetGameVar('spec_test', 1)
+-- end
+-- -- пїЅпїЅпїЅпїЅ: пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ boss
+-- --function GretaTest(boss)
+-- --  GiveArtifact('Greta', ARTIFACT_DRAGON_EYE_RING)
+-- --  for i, spell in {SPELL_REGENERATION, SPELL_BLESS, SPELL_SLOW, SPELL_HASTE, SPELL_DISPEL} do
+-- --    TeachHeroSpell('Greta', spell)
+-- --  end
+-- --  SetObjectOwner('ore_m', PLAYER_1)
+-- --  SetObjectOwner('wood_m', PLAYER_1)
+-- --  SetObjectOwner('gold_m', PLAYER_1)
+-- --  moriton.deadStacks = 7
+-- --  if boss == 1 then
+-- --    ChangeHeroStat('Greta', 0, LEVELS[19])
+-- --    AddHeroCreatures('Greta', CREATURE_DRYAD, 180)
+-- --    AddHeroCreatures('Greta', CREATURE_BLADE_SINGER, 130)
+-- --    AddHeroCreatures('Greta', CREATURE_SHARP_SHOOTER, 125)
+-- --    AddHeroCreatures('Greta', CREATURE_HIGH_DRUID, 50)
+-- --    AddHeroCreatures('Greta', CREATURE_UNICORN, 12)
+-- --    AddHeroCreatures('Greta', CREATURE_TREANT, 3)
+-- --  elseif boss == 2 then
+-- --    AddHeroCreatures('Greta', CREATURE_DRYAD, 250)
+-- --    AddHeroCreatures('Greta', CREATURE_BLADE_SINGER, 90)
+-- --    AddHeroCreatures('Greta', CREATURE_SHARP_SHOOTER, 170)
+-- --    AddHeroCreatures('Greta', CREATURE_HIGH_DRUID, 60)
+-- --    AddHeroCreatures('Greta', CREATURE_WAR_UNICORN, 16)
+-- --    AddHeroCreatures('Greta', CREATURE_TREANT_GUARDIAN, 4)
+-- --    Award('Greta', nil, {[0] = LEVELS[26]},
+-- --         {
+-- --           ARTIFACT_SWORD_OF_RUINS,
+-- --           ARTIFACT_LION_HIDE_CAPE,
+-- --           ARTIFACT_BOOTS_OF_SWIFTNESS,
+-- --           ARTIFACT_SKULL_HELMET
+-- --         },
+-- --         {
+-- --           {SPELL_FIREBALL, SPELL_CHAIN_LIGHTNING, SPELL_METEOR_SHOWER},
+-- --           {SPELL_WEAKNESS, SPELL_FORGETFULNESS},
+-- --           {SPELL_DEFLECT_ARROWS, SPELL_RESURRECT},
+-- --           {SPELL_PHANTOM, SPELL_CELESTIAL_SHIELD}
+-- --         })
+-- --  end
+-- --end
 
--- проигрывание эффектов на старте карты
-function InitThisMapStartFX()
-  PlayVisualEffect(USED_FX.GHOST_CURSE_FX, 'baal_point')
-  PlayVisualEffect(USED_FX.AMPLIFIER_FX, 'SoM', 'scull_fx', 0, 0, 0, 0, 1)
-  PlayVisualEffect(USED_FX.TITAN_FX, 'portal1', 'portal1_fx', -0.5, 0, 0, 0, 0)
-  PlayVisualEffect(USED_FX.BIG_CRYS_FX, 'darkPath_Portal', 'dpp_fx', 1, 0, 0, 0, 1)
-  PlayVisualEffect(USED_FX.GHOST_HAUNT_FX, 'lake_temple', 'lt_fx1', -1.2, 1.85, 1, 0)
-  PlayVisualEffect(USED_FX.GHOST_POSSES_FX, 'lake_temple', 'lt_fx2', -1, -2, 2, 0)
-  -- PlayVisualEffect(USED_FX.MATRON_FX, 'libTui_portal', 'lib_p_fx', -5.74, 4.45, -4)
-end
+-- -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+-- function InitThisMapStartFX()
+--   PlayVisualEffect(USED_FX.GHOST_CURSE_FX, 'baal_point')
+--   PlayVisualEffect(USED_FX.AMPLIFIER_FX, 'SoM', 'scull_fx', 0, 0, 0, 0, 1)
+--   PlayVisualEffect(USED_FX.TITAN_FX, 'portal1', 'portal1_fx', -0.5, 0, 0, 0, 0)
+--   PlayVisualEffect(USED_FX.BIG_CRYS_FX, 'darkPath_Portal', 'dpp_fx', 1, 0, 0, 0, 1)
+--   PlayVisualEffect(USED_FX.GHOST_HAUNT_FX, 'lake_temple', 'lt_fx1', -1.2, 1.85, 1, 0)
+--   PlayVisualEffect(USED_FX.GHOST_POSSES_FX, 'lake_temple', 'lt_fx2', -1, -2, 2, 0)
+--   -- PlayVisualEffect(USED_FX.MATRON_FX, 'libTui_portal', 'lib_p_fx', -5.74, 4.45, -4)
+-- end
 
--- инициализация анимгрупп
-function InitThisMapAnimGroups()
-  local deads = {}
-  for i = 1, 31 do
-    deads[i] = 'dead'..i
-  end
-  AnimGroup[1] = {actors = deads}
-  AnimGroup[2] = {actors = {'moriton_treant1', 'moriton_treant2'}}
-  AnimGroup[3] = {actors = {'moriton_g1_a', 'moriton_g1_dru'}, region = 'moriton_anims1'}
-  AnimGroup[4] = {actors = {'moriton_g1_drag', 'moriton_g1_uni'}, region = 'moriton_anims1'}
-  AnimGroup[5] = {actors = {'moriton_g2_a1', 'moriton_g2_a2', 'moriton_g2_dru'}, region = 'moriton_anims2'}
-  AnimGroup[6] = {actors = {'moriton_g2_treant', 'moriton_g2_uni', 'moriton_g2_drag'}, region = 'moriton_anims2'}
-  AnimGroup[7] = {actors = {'moriton_g2_fairy1', 'moriton_g2_fairy2'}, region = 'moriton_anims2'}
-  AnimGroup[8] = {actors = {'moriton_g3_fairy1', 'moriton_g3_fairy2', 'moriton_g3_fairy3', 'moriton_g3_fairy4', 'moriton_g3_fairy5'}, region = 'moriton_anims3'}
-  AnimGroup[9] = {actors = {'moriton_g3_dancer1', 'moriton_g3_dancer2', 'moriton_g3_drag'}, region = 'moriton_anims3'}
-  AnimGroup[10] = {actors = {'dp_hydra1', 'dp_hydra2', 'dp_hydra3'}}
-  AnimGroup[11] = {actors = {'dp_mino1', 'dp_mino2', 'dp_mino3', 'dp_mino4', 'dp_mino5'}}
-  AnimGroup[12] = {actors = {'dp_fury1', 'dp_fury2', 'dp_fury3', 'dp_fury4', 'dp_fury5'}}
-  AnimGroup[13] = {actors = {'dp_drag1', 'dp_drag2', 'dp_drag3'}}
-end
+-- -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+-- function InitThisMapAnimGroups()
+--   local deads = {}
+--   for i = 1, 31 do
+--     deads[i] = 'dead'..i
+--   end
+--   AnimGroup[1] = {actors = deads}
+--   AnimGroup[2] = {actors = {'moriton_treant1', 'moriton_treant2'}}
+--   AnimGroup[3] = {actors = {'moriton_g1_a', 'moriton_g1_dru'}, region = 'moriton_anims1'}
+--   AnimGroup[4] = {actors = {'moriton_g1_drag', 'moriton_g1_uni'}, region = 'moriton_anims1'}
+--   AnimGroup[5] = {actors = {'moriton_g2_a1', 'moriton_g2_a2', 'moriton_g2_dru'}, region = 'moriton_anims2'}
+--   AnimGroup[6] = {actors = {'moriton_g2_treant', 'moriton_g2_uni', 'moriton_g2_drag'}, region = 'moriton_anims2'}
+--   AnimGroup[7] = {actors = {'moriton_g2_fairy1', 'moriton_g2_fairy2'}, region = 'moriton_anims2'}
+--   AnimGroup[8] = {actors = {'moriton_g3_fairy1', 'moriton_g3_fairy2', 'moriton_g3_fairy3', 'moriton_g3_fairy4', 'moriton_g3_fairy5'}, region = 'moriton_anims3'}
+--   AnimGroup[9] = {actors = {'moriton_g3_dancer1', 'moriton_g3_dancer2', 'moriton_g3_drag'}, region = 'moriton_anims3'}
+--   AnimGroup[10] = {actors = {'dp_hydra1', 'dp_hydra2', 'dp_hydra3'}}
+--   AnimGroup[11] = {actors = {'dp_mino1', 'dp_mino2', 'dp_mino3', 'dp_mino4', 'dp_mino5'}}
+--   AnimGroup[12] = {actors = {'dp_fury1', 'dp_fury2', 'dp_fury3', 'dp_fury4', 'dp_fury5'}}
+--   AnimGroup[13] = {actors = {'dp_drag1', 'dp_drag2', 'dp_drag3'}}
+-- end
 
--- настройка объектов из анимгрупп и их запуск
-function SetupThisMapAnimGroups()
-  for i = 1, 13 do
-    for i, actor in AnimGroup[i].actors do
-      SetObjectEnabled(actor, nil)
-      SetDisabledObjectMode(actor, DISABLED_BLOCKED)
-      startThread(
-      function()
-        sleep()
-        SetMonsterSelectionType(%actor, 0)
-      end)
-    end
-  end
-  sleep(2)
-  PlayAnims(AnimGroup[1], {'death'}, COND_SINGLE, ONESHOT_STILL)
-  PlayAnims(AnimGroup[2], {'specability'}, COND_SINGLE, ONESHOT_STILL)
-  PlayAnims(AnimGroup[3], {'attack00', 'happy', 'rangeattack'}, COND_HERO_IN_REGION)
-  PlayAnims(AnimGroup[4], {'stir00', 'attack00', 'happy'}, COND_HERO_IN_REGION)
-  PlayAnims(AnimGroup[5], {'attack00', 'happy', 'rangeattack'}, COND_HERO_IN_REGION)
-  PlayAnims(AnimGroup[6], {'stir00', 'attack00', 'happy'}, COND_HERO_IN_REGION)
-  PlayAnims(AnimGroup[7], {'stir00', 'attack00', 'happy', 'cast'}, COND_HERO_IN_REGION)
-  PlayAnims(AnimGroup[8], {'stir00', 'attack00', 'happy', 'cast'}, COND_HERO_IN_REGION)
-  PlayAnims(AnimGroup[9], {'stir00', 'attack00', 'happy'}, COND_HERO_IN_REGION)
-  for i = 10, 13 do
-    PlayAnims(AnimGroup[i], {'stir00'}, COND_OBJECT_EXISTS)
-  end
-end
+-- -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+-- function SetupThisMapAnimGroups()
+--   for i = 1, 13 do
+--     for i, actor in AnimGroup[i].actors do
+--       SetObjectEnabled(actor, nil)
+--       SetDisabledObjectMode(actor, DISABLED_BLOCKED)
+--       startThread(
+--       function()
+--         sleep()
+--         SetMonsterSelectionType(%actor, 0)
+--       end)
+--     end
+--   end
+--   sleep(2)
+--   PlayAnims(AnimGroup[1], {'death'}, COND_SINGLE, ONESHOT_STILL)
+--   PlayAnims(AnimGroup[2], {'specability'}, COND_SINGLE, ONESHOT_STILL)
+--   PlayAnims(AnimGroup[3], {'attack00', 'happy', 'rangeattack'}, COND_HERO_IN_REGION)
+--   PlayAnims(AnimGroup[4], {'stir00', 'attack00', 'happy'}, COND_HERO_IN_REGION)
+--   PlayAnims(AnimGroup[5], {'attack00', 'happy', 'rangeattack'}, COND_HERO_IN_REGION)
+--   PlayAnims(AnimGroup[6], {'stir00', 'attack00', 'happy'}, COND_HERO_IN_REGION)
+--   PlayAnims(AnimGroup[7], {'stir00', 'attack00', 'happy', 'cast'}, COND_HERO_IN_REGION)
+--   PlayAnims(AnimGroup[8], {'stir00', 'attack00', 'happy', 'cast'}, COND_HERO_IN_REGION)
+--   PlayAnims(AnimGroup[9], {'stir00', 'attack00', 'happy'}, COND_HERO_IN_REGION)
+--   for i = 10, 13 do
+--     PlayAnims(AnimGroup[i], {'stir00'}, COND_OBJECT_EXISTS)
+--   end
+-- end
 
-function StartMap() -- некоторые настройки и читы для теста
-  SetHeroesExpCoef(0.55 + (0.2 - 0.05 * diff))
-  SetCombatLight(COMBAT_LIGHTS.MORNING)
-  COMBAT_LIGHTS.CURRENT = COMBAT_LIGHTS.MORNING
-  startQuest(mainQ.names.intro)
-  --startQuest(mainQ.names.main, 'Karlam')
-  SetGameVar('svetoch', 0)
-  SetGameVar('sandro_cape', 0)
-  SetGameVar('karlam_soldier_luck', 0)
-  --SetGameVar('spec_test', 0)
-  --SetGameVar('spec_max_coef', 0)
-  --SetGameVar('spec_init_coef', 0)
-  --SetTownBuildLimit('Moriton', {2, 2, 1, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, -1, 1, -1, 0, -1, 0, 0})
-  SetPlayerStartResources(PLAYER_1, 14 - diff, 14 - diff, 7 - DIFF, 7 - DIFF, 7 - DIFF, 7 - DIFF, 13000 - 1000 * DIFF)
-  SetPlayerStartResources(PLAYER_3, 0, 0, 0, 0, 0, 0, 0)
-  InitThisMapStartFX()
-  InitThisMapAnimGroups()
-  SetupThisMapAnimGroups()
-  sleep(5)
-  UGCombatLightInit()
-  --SpecTest()
-end
-StartDialogScene(DIALOG_SCENES.START)
-startThread(StartMap)
-startThread(UpdateCombatStats)
-startThread(SetupHeroes)
-startThread(KarlamAlive)
-startThread(RemovePlayer3Gold)
+-- function StartMap() -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+--   SetHeroesExpCoef(0.55 + (0.2 - 0.05 * diff))
+--   SetCombatLight(COMBAT_LIGHTS.MORNING)
+--   COMBAT_LIGHTS.CURRENT = COMBAT_LIGHTS.MORNING
+--   startQuest(mainQ.names.intro)
+--   --startQuest(mainQ.names.main, 'Karlam')
+--   SetGameVar('svetoch', 0)
+--   SetGameVar('sandro_cape', 0)
+--   SetGameVar('karlam_soldier_luck', 0)
+--   --SetGameVar('spec_test', 0)
+--   --SetGameVar('spec_max_coef', 0)
+--   --SetGameVar('spec_init_coef', 0)
+--   --SetTownBuildLimit('Moriton', {2, 2, 1, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, -1, 1, -1, 0, -1, 0, 0})
+--   SetPlayerStartResources(PLAYER_1, 14 - diff, 14 - diff, 7 - DIFF, 7 - DIFF, 7 - DIFF, 7 - DIFF, 13000 - 1000 * DIFF)
+--   SetPlayerStartResources(PLAYER_3, 0, 0, 0, 0, 0, 0, 0)
+--   InitThisMapStartFX()
+--   InitThisMapAnimGroups()
+--   SetupThisMapAnimGroups()
+--   sleep(5)
+--   UGCombatLightInit()
+--   --SpecTest()
+-- end
+-- StartDialogScene(DIALOG_SCENES.START)
+-- startThread(StartMap)
+-- startThread(UpdateCombatStats)
+-- startThread(SetupHeroes)
+-- startThread(KarlamAlive)
+-- startThread(RemovePlayer3Gold)
 --startThread(KarlamTest)
+
+primary_quest_path = mainPath.."Quests/Primary/"
+secondary_quest_path = mainPath.."Quests/Secondary/"
+zones_path = mainPath.."Zones/"
+
+function LoadScripts()
+    doFile(secondary_quest_path.."HiddenPath/script.lua")
+    doFile(zones_path.."Moriton/script.lua")
+end
+
+function StartMap()
+    consoleCmd("enable_cheats")
+    OpenCircleFog(0, 0, 0, 999, 1)
+    WarpHeroExp("Karlam", Levels[20])
+    LoadScripts()
+    sleep(10)
+    startThread(hidden_path.Init)
+    startThread(moriton_zone.Init)
+end
+
+startThread(StartMap)

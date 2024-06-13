@@ -1,6 +1,6 @@
 --------------------------------------------------------------------------------
--- главный квест карты, который так или иначе сводится к победе над Баалом
--- здесь же описаны прочие, тесно связанные с главным, квесты
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+-- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅ
 
 mainQ =
 {
@@ -19,23 +19,23 @@ mainQ =
     tear = qPath..'AshaTear/',
     other = qPath..'Other/'
     },
-  eNightDay = 0, -- день начала вечной ночи
-  nightTime = 5,-- день наступления ночи
-  BaalFirstActiveDay = 0, -- день первого появления Баала
-  isBaalActive = 0, -- Баал активен/нет
-  BaalSpawnDate = 0, -- день недели, в который Баал должен начать преследование
-  Destination = 0, -- Баал не имеет/имеет точку назначения(для случая когда Карлам не доступен)
-  BaalTP = 0, -- возможность Баала приблизиться к игроку
-  SpawnPoints = {}, -- список регионов из одного тайла, в которых потенциально может появиться Баал
+  eNightDay = 0, -- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+  nightTime = 5,-- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+  BaalFirstActiveDay = 0, -- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+  isBaalActive = 0, -- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ/пїЅпїЅпїЅ
+  BaalSpawnDate = 0, -- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+  Destination = 0, -- пїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ/пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ(пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ)
+  BaalTP = 0, -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+  SpawnPoints = {}, -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ, пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
   
-  Obelisks = 0, -- посещенные обелиски
-  tear_flag = 0, -- флаг слезы
-  phoenix_flag = 0, -- флаг феникса. а вот
+  Obelisks = 0, -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+  tear_flag = 0, -- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+  phoenix_flag = 0, -- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ. пїЅ пїЅпїЅпїЅ
   
-  gotSvetDay = 0, -- день получения Светоча
+  gotSvetDay = 0, -- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 }
 
--- небольшая подсказка игроку по направлению поисков
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 SetObjectEnabled('hut1', nil)
 Touch.SetFunction('hut1',
 function(hero, object)
@@ -50,7 +50,7 @@ function(hero, object)
   end)
 end)
 
--- крипта Баала и его 'включение'
+-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅ 'пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ'
 SetObjectEnabled('baal_point', nil)
 Touch.SetFunction('baal_point',
 function(hero, object)
@@ -64,7 +64,7 @@ function(hero, object)
   BlockGame()
   MessageBox(mainQ.paths.main..'baal_spawn_message.txt')
   startQuest(mainQ.names.main, hero)
-  mainQ.eNightDay = GetDate(DAY) + 81 - 3 * DIFF -- установка дня вечной ночи
+  mainQ.eNightDay = GetDate(DAY) + 81 - 3 * DIFF -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
   sleep()
   ShowObject('prorok1', 1, 1)
   sleep(15)
@@ -73,11 +73,11 @@ function(hero, object)
   MarkObjectAsVisited(object, hero)
   Touch.OverrideFunction(object, 1,
   function(hero, object)
-    ShowFlyingSign(rtext('Вы уже были здесь...'), object, -1, 7.0)
+    ShowFlyingSign(rtext('пїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ...'), object, -1, 7.0)
   end)
   local dow = GetDate(DAY_OF_WEEK)
-  -- если активировали Баала днем, то он начнет преследование уже этой ночью
-  -- если ночью, то он появится только в следующую ночь
+  -- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ, пїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+  -- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ, пїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
   if dow == 4 then
     mainQ.BaalFirstActiveDay = GetDate(DAY) + 2
   else
@@ -86,7 +86,7 @@ function(hero, object)
   UnblockGame()
 end)
 
--- разговор с пророком возле Моритона
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 SetObjectEnabled('prorok1', nil)
 Touch.SetFunction('prorok1',
 function(hero, object)
@@ -94,7 +94,7 @@ function(hero, object)
     MessageBox(mainQ.paths.main..'prorok_msg.txt')
     updateQuest(mainQ.names.main, 1, hero)
     SetObjectEnabled('elf_treasure1', nil)
-    Touch.SetFunction('elf_treasure1', -- битва в ближней чаще энтов
+    Touch.SetFunction('elf_treasure1', -- пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
     function(hero, object)
       if hero == 'Karlam' then
         if StartCombat(hero, nil, 4,
@@ -120,65 +120,65 @@ function(hero, object)
       end
     end)
   else
-    ShowFlyingSign(rtext('Пророка нет на месте...'), object, -1, 7.0)
+    ShowFlyingSign(rtext('пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ...'), object, -1, 7.0)
   end
 end)
 
--- гарнизон Моритона
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 SetObjectEnabled('garnison1', nil)
 Touch.SetFunction('garnison1',
 function(hero, object)
   if hero == 'Karlam' then
-    if HasArtefact('Karlam', ARTIFACT_RIGID_MANTLE, 1) then -- пропускает, если есть плащ Силанны
+    if HasArtefact('Karlam', ARTIFACT_RIGID_MANTLE, 1) then -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
       MessageBox(mainQ.paths.main..'garnison1_y.txt')
       SetObjectOwner(object, PLAYER_1)
       Touch.RemoveFunctions(object)
       SetObjectEnabled(object, not nil)
       sleep()
-      -- по необъяснимым причинам именно этот гарнизон отказывается нормально работать, пока не войдешь в него,
-      -- а затем не выйдешь с другой стороны, поэтому решаем эту проблему напрямую
+      -- пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅ,
+      -- пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
       ChangeHeroStat(hero, STAT_MOVE_POINTS, 400)
       sleep()
       MoveHeroRealTime(hero, 26, 46, 0)
       -- MakeHeroInteractWithObject(hero, object)
     else
-      MessageBox(mainQ.paths.main..'garnison1_n.txt') -- иначе пройти нельзя
+      MessageBox(mainQ.paths.main..'garnison1_n.txt') -- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
     end
   end
 end)
 
--- первый вход Карлама в Моритон
+-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 function reachMoriton(hero)
   if hero == 'Karlam' then
     Trigger(REGION_ENTER_AND_STOP_TRIGGER, 'moritonEnter', nil)
     StartDialogScene(DIALOG_SCENES.MORITON_ENTER)
-    SetPlayerTeam(PLAYER_3, 1) -- мало ли кто-то решит напасть на Грету
+    SetPlayerTeam(PLAYER_3, 1) -- пїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅ-пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
     startQuest(mainQ.names.enight, hero)
     startQuest(mainQ.names.tear, hero)
     startQuest(mainQ.names.phoenix, hero)
     updateQuest(mainQ.names.main, 2, hero)
     updateQuest(mainQ.names.intro, 1, hero)
     sleep()
-    if mainQ.Obelisks ~= 0 then -- если уже посетили хотя бы один обелиск
-      updateQuest(mainQ.names.tear, 1, hero) -- дать небольшую подсказку в квесте
+    if mainQ.Obelisks ~= 0 then -- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+      updateQuest(mainQ.names.tear, 1, hero) -- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
     end
     -- startThread(CheckMoritonBlock)
     startThread(AshaTear)
     SetHeroesExpCoef(0.5 + (0.2 - (0.05 * diff)))
---    SetRegionBlocked('townBlock1', not nil) -- блокировка всех выходов, кроме тропы.
+--    SetRegionBlocked('townBlock1', not nil) -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ.
 --    SetRegionBlocked('townBlock3', not nil)
 --    SetRegionBlocked('townBlock4', not nil)
 --    SetRegionBlocked('townBlock5', not nil)
-    Trigger(REGION_ENTER_AND_STOP_TRIGGER, 'tropa6', 'leaveMoriton') -- триггер на выход
+    Trigger(REGION_ENTER_AND_STOP_TRIGGER, 'tropa6', 'leaveMoriton') -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
     MessageBox(wPath..'All_paths_blocked.txt')
-    for i = 1, 3 do -- блок гарнизонов
+    for i = 1, 3 do -- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
       SetObjectEnabled('garnison'..i, nil)
       Touch.SetFunction('garnison'..i, returnTown)
       PlayVisualEffect(USED_FX.GHOST_GUARD_FX, 'garnison'..i, 'blockEffect'..i, 0, 0, 0, 0, 0)
     end
     ShowObject('Elleshar', 1)
     sleep(5)
-    for i, unit in moriton.out_gar_units do -- убрать внешний гарнизон
+    for i, unit in moriton.out_gar_units do -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
       local og_unit = 'out_gar_'..unit
       PlayVisualEffect(USED_FX.TOWN_PORTAL_FX, og_unit)
       Play3DSound(USED_SOUNDS.TOWN_PORTAL_SOUND, GetObjectPosition(og_unit))
@@ -207,19 +207,19 @@ function GretaAlive()
   end
 end
 
--- Карлам покидает город - настройка дней нападений, подкреплений, передача Греты игроку
+-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 function leaveMoriton(hero)
   if hero == 'Karlam' then
     SetPlayerTeam(PLAYER_3, 2)
-    -- установка дней атак на город
+    -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
     moriton.test_day = GetDate(DAY) + 1
     moriton.ainurAttack = GetDate(DAY) + 10 -- 10
     moriton.gilvaAttack = moriton.ainurAttack + 13 -- 13
     moriton.orrisAttack = moriton.gilvaAttack + 15 -- 15
     moriton.klemAttack = moriton.orrisAttack + 17 -- 18
     moriton.mordAttack = moriton.klemAttack + 19 -- 21
-    moriton.reinfs = GetDate(DAY) + 7 -- установка дня подкреплений
-    SetRegionBlocked('townBlock2', not nil) -- блокировка тропы
+    moriton.reinfs = GetDate(DAY) + 7 -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+    SetRegionBlocked('townBlock2', not nil) -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
     SetRegionBlocked('undeadAttack', nil)
     Trigger(REGION_ENTER_AND_STOP_TRIGGER, 'tropa6', nil)
     MoritonAttackEvent()
@@ -228,7 +228,7 @@ function leaveMoriton(hero)
     startThread(GretaAlive)
     -- startThread(GretaTest, 2)
     -- unlim_move = 0
-    -- игрок может передать существ Грете, переносим их обратно, если нужно
+    -- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
     for i = 0, 6 do
       local creature, count = GetObjectArmySlotCreature('Greta', i)
       if not (creature == 0 or count == 0) and GetCreatureTown(creature) ~= TOWN_PRESERVE then
@@ -237,12 +237,12 @@ function leaveMoriton(hero)
       end
     end
     SetObjectOwner('Moriton', PLAYER_1)
-    -- по непонятным причинам, сверкающий фонтан, константа которого - 19, установить не получается,
-    -- т.к. 'город не содержит здания 19'. Способа построить его скриптом я вообще не нашел.
-    -- Поэтому эта функция больше не юзается, у ИИ изымается золото, чтобы тупо не мог строить
+    -- пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ - 19, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ,
+    -- пїЅ.пїЅ. 'пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ 19'. пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ.
+    -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     -- SetTownBuildLimit('Moriton', {4, 3, 2, 0, 0, 1, 3, 2, 2, 2, 2, 2, 2, 2, 0, -1, 2, -1, 1, -1, 1, 1})
-    UpgradeTownBuilding('Moriton', 0) -- отстройка Моритона
-    UpgradeTownBuilding('Moriton', 1) -- здания существ зависят от сложности
+    UpgradeTownBuilding('Moriton', 0) -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+    UpgradeTownBuilding('Moriton', 1) -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     for i = 7, 12 - DIFF do
       UpgradeTownBuilding('Moriton', i)
     end
@@ -252,43 +252,43 @@ function leaveMoriton(hero)
   end
 end
 
--- логика тыков в гарнизоны после того, как покинули город
+-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 function returnTown(hero, object)
-  if moriton.remove_def ~= -1 then -- пока не сняты защитные чары
-    MessageBox(rtext('Странная магия закрывает проход...')) -- взаимодействовать, в принципе, нельзя
+  if moriton.remove_def ~= -1 then -- пїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+    MessageBox(rtext('пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ...')) -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅ
     return
-  else -- иначе
+  else -- пїЅпїЅпїЅпїЅпїЅ
     if hero == 'Karlam' then
-      if mainQ.tear_flag == 1 and mainQ.phoenix_flag == 1 then -- есть обе части артефакта?
+      if mainQ.tear_flag == 1 and mainQ.phoenix_flag == 1 then -- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ?
         StartDialogScene(DIALOG_SCENES.CREATE_SVET)
         finishQuest(mainQ.names.tear, hero)
         finishQuest(mainQ.names.phoenix, hero)
-        Award(hero, nil, nil, {ARTIFACT_PRINCESS}) -- получаем Светоч
+        Award(hero, nil, nil, {ARTIFACT_PRINCESS}) -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
         sleep()
         MessageBox(mainQ.paths.main..'got_svetoch.txt')
         updateQuest(mainQ.names.main, 4, hero)
-        mainQ.gotSvetDay = GetDate(DAY) -- запоминаем день
-        startThread(ControlBaalBonus) -- запускаем поток включения/выключения бонуса Баала
+        mainQ.gotSvetDay = GetDate(DAY) -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+        startThread(ControlBaalBonus) -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ/пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
         for i = 1, 3 do
-          Touch.OverrideFunction('garnison'..i, 1, -- больше взаимодействовать нельзя
+          Touch.OverrideFunction('garnison'..i, 1, -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
           function(hero, object)
             if hero == 'Karlam' then
-              MessageBox(rtext('Еще не время возвращаться...'))
+              MessageBox(rtext('пїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ...'))
             elseif hero == 'Greta' then
-              MessageBox(rtext('Хранительница должна остаться до конца со своим городом...'))
+              MessageBox(rtext('пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ...'))
             end
           end)
         end
       else
-        MessageBox(rtext('Возвращаться пока рано...'))
+        MessageBox(rtext('пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ...'))
       end
     elseif hero == 'Greta' then
-      MessageBox(rtext('Хранительница должна остаться до конца со своим городом...')) -- Грета выйти не может в любом случае
+      MessageBox(rtext('пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ...')) -- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
     end
   end
 end
 
--- Светоч нестабилен и разрушается через день(неделю по геройски)...
+-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ(пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ)...
 function CheckSvetDestroy(day)
   if day == mainQ.gotSvetDay + 7 then
     MessageBox(mainQ.paths.main..'svet_destroyed.txt')
@@ -298,9 +298,9 @@ function CheckSvetDestroy(day)
   end
 end
 --------------------------------------------------------------------------------
--- все связанное с респавнами Баала и его преследованием
+-- пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 
--- дает ночные(по факту постоянные) бонусы Баалу. Намеренно завышены, чтобы кто - нибудь случайно не убил раньше времени)
+-- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ(пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ) пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ. пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ - пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ)
 function GiveBaalNightBonus()
   GiveHeroBattleBonus('Baal', HERO_BATTLE_BONUS_ATTACK, 30)
   GiveHeroBattleBonus('Baal', HERO_BATTLE_BONUS_DEFENCE, 30)
@@ -309,106 +309,8 @@ function GiveBaalNightBonus()
   GiveHeroBattleBonus('Baal', HERO_BATTLE_BONUS_HITPOINTS, 1000)
 end
 
-function InitBaalSpawnPoints()
-  for i = 1, 36 do
-    mainQ.SpawnPoints[i] = 'sp'..i -- инициализация точек респавна Баала
-  end
-end
 
-InitBaalSpawnPoints()
-
--- находит точку из числа возможных, которая будет удовлетворять всем условиям
--- с параметром 0 находит проходимую точку, наиболее близкую к Карламу, но не ближе 8 клеток
--- с параметром 1 находит наиболее удаленную проходимую точку для Баала
--- c параметром 2 находит точку, наиболее подходящую для сокращения расстояния, если Баал сильно отстал
-function FindOptimalSpawnPoint(param)
-  if param == 0 then
-    -- сначала устанавливаем случайные возвращаемые координаты - если не получится найти подходящую точку, Баал появится в базовой
-    local xTile, yTile, zTile = RegionToPoint(mainQ.SpawnPoints[1])
-    local nPath = math.huge -- текущий минимальный путь
-    -- local iDebug = 0 -- для отладки
-    for i, point in mainQ.SpawnPoints do -- проверяем все точки из таблицы
-      local testPath = CalcHeroMoveCost('Karlam', RegionToPoint(point)) -- считаем путь героя до точки
-      if testPath ~= -1 and -- если путь есть
-         testPath < nPath and -- и он меньше текущего минимального
-         testPath > 800 then -- но не меньше 8 клеток
-        nPath = testPath -- то обновляем минимальный путь
-        xTile, yTile, zTile = RegionToPoint(point) -- устанавливаем временные возвращаемые координаты
-      end
-    end
-    return xTile, yTile, zTile
-  elseif param == 1 then -- аналогично тому, что выше, только ищем самую дальнюю проходимую точку
-    local xTile, yTile, zTile = RegionToPoint(mainQ.SpawnPoints[1])
-    local nPath = 0
-    for i, point in mainQ.SpawnPoints do
-      local testPath = CalcHeroMoveCost('Baal', RegionToPoint(point))
-      if testPath ~= -1 and
-         testPath > nPath then
-        nPath = testPath
-        xTile, yTile, zTile = RegionToPoint(point)
-      end
-    end
-    return xTile, yTile, zTile
-  -- здесь мы должны найти точку, удовлетворяющую следующим условиям:
-  -- проходима и для Карлама и для Баала;
-  -- путь Карлама до нее - минимально возможный, но не меньше 800;
-  -- сумма путей Карлама и Баала до нее должна быть больше или равна фактическому расстоянию от Баал -> Карлам, т.к.
-  -- нужно учитывать, что путь Карлам -> Баал может быть гораздо меньше засчет троп
-  elseif param == 2 then
-    local xTile, yTile, zTile = GetObjectPosition('Baal')
-    local nPath = math.huge
-    for i, point in mainQ.SpawnPoints do
-      local bPath = CalcHeroMoveCost('Baal', RegionToPoint(point)) -- путь Баала до точки
-      if bPath ~= - 1 then -- если его нет дальше проверять нет смысла
-        local kPath = CalcHeroMoveCost('Karlam', RegionToPoint(point)) -- путь Карлама до точки
-        if kPath ~= -1 and kPath >= 800 then -- так же отсекаем лишние вычисления
-          local dist = CalcHeroMoveCost('Baal', GetObjectPosition('Karlam')) -- расстояние Баал -> Карлам
-          if kPath < nPath and -- путь Карлама минимален?
-             kPath + bPath >= dist then -- сумма путей >= расстоянию Баал -> Карлам?
-            nPath = kPath
-            xTile, yTile, zTile = RegionToPoint(point)
-          end
-        end
-      end
-    end
-    return xTile, yTile, zTile
-  end
-end
-
--- логика перемещений Баала
-function BaalRun()
-  while 1 do
-    if mainQ.isBaalActive == 0 then return end -- выход из функции при отступлении Баала утром
-    if GetCurrentPlayer() == PLAYER_2 then -- если ход 2 игрока
-      pX, pY, pZ = GetObjectPosition('Karlam')
-      if CanMoveHero('Baal', pX, pY, pZ) then -- и Баал может добежать до Карлама
-        local cost = CalcHeroMoveCost('Baal', pX, pY, pZ)
-        print('Расстояние до цели: ', cost)
-        if cost >= 10000 and mainQ.BaalTP == 0 then -- если игрок ушел слишком далеко, Баал сокращает расстояние
-          local cX, cY, cZ = FindOptimalSpawnPoint(2)
-          SetObjectPosition('Baal', cX, cY, cZ, 3)
-          mainQ.BaalTP = 1
-          print('Игрок ушел слишком далеко, сокращаем расстояние')
-          ChangeHeroStat('Baal', 7, -(GetHeroStat('Baal', 7) - 300)) -- но догнать в тот же момент он не сможет
-          sleep()
-        end
-        MoveHero('Baal', pX, pY, pZ) -- бежать в эту точку
-        print('Все нормально, бежим за игроком')
-      elseif mainQ.Destination == 0 then -- если не добежать и нет точки назначения
-        print('Нельзя добежать до игрока, поэтому ищем другую цель')
-        bX, bY, bZ = FindOptimalSpawnPoint(1) -- определяем максимально удаленную проходимую точку для Баала
-        MoveHero('Baal', bX, bY, bZ) -- бежим туда
-        mainQ.Destination = 1
-      else
-        print('Нельзя добежать до игрока, но есть другая цель')
-        MoveHero('Baal', bX, bY, bZ)
-      end
-    end
-    sleep(2)
-  end
-end
-
--- ускорение Баала
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 function BaalAddMP()
   if mainQ.isBaalActive == 1 then
     MakeHeroInteractWithObject('Baal', 'stables')
@@ -416,7 +318,7 @@ function BaalAddMP()
   end
 end
 
--- замедление Баала -> см. квест с тайными тропами
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ -> пїЅпїЅ. пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 --function BaalRemoveMP(hero)
 --  if hero == 'Baal' then
 --    local mp = GetHeroStat('Baal', STAT_MOVE_POINTS)
@@ -429,7 +331,7 @@ end
 --  end
 --end
 
--- первый респавн Баала
+-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 function CheckBaalFirstSpawn(day)
   if day == mainQ.BaalFirstActiveDay then
     BlockGame()
@@ -445,36 +347,36 @@ function CheckBaalFirstSpawn(day)
   end
 end
 
--- логика респавна Баала до начала вечной ночи
+-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 function NormalSpawnRules(weekday)
-  if weekday == 1 then -- в 1 день недели
-    if mainQ.isBaalActive == 1 then -- Баал активен?
+  if weekday == 1 then -- пїЅ 1 пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+    if mainQ.isBaalActive == 1 then -- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ?
       ShowFlyingSign(mainQ.paths.main..'retreatBaal.txt', 'Baal', -1, 5.0)
       sleep(5)
       SetObjectPosition('Baal', 3, 8, 1, 3)
-      mainQ.isBaalActive = 0 -- убрать
+      mainQ.isBaalActive = 0 -- пїЅпїЅпїЅпїЅпїЅпїЅ
     end
-  elseif weekday == mainQ.BaalSpawnDate then -- день респавна?
+  elseif weekday == mainQ.BaalSpawnDate then -- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ?
     if mainQ.isBaalActive == 0 and
        IsHeroAlive('Baal') and
        isActive(mainQ.names.main) then
-      local x, y, z = FindOptimalSpawnPoint(0) -- определяем оптимальную точку
-      SetObjectPosition('Baal', x, y, z, 3) -- спавним
+      local x, y, z = FindOptimalSpawnPoint(0) -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+      SetObjectPosition('Baal', x, y, z, 3) -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
       sleep()
       ShowFlyingSign(mainQ.paths.main..'herecomesBaal.txt', 'Baal', -1, 5.0)
       mainQ.isBaalActive = 1
-      startThread(BaalRun) -- запускаем поток перемещения
+      startThread(BaalRun) -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     end
   end
 end
 
--- действия Баала в день наступления вечной ночи
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 function eNightSpawnRules(weekday)
-  -- прежде всего разблокируются открытые Карламом тайные тропы
+  -- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 --  for i, path in secret_path.pathOpened do
 --    SetRegionBlocked(path, nil, PLAYER_2)
 --  end
-  -- в зависимости от времени дня события немного меняются
+  -- пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
   if mainQ.isBaalActive == 0 then
     local x, y, z = FindOptimalSpawnPoint(0)
     SetObjectPosition('Baal', x, y, z, 3)
@@ -488,17 +390,17 @@ function eNightSpawnRules(weekday)
   end
 end
 
--- ежедневная проверка на респавн Баала -> для триггера нового дня
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ -> пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ
 function CheckBaalSpawnRules(day)
   if isActive(mainQ.names.enight) or isUnknown(mainQ.names.enight) then
     if day < mainQ.eNightDay then
       NormalSpawnRules(GetDate(DAY_OF_WEEK))
     end
-    if mainQ.eNightDay - day == mainQ.eNightDay/2 then -- половина времени до вечной ночи прошла
-      MessageBox(rtext('Чары Вечной Ночи проявляются все сильнее...'))
-      mainQ.nightTime = 4 -- ночь наступает раньше
+    if mainQ.eNightDay - day == mainQ.eNightDay/2 then -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+      MessageBox(rtext('пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ...'))
+      mainQ.nightTime = 4 -- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
       mainQ.BaalSpawnDate = 4
-      if mainQ.isBaalActive == 0 then -- проверить случай, если события как раз происходят в 4 день недели
+      if mainQ.isBaalActive == 0 then -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ 4 пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
         NormalSpawnRules(GetDate(DAY_OF_WEEK))
       end
     end
@@ -515,8 +417,8 @@ function CheckBaalSpawnRules(day)
   end
 end
 
--- контролирует выдачу/удаление бонуса в зависимости от наличия Светоча
--- способ тупой, но более логичного придумать не смог
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ/пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ, пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ
 function ControlBaalBonus()
   local bonus_removed = 0
   while 1 do
@@ -536,105 +438,6 @@ function ControlBaalBonus()
   end
 end
 
---------------------------------------------------------------------------------
--- получение Слезы
-
--- определяет наличие слезы
-function AshaTear()
-  while 1 do
-    if GetCurrentPlayer() == PLAYER_1 then
-      if isActive(mainQ.names.tear) then
-        if HasArtefact('Karlam', ARTIFACT_GRAAL) then
-          mainQ.tear_flag = 1
-          CheckPartsCollected()
-          updateQuest(mainQ.names.tear, 4, 'Karlam')
-          return
-        end
-      end
-    end
-    sleep(2)
-  end
-end
-
--- стартовая настройка обелисков
-function InitObelisks()
-  for i = 1, 15 do
-    SetObjectEnabled('obelisk'..i, nil)
-    SetObjectFlashlight('obelisk'..i, 'obelisk_fl')
-    Touch.SetFunction('obelisk'..i,
-    function(hero, object)
-      if hero == 'Karlam' then
-        MessageBox(mainQ.paths.tear..'obelisk_text'..(random(2) + 1)..'.txt') -- выводим случайное сообщение
-        mainQ.Obelisks = mainQ.Obelisks + 1 -- увеличиваем счетчик обелисков
-        ResetObjectFlashlight(object)
-        if getProgress(mainQ.names.tear) == 0 then
-          updateQuest(mainQ.names.tear, 1, hero)
-        end
-        Touch.OverrideFunction(object, 1,
-        function(hero, object)
-          ShowFlyingSign(rtext('Вы уже осмотрели этот обелиск...'), object, -1, 7.0)
-        end)
-        MarkObjectAsVisited(object, hero)
-      end
-    end)
-  end
-end
-
-InitObelisks()
-
--- отслеживает число посещенных обелисков
-function CheckObelisks()
-  while 1 do
-    if mainQ.Obelisks == 15 then
-      updateQuest(mainQ.names.tear, 3, 'Karlam')
-      MessageBox(mainQ.paths.tear..'all_obelisks.txt')
-      return
-    end
-    sleep(2)
-  end
-end
-
--- логика разговора с древом Силанны
-SetObjectEnabled('sylanna_tree', nil)
-Touch.SetFunction('sylanna_tree',
-function(hero, object)
-  if hero == 'Karlam' then
-    if getProgress(mainQ.names.tear) == 1 then -- первый раз зашли?
-      MessageBox(mainQ.paths.tear..'tree_talk_start.txt')
-      updateQuest(mainQ.names.tear, 2, hero)
-      startThread(CheckObelisks)
-    elseif getProgress(mainQ.names.tear) == 3 then -- посетили все обелиски?
-      MessageBox(mainQ.paths.tear..'tree_talk_end.txt')
-      OpenPuzzleMap(PLAYER_1, 15) -- открываем карту
-      sleep()
-      LevelUpHero(hero)
-      Touch.OverrideFunction(object, 1,
-      function(hero, object)
-        ShowFlyingSign(rtext('Мои корни и ветви с тобой, юный маг...'), object, -1, 7.0)
-      end)
-      MarkObjectAsVisited(object, hero)
-    end
-  end
-end)
-
--- феникс
-SetObjectEnabled('qPhoenix', nil)
-SetDisabledObjectMode('qPhoenix', DISABLED_INTERACT)
-sleep()
-SetMonsterSelectionType('qPhoenix', 0)
-Touch.SetFunction('qPhoenix',
-function(hero, object)
-  if hero == 'Karlam' then
-    MessageBox(mainQ.paths.other..'phoenix_add.txt')
-    updateQuest(mainQ.names.phoenix, 2, hero)
-    PlayObjectAnimation(object, 'specability', ONESHOT_STILL)
-    sleep(20)
-    RemoveObject(object)
-    mainQ.phoenix_flag = 1
-    CheckPartsCollected()
-  end
-end)
-
 function CheckPartsCollected()
   if mainQ.tear_flag == 1 and mainQ.phoenix_flag == 1 then
     MessageBox(mainQ.paths.main..'have_2_svet_parts.txt')
@@ -644,7 +447,7 @@ function CheckPartsCollected()
 end
 
 --------------------------------------------------------------------------------
--- настройки после победы над Баалом
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
 function SetupFinalQuest()
   local x, y, z = GetObjectPosition('art_town')
@@ -770,7 +573,7 @@ function SetupFinalQuest()
   SetObjectRotation('Baal_copy', 243)
 end
 
--- финальная битва с Баалом - боссом и завершение карты
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ - пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 function FinalBattle()
   SetAmbientLight(0, 'full_darkness', not nil, 2)
   sleep(5)

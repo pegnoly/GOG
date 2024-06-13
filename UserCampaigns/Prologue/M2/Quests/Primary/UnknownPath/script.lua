@@ -388,6 +388,7 @@ unknown_path =
                     MoveHeroRealTime("Loiren", GetObjectPosition("Karlam"))
                 end
             else
+                -- 2.
                 if unknown_path.loiren_waits == 0 then
                     for reg, active in unknown_path.loiren_dest do
                         if active then
