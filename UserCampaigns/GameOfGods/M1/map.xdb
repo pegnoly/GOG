@@ -10802,8 +10802,8 @@
 		<Item href="#n:inline(AdvMapStatic)" id="item_4AEB0CBC-D32F-41BE-A101-46D1ABE18C23">
 			<AdvMapStatic>
 				<Pos>
-					<x>75</x>
-					<y>138</y>
+					<x>73</x>
+					<y>140</y>
 					<z>0</z>
 				</Pos>
 				<Rot>3.14159</Rot>
@@ -62506,70 +62506,6 @@
 				<BannedRaces/>
 			</AdvMapHero>
 		</Item>
-		<Item href="#n:inline(AdvMapHero)" id="item_1D0BAE63-D4AD-44DD-B74A-DA139C4F79B8">
-			<AdvMapHero>
-				<Pos>
-					<x>26</x>
-					<y>11</y>
-					<z>0</z>
-				</Pos>
-				<Rot>0</Rot>
-				<Floor>0</Floor>
-				<Name/>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Stronghold/Hero3.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
-				<PlayerID>PLAYER_1</PlayerID>
-				<Experience>0</Experience>
-				<armySlots/>
-				<artifactIDs/>
-				<isUntransferable/>
-				<Editable>
-					<NameFileRef href=""/>
-					<BiographyFileRef href=""/>
-					<Offence>0</Offence>
-					<Defence>0</Defence>
-					<Spellpower>0</Spellpower>
-					<Knowledge>0</Knowledge>
-					<skills>
-						<Item>
-							<Mastery>MASTERY_EXPERT</Mastery>
-							<SkillID>HERO_SKILL_SORCERY</SkillID>
-						</Item>
-						<Item>
-							<Mastery>MASTERY_BASIC</Mastery>
-							<SkillID>HERO_SKILL_DESTRUCTIVE_MAGIC</SkillID>
-						</Item>
-					</skills>
-					<perkIDs/>
-					<spellIDs>
-						<Item>SPELL_WARCRY_CALL_OF_BLOOD</Item>
-					</spellIDs>
-					<Ballista>false</Ballista>
-					<FirstAidTent>false</FirstAidTent>
-					<AmmoCart>false</AmmoCart>
-					<FavoriteEnemies/>
-					<TalismanLevel>0</TalismanLevel>
-				</Editable>
-				<OverrideMask>8</OverrideMask>
-				<PrimarySkillMastery>MASTERY_BASIC</PrimarySkillMastery>
-				<LossTrigger>
-					<Action>
-						<FunctionName/>
-					</Action>
-				</LossTrigger>
-				<AllowQuickCombat>true</AllowQuickCombat>
-				<Textures>
-					<Icon128x128/>
-					<Icon64x64/>
-					<RoundedFace/>
-					<LeftFace/>
-					<RightFace/>
-				</Textures>
-				<PresetPrice>0</PresetPrice>
-				<BannedRaces/>
-			</AdvMapHero>
-		</Item>
 		<Item href="#n:inline(AdvMapShrine)" id="item_6294F65C-8B1A-40F4-8638-0B6E47F8712D">
 			<AdvMapShrine>
 				<Pos>
@@ -64955,7 +64891,12 @@
 						<Shared href="/MapObjects/Inferno/GOG/Isfet_Heroic.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
 						<PlayerID>PLAYER_1</PlayerID>
 						<Experience>0</Experience>
-						<armySlots/>
+						<armySlots>
+							<Item>
+								<Creature>CREATURE_IMP</Creature>
+								<Count>1</Count>
+							</Item>
+						</armySlots>
 						<artifactIDs/>
 						<isUntransferable/>
 						<Editable>
@@ -65039,7 +64980,7 @@
 						<Name/>
 						<CombatScript/>
 						<pointLights/>
-						<Shared href="/MapObjects/Haven/Nathaniel.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+						<Shared href="/MapObjects/Inferno/GOG/Shezmur.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
 						<PlayerID>PLAYER_1</PlayerID>
 						<Experience>0</Experience>
 						<armySlots/>
@@ -65052,8 +64993,34 @@
 							<Defence>0</Defence>
 							<Spellpower>0</Spellpower>
 							<Knowledge>0</Knowledge>
-							<skills/>
-							<perkIDs/>
+							<skills>
+								<Item>
+									<Mastery>MASTERY_EXPERT</Mastery>
+									<SkillID>HERO_SKILL_DESTRUCTIVE_MAGIC</SkillID>
+								</Item>
+								<Item>
+									<Mastery>MASTERY_EXPERT</Mastery>
+									<SkillID>HERO_SKILL_DEFENCE</SkillID>
+								</Item>
+								<Item>
+									<Mastery>MASTERY_ADVANCED</Mastery>
+									<SkillID>HERO_SKILL_LUCK</SkillID>
+								</Item>
+								<Item>
+									<Mastery>MASTERY_ADVANCED</Mastery>
+									<SkillID>HERO_SKILL_LEADERSHIP</SkillID>
+								</Item>
+							</skills>
+							<perkIDs>
+								<Item>HERO_SKILL_TOUGHNESS</Item>
+								<Item>HERO_SKILL_RECRUITMENT</Item>
+								<Item>HERO_SKILL_CONSUME_CORPSE</Item>
+								<Item>HERO_SKILL_LUCKY_STRIKE</Item>
+								<Item>HERO_SKILL_DEMONIC_FIRE</Item>
+								<Item>HERO_SKILL_GATING_MASTERY</Item>
+								<Item>HERO_SKILL_PROTECTION</Item>
+								<Item>HERO_SKILL_CRITICAL_GATING</Item>
+							</perkIDs>
 							<spellIDs/>
 							<Ballista>false</Ballista>
 							<FirstAidTent>false</FirstAidTent>
@@ -65061,8 +65028,8 @@
 							<FavoriteEnemies/>
 							<TalismanLevel>0</TalismanLevel>
 						</Editable>
-						<OverrideMask>0</OverrideMask>
-						<PrimarySkillMastery>MASTERY_NONE</PrimarySkillMastery>
+						<OverrideMask>8</OverrideMask>
+						<PrimarySkillMastery>MASTERY_ADVANCED</PrimarySkillMastery>
 						<LossTrigger>
 							<Action>
 								<FunctionName/>
@@ -65201,7 +65168,12 @@
 						<Shared href="/MapObjects/Inferno/GOG/Isfet.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
 						<PlayerID>PLAYER_1</PlayerID>
 						<Experience>0</Experience>
-						<armySlots/>
+						<armySlots>
+							<Item>
+								<Creature>CREATURE_IMP</Creature>
+								<Count>1</Count>
+							</Item>
+						</armySlots>
 						<artifactIDs/>
 						<isUntransferable/>
 						<Editable>
@@ -65338,7 +65310,7 @@
 						<Name/>
 						<CombatScript/>
 						<pointLights/>
-						<Shared href="/MapObjects/Inferno/Calid.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+						<Shared href="/MapObjects/Inferno/GOG/Shezmur_Heroic.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
 						<PlayerID>PLAYER_1</PlayerID>
 						<Experience>0</Experience>
 						<armySlots/>
@@ -65351,8 +65323,38 @@
 							<Defence>0</Defence>
 							<Spellpower>0</Spellpower>
 							<Knowledge>0</Knowledge>
-							<skills/>
-							<perkIDs/>
+							<skills>
+								<Item>
+									<Mastery>MASTERY_ADVANCED</Mastery>
+									<SkillID>HERO_SKILL_DESTRUCTIVE_MAGIC</SkillID>
+								</Item>
+								<Item>
+									<Mastery>MASTERY_EXPERT</Mastery>
+									<SkillID>HERO_SKILL_DEFENCE</SkillID>
+								</Item>
+								<Item>
+									<Mastery>MASTERY_EXPERT</Mastery>
+									<SkillID>HERO_SKILL_LEADERSHIP</SkillID>
+								</Item>
+								<Item>
+									<Mastery>MASTERY_EXPERT</Mastery>
+									<SkillID>HERO_SKILL_LUCK</SkillID>
+								</Item>
+							</skills>
+							<perkIDs>
+								<Item>HERO_SKILL_TOUGHNESS</Item>
+								<Item>HERO_SKILL_DEMONIC_RETALIATION</Item>
+								<Item>HERO_SKILL_RECRUITMENT</Item>
+								<Item>HERO_SKILL_DEMONIC_FLAME</Item>
+								<Item>HERO_SKILL_MASTER_OF_FIRE</Item>
+								<Item>HERO_SKILL_CONSUME_CORPSE</Item>
+								<Item>HERO_SKILL_LUCKY_STRIKE</Item>
+								<Item>HERO_SKILL_DEMONIC_FIRE</Item>
+								<Item>HERO_SKILL_GATING_MASTERY</Item>
+								<Item>HERO_SKILL_PROTECTION</Item>
+								<Item>HERO_SKILL_CRITICAL_GATING</Item>
+								<Item>HERO_SKILL_LUCKY_SPELLS</Item>
+							</perkIDs>
 							<spellIDs/>
 							<Ballista>false</Ballista>
 							<FirstAidTent>false</FirstAidTent>
@@ -65360,8 +65362,8 @@
 							<FavoriteEnemies/>
 							<TalismanLevel>0</TalismanLevel>
 						</Editable>
-						<OverrideMask>0</OverrideMask>
-						<PrimarySkillMastery>MASTERY_NONE</PrimarySkillMastery>
+						<OverrideMask>8</OverrideMask>
+						<PrimarySkillMastery>MASTERY_ADVANCED</PrimarySkillMastery>
 						<LossTrigger>
 							<Action>
 								<FunctionName/>

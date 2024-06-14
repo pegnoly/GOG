@@ -1,9 +1,9 @@
 --------------------------------------------------------------------------------
--- базовый скрипт. Определяет условия боя и назначает боевые функции согласно им.
--- Система организации скрипта, а так же ГПСЧ и некоторые другие функции позаимствованы
--- из карты Эхо Пустоты от RedHeavenHero, за что ему огромная благодарность
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ. пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ.
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅ пїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+-- пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ RedHeavenHero, пїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 --consoleCmd('game_writelog 1')
--- номер боя(для дебага) 0.4.0
+-- пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ(пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ) 0.4.0
 --do
 --  local fight_number = -1
 --  if GetGameVar("MCCS_FightNumber") == '' then
@@ -16,23 +16,25 @@
 --  local attacker = GetHeroName(GetAttackerHero())
 --  local defender = GetDefenderHero() and GetHeroName(GetDefenderHero()) or "neutrals"
 --  print("##Combat mode started##")
---  print("Fight №", fight_number, ' started between ', attacker, ' and ', defender)
+--  print("Fight пїЅ", fight_number, ' started between ', attacker, ' and ', defender)
 --end
 
-doFile('/scripts/lib/combat_init.lua')
-doFile('/scripts/lib/mccs_default_settings.lua')
-while not (hero_info and InitGlobalTables) do
-  sleep()
+doFile('/scripts/source/init/combat_init.lua')
+while not Creature do
+	sleep()
 end
-InitGlobalTables()
+--doFile('/scripts/lib/mccs_default_settings.lua')
+
+Creature.Sorting.Init()
 
 ATB_FILTER = 64679235
 GetCreatureAtb = function(unit) return GetCreatureCount(unit, ATB_FILTER)
 end
 
+casters_checked = -1
 --
 --------------------------------------------------------------------------------
--- определение режима игры(один компьютер или сеть)
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ(пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ)
 
 if GetGameVar('MCCS_IsHotseat') == 'true' then
   print('<color=yellow>Game mode: <color=green>single or hotseat')
@@ -108,21 +110,21 @@ end
 
 --
 --------------------------------------------------------------------------------
--- таблицы армий
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 
-attacker_army = {} -- базовая нападающего(поддерживает добавление призванных)
-attacker_real_army = {} -- реальная нападающего(учитываются только стартовые юниты)
-attacker_army_copies = {} -- таблица копий армии нападающего(нужно, если манипуляции изменения затрагивают базовую таблицу, а инфа из нее нужна где-то еще)
-                        -- если такая необходимость возникла, просто создаем копии армии и изменяем их
-defender_army = {} -- аналогичные для стороны защиты
+attacker_army = {} -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ(пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ)
+attacker_real_army = {} -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ(пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ)
+attacker_army_copies = {} -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ(пїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅ пїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ-пїЅпїЅ пїЅпїЅпїЅ)
+                        -- пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ
+defender_army = {} -- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 defender_real_army = {}
 defender_army_copies = {}
 
---reserved_turn = 0 -- флаг, что нужно скипнуть ход(в случае, когда вражеский юнит что-то кастует,
-                  -- а затем должен сделать что-то еще по скрипту, UNIT_MOVE запускается опять и это может привести к проблемем)
+--reserved_turn = 0 -- пїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ(пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ-пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ,
+                  -- пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ-пїЅпїЅ пїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, UNIT_MOVE пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ)
                   
                   
--- ивенты
+-- пїЅпїЅпїЅпїЅпїЅпїЅ
 combat_event_add_creature = {}
 combat_event_turn_end = {}
 
@@ -135,7 +137,7 @@ end
 print((GetGameVar('active_scripts')))
 paths = parse(GetGameVar('active_scripts'))()
 
--- получает функции для управления боем согласно его условиям
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 function GetCombatFunctions()
   local thread = GetGameVar('combat_active_thread')
   consoleCmd("@SetGameVar('"..thread.."_combat_mode', 'real')")
@@ -146,37 +148,54 @@ function GetCombatFunctions()
   end
   print("<color=yellow>Combat thread: <color=green>combat thread is same with attacker's owner, so this thread will be executed")
   --
-  AddCombatFunction(CombatFunctions.START,
+  AddCombatFunction(CombatFunctions.START, "init_combat",
   function()
     InitRandom()
     while not random do
       sleep()
     end
-   	for i, unit in GetCreatures(ATTACKER) do
-      attacker_army[unit] = GetCreatureNumber(unit)
-    end
-    table.copy(attacker_army, attacker_real_army)
-    for i, unit in GetCreatures(DEFENDER) do
-      defender_army[unit] = GetCreatureNumber(unit)
-    end
-    table.copy(defender_army, defender_real_army)
-    startThread(NewCreaturesAddToTablesThread)
+   	-- for i, unit in GetCreatures(ATTACKER) do
+      -- attacker_army[unit] = GetCreatureNumber(unit)
+    -- end
+    -- table.copy(attacker_army, attacker_real_army)
+    -- for i, unit in GetCreatures(DEFENDER) do
+      -- defender_army[unit] = GetCreatureNumber(unit)
+    -- end
+    -- table.copy(defender_army, defender_real_army)
+    -- startThread(NewCreaturesAddToTablesThread)
     --
-    for side = ATTACKER, DEFENDER do
-      for i, creature in GetCreatures(side) do
-        local abils_info = GetCreatureActiveAbilsInfo(creature)
-        --print('abils_info: ', abils_info)
-        if abils_info == HAS_BY_DEFAULT and GetUnitMaxManaPoints(creature) == 0 then
-          SetUnitManaPoints(creature, 1)
-        end
-      end
-    end
+    -- for side = ATTACKER, DEFENDER do
+    --   for i, creature in GetCreatures(side) do
+    --     local abils_info = GetCreatureActiveAbilsInfo(creature)
+    --     --print('abils_info: ', abils_info)
+    --     if abils_info == HAS_BY_DEFAULT and GetUnitMaxManaPoints(creature) == 0 then
+    --       SetUnitManaPoints(creature, 1)
+    --     end
+    --   end
+    -- end
     --
     for i, creature in GetAttackerCreatures() do
       print(creature, " has position ", GetCreatureNumber(creature, 64679235))
     end
     --
   end)
+  -- AddCombatFunction(CombatFunctions.UNIT_MOVE, "check_units",
+  -- function()
+	-- if casters_checked == -1 then
+	-- 	casters_checked = 0
+	-- 	CombatFunctions.UNIT_MOVE["check_units"] = nil
+	-- 	for i, creature in GetAttackerCreatures() do
+	-- 		if not attacker_real_army[creature] and not defender_real_army[creature] then
+	-- 			pcall(removeUnit, creature)
+	-- 		end
+	-- 	end
+	-- 	for i, creature in GetDefenderCreatures() do
+	-- 		if not attacker_real_army[creature] and not defender_real_army[creature] then
+	-- 			pcall(removeUnit, creature)
+	-- 		end
+	-- 	end
+	-- end
+  -- end)
   --
   if paths then
     for i, path in paths.to_cmb do
@@ -186,22 +205,28 @@ function GetCombatFunctions()
   --
 end
 
--- добавляет функцию в таблицу, соответсвующую базовой функции
-function AddCombatFunction(event_table, func)
-	local l = length(event_table)
-	event_table[l + 1] = func
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+function AddCombatFunction(event_table, desc, func)
+	event_table[desc] = func
 end
 
--- последовательно вызывает функции из таблицы
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 function CallCombatFunctions(event_table, param, temp)
-	local x
-	for i = 1, length(event_table) do
-    x = event_table[i](param) or temp
+  local already_called_functions = {}
+  local x
+  for desc, func in event_table do
+    if func then
+		if not already_called_functions[desc] then
+		   already_called_functions[desc] = 1
+		end
+		print("Calling ", desc)
+		x = func(param) or temp
 	end
-	return x
+  end
+  return x
 end
 
--- таблицы для базовых функций
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 CombatFunctions =
 {
   PREPARE = {},
@@ -235,13 +260,28 @@ CombatFunctions =
 	DEFENDER_BUILDING_DEATH = {},
 }
 
--- базовые функции
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 function Prepare()
 	CallCombatFunctions(CombatFunctions.PREPARE)
 end
 
 function Start()
+    combatSetPause(1)
+   	for i, unit in GetCreatures(ATTACKER) do
+      attacker_army[unit] = GetCreatureNumber(unit)
+    end
+    table.copy(attacker_army, attacker_real_army)
+    for i, unit in GetCreatures(DEFENDER) do
+      defender_army[unit] = GetCreatureNumber(unit)
+    end
+    table.copy(defender_army, defender_real_army)
+    startThread(NewCreaturesAddToTablesThread)
+	while len(defender_real_army) == 0 do
+		sleep()
+	end
 	startThread(CallCombatFunctions, CombatFunctions.START)
+	sleep(44)
+	combatSetPause(nil)
 end
 
 function UnitMove(unit)

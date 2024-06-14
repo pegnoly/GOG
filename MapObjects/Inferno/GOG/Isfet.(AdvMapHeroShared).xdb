@@ -25,7 +25,7 @@
 	<AdventureSoundEffect/>
 	<RazedStatic/>
 	<Icon128/>
-	<InternalName>M2_Isfet</InternalName>
+	<InternalName>C2M1_Isfet</InternalName>
 	<Class>HERO_CLASS_DEMON_LORD</Class>
 	<Specialization>HERO_SPEC_NONE</Specialization>
 	<PrimarySkill>

@@ -9,7 +9,7 @@
 		<Item>
 			<NameFileRef href="MissionName.1.txt"/>
 			<NameCommentFileRef href="MissionDescription.1.txt"/>
-			<MissionTag href="/UserCampaigns/WP/M2/map-tag.xdb#xpointer(/AdvMapDescTag)"/>
+			<MissionTag href="/UserCampaigns/GameOfGods/M1/map-tag.xdb#xpointer(/AdvMapDescTag)"/>
 			<Bonuses>
 				<Item>
 					<Target>
@@ -106,7 +106,7 @@
 		<Item>
 			<NameFileRef href="MissionName.2.txt"/>
 			<NameCommentFileRef href="MissionDescription.2.txt"/>
-			<MissionTag href="/UserCampaigns/WP/M3/map-tag.xdb#xpointer(/AdvMapDescTag)"/>
+			<MissionTag href="/UserCampaigns/GameOfGods/M2/map-tag.xdb#xpointer(/AdvMapDescTag)"/>
 			<Bonuses>
 				<Item>
 					<Target>
@@ -200,7 +200,7 @@
 		<Item>
 			<NameFileRef href="MissionName.3.txt"/>
 			<NameCommentFileRef href="MissionDescription.3.txt"/>
-			<MissionTag href="/UserCampaigns/WP/M4/map-tag.xdb#xpointer(/AdvMapDescTag)"/>
+			<MissionTag href="/UserCampaigns/GameOfGods/M3/map-tag.xdb#xpointer(/AdvMapDescTag)"/>
 			<Bonuses>
 				<Item>
 					<Target>
@@ -295,7 +295,7 @@
 		<Item>
 			<NameFileRef href="MissionName.4.txt"/>
 			<NameCommentFileRef href="MissionDescription.4.txt"/>
-			<MissionTag href="/UserCampaigns/WP/M5/map-tag.xdb#xpointer(/AdvMapDescTag)"/>
+			<MissionTag href="/UserCampaigns/GameOfGods/M4/map-tag.xdb#xpointer(/AdvMapDescTag)"/>
 			<Bonuses>
 				<Item>
 					<Target>
@@ -387,8 +387,8 @@
 			</additionalCombatMusics>
 		</Item>
 		<Item>
-			<NameFileRef href="M5_mission_01.txt"/>
-			<NameCommentFileRef href="MissionDescription.4.txt"/>
+			<NameFileRef href="MissionName.5.txt"/>
+			<NameCommentFileRef href="MissionDescription.5.txt"/>
 			<MissionTag href="/UserCampaigns/WP/M5/map-tag.xdb#xpointer(/AdvMapDescTag)"/>
 			<Bonuses>
 				<Item>
