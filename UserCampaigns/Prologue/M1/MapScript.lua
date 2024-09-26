@@ -391,9 +391,11 @@ DIALOG_SCENES = {
 }
 
 function LoadScripts()
+    doFile(zones_path.."Moriton/script.lua")
+    doFile(zones_path.."ForestEdge/script.lua")
     doFile(primary_quest_path.."FlawInThePlan/script.lua")
     doFile(secondary_quest_path.."HiddenPath/script.lua")
-    doFile(zones_path.."Moriton/script.lua")
+    doFile(secondary_quest_path.."ContractKiller/script.lua")
 end
 
 function StartMap()
@@ -402,18 +404,11 @@ function StartMap()
     WarpHeroExp("Karlam", Levels[20])
     LoadScripts()
     sleep(10)
+    startThread(moriton_zone.Init)
+    startThread(forest_edge_zone.Init)
     startThread(flaw_in_the_plan.Init)
     startThread(hidden_path.Init)
-    startThread(moriton_zone.Init)
-    NewDayEvent.AddListener("test1", 
-    function (day)
-        sleep(150)
-    end)
-    NewDayEvent.AddListener("test2",
-    function (day)
-        MessageBox(rtext("ffgfgfg"))
-    end)
-    NewDayEvent.InvokeAfter("test1", "test2")
+    startThread(c1m1_q_contract_killer.Init)
 end
 
 --StartDialogSceneInt("")

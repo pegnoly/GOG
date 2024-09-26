@@ -111,7 +111,7 @@ Touch =
     NewHandlersTable = 
     ---@meta
     function(object)
-      Touch.handler_tables[object] = {funcs = {}, priority_func = nil}
+      Touch.handler_tables[object] = {funcs = {}, priority_func = nil, default = nil}
       Touch.SetTrigger(object)
     end,
 
@@ -125,17 +125,17 @@ Touch =
         return answer
       end
     end,
-
-    GetHandlersCount = 
-    function(object)
-      local table = Touch.GetHandlersTable(object)
-        if not table then
-          return -1
-        else
-      local count = len(table.funcs)
-      return count
-      end
-    end,
+	
+	GetHandlersCount = 
+	function(object)
+	  local table = Touch.GetHandlersTable(object)
+      if not table then
+        return -1
+      else
+		local count = len(table)
+		return count
+	  end
+	end,
 
     HasFunction =
     --- Определяет, есть ли на объекте функция
@@ -257,6 +257,15 @@ Touch =
       end
     end,
 
+    SetDefault =
+    --- Назначает объекту дефолтную функцию, которая будет вызвана, если никаких других нет
+    ---@param object any
+    ---@param func any
+    function (object, func)
+      local table = Touch.GetHandlersTable(object)
+      table["default"] = func
+    end
+
     OverrideFunction =
     --- Перезаписывает функцию на объекте
     ---@param object string скриптовое имя объекта
@@ -276,6 +285,11 @@ Touch =
         return answer
       end
       local funcs = Touch.handler_tables[object].funcs
+      if func["default"] and len(funcs) == 1 then
+        print('<color=red>Touch.<color=green>CallHandlers: default')
+        answer = func["default"](hero, object)
+        return answer
+      end
       for desc, func in funcs do
         print('<color=red>Touch.<color=green>CallHandlers: call ', desc)
         if desc then

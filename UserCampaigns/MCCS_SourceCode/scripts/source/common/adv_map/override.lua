@@ -176,7 +176,12 @@ function MCCS_StartCombat(hero, enemy, stack_count, stacks_info, is_diff_indepen
   StartCombat(hero, enemy, stack_count, args[1], args[2], args[3], args[4], args[5], args[6], args[7],
                                         args[8], args[9], args[10], args[11], args[12], args[13], args[14],
                                         args[15], args[16], args[17], args[18])
-  while GetLastSavedCombatIndex() == fight_ID do sleep() end
+
+  print("<color=red>MCCS_StartCombat: <color=green> fight started?")
+  while GetLastSavedCombatIndex() == fight_ID do 
+    sleep() 
+  end
+  print("<color=red>MCCS_StartCombat: <color=green> fight ended?")
   if floor_flag then
     SetCombatLight(COMBAT_LIGHTS.CURRENT)
   end
