@@ -6939,18 +6939,20 @@
 	<ReflectiveWater>false</ReflectiveWater>
 	<tiles>
 		<Item href="/MapObjects/_(AdvMapTile)/Grass/River-bed_grass.xdb#xpointer(/AdvMapTile)"/>
-		<Item href="/MapObjects/_(AdvMapTile)/Dirt/Scatter_stone_Dirt_.xdb#xpointer(/AdvMapTile)"/>
-		<Item href="/MapObjects/_(AdvMapTile)/Grass/Road.xdb#xpointer(/AdvMapTile)"/>
-		<Item href="/MapObjects/_(AdvMapTile)/Conquest/Dirt.xdb#xpointer(/AdvMapTile)"/>
-		<Item href="/MapObjects/_(AdvMapTile)/Dirt/Ground 2.xdb#xpointer(/AdvMapTile)"/>
-		<Item href="/MapObjects/_(AdvMapTile)/Grass/Dark_Grass.xdb#xpointer(/AdvMapTile)"/>
-		<Item href="/MapObjects/_(AdvMapTile)/Grass/Rock_Floor_green_grass.xdb#xpointer(/AdvMapTile)"/>
+		<Item href="/MapObjects/_(AdvMapTile)/Dirt/Weed.xdb#xpointer(/AdvMapTile)"/>
 		<Item href="/MapObjects/_(AdvMapTile)/Dirt/Ground.xdb#xpointer(/AdvMapTile)"/>
-		<Item href="/MapObjects/_(AdvMapTile)/Grass/Used_Grass.xdb#xpointer(/AdvMapTile)"/>
+		<Item href="/MapObjects/_(AdvMapTile)/Dirt/Scatter_stone_Dirt_.xdb#xpointer(/AdvMapTile)"/>
+		<Item href="/MapObjects/_(AdvMapTile)/Dirt/Ground 2.xdb#xpointer(/AdvMapTile)"/>
+		<Item href="/MapObjects/_(AdvMapTile)/Grass/Road.xdb#xpointer(/AdvMapTile)"/>
 		<Item href="/MapObjects/_(AdvMapTile)/Water/Water.xdb#xpointer(/AdvMapTile)"/>
-		<Item href="/MapObjects/_(AdvMapTile)/Grass/Scatter_stone_green_Grass.xdb#xpointer(/AdvMapTile)"/>
+		<Item href="/MapObjects/_(AdvMapTile)/Grass/Dark_Grass.xdb#xpointer(/AdvMapTile)"/>
+		<Item href="/MapObjects/_(AdvMapTile)/Grass/Used_Grass.xdb#xpointer(/AdvMapTile)"/>
 		<Item href="/MapObjects/_(AdvMapTile)/Conquest/Mud.xdb#xpointer(/AdvMapTile)"/>
+		<Item href="/MapObjects/_(AdvMapTile)/Grass/Rock_Floor_green_grass.xdb#xpointer(/AdvMapTile)"/>
+		<Item href="/MapObjects/_(AdvMapTile)/Dirt/Necro_Ground.xdb#xpointer(/AdvMapTile)"/>
 		<Item href="/MapObjects/_(AdvMapTile)/Grass/Nidle_Grass_Green.xdb#xpointer(/AdvMapTile)"/>
+		<Item href="/MapObjects/_(AdvMapTile)/Grass/Scatter_stone_green_Grass.xdb#xpointer(/AdvMapTile)"/>
+		<Item href="/MapObjects/_(AdvMapTile)/Conquest/Dirt.xdb#xpointer(/AdvMapTile)"/>
 	</tiles>
 	<regions/>
 	<GroundTerrainFileName href="GroundTerrain.bin"/>

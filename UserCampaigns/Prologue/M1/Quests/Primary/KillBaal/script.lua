@@ -6,19 +6,30 @@
 
 ARTIFACT_C1_M1_LIFE_ESSENCE = 402
 
+-- возможные типы поиска точки для перемещений Баала
 BAAL_SPAWN_MODE_KARLAM_CLOSEST = 1
 BAAL_SPAWN_MODE_BAAL_FURTHEST = 2
 BAAL_SPAWN_MODE_TELEPORT = 3
 
+-- возможные состояния вечной ночи
 ETERNAL_NIGHT_STATE_NOT_STARTED = 1
 ETERNAL_NIGHT_STATE_JUST_STARTED = 2
 ETERNAL_NIGHT_STATE_STARTED = 3
+
+-- возможные состояния прогресса квеста
+KILL_BAAL_QUEST_PROGRESS_MUST_TALK_WITH_PROPHET = 0
+KILL_BAAL_QUEST_PROGRESS_MUST_GO_TO_MORITON = 1
+KILL_BAAL_QUEST_PROGRESS_MORITON_ENTERED = 11
+KILL_BAAL_QUEST_PROGRESS_MUST_CREATE_SPRING = 2
 
 kill_baal = {
         --*ПЕРЕМЕННЫЕ*--
 
     -- техническая информация --
     name = "C1_M1_KILL_BAAL",
+
+    state = nil,
+
     path = {
         text = primary_quest_path.."KillBaal/Texts/",
         dialog = primary_quest_path.."KillBaal/Dialogs/"
@@ -96,26 +107,6 @@ kill_baal = {
         sleep(15)
         MessageBox(kill_baal.path.text.."prorok1.txt")
         UnblockGame()
-    end,
-
-    -- логика касания хижины пророка
-    ProphetHutTouch =
-    function (hero, object)
-        if Quest.IsUnknown(kill_baal.name) then
-            MessageBox(kill_baal.path.text.."no_prophet.txt")
-            return
-        end
-        --
-        local progress = Quest.GetProgress(kill_baal.name)
-        if progress == 0 then
-            MiniDialog.Start(kill_baal.path.dialog.."ProphetDialog/", PLAYER_1, kill_baal.dialogs.Prophet)
-            Quest.Update(kill_baal.name, 1, hero)
-            Quest.ResetObjectQuestmark(object)
-            Quest.SetObjectQuestmark("elf_treasure1", QUESTMARK_OBJ_IN_PROGRESS)
-            return
-        else
-            MessageBox(kill_baal.path.text.."prophet_left.txt")
-        end
     end,
 
     InitBaalSpawnPoints = 
@@ -317,6 +308,66 @@ kill_baal = {
         kill_baal.baal_active = nil
     end,
 
-    
+    -- логика касания хижины пророка
+    ProphetHutTouch =
+    function (hero, object)
+        if Quest.IsUnknown(kill_baal.name) then
+            MessageBox(kill_baal.path.text.."no_prophet.txt")
+            return
+        end
+        --
+        local progress = Quest.GetProgress(kill_baal.name)
+        if progress == KILL_BAAL_QUEST_PROGRESS_MUST_TALK_WITH_PROPHET then
+            MiniDialog.Start(kill_baal.path.dialog.."ProphetDialog/", PLAYER_1, kill_baal.dialogs.Prophet)
+            Quest.Update(kill_baal.name, 1, hero)
+            Quest.ResetObjectQuestmark(object)
+            Quest.SetObjectQuestmark("elf_treasure1", QUESTMARK_OBJ_IN_PROGRESS)
+            return
+        else
+            MessageBox(kill_baal.path.text.."prophet_left.txt")
+        end
+    end,
+
+    -- логика боя в чаще энтов
+    TreantBankFight = 
+    function (hero, object)
+        if MCCS_QuestionBox("") then
+
+            CombatResultsEvent.AddListener("c1m1_start_zone_treant_bank_fight_remove_tag_listener",
+            function (fight_id)
+                local player = GetSavedCombatArmyPlayer(fight_id, 1)
+                if not(CombatResultsEvent.fight_tag_for_player[player] and 
+                    CombatResultsEvent.fight_tag_for_player[player] == "c1m1_start_zone_treant_bank_fight") then
+                    return
+                end
+                CombatResultsEvent.fight_tag_for_player[player] = nil
+                CombatResultsEvent.RemoveListener("c1m1_start_zone_treant_bank_fight_remove_tag_listener")
+            end)
+
+            local tiers = TIER_TABLES[TOWN_PRESERVE]
+            local stacks = {
+                {Random.FromTable_IgnoreValue(tiers[1], tiers[1][1], 113 + random(Creature.Params.Grow(tiers[1][1])))},
+                {Random.FromTable_IgnoreValue(tiers[2], tiers[2][1], 48 + random(Creature.Params.Grow(tiers[2][1])))},
+                {Random.FromTable_IgnoreValue(tiers[4], tiers[4][1], 16 + random(Creature.Params.Grow(tiers[4][1])))},
+                {Random.FromTable_IgnoreValue(tiers[5], tiers[5][1], 12 + random(Creature.Params.Grow(tiers[5][1])))}
+            }
+            MCCS_StartCombat(hero, nil, 4, stacks, nil, "c1m1_start_zone_treant_bank_fight", nil, 1)
+        end
+    end,
+
+    -- Пытается вызваться при касании внутренних гарнизонов Моритона.
+    TryEnterMoriton =
+    function (hero, object)
+        if Quest.GetProgress(kill_baal.name) ~= KILL_BAAL_QUEST_PROGRESS_MUST_GO_TO_MORITON and 
+            not HasArtefact(hero, ARTIFACT_RIGID_MANTLE, 1) then
+            MessageBox()
+            return
+        end
+        if HasArtefact(hero, ARTIFACT_RIGID_MANTLE, 1) then
+            Touch.RemoveFunction(object, "kill_baal_try_enter_moriton")
+        else
+
+        end
+    end
 }
 

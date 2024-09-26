@@ -46261,8 +46261,8 @@
 		<Item href="#n:inline(AdvMapGarrison)" id="item_0F0A93F8-319D-4EB7-B310-107EF44FA095">
 			<AdvMapGarrison>
 				<Pos>
-					<x>51</x>
-					<y>29</y>
+					<x>52</x>
+					<y>28</y>
 					<z>0</z>
 				</Pos>
 				<Rot>1.5708</Rot>

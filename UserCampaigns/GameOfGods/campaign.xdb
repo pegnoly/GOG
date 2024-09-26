@@ -389,7 +389,7 @@
 		<Item>
 			<NameFileRef href="MissionName.5.txt"/>
 			<NameCommentFileRef href="MissionDescription.5.txt"/>
-			<MissionTag href="/UserCampaigns/WP/M5/map-tag.xdb#xpointer(/AdvMapDescTag)"/>
+			<MissionTag href="/UserCampaigns/GameOfGods/M5/map-tag.xdb#xpointer(/AdvMapDescTag)"/>
 			<Bonuses>
 				<Item>
 					<Target>

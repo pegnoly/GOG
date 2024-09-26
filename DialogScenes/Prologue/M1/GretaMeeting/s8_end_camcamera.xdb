@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSceneCamera>
+	<Pos>
+		<Rod>60.3573</Rod>
+		<Pitch>-0.221602</Pitch>
+		<Yaw>5.68799</Yaw>
+		<Roll>0</Roll>
+		<FOV>35</FOV>
+		<ClipDistanceMin>1</ClipDistanceMin>
+		<ClipDistanceMax>500</ClipDistanceMax>
+		<Anchor>
+			<x>299.051</x>
+			<y>301.077</y>
+			<z>-1.01622e-007</z>
+		</Anchor>
+	</Pos>
+	<Absolute>true</Absolute>
+	<Rot>0</Rot>
+	<NameFileRef href="s8_end_cam-name-camera.txt"/>
+</DSceneCamera>

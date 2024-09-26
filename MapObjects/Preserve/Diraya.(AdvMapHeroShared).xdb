@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <AdvMapHeroShared ObjectRecordID="69">
 	<Model href="/Characters/Heroes/Sylvan/Dirael/Dirael.xdb#xpointer(/Model)"/>
-	<AnimSet href="/Characters/Heroes/Ranger_LOD-adv.xdb#xpointer(/AnimSet)"/>
+	<AnimSet/>
 	<blockedTiles/>
 	<holeTiles/>
 	<activeTiles>

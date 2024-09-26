@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSceneCamera>
+	<Pos>
+		<Rod>183.416</Rod>
+		<Pitch>-0.552798</Pitch>
+		<Yaw>2.04478</Yaw>
+		<Roll>0</Roll>
+		<FOV>35</FOV>
+		<ClipDistanceMin>1</ClipDistanceMin>
+		<ClipDistanceMax>500</ClipDistanceMax>
+		<Anchor>
+			<x>263.051</x>
+			<y>283.808</y>
+			<z>-1.04785e-006</z>
+		</Anchor>
+	</Pos>
+	<Absolute>true</Absolute>
+	<Rot>0</Rot>
+	<NameFileRef href="s29_start_cam-name-camera.txt"/>
+</DSceneCamera>

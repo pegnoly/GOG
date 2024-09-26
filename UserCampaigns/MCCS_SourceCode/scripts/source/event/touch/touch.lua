@@ -126,6 +126,17 @@ Touch =
       end
     end,
 
+    GetHandlersCount = 
+    function(object)
+      local table = Touch.GetHandlersTable(object)
+        if not table then
+          return -1
+        else
+      local count = len(table.funcs)
+      return count
+      end
+    end,
+
     HasFunction =
     --- Определяет, есть ли на объекте функция
     ---@param object string скриптовое имя объекта

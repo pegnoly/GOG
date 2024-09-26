@@ -179,7 +179,7 @@
 				</Pos>
 				<Rot>2.67299</Rot>
 				<Floor>0</Floor>
-				<Name>elf_treasure1</Name>
+				<Name>start_zone_elf_treasure</Name>
 				<CombatScript/>
 				<pointLights>
 					<Item>
@@ -7618,7 +7618,7 @@
 				</Pos>
 				<Rot>0.615268</Rot>
 				<Floor>0</Floor>
-				<Name>garnison1</Name>
+				<Name>moriton_garrison_01</Name>
 				<CombatScript/>
 				<pointLights/>
 				<Shared href="/MapObjects/GarrisonAntiMagic.(AdvMapGarrisonShared).xdb#xpointer(/AdvMapGarrisonShared)"/>
@@ -11897,75 +11897,6 @@
 				<GroupID>0</GroupID>
 				<showCameras/>
 			</AdvMapBuilding>
-		</Item>
-		<Item href="#n:inline(AdvMapArtifact)" id="item_4786D1CF-570A-4362-BB57-3A8022302B83">
-			<AdvMapArtifact>
-				<Pos>
-					<x>31.2902</x>
-					<y>29.3604</y>
-					<z>0</z>
-				</Pos>
-				<Rot>0</Rot>
-				<Floor>0</Floor>
-				<Name/>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Artifacts/wayfarer_boots.(AdvMapArtifactShared).xdb#xpointer(/AdvMapArtifactShared)"/>
-				<armySlots/>
-				<MessageFileRef href=""/>
-				<spellID>SPELL_NONE</spellID>
-				<RandomShiftRadius>0</RandomShiftRadius>
-				<untransferable>false</untransferable>
-			</AdvMapArtifact>
-		</Item>
-		<Item href="#n:inline(AdvMapMonster)" id="item_3A011AD8-A0D4-4887-A1C6-D986021589C3">
-			<AdvMapMonster>
-				<Pos>
-					<x>30.8515</x>
-					<y>28.9128</y>
-					<z>0</z>
-				</Pos>
-				<Rot>5.52401</Rot>
-				<Floor>0</Floor>
-				<Name/>
-				<CombatScript/>
-				<pointLights/>
-				<Shared href="/MapObjects/Dungeon/Blood_Witch.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
-				<Custom>true</Custom>
-				<Amount>76</Amount>
-				<Amount2>83</Amount2>
-				<AttackType>ATTACK_ANY</AttackType>
-				<MoveType>MOVE_ANY</MoveType>
-				<DoesNotGrow>true</DoesNotGrow>
-				<MessageFileRef href=""/>
-				<Script/>
-				<Resources>
-					<Wood>0</Wood>
-					<Ore>0</Ore>
-					<Mercury>0</Mercury>
-					<Crystal>0</Crystal>
-					<Sulfur>0</Sulfur>
-					<Gem>0</Gem>
-					<Gold>0</Gold>
-				</Resources>
-				<ArtifactID>ARTIFACT_NONE</ArtifactID>
-				<Mood>MONSTER_MOOD_WILD</Mood>
-				<Courage>MONSTER_COURAGE_ALWAYS_FIGHT</Courage>
-				<AllowQuickCombat>true</AllowQuickCombat>
-				<DoesNotDependOnDifficulty>false</DoesNotDependOnDifficulty>
-				<AdditionalStacks>
-					<Item>
-						<Creature>CREATURE_BLOOD_WITCH_2</Creature>
-						<CustomAmount>true</CustomAmount>
-						<Amount>73</Amount>
-						<Amount2>78</Amount2>
-					</Item>
-				</AdditionalStacks>
-				<SingleMonsterNameFileRef href=""/>
-				<MultipleMonstersNameFileRef href=""/>
-				<RacesRandomGroupID>0</RacesRandomGroupID>
-				<relationsOverrides/>
-			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapBuilding)" id="item_2D0DFE08-4CF5-4FE7-8C8F-96AC02B894FA">
 			<AdvMapBuilding>
@@ -23015,7 +22946,7 @@
 				</Pos>
 				<Rot>1.5708</Rot>
 				<Floor>0</Floor>
-				<Name>garnison2</Name>
+				<Name>moriton_garrison_02</Name>
 				<CombatScript/>
 				<pointLights/>
 				<Shared href="/MapObjects/GarrisonAntiMagic.(AdvMapGarrisonShared).xdb#xpointer(/AdvMapGarrisonShared)"/>
@@ -23028,7 +22959,7 @@
 				<armySlots/>
 				<CollectableArmy>false</CollectableArmy>
 				<AllowQuickCombat>false</AllowQuickCombat>
-				<TownType>TOWN_HEAVEN</TownType>
+				<TownType>TOWN_PRESERVE</TownType>
 			</AdvMapGarrison>
 		</Item>
 		<Item href="#n:inline(AdvMapBuilding)" id="item_C066AA83-B933-4142-BA67-0CCCCB05BBA3">
@@ -45693,7 +45624,7 @@
 				</Pos>
 				<Rot>4.97927</Rot>
 				<Floor>1</Floor>
-				<Name>garnison3</Name>
+				<Name>moriton_garrison_03</Name>
 				<CombatScript/>
 				<pointLights/>
 				<Shared href="/MapObjects/GarrisonAntiMagic.(AdvMapGarrisonShared).xdb#xpointer(/AdvMapGarrisonShared)"/>
@@ -82587,6 +82518,78 @@
 				<untransferable>false</untransferable>
 			</AdvMapArtifact>
 		</Item>
+		<Item href="#n:inline(AdvMapStatic)" id="item_39179292-443C-4CB8-A12E-71D1BEB14DD1">
+			<AdvMapStatic>
+				<Pos>
+					<x>31</x>
+					<y>30</y>
+					<z>0</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>0</Floor>
+				<Name/>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/Taiga/Scatter_Big_Moss_2x2_02.xdb#xpointer(/AdvMapStaticShared)"/>
+				<IsRemovable>false</IsRemovable>
+				<TerrainAligned>false</TerrainAligned>
+				<ScalePercent>100</ScalePercent>
+			</AdvMapStatic>
+		</Item>
+		<Item href="#n:inline(AdvMapStatic)" id="item_ACA3BBE4-4646-4321-8228-A4AD136EC040">
+			<AdvMapStatic>
+				<Pos>
+					<x>29</x>
+					<y>30</y>
+					<z>0</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>0</Floor>
+				<Name/>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/Taiga/Scatter_Big_Moss_2x2_01.xdb#xpointer(/AdvMapStaticShared)"/>
+				<IsRemovable>false</IsRemovable>
+				<TerrainAligned>false</TerrainAligned>
+				<ScalePercent>100</ScalePercent>
+			</AdvMapStatic>
+		</Item>
+		<Item href="#n:inline(AdvMapStatic)" id="item_66E5802A-2A4F-4819-B821-5060385DECCC">
+			<AdvMapStatic>
+				<Pos>
+					<x>30</x>
+					<y>30</y>
+					<z>0</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>0</Floor>
+				<Name/>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/Taiga/Scatter_Big_Moss_2x2_06.xdb#xpointer(/AdvMapStaticShared)"/>
+				<IsRemovable>false</IsRemovable>
+				<TerrainAligned>false</TerrainAligned>
+				<ScalePercent>100</ScalePercent>
+			</AdvMapStatic>
+		</Item>
+		<Item href="#n:inline(AdvMapStatic)" id="item_3D4856B9-D363-4B91-A8BA-6B2297344D3F">
+			<AdvMapStatic>
+				<Pos>
+					<x>30</x>
+					<y>31</y>
+					<z>0</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>0</Floor>
+				<Name/>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/Taiga/Scatter_Big_Moss_2x2_06.xdb#xpointer(/AdvMapStaticShared)"/>
+				<IsRemovable>false</IsRemovable>
+				<TerrainAligned>false</TerrainAligned>
+				<ScalePercent>100</ScalePercent>
+			</AdvMapStatic>
+		</Item>
 	</objects>
 	<Resources>
 		<PointLights>
@@ -87698,13 +87701,13 @@
 				<Item>
 					<Objectives>
 						<Item>
-							<Name>INTRO_QUEST</Name>
-							<CaptionFileRef href="Quests/Other/main_quest_name.txt"/>
+							<Name>C1_M1_FLAW_IN_THE_PLAN</Name>
+							<CaptionFileRef href="Quests/Primary/FlawInThePlan/name.txt"/>
 							<ObscureCaptionFileRef href=""/>
-							<DescriptionFileRef href="Quests/Other/main_quest_desc.txt"/>
+							<DescriptionFileRef href="Quests/Primary/FlawInThePlan/desc.txt"/>
 							<ProgressCommentsFileRef>
-								<Item href="Quests/Other/mq_p0.txt"/>
-								<Item href="Quests/Other/mq_p1.txt"/>
+								<Item href="Quests/Primary/FlawInThePlan/Progress/p0.txt"/>
+								<Item href="Quests/Primary/FlawInThePlan/Progress/p1.txt"/>
 							</ProgressCommentsFileRef>
 							<Kind>OBJECTIVE_KIND_MANUAL</Kind>
 							<Parameters/>
@@ -87774,16 +87777,16 @@
 							<SoundFailed/>
 						</Item>
 						<Item>
-							<Name>KILL_BAAL</Name>
-							<CaptionFileRef href="Quests/KillBaal/kill_baal_name.txt"/>
+							<Name>C1_M1_KILL_BAAL</Name>
+							<CaptionFileRef href="Quests/Primary/KillBaal/name.txt"/>
 							<ObscureCaptionFileRef href=""/>
-							<DescriptionFileRef href="Quests/KillBaal/kill_baal_desc.txt"/>
+							<DescriptionFileRef href="Quests/Primary/KillBaal/desc.txt"/>
 							<ProgressCommentsFileRef>
-								<Item href="Quests/KillBaal/kill_baal_p0.txt"/>
-								<Item href="Quests/KillBaal/kill_baal_p1.txt"/>
-								<Item href="Quests/KillBaal/kill_baal_p2.txt"/>
-								<Item href="Quests/KillBaal/kill_baal_p3.txt"/>
-								<Item href="Quests/KillBaal/kill_baal_p4.txt"/>
+								<Item href="Quests/Primary/KillBaal/Progress/p0.txt"/>
+								<Item href="Quests/Primary/KillBaal/Progress/p1.txt"/>
+								<Item href="Quests/Primary/KillBaal/Progress/p2.txt"/>
+								<Item href="Quests/Primary/KillBaal/Progress/p3.txt"/>
+								<Item href="Quests/Primary/KillBaal/Progress/p4.txt"/>
 							</ProgressCommentsFileRef>
 							<Kind>OBJECTIVE_KIND_MANUAL</Kind>
 							<Parameters/>
@@ -88005,14 +88008,12 @@
 							<SoundFailed/>
 						</Item>
 						<Item>
-							<Name>PHOENIX</Name>
-							<CaptionFileRef href="Quests/Other/phoenix_name.txt"/>
+							<Name>C1_M1_PHOENIX_ESSENCE</Name>
+							<CaptionFileRef href="Quests/Primary/PhoenixEssence/name.txt"/>
 							<ObscureCaptionFileRef href=""/>
-							<DescriptionFileRef href="Quests/Other/phoenix_desc.txt"/>
+							<DescriptionFileRef href="Quests/Primary/PhoenixEssence/desc.txt"/>
 							<ProgressCommentsFileRef>
-								<Item href="Quests/Other/phoenixQ_p0.txt"/>
-								<Item href="Quests/Other/phoenixQ_p1.txt"/>
-								<Item href="Quests/Other/phoenixQ_p2.txt"/>
+								<Item href="Quests/Primary/PhoenixEssence/Progress/p0.txt"/>
 							</ProgressCommentsFileRef>
 							<Kind>OBJECTIVE_KIND_MANUAL</Kind>
 							<Parameters/>

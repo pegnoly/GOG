@@ -5,11 +5,10 @@
 	<DescriptionFileRef href="description.txt"/>
 	<TileX>216</TileX>
 	<TileY>216</TileY>
-	<MapGoal href=""/>
+	<MapGoal href="MapGoalText.txt"/>
 	<CustomMapGoal>false</CustomMapGoal>
 	<teams>
 		<Item>1</Item>
-		<Item>3</Item>
 		<Item>1</Item>
 	</teams>
 	<thumbnailImages/>

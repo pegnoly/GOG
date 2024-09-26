@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Character ObjectRecordID="1000007">
+	<Model href="Dirael.xdb#xpointer(/Model)"/>
+	<ArenaAnimSet href="Ranger-arena.xdb#xpointer(/AnimSet)"/>
+	<AdvMapAnimSet/>
+	<ColourModels>
+		<Item href="Dirael_White.xdb#xpointer(/Model)"/>
+		<Item href="Dirael_Red.xdb#xpointer(/Model)"/>
+		<Item href="Dirael_Blue.xdb#xpointer(/Model)"/>
+		<Item href="Dirael_Green.xdb#xpointer(/Model)"/>
+		<Item href="Dirael_Yellow.xdb#xpointer(/Model)"/>
+		<Item href="Dirael_Orange.xdb#xpointer(/Model)"/>
+		<Item href="Dirael_Teal.xdb#xpointer(/Model)"/>
+		<Item href="Dirael_Purple.xdb#xpointer(/Model)"/>
+		<Item href="Dirael_Tan.xdb#xpointer(/Model)"/>
+	</ColourModels>
+</Character>

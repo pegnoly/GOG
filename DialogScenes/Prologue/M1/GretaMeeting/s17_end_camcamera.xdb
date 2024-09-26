@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSceneCamera>
+	<Pos>
+		<Rod>97.9755</Rod>
+		<Pitch>-0.50457</Pitch>
+		<Yaw>0.743848</Yaw>
+		<Roll>0</Roll>
+		<FOV>63.3088</FOV>
+		<ClipDistanceMin>1</ClipDistanceMin>
+		<ClipDistanceMax>500</ClipDistanceMax>
+		<Anchor>
+			<x>-12.1338</x>
+			<y>344.582</y>
+			<z>2.50008</z>
+		</Anchor>
+	</Pos>
+	<Absolute>true</Absolute>
+	<Rot>0</Rot>
+	<NameFileRef href="s17_end_cam-name-camera.txt"/>
+</DSceneCamera>

@@ -37,10 +37,14 @@ asha_tear = {
     end,
 
     Start = 
-    function ()
-        Quest.Start(asha_tear.name, "Karlam")
+    function (hero)
+        Quest.Start(asha_tear.name, hero)
         Quest.SetObjectQuestmark("sylanna_tree", QUESTMARK_OBJ_NEW_PROGRESS, 4)
         startThread(asha_tear.ObelisksCountCheckThread)
+        startThread(asha_tear.TearCheckThread)
+        if asha_tear.obelisks_count > 0 then
+            Quest.Update(asha_tear.name, 1, hero)
+        end
     end,
 
     ObelisksCountCheckThread = 

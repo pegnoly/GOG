@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSceneCamera>
+	<Pos>
+		<Rod>69.8901</Rod>
+		<Pitch>-1.27759</Pitch>
+		<Yaw>0.297522</Yaw>
+		<Roll>0</Roll>
+		<FOV>47.5469</FOV>
+		<ClipDistanceMin>1</ClipDistanceMin>
+		<ClipDistanceMax>500</ClipDistanceMax>
+		<Anchor>
+			<x>290.43</x>
+			<y>270.616</y>
+			<z>109.5</z>
+		</Anchor>
+	</Pos>
+	<Absolute>true</Absolute>
+	<Rot>0</Rot>
+	<NameFileRef href="s3_start_cam-name-camera.txt"/>
+</DSceneCamera>

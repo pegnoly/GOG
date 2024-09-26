@@ -59,7 +59,9 @@ function(day)
 end
 
 -- ����� ����������� ���
-CombatResultsEvent = {}
+CombatResultsEvent = {
+  fight_tag_for_player = {}
+}
 CombatResultsEvent.listeners = {}
 
 CombatResultsEvent.AddListener =
@@ -143,8 +145,11 @@ function()
   end
 end
 
--- ����� ��������� �����
-AddHeroEvent = {}
+AddHeroEvent = {
+  already_invoked_listeners = {},
+  listeners_waiting = {}
+}
+
 AddHeroEvent.listeners = {}
 
 AddHeroEvent.AddListener =
@@ -157,11 +162,45 @@ function(desc)
   AddHeroEvent.listeners[desc] = nil
 end
 
+AddHeroEvent.InvokeAfter = 
+function (prev_listener, this_listener)
+  if not AddHeroEvent.listeners_waiting[this_listener] then
+    AddHeroEvent.listeners_waiting[this_listener] = {}
+  end
+  local length = AddHeroEvent.listeners_waiting[this_listener]
+  AddHeroEvent.listeners_waiting[this_listener][length + 1] = prev_listener
+end
+
+AddHeroEvent.FinishInvoking = 
+function (listener)
+  AddHeroEvent.already_invoked_listeners[listener] = 1
+end
+
 AddHeroEvent.Invoke =
 function(hero)
+  AddHeroEvent.already_invoked_listeners = {}
   for desc, func in AddHeroEvent.listeners do
-    print("<color=red>AddHeroEvent.Invoke: <color=green>", desc)
-    startThread(func, hero)
+    if AddHeroEvent.listeners_waiting[desc] then
+      startThread(
+      function ()
+        while 1 do
+          local listeners_done = 0
+          local listeners_done_needed = len(AddHeroEvent.listeners_waiting[%desc])
+          for i, listener in AddHeroEvent.listeners_waiting[%desc] do
+            if AddHeroEvent.already_invoked_listeners[listener] then
+              listeners_done = listeners_done + 1
+            end
+          end
+          if listeners_done == listeners_done_needed then
+            break
+          end
+          sleep()
+        end
+        startThread(%func, %hero)
+      end)
+    else
+      startThread(func, hero)
+    end
   end
 end
 

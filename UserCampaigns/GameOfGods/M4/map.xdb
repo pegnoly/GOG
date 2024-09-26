@@ -770,6 +770,29 @@
 				<showCameras/>
 			</AdvMapBuilding>
 		</Item>
+		<Item href="#n:inline(AdvMapMine)" id="item_65D97C54-AF3C-46E6-81BA-DDFFB8A87DEA">
+			<AdvMapMine>
+				<Pos>
+					<x>16</x>
+					<y>33</y>
+					<z>0</z>
+				</Pos>
+				<Rot>0</Rot>
+				<Floor>0</Floor>
+				<Name/>
+				<CombatScript/>
+				<pointLights/>
+				<Shared href="/MapObjects/Crystal_Cavern.(AdvMapMineShared).xdb#xpointer(/AdvMapMineShared)"/>
+				<PlayerID>PLAYER_3</PlayerID>
+				<CaptureTrigger>
+					<Action>
+						<FunctionName/>
+					</Action>
+				</CaptureTrigger>
+				<armySlots/>
+				<CreatureSwapBlockedForAI>false</CreatureSwapBlockedForAI>
+			</AdvMapMine>
+		</Item>
 	</objects>
 	<Resources>
 		<PointLights/>

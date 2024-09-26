@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSceneCamera>
+	<Pos>
+		<Rod>130.493</Rod>
+		<Pitch>-0.341595</Pitch>
+		<Yaw>1.58877</Yaw>
+		<Roll>0</Roll>
+		<FOV>63.3273</FOV>
+		<ClipDistanceMin>1</ClipDistanceMin>
+		<ClipDistanceMax>500</ClipDistanceMax>
+		<Anchor>
+			<x>-72.1841</x>
+			<y>310.504</y>
+			<z>4.49972</z>
+		</Anchor>
+	</Pos>
+	<Absolute>true</Absolute>
+	<Rot>0</Rot>
+	<NameFileRef href="s21_start_cam-name-camera.txt"/>
+</DSceneCamera>

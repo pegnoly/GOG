@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSceneCamera>
+	<Pos>
+		<Rod>46.044</Rod>
+		<Pitch>-0.259998</Pitch>
+		<Yaw>5.00641</Yaw>
+		<Roll>0</Roll>
+		<FOV>35</FOV>
+		<ClipDistanceMin>1</ClipDistanceMin>
+		<ClipDistanceMax>500</ClipDistanceMax>
+		<Anchor>
+			<x>313.422</x>
+			<y>272.073</y>
+			<z>0.499992</z>
+		</Anchor>
+	</Pos>
+	<Absolute>true</Absolute>
+	<Rot>0</Rot>
+	<NameFileRef href="s5_finish_cam-name-camera.txt"/>
+</DSceneCamera>

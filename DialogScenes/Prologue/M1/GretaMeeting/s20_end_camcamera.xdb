@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSceneCamera>
+	<Pos>
+		<Rod>89.7924</Rod>
+		<Pitch>-0.375199</Pitch>
+		<Yaw>0.0479908</Yaw>
+		<Roll>0</Roll>
+		<FOV>47.5923</FOV>
+		<ClipDistanceMin>1</ClipDistanceMin>
+		<ClipDistanceMax>500</ClipDistanceMax>
+		<Anchor>
+			<x>34.9715</x>
+			<y>393.908</y>
+			<z>12.9994</z>
+		</Anchor>
+	</Pos>
+	<Absolute>true</Absolute>
+	<Rot>0</Rot>
+	<NameFileRef href="s20_end_cam-name-camera.txt"/>
+</DSceneCamera>

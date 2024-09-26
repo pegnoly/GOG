@@ -498,18 +498,54 @@ function table.is_equal(t1, t2)
   return 1
 end
 
+key_value_pair = {
+	key = nil,
+	value = nil
+}
+
+--- Возвращает пару ключ-значение, в которой значение - максимальное при вычислении заданного условия.
+---@param t table Таблица, в которой ищется пара
+---@param predicate function Функция-условие
+---@return key_value_pair kvp Пара ключ-значение
 function table.max(t, predicate)
-	local current_answer, current_value = nil, math.nan
+	local current_answer, current_index, current_value = nil, nil, 0
 	for k, v in t do
-		local value = predicate(v)
-		if value > current_value then
-			current_answer = v
-			current_value = value
+		if k and v then
+			local value = predicate(v)
+			if value > current_value then
+				current_answer = v
+				current_index = k
+				current_value = value
+			end
 		end
 	end
-	return current_answer
+	return {key = current_index, value = current_answer}
 end
 
+--- Возвращает пару ключ-значение, в которой значение - минимальное при вычислении заданного условия.
+---@param t table Таблица, в которой ищется пара
+---@param predicate function Функция-условие
+---@return key_value_pair kvp Пара ключ-значение
+function table.min(t, predicate)
+	local current_answer, current_index, current_value = nil, nil, math.huge
+	for k, v in t do
+		if k and v then
+			local value = predicate(v)
+			if value < current_value then
+				current_answer = v
+				current_index = k
+				current_value = value
+			end
+		end
+	end
+	return {key = current_index, value = current_answer}
+end
+
+
+--- Находит значения в таблице, соответствующие условию
+---@param t table Таблица
+---@param predicate function Функция-условие
+---@return table t Подходящие значения
 function table.select(t, predicate)
 	local answer, n = {}, 0
 	for k, v in t do

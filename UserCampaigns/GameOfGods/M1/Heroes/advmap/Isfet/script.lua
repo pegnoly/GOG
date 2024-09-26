@@ -85,46 +85,72 @@ c2m1_isfet = {
         AddHeroEvent.AddListener("C2M1_isfet_add_hero_listener",
             GetDifficulty() == DIFFICULTY_HEROIC and c2m1_isfet.AddHeroic or c2m1_isfet.AddDefault
         )
+        RemoveHeroEvent.AddListener("C2M1_isfet_remove_hero_listener", c2m1_isfet.Remove)
+        RespawnHeroEvent.AddListener("C2M1_isfet_respawn_hero_listener",
+            GetDifficulty() == DIFFICULTY_HEROIC and c2m1_isfet.RespawnHeroic or c2m1_isfet.RespawnDefault
+        )
         sleep(5)
         DeployReserveHero("C2M1_Isfet_Heroic", 17, 7)
     end,
 
+    -- первое появление на сложностях, кроме героя
     AddDefault = 
     function (hero)
-        if hero == "C2M1_Isfet" then
-            c2m1_demons.heroes_as_main_count[hero] = 1
+        if hero ~= "C2M1_Isfet" then
+            return 
         end
-        WarpHeroExp(hero, Levels[20])
-        startThread(c2m1_isfet.SetupDefault)
+        c2m1_demons.heroes_as_main_count[hero] = 1
+        ChangeHeroStat(hero, STAT_ATTACK, 10 + initialDifficulty + random(3))
+        ChangeHeroStat(hero, STAT_DEFENCE, 3 + initialDifficulty + random(2))
+        ChangeHeroStat(hero, STAT_SPELL_POWER, 2 + initialDifficulty + random(2))
+        ChangeHeroStat(hero, STAT_KNOWLEDGE, 9 + initialDifficulty + random(3))
+        for i, machine in {WAR_MACHINE_BALLISTA, WAR_MACHINE_AMMO_CART, WAR_MACHINE_FIRST_AID_TENT} do
+            pcall(GiveHeroWarMachine, hero, machine)
+        end
+        WarpHeroExp(hero, Levels[16 + initialDifficulty])
+        startThread(c2m1_isfet.Setup, hero)
     end,
 
+    -- первое появление на сложности герой
     AddHeroic = 
     function (hero)
-        if hero == "C2M1_Isfet_Heroic" then
-            c2m1_demons.heroes_as_main_count[hero] = 1
+        if hero ~= "C2M1_Isfet_Heroic" then
+            return 
         end
+        consoleCmd("game_writelog 1")
+        sleep(20)
+        c2m1_demons.heroes_as_main_count[hero] = 1
         ChangeHeroStat(hero, STAT_ATTACK, 16 + random(4))
-        ChangeHeroStat(hero, STAT_DEFENCE, 6 + random(3))
-        ChangeHeroStat(hero, STAT_SPELL_POWER, 4 + random(4))
-        ChangeHeroStat(hero, STAT_KNOWLEDGE, 14 + random(6))
+        ChangeHeroStat(hero, STAT_DEFENCE, 7 + random(3))
+        ChangeHeroStat(hero, STAT_SPELL_POWER, 6 + random(4))
+        ChangeHeroStat(hero, STAT_KNOWLEDGE, 13 + random(6))
         for i, machine in {WAR_MACHINE_BALLISTA, WAR_MACHINE_AMMO_CART, WAR_MACHINE_FIRST_AID_TENT} do
             pcall(GiveHeroWarMachine, hero, machine)
         end
         WarpHeroExp(hero, Levels[23])
-        startThread(c2m1_isfet.SetupHeroic, hero)
+        startThread(c2m1_isfet.Setup, hero)
     end,
 
-    SetupHeroic = 
+    Remove = 
     function (hero)
-        local object = GetHeroTown(hero) or hero
-        local week = ceil(GetDate(DAY) / 7)
-        local times_as_main = c2m1_demons.heroes_as_main_count[hero]
-        for tier = 1, 7 do
-            local tier_creature = c2m1_isfet.GetAdjustedTierCreature(tier)
-            local count = ceil((week + times_as_main)  * c2m1_isfet.army_multipliers[tier])
-            AddObjectCreatures(object, tier_creature, count)
+        -- здесь должен обновляться стейт 
+    end,
+
+    RespawnDefault = 
+    function (hero)
+        c2m1_demons.heroes_as_main_count[hero] = c2m1_demons.heroes_as_main_count[hero] + 1
+        for i, machine in {WAR_MACHINE_BALLISTA, WAR_MACHINE_AMMO_CART, WAR_MACHINE_FIRST_AID_TENT} do
+            pcall(GiveHeroWarMachine, hero, machine)
         end
-        --
+    end,
+
+    RespawnHeroic = 
+    function (hero)
+        c2m1_demons.heroes_as_main_count[hero] = c2m1_demons.heroes_as_main_count[hero] + 1
+    end,
+
+    Setup = 
+    function (hero)
         c2m1_isfet.artifacts_pool_weight = c2m1_isfet.artifacts_pool_weight + c2m1_isfet.artifacts_pool_weight_grow
         startThread(
             ai_art_distribution.BuildArtifactsSet, 
@@ -133,16 +159,57 @@ c2m1_isfet = {
             c2m1_isfet.required_arts_pool,
             c2m1_isfet.random_artifacts_pool
         )
+        startThread(c2m1_isfet.ArmySetup, hero)
+    end,
+
+    ArmySetup = 
+    function (hero)
+        local object = GetHeroTown(hero) or hero
+        local week = ceil(GetDate(DAY) / 7)
+        local times_as_main = c2m1_demons.heroes_as_main_count[hero]
+        local default_creature_removed
+        for tier = 1, 7 do
+            local tier_creature = c2m1_isfet.GetAdjustedTierCreature(tier)
+            local count = ceil((week + times_as_main)  * c2m1_isfet.army_multipliers[tier])
+            AddObjectCreatures(object, tier_creature, count)
+            if not default_creature_removed then
+                while GetObjectCreatures(object, tier_creature) ~= count do
+                    sleep()
+                end
+                RemoveObjectCreatures(object, CREATURE_PIXIE, 99999)
+                while GetObjectCreatures(object, CREATURE_PIXIE) ~= 0 do
+                    sleep()
+                end
+                default_creature_removed = 1
+            end
+        end
     end,
 
     -- выбираются грейды с максимальной суммарной скоростью и инициативой.
     GetAdjustedTierCreature =
     function (tier)
-        local result = table.max(TIER_TABLES[TOWN_INFERNO][tier], 
+        local tier_creatures = TIER_TABLES[TOWN_INFERNO][tier]
+        local non_grade_creature = table.min(tier_creatures, 
         function (creature)
-            local res = Creature.Params.Initiative(creature) + Creature.Params.Speed(creature)
+            if creature >= 2000 then
+                return math.huge
+            end
+            local res = Creature.Params.Power(creature)
             return res
         end)
-        return result
+        --print("non_grade_creature: ", non_grade_creature)
+        tier_creatures[non_grade_creature.key] = nil
+        local result = table.max(tier_creatures, 
+        function (creature)
+            if creature >= 2000 then
+                return -1
+            end
+            --print("creature: ", creature)
+            local res = Creature.Params.Initiative(creature) + Creature.Params.Speed(creature)
+            --print("sum: ", res)
+            return res
+        end)
+        --print("result: ", result)
+        return result.value
     end
 }

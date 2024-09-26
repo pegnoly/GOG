@@ -386,7 +386,12 @@ primary_quest_path = mainPath.."Quests/Primary/"
 secondary_quest_path = mainPath.."Quests/Secondary/"
 zones_path = mainPath.."Zones/"
 
+DIALOG_SCENES = {
+    GRETA_MEETING = "/DialogScenes/Prologue/M1/GretaMeeting/DialogScene.xdb#xpointer(/DialogScene)"
+}
+
 function LoadScripts()
+    doFile(primary_quest_path.."FlawInThePlan/script.lua")
     doFile(secondary_quest_path.."HiddenPath/script.lua")
     doFile(zones_path.."Moriton/script.lua")
 end
@@ -397,8 +402,19 @@ function StartMap()
     WarpHeroExp("Karlam", Levels[20])
     LoadScripts()
     sleep(10)
+    startThread(flaw_in_the_plan.Init)
     startThread(hidden_path.Init)
     startThread(moriton_zone.Init)
+    NewDayEvent.AddListener("test1", 
+    function (day)
+        sleep(150)
+    end)
+    NewDayEvent.AddListener("test2",
+    function (day)
+        MessageBox(rtext("ffgfgfg"))
+    end)
+    NewDayEvent.InvokeAfter("test1", "test2")
 end
 
+--StartDialogSceneInt("")
 startThread(StartMap)
