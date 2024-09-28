@@ -1,0 +1,1 @@
+doFile("/scripts/advmap/Heroes/Karlam/script.lua")
