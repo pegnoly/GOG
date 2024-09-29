@@ -60,7 +60,7 @@ doFile('/scripts/source/event/map_common/map_reload_fix.lua')
 
 function CommonStart()
   consoleCmd("@GAME_RELOADEAD = 0")
-	--doFile("/scripts/local_load.lua")
+	doFile("/scripts/local_load.lua")
 	sleep()
 	startThread(CommonMapLoadingThread)
 	print("<color=blue>MCCS SCRIPTS SUCCESSFULLY LOADED")

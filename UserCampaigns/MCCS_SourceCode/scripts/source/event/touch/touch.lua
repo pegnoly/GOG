@@ -111,7 +111,7 @@ Touch =
     NewHandlersTable = 
     ---@meta
     function(object)
-      Touch.handler_tables[object] = {funcs = {}, priority_func = nil, default = nil}
+      Touch.handler_tables[object] = {funcs = {}, priority_func = nil}
       Touch.SetTrigger(object)
     end,
 
@@ -262,9 +262,19 @@ Touch =
     ---@param object any
     ---@param func any
     function (object, func)
+      --print("Trying to set default for ", object)
       local table = Touch.GetHandlersTable(object)
-      table["default"] = func
-    end
+      if not table then
+        --print("Creating new table..")
+        Touch.NewHandlersTable(object)
+        --print("Ok?")
+        Touch.handler_tables[object].funcs["default"] = func
+        --print("Ok??")
+      else 
+        --print("Exists..?")
+        Touch.handler_tables[object].funcs["default"] = func
+      end
+    end,
 
     OverrideFunction =
     --- Перезаписывает функцию на объекте
@@ -285,14 +295,14 @@ Touch =
         return answer
       end
       local funcs = Touch.handler_tables[object].funcs
-      if func["default"] and len(funcs) == 1 then
+      if funcs["default"] and len(funcs) == 1 then
         print('<color=red>Touch.<color=green>CallHandlers: default')
-        answer = func["default"](hero, object)
+        answer = funcs["default"](hero, object)
         return answer
       end
       for desc, func in funcs do
-        print('<color=red>Touch.<color=green>CallHandlers: call ', desc)
-        if desc then
+        if desc and desc ~= "default" then
+          print('<color=red>Touch.<color=green>CallHandlers: call ', desc)
           answer = func(hero, object)
         end
       end

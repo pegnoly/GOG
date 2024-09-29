@@ -17,7 +17,7 @@ end
 ---@param hero string скриптовое имя героя
 ---@param skill HeroSkillType id навыка
 ---@return boolean has имеется скилл/нет
-function HasHeroSkil(hero, skill)
+function HasHeroSkill(hero, skill)
 end
 
 --- Определяет, есть ли у героя боевая машина заданного типа

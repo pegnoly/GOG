@@ -71,7 +71,7 @@ Art =
         function(art)
             errorHook(
             function()
-                ArtParams.Exception(%art, "cost")
+                Art.Params.Exception(%art, "cost")
             end)
             local answer = MCCS_ARTIFACTS_GENERATED_TABLE[art].cost
             return answer

@@ -8,16 +8,21 @@ start_zone = {
 
     Init = 
     function ()
-        Touch.DisableObject("start_zone_elf_treasure")
-        Touch.SetFunction("start_zone_elf_treasure", "default", start_zone.TreantBankDefault)
+        startThread(start_zone.InitTreantBank)
+        startThread(start_zone.InitElementalStockpile)
     end,
 
-    -- дефолтная функция касания - вызывается только если есть только она 
-    TreantBankDefault =
-    function (hero, object)
-        if not (Touch.GetHandlersCount(object) == 1 and Touch.HasFunction(object, "default")) then
-            return
-        end
-        MessageBox(start_zone.path.text.."treant_bank_default.txt")
+    InitTreantBank = 
+    function ()
+        Touch.DisableObject("start_zone_elf_treasure")
+        Touch.SetDefault("start_zone_elf_treasure", 
+        function (hero, object)
+            MessageBox(start_zone.path.text.."treant_bank_default.txt")
+        end)
     end,
+
+    InitElementalStockpile = 
+    function ()
+        Touch.DisableObject("start_zone_elemental_stockpile")
+    end
 }

@@ -29,7 +29,7 @@ c1m1_q_contract_killer = {
     Init = 
     function ()
         Quest.Names["C1M1_CONTRACT_KILLER"] = secondary_quest_path.."ContractKiller/name.txt"
-        Quest.SetObjectQuestmark("forest_edge_tavern", QUESTMARK_OBJ_NEW, 7)
+        Quest.SetObjectQuestmark("forest_edge_tavern", QUESTMARK_OBJ_NEW, QUESTMARK_HEIGHT_TAVERN)
         Touch.SetFunction("forest_edge_tavern", "contract_killer_talk", c1m1_q_contract_killer.TavernTalk)
     end,
 
@@ -39,8 +39,8 @@ c1m1_q_contract_killer = {
             MiniDialog.Start(c1m1_q_contract_killer.path.dialog.."TavernStartDialog/", PLAYER_1, c1m1_q_contract_killer.dialogs.Start)
             Touch.SetFunction("forest_edge_artifact_merchant", "contract_killer_fight", c1m1_q_contract_killer.SellerFight)
             Quest.Start(c1m1_q_contract_killer.name, hero)
-            Quest.SetObjectQuestmark(object, QUESTMARK_OBJ_IN_PROGRESS, 7)
-            Quest.SetObjectQuestmark("forest_edge_artifact_merchant", QUESTMARK_OBJ_NEW_PROGRESS, 3)
+            Quest.SetObjectQuestmark(object, QUESTMARK_OBJ_IN_PROGRESS, QUESTMARK_HEIGHT_TAVERN)
+            Quest.SetObjectQuestmark("forest_edge_artifact_merchant", QUESTMARK_OBJ_NEW_PROGRESS, QUESTMARK_HEIGHT_ARTIFACT_MERCHANT)
             return
         end
         --
@@ -52,6 +52,8 @@ c1m1_q_contract_killer = {
         if progress == 1 then
             MiniDialog.Start(c1m1_q_contract_killer.path.dialog.."TavernFinalDialog/", PLAYER_1, c1m1_q_contract_killer.dialogs.Final)
             Quest.Finish(c1m1_q_contract_killer.name)
+            Touch.RemoveFunction(object, "contract_killer_talk")
+            c1m1_q_treasures_and_secrets.Start(hero)
             return
         end
     end,
@@ -99,6 +101,6 @@ c1m1_q_contract_killer = {
         end)
         Quest.Update(c1m1_q_contract_killer.name, 1, hero)
         Quest.ResetObjectQuestmark(object)
-        Quest.SetObjectQuestmark("forest_edge_tavern", QUESTMARK_OBJ_NEW_PROGRESS, 7)
+        Quest.SetObjectQuestmark("forest_edge_tavern", QUESTMARK_OBJ_NEW_PROGRESS, QUESTMARK_HEIGHT_TAVERN)
     end
 }

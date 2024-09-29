@@ -258,6 +258,8 @@ CombatFunctions =
 	DEFENDER_CREATURE_DEATH = {},
 	DEFENDER_WARMACHINE_DEATH = {},
 	DEFENDER_BUILDING_DEATH = {},
+
+  ON_SPELL_CAST = {}
 }
 
 -- ������� �������
@@ -335,6 +337,35 @@ function UnitDeath(unit)
   end
 end
 
+function OnSpellCast(data)
+  --print("on spell cast data: ", data)
+  local s = string.spread(data)
+  s.n = nil
+  local delimeter_count = 0
+  local caster, spell, target = "", "", ""
+  for _, c in s do
+    if c then
+      if c == '#' then
+        delimeter_count = delimeter_count + 1
+      else
+        if delimeter_count == 0 then
+          caster = caster..c
+        elseif delimeter_count == 1 then
+          spell = spell..c
+        else
+          target = target..c
+        end
+      end
+    end
+  end
+  print("caster: ", caster, "; spell: ", spell + 0, "; target: ", target)
+  for desc, func in CombatFunctions.ON_SPELL_CAST do
+    print("OnSpellCast: executing ", desc)
+    startThread(func, caster, spell + 0, target)
+  end
+  local result = nil
+  return result
+end
 startThread(GetCombatFunctions)
 --AddCombatFunction(CombatFunctions.UNIT_MOVE,
 --function(unit)

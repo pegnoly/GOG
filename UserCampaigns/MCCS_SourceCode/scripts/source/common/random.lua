@@ -88,6 +88,7 @@ Random =
           return answer
         end
       end
+	  sleep()
     until is_ok
   end,
 
@@ -97,6 +98,7 @@ Random =
   ---@param ... any возможные значения
   ---@return any|nil value случайное значение
   function(e_tbl, ...)
+	print("etbl: ", e_tbl, " arg: ", arg)
     errorHook(
     function()
        Random.Exception("selection with exceptional table")
@@ -121,13 +123,16 @@ Random =
     local Random_mode = Random.Mode()
     repeat
       answer = random(arg.n) + 1 * (Random_mode == RANDOM_ADV_MAP_MODE and 1 or 0)
-      for i = 1, arg.n do
-        if answer == i and not(contains(e_tbl, arg[i])) then
-          is_ok = 1
-          answer = arg[i]
-          return answer
-        end
+      for k, v in arg do
+		if k and v then
+			if answer == k and not(contains(e_tbl, v)) then
+			  is_ok = 1
+			  answer = v
+			  return answer
+			end
+		end
       end
+	  sleep()
     until is_ok
   end,
 
@@ -168,7 +173,7 @@ Random =
     function()
        Random.Exception("table with exceptional table")
     end)
-    local answer = Random.FromSelection_IgnoreTable(e_tbl, table.unpack(tbl))
+    local answer = Random.FromSelection_IgnoreTable(e_tbl, table.unpack(tbl, 0, len(tbl)))
     return answer
   end 
 }

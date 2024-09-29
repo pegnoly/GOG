@@ -1,4 +1,4 @@
-MiniDialog.Sets["GOG_C1M1_Q_TREASURES&SECRETS_TAVERN_TEMP_DIALOG_ONE"] = {
+MiniDialog.Sets["GOG_C1M1_Q_TREASURES_AND_SECRETS_TAVERN_TEMP_DIALOG_ONE"] = {
 	[0] = {
 		["main"] = {speaker = CREATURE_PEASANT, speaker_type = SPEAKER_TYPE_CREATURE},
 	},

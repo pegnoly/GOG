@@ -33,9 +33,13 @@ function table.pack(...)
 end
 
 function table.unpack(t, i, j)
+	--print("t: ", t)
 	i = (i or 1) - 1
+	--print("i: ", i) 
 	j = j or table.getn(t)
+	--print("j: ", j)
 	local n = j-i
+	--print("n: ", n)
 	if n <= 0 then
 		return
 	elseif n == 1 then
@@ -417,7 +421,7 @@ end
 
 function table.getn(t)
 	if t.n then return t.n end
-	local a = 0
+	local a = t[0] and -1 or 0
 	while t[a+1] do
 		a = a + 1
 	end
@@ -498,16 +502,8 @@ function table.is_equal(t1, t2)
   return 1
 end
 
-key_value_pair = {
-	key = nil,
-	value = nil
-}
-
---- Возвращает пару ключ-значение, в которой значение - максимальное при вычислении заданного условия.
----@param t table Таблица, в которой ищется пара
----@param predicate function Функция-условие
----@return key_value_pair kvp Пара ключ-значение
 function table.max(t, predicate)
+	--print("Table max: ", t)
 	local current_answer, current_index, current_value = nil, nil, 0
 	for k, v in t do
 		if k and v then
@@ -522,10 +518,6 @@ function table.max(t, predicate)
 	return {key = current_index, value = current_answer}
 end
 
---- Возвращает пару ключ-значение, в которой значение - минимальное при вычислении заданного условия.
----@param t table Таблица, в которой ищется пара
----@param predicate function Функция-условие
----@return key_value_pair kvp Пара ключ-значение
 function table.min(t, predicate)
 	local current_answer, current_index, current_value = nil, nil, math.huge
 	for k, v in t do
@@ -541,11 +533,6 @@ function table.min(t, predicate)
 	return {key = current_index, value = current_answer}
 end
 
-
---- Находит значения в таблице, соответствующие условию
----@param t table Таблица
----@param predicate function Функция-условие
----@return table t Подходящие значения
 function table.select(t, predicate)
 	local answer, n = {}, 0
 	for k, v in t do

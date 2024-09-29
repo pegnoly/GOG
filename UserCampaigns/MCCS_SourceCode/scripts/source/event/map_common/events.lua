@@ -50,17 +50,23 @@ function(day)
           end
           sleep()
         end
-        startThread(%func, %day)
+        startThread(NewDayEvent.RunHandler, %desc, %func, %day)
       end)
     else
-      startThread(func, day)
+      startThread(NewDayEvent.RunHandler, desc, func, day)
     end
   end
 end
 
+NewDayEvent.RunHandler = 
+function(desc, func, day)
+	func(day)
+	NewDayEvent.this_day_already_invoked_listeners[desc] = 1
+end
+
 -- ����� ����������� ���
 CombatResultsEvent = {
-  fight_tag_for_player = {}
+	fight_tag_for_player = {}
 }
 CombatResultsEvent.listeners = {}
 
@@ -144,6 +150,7 @@ function()
     startThread(func)
   end
 end
+
 
 AddHeroEvent = {
   already_invoked_listeners = {},

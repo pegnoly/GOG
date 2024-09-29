@@ -51,6 +51,19 @@ Spell =
             return answer
         end,
 
+        Cost = 
+        --- Возвращает уровень мастерства, необходимый для изучения спелла
+        ---@param spell integer id спелла
+        ---@return integer cost стоимость заклинания
+        function(spell)
+            errorHook(
+            function()
+                Spell.Params.Exception(%spell, "cost")
+            end)
+            local answer = MCCS_SPELL_GENERATED_TABLE[spell].cost
+            return answer  
+        end,
+
         Type =
         --- Возвращает тип каста спелла
         ---@param spell integer id спелла

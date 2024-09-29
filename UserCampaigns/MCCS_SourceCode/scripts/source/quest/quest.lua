@@ -1,7 +1,7 @@
 --------------------------------------------------------------------------------
--- для упрощения работы с квестами
--- задать таблицу Q_NAMES = {['скрипт имя квеста'] = 'Название'} для корректной работы
--- (тупой комментарий с сингла)
+-- пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ Q_NAMES = {['пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ'] = 'пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ'} пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+-- (пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ)
 
 Quest = {
 	Names = {}
@@ -83,14 +83,22 @@ QUESTMARK_OBJ_IN_PROGRESS = 2
 QUESTMARK_OBJ_NEW_PROGRESS = 3
 QUESTMARK_NO_OBJ = 4
 
-Quest.Questmarks = {[QUESTMARK_OBJ_NEW] = 'Art_blue', [QUESTMARK_OBJ_IN_PROGRESS] = 'Art_gold', [QUESTMARK_OBJ_NEW_PROGRESS] = 'Art_green', [QUESTMARK_NO_OBJ] = 'Art_red'}
+QUESTMARK_HEIGHT_TAVERN = 7
+QUESTMARK_HEIGHT_ARTIFACT_MERCHANT = 3
+
+Quest.Questmarks = {
+  [QUESTMARK_OBJ_NEW] = 'Art_blue', 
+  [QUESTMARK_OBJ_IN_PROGRESS] = 'Art_gold', 
+  [QUESTMARK_OBJ_NEW_PROGRESS] = 'Art_green', 
+  [QUESTMARK_NO_OBJ] = 'Art_red'
+}
 
 Quest.SetObjectQuestmark =
-function(object, mark, z)
-  z = z or 2
+function(object, mark, height)
+  height = height or 2
   pcall(Quest.ResetObjectQuestmark, object)
   sleep()
-  FX.Play(Quest.Questmarks[mark], object, object..'_questmark', 0, 0, z)
+  FX.Play(Quest.Questmarks[mark], object, object..'_questmark', 0, 0, height)
 end
 
 Quest.ResetObjectQuestmark =

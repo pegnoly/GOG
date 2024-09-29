@@ -65,7 +65,7 @@ do
   ---@return boolean is_ok было нажато ок/отмена
   function MCCS_QuestionBox(msg)
     qbox_answer = -1
-    %oldQuestionBox(msg, 'Yes', 'No')
+    %oldQuestionBox(msg, 'YesSingle', 'NoSingle')
     while qbox_answer == -1 do
       sleep()
     end
@@ -107,6 +107,14 @@ do
   		end;
   		UnblockGame();
   	end;
+  end
+
+  function YesSingle()
+    qbox_answer = 1
+  end
+
+  function NoSingle()
+    qbox_answer = 0
   end
 
   function Yes(player)
@@ -163,7 +171,11 @@ function MCCS_StartCombat(hero, enemy, stack_count, stacks_info, is_diff_indepen
     print("<color=red>MCCS_StartCombat: <color=green> count - ", args[index + 1])
     index = index + 2
   end
-  args[index + 2] = script
+  if script then
+    local player = GetObjectOwner(hero)
+    CombatResultsEvent.fight_tag_for_player[player] = script
+  end
+  args[index + 2] = nil
   args[index + 3] = arena
   args[index + 4] = is_auto_combat
   local floor_flag
@@ -176,12 +188,7 @@ function MCCS_StartCombat(hero, enemy, stack_count, stacks_info, is_diff_indepen
   StartCombat(hero, enemy, stack_count, args[1], args[2], args[3], args[4], args[5], args[6], args[7],
                                         args[8], args[9], args[10], args[11], args[12], args[13], args[14],
                                         args[15], args[16], args[17], args[18])
-
-  print("<color=red>MCCS_StartCombat: <color=green> fight started?")
-  while GetLastSavedCombatIndex() == fight_ID do 
-    sleep() 
-  end
-  print("<color=red>MCCS_StartCombat: <color=green> fight ended?")
+  while GetLastSavedCombatIndex() == fight_ID do sleep() end
   if floor_flag then
     SetCombatLight(COMBAT_LIGHTS.CURRENT)
   end

@@ -144,3 +144,9 @@ end
 ---@return string[] spell_spawns список скриптовых имен обектов
 function GetDefenderSpellSpawns()
 end
+
+--- Возвращает сторону, которой принадлежит юнит
+---@param unit string скриптовое имя юнита
+---@return CombatSide side сторона боя
+function GetUnitSide(unit)
+end

@@ -712,7 +712,9 @@
 							<SkillID>HERO_SKILL_LOGISTICS</SkillID>
 						</Item>
 					</skills>
-					<perkIDs/>
+					<perkIDs>
+						<Item>HERO_SKILL_MAGIC_BOND</Item>
+					</perkIDs>
 					<spellIDs>
 						<Item>SPELL_MAGIC_ARROW</Item>
 					</spellIDs>
@@ -14391,7 +14393,7 @@
 				</Pos>
 				<Rot>3.22049</Rot>
 				<Floor>0</Floor>
-				<Name>elem1</Name>
+				<Name>west_swamp_elemental_stockpile</Name>
 				<CombatScript/>
 				<pointLights/>
 				<Shared href="/MapObjects/Elemantal_Stockpile.(AdvMapBuildingShared).xdb#xpointer(/AdvMapBuildingShared)"/>
@@ -14527,7 +14529,7 @@
 				</Pos>
 				<Rot>1.5708</Rot>
 				<Floor>0</Floor>
-				<Name>elem2</Name>
+				<Name>deep_forest_elemental_stockpile</Name>
 				<CombatScript/>
 				<pointLights/>
 				<Shared href="/MapObjects/Elemantal_Stockpile.(AdvMapBuildingShared).xdb#xpointer(/AdvMapBuildingShared)"/>
@@ -17048,7 +17050,7 @@
 				</Pos>
 				<Rot>5.82079</Rot>
 				<Floor>0</Floor>
-				<Name>elem3</Name>
+				<Name>start_zone_elemental_stockpile</Name>
 				<CombatScript/>
 				<pointLights/>
 				<Shared href="/MapObjects/Elemantal_Stockpile.(AdvMapBuildingShared).xdb#xpointer(/AdvMapBuildingShared)"/>
@@ -22971,7 +22973,7 @@
 				</Pos>
 				<Rot>5.17479</Rot>
 				<Floor>0</Floor>
-				<Name>elem4</Name>
+				<Name>big_mountain_foot_elemental_stockpile</Name>
 				<CombatScript/>
 				<pointLights/>
 				<Shared href="/MapObjects/Elemantal_Stockpile.(AdvMapBuildingShared).xdb#xpointer(/AdvMapBuildingShared)"/>
@@ -89376,6 +89378,85 @@
 							<ProgressCommentsFileRef>
 								<Item href="Quests/Secondary/ContractKiller/Progress/p0.txt"/>
 								<Item href="Quests/Secondary/ContractKiller/Progress/p1.txt"/>
+							</ProgressCommentsFileRef>
+							<Kind>OBJECTIVE_KIND_MANUAL</Kind>
+							<Parameters/>
+							<Timeout>-1</Timeout>
+							<Holdout>-1</Holdout>
+							<CheckDelay>-1</CheckDelay>
+							<Dependencies/>
+							<InstantVictory>false</InstantVictory>
+							<TargetGlance>
+								<Target>
+									<Type>ADV_TARGET_NONE</Type>
+									<Name/>
+									<Coords>
+										<FloorID>0</FloorID>
+										<cell>
+											<x>0</x>
+											<y>0</y>
+										</cell>
+									</Coords>
+								</Target>
+								<Radius>10</Radius>
+								<Duration>5000</Duration>
+							</TargetGlance>
+							<Award>
+								<Type>AWARD_NONE</Type>
+								<Experience>0</Experience>
+								<Resources>
+									<Wood>0</Wood>
+									<Ore>0</Ore>
+									<Mercury>0</Mercury>
+									<Crystal>0</Crystal>
+									<Sulfur>0</Sulfur>
+									<Gem>0</Gem>
+									<Gold>0</Gold>
+								</Resources>
+								<Attribute>HERO_ATTRIB_DEFENCE</Attribute>
+								<AttributeAmount>0</AttributeAmount>
+								<ArtifactID>ARTIFACT_NONE</ArtifactID>
+								<SpellID>SPELL_NONE</SpellID>
+								<ArmySlot>
+									<Creature>CREATURE_UNKNOWN</Creature>
+									<Count>0</Count>
+								</ArmySlot>
+								<SpellPoints>0</SpellPoints>
+								<Morale>0</Morale>
+								<Luck>0</Luck>
+								<SkillWithMastery>
+									<Mastery>MASTERY_NONE</Mastery>
+									<SkillID>HERO_SKILL_NONE</SkillID>
+								</SkillWithMastery>
+							</Award>
+							<TakeContribution>false</TakeContribution>
+							<CanUncomplete>false</CanUncomplete>
+							<IsInitialyActive>false</IsInitialyActive>
+							<IsInitialyVisible>false</IsInitialyVisible>
+							<IsHidden>false</IsHidden>
+							<Ignore>false</Ignore>
+							<ShowCompleted>true</ShowCompleted>
+							<NeedComplete>true</NeedComplete>
+							<StateChangeTrigger>
+								<Action>
+									<FunctionName/>
+								</Action>
+							</StateChangeTrigger>
+							<SoundActivated/>
+							<SoundComplete/>
+							<SoundFailed/>
+						</Item>
+						<Item>
+							<Name>C1M1_TREASURES_AND_SECRETS</Name>
+							<CaptionFileRef href="Quests/Secondary/TreasuresAndSecrets/name.txt"/>
+							<ObscureCaptionFileRef href=""/>
+							<DescriptionFileRef href="Quests/Secondary/TreasuresAndSecrets/desc.txt"/>
+							<ProgressCommentsFileRef>
+								<Item href="Quests/Secondary/TreasuresAndSecrets/Progress/p0.txt"/>
+								<Item href="Quests/Secondary/TreasuresAndSecrets/Progress/p1.txt"/>
+								<Item href="Quests/Secondary/TreasuresAndSecrets/Progress/p2.txt"/>
+								<Item href="Quests/Secondary/TreasuresAndSecrets/Progress/p3.txt"/>
+								<Item href="Quests/Secondary/TreasuresAndSecrets/Progress/p4.txt"/>
 							</ProgressCommentsFileRef>
 							<Kind>OBJECTIVE_KIND_MANUAL</Kind>
 							<Parameters/>
