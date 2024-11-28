@@ -396,12 +396,10 @@ function LoadScripts()
     doFile(primary_quest_path.."FlawInThePlan/script.lua")
     doFile(secondary_quest_path.."HiddenPath/script.lua")
     doFile(secondary_quest_path.."ContractKiller/script.lua")
+    doFile(secondary_quest_path.."TreasuresAndSecrets/script.lua")
 end
 
 function StartMap()
-    consoleCmd("enable_cheats")
-    OpenCircleFog(0, 0, 0, 999, 1)
-    WarpHeroExp("Karlam", Levels[20])
     LoadScripts()
     sleep(10)
     startThread(moriton_zone.Init)
@@ -409,7 +407,20 @@ function StartMap()
     startThread(flaw_in_the_plan.Init)
     startThread(hidden_path.Init)
     startThread(c1m1_q_contract_killer.Init)
+    startThread(c1m1_q_treasures_and_secrets.Init)
 end
 
+function Test()
+    consoleCmd("enable_cheats")
+    OpenCircleFog(0, 0, 0, 999, 1)
+    WarpHeroExp("Karlam", Levels[20])
+    ChangeHeroStat("Karlam", STAT_SPELL_POWER, 30)
+    ChangeHeroStat("Karlam", STAT_KNOWLEDGE, 30)
+    for i = 1, 3 do
+        GiveHeroSkill("Karlam", SKILL_DESTRUCTIVE_MAGIC)
+    end
+    GiveArtefact("Karlam", ARTIFACT_TOME_OF_DESTRUCTION, 1)
+    AddHeroCreatures("Karlam", CREATURE_PHOENIX, 100)
+end
 --StartDialogSceneInt("")
 startThread(StartMap)

@@ -51,7 +51,7 @@ c1m1_q_contract_killer = {
         end
         if progress == 1 then
             MiniDialog.Start(c1m1_q_contract_killer.path.dialog.."TavernFinalDialog/", PLAYER_1, c1m1_q_contract_killer.dialogs.Final)
-            Quest.Finish(c1m1_q_contract_killer.name)
+            Quest.Finish(c1m1_q_contract_killer.name, hero)
             Touch.RemoveFunction(object, "contract_killer_talk")
             c1m1_q_treasures_and_secrets.Start(hero)
             return
@@ -79,7 +79,7 @@ c1m1_q_contract_killer = {
                 n = n + 2
             end
         end
-        if MCCS_StartCombat(hero, nil, initialDifficulty == DIFFICULTY_EASY and 4 or 5, actual_army, nil, nil, nil, 1) then
+        if MCCS_StartCombat(hero, nil, initialDifficulty == DIFFICULTY_EASY and 4 or 5, actual_army) then
             Touch.RemoveFunction(object, "contract_killer_fight")
             startThread(c1m1_q_contract_killer.FinishSellerFight, hero, object)
         end
@@ -94,8 +94,7 @@ c1m1_q_contract_killer = {
         else
             MiniDialog.Start(c1m1_q_contract_killer.path.dialog.."SellerKeptAliveDialog/", PLAYER_1, c1m1_q_contract_killer.dialogs.SellerKeptAlive)
         end
-        -- !TODO replace with MCCS version after scan
-        GiveArtefact(hero, ARTIFACT_C1M1_Q_CONTRACT_KILLER_RAINBOW_CRYSTAL, 1)
+        Art.Distribution.Give(hero, ARTIFACT_C1M1_Q_CONTRACT_KILLER_RAINBOW_CRYSTAL, 1)
         Touch.SetDefault(object, function (h, o)
             MessageBox(c1m1_q_contract_killer.path.text.."artifact_merchant_empty.txt")
         end)

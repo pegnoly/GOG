@@ -26,10 +26,10 @@ if contains(karlam_spec.heroes, GetHeroName(GetAttackerHero())) then
             AssignMagicBondTarget(caster, spell, target)
         end
         if karlam_spec.state == KARLAM_SPEC_STATE_NO_SPECIAL_STATE then
-            print("No special state of karlam's spec, trying to duplicate")
+            --print("No special state of karlam's spec, trying to duplicate")
             DuplicateCast(caster, spell, target)
         else
-            print("Some special state of karlam's spec: ", karlam_spec.state, ", returning")
+            --print("Some special state of karlam's spec: ", karlam_spec.state, ", returning")
             karlam_spec.state = KARLAM_SPEC_STATE_NO_SPECIAL_STATE
             return
         end
