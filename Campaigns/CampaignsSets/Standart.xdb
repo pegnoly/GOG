@@ -4,5 +4,6 @@
 	<Campaigns>
 		<Item href="/UserCampaigns/Prologue/campaign.xdb#xpointer(/Campaign)"/>
 		<Item href="/UserCampaigns/GameOfGods/campaign.xdb#xpointer(/Campaign)"/>
+		<Item href="/UserCampaigns/Exodus/campaign.xdb#xpointer(/Campaign)"/>
 	</Campaigns>
 </CampaignsSet>

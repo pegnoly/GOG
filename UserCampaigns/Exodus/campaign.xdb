@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Campaign>
+	<InternalName>Exodus</InternalName>
+	<NameFileRef href="CampaignName.txt"/>
+	<FullNameFileRef href="FullCampaignName.txt"/>
+	<NameCommentFileRef href="CampaignSummary.txt"/>
+	<DependentCampaigns/>
+	<Missions>
+		<Item>
+			<NameFileRef href="MissionName.txt"/>
+			<NameCommentFileRef href="MissionDescription.txt"/>
+			<MissionTag href="/UserCampaigns/Exodus/M1/map-tag.xdb#xpointer(/AdvMapDescTag)"/>
+			<Bonuses>
+				<Item>
+					<Target>
+						<Hero/>
+					</Target>
+					<Type>E_BONUS_ARTIFACT</Type>
+					<BonusArmy>
+						<Creature>CREATURE_UNKNOWN</Creature>
+						<Count>0</Count>
+					</BonusArmy>
+					<BonusArtifactID>ARTIFACT_136</BonusArtifactID>
+					<BonusResources>
+						<Wood>0</Wood>
+						<Ore>0</Ore>
+						<Mercury>0</Mercury>
+						<Crystal>0</Crystal>
+						<Sulfur>0</Sulfur>
+						<Gem>0</Gem>
+						<Gold>0</Gold>
+					</BonusResources>
+					<BonusSpellID>SPELL_NONE</BonusSpellID>
+					<Building>TB_TOWN_HALL</Building>
+				</Item>
+				<Item>
+					<Target>
+						<Hero/>
+					</Target>
+					<Type>E_BONUS_ARTIFACT</Type>
+					<BonusArmy>
+						<Creature>CREATURE_UNKNOWN</Creature>
+						<Count>0</Count>
+					</BonusArmy>
+					<BonusArtifactID>ARTIFACT_141</BonusArtifactID>
+					<BonusResources>
+						<Wood>0</Wood>
+						<Ore>0</Ore>
+						<Mercury>0</Mercury>
+						<Crystal>0</Crystal>
+						<Sulfur>0</Sulfur>
+						<Gem>0</Gem>
+						<Gold>0</Gold>
+					</BonusResources>
+					<BonusSpellID>SPELL_NONE</BonusSpellID>
+					<Building>TB_TOWN_HALL</Building>
+				</Item>
+				<Item>
+					<Target>
+						<Hero/>
+					</Target>
+					<Type>E_BONUS_ARTIFACT</Type>
+					<BonusArmy>
+						<Creature>CREATURE_UNKNOWN</Creature>
+						<Count>0</Count>
+					</BonusArmy>
+					<BonusArtifactID>ARTIFACT_146</BonusArtifactID>
+					<BonusResources>
+						<Wood>0</Wood>
+						<Ore>0</Ore>
+						<Mercury>0</Mercury>
+						<Crystal>0</Crystal>
+						<Sulfur>0</Sulfur>
+						<Gem>0</Gem>
+						<Gold>0</Gold>
+					</BonusResources>
+					<BonusSpellID>SPELL_NONE</BonusSpellID>
+					<Building>TB_TOWN_HALL</Building>
+				</Item>
+			</Bonuses>
+			<HeroesPool>
+				<Count>1</Count>
+				<Heroes>
+					<Item>
+						<HeroScriptName>Karlam</HeroScriptName>
+						<TargetCampaign/>
+						<TargetMission>2</TargetMission>
+					</Item>
+				</Heroes>
+			</HeroesPool>
+			<startMusics/>
+			<additionalAdventureMusics>
+				<Item href="/Sounds/_(Music)/Towns/a1-Renegade.xdb#xpointer(/Music)"/>
+			</additionalAdventureMusics>
+			<additionalWaitMusics>
+				<Item href="/Sounds/_(Music)/AI-Themes/a1-Renegade.xdb#xpointer(/Music)"/>
+			</additionalWaitMusics>
+			<additionalCombatMusics>
+				<Item href="/Sounds/_(Music)/Battle-Themes/Sylvan.xdb#xpointer(/Music)"/>
+				<Item href="/Sounds/_(Music)/Battle-Themes/a1-Fortress.xdb#xpointer(/Music)"/>
+				<Item href="/Sounds/_(Music)/Battle-Themes/a1-Renegade.xdb#xpointer(/Music)"/>
+				<Item href="/Sounds/_(Music)/Seige-Battle/a1-Fortress.xdb#xpointer(/Music)"/>
+				<Item href="/Sounds/_(Music)/Seige-Battle/a1-Renegade.xdb#xpointer(/Music)"/>
+			</additionalCombatMusics>
+		</Item>
+		<Item>
+			<NameFileRef href="MissionName.1.txt"/>
+			<NameCommentFileRef href="MissionDescription.1.txt"/>
+			<MissionTag href="/UserCampaigns/Exodus/M2/map-tag.xdb#xpointer(/AdvMapDescTag)"/>
+			<Bonuses>
+				<Item>
+					<Target>
+						<Hero/>
+					</Target>
+					<Type>E_BONUS_CREATURE</Type>
+					<BonusArmy>
+						<Creature>CREATURE_ZEALOT</Creature>
+						<Count>10</Count>
+					</BonusArmy>
+					<BonusArtifactID>ARTIFACT_NONE</BonusArtifactID>
+					<BonusResources>
+						<Wood>0</Wood>
+						<Ore>0</Ore>
+						<Mercury>0</Mercury>
+						<Crystal>0</Crystal>
+						<Sulfur>0</Sulfur>
+						<Gem>0</Gem>
+						<Gold>0</Gold>
+					</BonusResources>
+					<BonusSpellID>SPELL_NONE</BonusSpellID>
+					<Building>TB_TOWN_HALL</Building>
+				</Item>
+				<Item>
+					<Target>
+						<Hero/>
+					</Target>
+					<Type>E_BONUS_CREATURE</Type>
+					<BonusArmy>
+						<Creature>CREATURE_LONGBOWMAN</Creature>
+						<Count>50</Count>
+					</BonusArmy>
+					<BonusArtifactID>ARTIFACT_NONE</BonusArtifactID>
+					<BonusResources>
+						<Wood>0</Wood>
+						<Ore>0</Ore>
+						<Mercury>0</Mercury>
+						<Crystal>0</Crystal>
+						<Sulfur>0</Sulfur>
+						<Gem>0</Gem>
+						<Gold>0</Gold>
+					</BonusResources>
+					<BonusSpellID>SPELL_HYPNOTIZE</BonusSpellID>
+					<Building>TB_TOWN_HALL</Building>
+				</Item>
+				<Item>
+					<Target>
+						<Hero/>
+					</Target>
+					<Type>E_BONUS_RESOURCE</Type>
+					<BonusArmy>
+						<Creature>CREATURE_UNKNOWN</Creature>
+						<Count>0</Count>
+					</BonusArmy>
+					<BonusArtifactID>ARTIFACT_NONE</BonusArtifactID>
+					<BonusResources>
+						<Wood>0</Wood>
+						<Ore>0</Ore>
+						<Mercury>0</Mercury>
+						<Crystal>0</Crystal>
+						<Sulfur>0</Sulfur>
+						<Gem>0</Gem>
+						<Gold>4000</Gold>
+					</BonusResources>
+					<BonusSpellID>SPELL_NONE</BonusSpellID>
+					<Building>TB_TOWN_HALL</Building>
+				</Item>
+			</Bonuses>
+			<HeroesPool>
+				<Count>1</Count>
+				<Heroes>
+					<Item>
+						<HeroScriptName>Karlam</HeroScriptName>
+						<TargetCampaign/>
+						<TargetMission>3</TargetMission>
+					</Item>
+				</Heroes>
+			</HeroesPool>
+			<startMusics/>
+			<additionalAdventureMusics>
+				<Item href="/Sounds/_(Music)/Towns/a1-Renegade.xdb#xpointer(/Music)"/>
+			</additionalAdventureMusics>
+			<additionalWaitMusics>
+				<Item href="/Sounds/_(Music)/AI-Themes/a1-Renegade.xdb#xpointer(/Music)"/>
+			</additionalWaitMusics>
+			<additionalCombatMusics>
+				<Item href="/Sounds/_(Music)/Battle-Themes/a1-Renegade.xdb#xpointer(/Music)"/>
+				<Item href="/Sounds/_(Music)/Seige-Battle/a1-Renegade.xdb#xpointer(/Music)"/>
+			</additionalCombatMusics>
+		</Item>
+		<Item>
+			<NameFileRef href="MissionName.2.txt"/>
+			<NameCommentFileRef href="MissionDescription.2.txt"/>
+			<MissionTag href="/UserCampaigns/Exodus/M3/map-tag.xdb#xpointer(/AdvMapDescTag)"/>
+			<Bonuses>
+				<Item>
+					<Target>
+						<Hero/>
+					</Target>
+					<Type>E_BONUS_CREATURE</Type>
+					<BonusArmy>
+						<Creature>CREATURE_PALADIN</Creature>
+						<Count>5</Count>
+					</BonusArmy>
+					<BonusArtifactID>ARTIFACT_NONE</BonusArtifactID>
+					<BonusResources>
+						<Wood>0</Wood>
+						<Ore>0</Ore>
+						<Mercury>0</Mercury>
+						<Crystal>0</Crystal>
+						<Sulfur>0</Sulfur>
+						<Gem>0</Gem>
+						<Gold>0</Gold>
+					</BonusResources>
+					<BonusSpellID>SPELL_NONE</BonusSpellID>
+					<Building>TB_TOWN_HALL</Building>
+				</Item>
+				<Item>
+					<Target>
+						<Hero/>
+					</Target>
+					<Type>E_BONUS_SPELL</Type>
+					<BonusArmy>
+						<Creature>CREATURE_LONGBOWMAN</Creature>
+						<Count>50</Count>
+					</BonusArmy>
+					<BonusArtifactID>ARTIFACT_NONE</BonusArtifactID>
+					<BonusResources>
+						<Wood>0</Wood>
+						<Ore>0</Ore>
+						<Mercury>0</Mercury>
+						<Crystal>0</Crystal>
+						<Sulfur>0</Sulfur>
+						<Gem>0</Gem>
+						<Gold>0</Gold>
+					</BonusResources>
+					<BonusSpellID>SPELL_BLIND</BonusSpellID>
+					<Building>TB_TOWN_HALL</Building>
+				</Item>
+				<Item>
+					<Target>
+						<Hero/>
+					</Target>
+					<Type>E_BONUS_ARTIFACT</Type>
+					<BonusArmy>
+						<Creature>CREATURE_UNKNOWN</Creature>
+						<Count>0</Count>
+					</BonusArmy>
+					<BonusArtifactID>BOOTS_OF_SPEED</BonusArtifactID>
+					<BonusResources>
+						<Wood>0</Wood>
+						<Ore>0</Ore>
+						<Mercury>0</Mercury>
+						<Crystal>0</Crystal>
+						<Sulfur>0</Sulfur>
+						<Gem>0</Gem>
+						<Gold>0</Gold>
+					</BonusResources>
+					<BonusSpellID>SPELL_NONE</BonusSpellID>
+					<Building>TB_TOWN_HALL</Building>
+				</Item>
+			</Bonuses>
+			<HeroesPool>
+				<Count>1</Count>
+				<Heroes>
+					<Item>
+						<HeroScriptName>Karlam</HeroScriptName>
+						<TargetCampaign/>
+						<TargetMission>4</TargetMission>
+					</Item>
+				</Heroes>
+			</HeroesPool>
+			<startMusics/>
+			<additionalAdventureMusics>
+				<Item href="/Sounds/_(Music)/Towns/a1-Renegade.xdb#xpointer(/Music)"/>
+			</additionalAdventureMusics>
+			<additionalWaitMusics>
+				<Item href="/Sounds/_(Music)/AI-Themes/a1-Renegade.xdb#xpointer(/Music)"/>
+				<Item href="/Sounds/_(Music)/WP/AllenoraTheme.(Music).xdb#xpointer(/Music)"/>
+			</additionalWaitMusics>
+			<additionalCombatMusics>
+				<Item href="/Sounds/_(Music)/Battle-Themes/a1-Renegade.xdb#xpointer(/Music)"/>
+				<Item href="/Sounds/_(Music)/Seige-Battle/a1-Renegade.xdb#xpointer(/Music)"/>
+			</additionalCombatMusics>
+		</Item>
+	</Missions>
+	<AdventureMusic href="/Sounds/_(Music)/AdvMap-Heroes/a1-Biara.xdb#xpointer(/Music)"/>
+	<WinMissionMusic href="/Sounds/_(Music)/Win-Campaign/Haven.xdb#xpointer(/Music)"/>
+	<LoseMissionMusic href="/Sounds/_(Music)/Lose-Campaign/Haven.xdb#xpointer(/Music)"/>
+	<DescriptionFileRef href="CampaignDescription.txt"/>
+	<Icon href="/UI/MainMenu2/SelectCampaign/GriffonBack.(Texture).xdb#xpointer(/Texture)"/>
+	<UserCampaign>true</UserCampaign>
+</Campaign>
