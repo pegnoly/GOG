@@ -1,0 +1,1 @@
+CombatConnection.combat_scripts_paths["umino_spec"] = GetMapDataPath().."Combat/Umino/script.lua"
