@@ -29,6 +29,6 @@ end
 function UminoSpec_DetectMultishotCast(caster, spell, side)
     if caster == GetHero(side) and spell == 61 then -- multishot doesn't have constant
         print("Umino casted multishot...")
-        EndTurn(GetHero(side), umino_spec_combat.base_atb_shift + umino_spec_combat.atb_shift_per_level * umino_spec_combat[ATTACKER].level)
+        EndTurn(GetHero(side), umino_spec_combat.base_atb_shift + umino_spec_combat.atb_shift_per_level * umino_spec_combat[side].level)
     end
 end
