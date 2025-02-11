@@ -39,10 +39,10 @@ zone_common_cursed_dwellings = {
     },
 
     dwells_count_armies_coef = {
-        ["FAIRIE_TREE"] = {base = 1.45, grow = 0.15},
-        ["WOOD_GUARD_QUARTERS"] = {base = 1.50, grow = 0.175},
-        ["HIGH_CABINS"] = {base = 1.6, grow = 0.18},
-        ["PRESERVE_MILITARY_POST"] = {base = 1.8, grow = 0.2}
+        ["FAIRIE_TREE"] = {base = 1.18, grow = 0.06},
+        ["WOOD_GUARD_QUARTERS"] = {base = 1.23, grow = 0.09},
+        ["HIGH_CABINS"] = {base = 1.28, grow = 0.12},
+        ["PRESERVE_MILITARY_POST"] = {base = 1.4, grow = 0.15}
     },
 
     dwells_purge_resource_amount = {
@@ -62,6 +62,8 @@ zone_common_cursed_dwellings = {
                     zone_common_cursed_dwellings.dwells_type_counts[type] = 0
                     zone_common_cursed_dwellings.dwells_purge_states[dwell] = DWELLING_PURGE_STATE_NOT_STARTED
                     Touch.SetFunction(dwell, "zone_common_cursed_dwelling_touch", zone_common_cursed_dwellings.TouchDwelling)
+                    FX.Play("Ruined_tower", dwell, dwell.."_cursed_effect")
+                    SetObjectFlashlight(dwell, "curse_fl")
                 end
             end
         end    
@@ -75,6 +77,7 @@ zone_common_cursed_dwellings = {
         elseif dwell_state == DWELLING_PURGE_STATE_ARMY_DEFEATED then
             startThread(zone_common_cursed_dwellings.TryPurgeDwell, hero, object)
         else
+            MessageBox(zones_path.."Common/CursedDwellings/Texts/already_purged.txt")
         end
     end,
 
@@ -117,8 +120,53 @@ zone_common_cursed_dwellings = {
     TryPurgeDwell = 
     function (hero, object)
         local dwell_type = zone_common_cursed_dwellings.dwells_types[object]
-        -- for res, amount in zone_common_cursed_dwellings.dwells_purge_resource_amount do
-            
-        -- end
+        local res_values = {"blank.txt", "blank.txt", "blank.txt", "blank.txt", "blank.txt", "blank.txt", "blank.txt"}
+        local count = 1
+        for res, amount in zone_common_cursed_dwellings.dwells_purge_resource_amount[dwell_type] do
+            res_values[count] = {zones_path.."Common/CursedDwellings/Texts/res_info.txt"; res_type = ResNames[res], amount = amount}
+            count = count + 1
+        end
+        if MCCS_QuestionBox({zones_path.."Common/CursedDwellings/Texts/dwell_purge_question.txt";
+            res1 = res_values[1],  
+            res2 = res_values[2],    
+            res3 = res_values[3],    
+            res4 = res_values[4],    
+            res5 = res_values[5],    
+            res6 = res_values[6],    
+            res7 = res_values[7],      
+        }) then
+            local flag = 1
+            for res, amount in zone_common_cursed_dwellings.dwells_purge_resource_amount[dwell_type] do
+                if GetPlayerResource(PLAYER_1, res) < amount then
+                    flag = nil
+                    break
+                end
+            end
+            if flag then
+                startThread(zone_common_cursed_dwellings.PurgeDwelling, hero, object)
+            else
+                MessageBox(zones_path.."Common/CursedDwellings/Texts/not_enough_resources.txt")
+            end
+        end
+    end,
+
+    PurgeDwelling = 
+    function (hero, object)
+        local dwell_type = zone_common_cursed_dwellings.dwells_types[object]
+        startThread(
+        function ()
+            for res_type, amount in zone_common_cursed_dwellings.dwells_purge_resource_amount[%dwell_type] do
+                Resource.Change(%hero, res_type, -amount)
+            end 
+        end)
+        local x, y, f = GetObjectPosition(object)
+        FX.Play("Holy_word", object)
+        --Play3DSound(FX.Sounds["Holy_word"], x, y, f)
+        sleep(25)
+        StopVisualEffects(object.."_cursed_effect")
+        ResetObjectFlashlight(object)
+        SetObjectOwner(object, PLAYER_3)
+        zone_common_cursed_dwellings.dwells_purge_states[object] = DWELLING_PURGE_STATE_DONE
+        MessageBox(zones_path.."Common/CursedDwellings/Texts/dwell_purged.txt")
     end
 }
