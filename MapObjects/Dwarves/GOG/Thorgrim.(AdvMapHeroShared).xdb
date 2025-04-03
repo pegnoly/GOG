@@ -35,8 +35,8 @@
 	<SpecializationNameFileRef href=""/>
 	<SpecializationDescFileRef href=""/>
 	<SpecializationIcon href="/UI/H5A1/Icons/Abilites/Heroes_Abillites/128x128/Snatch.(Texture).xdb#xpointer(/Texture)"/>
-	<FaceTexture href="/Textures/Icons/Heroes/Bastion/Thogrim/Icon.(Texture).xdb#xpointer(/Texture)"/>
-	<FaceTextureSmall href="/Textures/Icons/Heroes/Bastion/Thogrim/Icon.(Texture).xdb#xpointer(/Texture)"/>
+	<FaceTexture href="/Textures/Icons/Heroes/Bastion/Thorgrim/Icon.(Texture).xdb#xpointer(/Texture)"/>
+	<FaceTextureSmall href="/Textures/Icons/Heroes/Bastion/Thorgrim/Icon.(Texture).xdb#xpointer(/Texture)"/>
 	<HeroCharacterArena href="/Characters/Heroes/Dwarves/DDD/RuneMage.(Character).xdb#xpointer(/Character)"/>
 	<HeroCharacterArenaMelee href="/Characters/Heroes/Dwarves/DDD/RuneMage.(Character).xdb#xpointer(/Character)"/>
 	<HeroCharacterAdventure href="/Characters/Heroes/Dwarves/DDD/1RuneMage.(Character).xdb#xpointer(/Character)"/>
@@ -44,8 +44,8 @@
 	<CombatVisual href="/GameMechanics/CreatureVisual/Heroes/Wulfstan.xdb#xpointer(/CreatureVisual)"/>
 	<TownType>TOWN_FORTRESS</TownType>
 	<Editable>
-		<NameFileRef href="/Text/Game/Heroes/Persons/Bastion/Thogrim/name.txt"/>
-		<BiographyFileRef href="/Text/Game/Heroes/Persons/Bastion/Thogrim/bio.txt"/>
+		<NameFileRef href="/Text/Game/Heroes/Persons/Bastion/Thorgrim/name.txt"/>
+		<BiographyFileRef href="/Text/Game/Heroes/Persons/Bastion/Thorgrim/bio.txt"/>
 		<Offence>1</Offence>
 		<Defence>0</Defence>
 		<Spellpower>3</Spellpower>
