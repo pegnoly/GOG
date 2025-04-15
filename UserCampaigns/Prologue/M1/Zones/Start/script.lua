@@ -1,19 +1,19 @@
 start_zone = {
 
-    path = 
-    {
+    path = {
+        npc = zones_path.."Start/Npc/",
         text = zones_path.."Start/Texts/",
-        -- dialog = primary_quest_path.."AshaTear/Dialogs/"
     },
 
-    Init = 
-    function ()
-        startThread(start_zone.InitTreantBank)
-        startThread(start_zone.InitElementalStockpile)
+    Load = function ()
+        doFile(start_zone.path.npc.."witch.lua")
     end,
 
-    InitTreantBank = 
-    function ()
+    Init = function ()
+        startThread(npc_start_zone_witch.Init)
+    end,
+
+    InitTreantBank = function ()
         Touch.DisableObject("start_zone_elf_treasure")
         Touch.SetDefault("start_zone_elf_treasure", 
         function (hero, object)
@@ -21,8 +21,14 @@ start_zone = {
         end)
     end,
 
-    InitElementalStockpile = 
-    function ()
+    InitElementalStockpile = function ()
         Touch.DisableObject("start_zone_elemental_stockpile")
-    end
+    end,
+
 }
+
+while not start_zone.Load do
+    sleep()
+end
+
+startThread(start_zone.Load)
