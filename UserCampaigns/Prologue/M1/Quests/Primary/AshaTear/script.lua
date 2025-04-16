@@ -42,6 +42,7 @@ asha_tear = {
         for _, obelisk_num in asha_tear.obelisks_known_by_seer do
             Object.Show(PLAYER_1, "obelisk"..obelisk_num, 1)
         end
+        npc_start_zone_seer.interaction_types[NPC_START_ZONE_INTERACTION_ASHA_TIER] = 1
     end
 
     -- Start = 
