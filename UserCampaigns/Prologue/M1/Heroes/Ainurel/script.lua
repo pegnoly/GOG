@@ -3,23 +3,23 @@ ainurel_advmap = {
     heroes = {'Ainurel', 'Ainurel_Heroic'},
 
     army_constant = {
-        [1] = 220,
-        [2] = 140,
-        [3] = 85,
-        [4] = 42,
-        [5] = 27,
-        [6] = 11,
-        [7] = 7
+        [1] = 24900,
+        [2] = 25250,
+        [3] = 25300,
+        [4] = 25500,
+        [5] = 25500,
+        [6] = 26500,
+        [7] = 28000
     },
 
     army_diff_step = {
-        [1] = 29,
-        [2] = 17,
-        [3] = 11,
-        [4] = 7,
-        [5] = 3,
-        [6] = 2,
-        [7] = 1
+        [1] = 2490,
+        [2] = 2525,
+        [3] = 2530,
+        [4] = 2550,
+        [5] = 2550,
+        [6] = 2650,
+        [7] = 2700
     },
 
     initial_level = 17,
@@ -65,7 +65,10 @@ ainurel_advmap = {
         local removed
         for level = 1, 7 do 
             local creature = ainurel_advmap.army_getters[level]()
-            local count = ainurel_advmap.army_constant[level] + defaultDifficulty * ainurel_advmap.army_diff_step[level]
+            print("Found creature: ", creature, " of level ", level)
+            local total_power = ainurel_advmap.army_constant[level] + defaultDifficulty * ainurel_advmap.army_diff_step[level]
+            local count = floor(total_power / Creature.Params.Power(creature))
+            count = count > 0 and count or 1
             AddHeroCreatures(hero, creature, count)
             if not removed then
                 while GetHeroCreatures(hero, creature) ~= count do

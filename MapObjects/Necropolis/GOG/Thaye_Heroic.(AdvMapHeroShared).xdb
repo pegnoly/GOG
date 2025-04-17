@@ -25,7 +25,7 @@
 	<AdventureSoundEffect/>
 	<RazedStatic/>
 	<Icon128/>
-	<InternalName>Thaye</InternalName>
+	<InternalName>Thaye_Heroic</InternalName>
 	<Class>HERO_CLASS_NECROMANCER</Class>
 	<Specialization>HERO_SPEC_REANIMATOR</Specialization>
 	<PrimarySkill>
@@ -51,9 +51,7 @@
 		<Spellpower>3</Spellpower>
 		<Knowledge>1</Knowledge>
 		<skills/>
-		<perkIDs>
-			<Item>HERO_SKILL_GHOST_VEIL</Item>
-		</perkIDs>
+		<perkIDs/>
 		<spellIDs/>
 		<Ballista>false</Ballista>
 		<FirstAidTent>false</FirstAidTent>

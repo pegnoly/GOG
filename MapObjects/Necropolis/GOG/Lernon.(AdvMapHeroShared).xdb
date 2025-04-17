@@ -25,9 +25,9 @@
 	<AdventureSoundEffect/>
 	<RazedStatic/>
 	<Icon128/>
-	<InternalName>Thaye</InternalName>
+	<InternalName>Lernon</InternalName>
 	<Class>HERO_CLASS_NECROMANCER</Class>
-	<Specialization>HERO_SPEC_REANIMATOR</Specialization>
+	<Specialization>HERO_SPEC_NONE</Specialization>
 	<PrimarySkill>
 		<Mastery>MASTERY_BASIC</Mastery>
 		<SkillID>HERO_SKILL_NECROMANCY</SkillID>
@@ -51,9 +51,7 @@
 		<Spellpower>3</Spellpower>
 		<Knowledge>1</Knowledge>
 		<skills/>
-		<perkIDs>
-			<Item>HERO_SKILL_GHOST_VEIL</Item>
-		</perkIDs>
+		<perkIDs/>
 		<spellIDs/>
 		<Ballista>false</Ballista>
 		<FirstAidTent>false</FirstAidTent>
