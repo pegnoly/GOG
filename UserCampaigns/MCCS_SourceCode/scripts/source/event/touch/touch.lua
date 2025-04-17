@@ -28,9 +28,9 @@ Touch =
     DisableObject = 
     --- Выключает объект на карте приключений
     ---@param object string скриптовое имя объекта
-    ---@param cursor ObjectInteractionCursorType тип курсора при наведении на объект
-    ---@param name string путь к файлу с новым именем объекта
-    ---@param desc string путь к файлу с новым описанием объекта
+    ---@param cursor? ObjectInteractionCursorType тип курсора при наведении на объект
+    ---@param name? string путь к файлу с новым именем объекта
+    ---@param desc? string путь к файлу с новым описанием объекта
     function(object, cursor, name, desc)
       SetObjectEnabled(object, nil)
       if cursor then
@@ -52,13 +52,14 @@ Touch =
       end
       startThread(
       function()
-        while IsObjectEnabled(%hero) do
+        local hero = %hero
+        while IsObjectEnabled(hero) do
           sleep()
         end
-        print('object: ', %hero)
+        print('object: ', hero)
         local hero_in_town
-        while not IsObjectEnabled(%hero) do
-          local town = GetHeroTown(%hero)
+        while not IsObjectEnabled(hero) do
+          local town = GetHeroTown(hero)
           if town and not hero_in_town then
             print('town: ', town)
             hero_in_town = 1
@@ -67,17 +68,17 @@ Touch =
               Touch.DisableObject(town)
               print(town, ' disabled')
             end
-            for desc, func in Touch.GetHandlersTable(%hero).funcs do
+            for desc, func in Touch.GetHandlersTable(hero).funcs do
               Touch.SetFunction(town, desc, func)
             end
-            while GetHeroTown(%hero) == town do
+            while GetHeroTown(hero) == town do
               sleep()
             end
             hero_in_town = nil
             if town_enabled then
               SetObjectEnabled(town, 1)
             end
-            for desc, func in Touch.GetHandlersTable(%hero).funcs do
+            for desc, func in Touch.GetHandlersTable(hero).funcs do
               Touch.RemoveFunction(town, desc)
             end
           end

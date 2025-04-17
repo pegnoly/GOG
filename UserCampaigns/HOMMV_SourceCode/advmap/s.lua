@@ -11,7 +11,7 @@ function SetAIHeroFleeControl(hero)
 end
 
 --- Устанавливает приоритет объекта для всех героев AI игрока
----@param object object string скриптовое имя цели
+---@param object string скриптовое имя цели
 ---@param player PlayerID id ии-игрока
 ---@param priority integer уровень приоритета цели(от -1 до 2)
 function SetAIPlayerAttractor(object, player, priority)
@@ -290,14 +290,16 @@ function SetGameVar(name, value)
 end
 
 --- Останавливает работу текущего потока исполнения на указанное время. Время задается в игровых сегментах
----@param num integer длительность остановки в сегментах
+---@param num? integer длительность остановки в сегментах
 function sleep(num)
+    num = num or 1
 end
 
 --- Извлекает квадратный корень из числа
 ---@param n number число
 ---@return number res квадратный корень
 function sqrt(n)
+    return 1
 end
 
 --- Запускает функцию в новом потоке исполнения

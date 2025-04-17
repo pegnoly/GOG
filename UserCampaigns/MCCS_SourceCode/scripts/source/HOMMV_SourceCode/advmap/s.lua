@@ -95,7 +95,7 @@ end
 
 --- Позволяет включать и выключать взаимодействие интерактивного объекта с героем стандартным образом
 ---@param object string скриптовое имя объекта
----@param is_enabled boolean 1 - включить, nil - выключить
+---@param is_enabled 1 | nil 1 - включить, nil - выключить
 function SetObjectEnabled(object, is_enabled)
 end
 
@@ -302,5 +302,5 @@ end
 
 --- Запускает функцию в новом потоке исполнения
 ---@param func function функция
-function startThread(func)
+function startThread(func, ...)
 end

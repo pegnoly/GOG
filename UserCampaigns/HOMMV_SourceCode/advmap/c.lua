@@ -10,6 +10,7 @@ end
 ---@param floor MapLevel уровень карты(-1 для рассчета на обоих уровнях)
 ---@return integer уровень существ
 function CalcAverageTier(floor)
+    return 1
 end
 
 --- Вычисляет стоимость передвижения героя в заданную точку
@@ -28,7 +29,7 @@ end
 ---@param x number координата X
 ---@param y number координата Y
 ---@param floor MapLevel уровень карты
----@return boolean can_move передвижение возможно/нет
+---@return 1|nil can_move передвижение возможно/нет
 function CanMoveHero(hero, x, y, floor)
     local can_move = nil
     return can_move
@@ -140,6 +141,7 @@ end
 ---@param n number число
 ---@return integer res ближайшее целое число
 function ceil(n)
+    return 1
 end
 
 --- Очищает от текста предназначенный для вывода tutorial-сообщений элемент

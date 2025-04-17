@@ -12,7 +12,8 @@ Object =
     errorHook(
     function()
       local text = ""
-      for i = 1, %arg.n do
+      local arg = %arg
+      for i = 1, arg.n do
         text = text..%arg[i]..", "
       end
       Object.Exception("remove selection: "..text)
@@ -31,7 +32,8 @@ Object =
     errorHook(
     function()
        local text = ""
-       for i, obj in %tbl do
+       local tbl = %tbl
+       for i, obj in tbl do
          text = text..obj..", "
        end
        Object.Exception("remove table: "..text)
@@ -47,8 +49,8 @@ Object =
   --- Показывает объект игроку
   ---@param player PlayerID id игрока
   ---@param object string имя объекта
-  ---@param use_cam boolean использовать камеру при показе
-  ---@param move_cam boolean использовать перемещение камеры при показе
+  ---@param use_cam? boolean использовать камеру при показе
+  ---@param move_cam? boolean использовать перемещение камеры при показе
   function(player, object, use_cam, move_cam)
     errorHook(
     function()

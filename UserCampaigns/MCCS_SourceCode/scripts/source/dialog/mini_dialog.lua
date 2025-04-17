@@ -3,12 +3,14 @@ SPEAKER_TYPE_CREATURE = 2
 
 MiniDialog = {}
 MiniDialog.Sets = {}
+MiniDialog.Paths = {}
 MiniDialog.answer_for_player = {[PLAYER_1] = 6, [PLAYER_2] = 6, [PLAYER_3] = 6, [PLAYER_4] = 6, [PLAYER_5] = 6, [PLAYER_6] = 6, [PLAYER_7] = 6, [PLAYER_8] = 6}
 
 MiniDialog.Start =
-function(path, player, name, alt_set)
+function(name, alt_set, player)
   if not MiniDialog.Sets[name] then
-    doFile(path.."script.lua")
+    local dialog_file = MiniDialog.Paths[name].."/script.lua"
+    doFile(dialog_file)
     while not MiniDialog.Sets[name] do
       sleep()
     end
@@ -19,12 +21,13 @@ function(path, player, name, alt_set)
     steps_count = steps_count + 1
   end
   --
-  MiniDialog.Step(path, player, MiniDialog.Sets[name], 0, steps_count, alt_set)
+  MiniDialog.Step(MiniDialog.Paths[name].."/", MiniDialog.Sets[name], 0, steps_count, alt_set, player)
 end
 
 MiniDialog.Step =
-function(path, player, set, curr_step, max_step, alt_set)
+function(path, set, curr_step, max_step, alt_set, player)
   alt_set = alt_set or "main"
+  player = player or PLAYER_1
   local answers = {"/Text/next.txt", "/Text/back.txt"}
   MiniDialog.answer_for_player[player] = 6
   if curr_step == 0 then
@@ -34,12 +37,12 @@ function(path, player, set, curr_step, max_step, alt_set)
   end
   local saved_state = curr_step
   local curr_set, text
-  if alt_set and set[curr_step][alt_set] then
-	curr_set = set[curr_step][alt_set]
-	text = path..curr_step.."_"..alt_set..".txt"
+  if alt_set and set[curr_step.."_"..alt_set] then
+    curr_set = set[curr_step.."_"..alt_set]
+    text = path..curr_step.."_"..alt_set..".txt"
   else
-	curr_set = set[curr_step]["main"]
-	text = path..curr_step.."_main.txt"
+    curr_set = set[curr_step.."_main"]
+    text = path..curr_step.."_main.txt"
   end
   print('<color=red>MiniDialog: <color=green>curr state is ', curr_step)
   print('<color=red>MiniDialog: <color=green>curr text is ', text)
@@ -82,7 +85,7 @@ function(path, player, set, curr_step, max_step, alt_set)
       saved_state = saved_state - 1
     end
   end
-  MiniDialog.Step(path, player, set, saved_state, max_step, alt_set)
+  MiniDialog.Step(path, set, saved_state, max_step, alt_set, player)
 end
 
 MiniDialog.Callback =

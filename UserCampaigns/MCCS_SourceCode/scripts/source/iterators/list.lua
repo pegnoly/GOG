@@ -29,5 +29,34 @@ list_iterator = {
             end
         end
         return 1
+    end,
+
+    Filter = 
+    ---comment
+    ---@param table table Таблица для фильтра значений
+    ---@param predicate function Условие
+    ---@return t table Таблица отфильтрованных значений
+    function (table, predicate)
+        local t, n = {}, 0
+        for k, v in table do 
+            if predicate(v) then
+                t[n] = v
+                n = n + 1
+            end
+        end
+        return t
+    end,
+
+    Join = 
+    --- Джойнит две таблицы, которые имеют ключи-числа
+    ---@param t1 table Первая таблица
+    ---@param t2 table Вторая таблица
+    function (t1, t2)
+        local n = len(t1)
+        for k, v in t2 do
+            t1[n] = v
+            n = n + 1
+        end
+        return t1
     end
 }

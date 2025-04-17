@@ -27,7 +27,7 @@ end
 ---@param creature CreatureID id существа
 ---@param count integer число существ
 ---@param slot integer слот в армии(-1 по умолчанию - первый подходящий слот)
-function RemoveHeroCreatures(hero, creature, count, slot)
+function RemoveHeroCreatures(hero, creature, count, slot = -1)
 end
 
 --- Отнимает у героя машину заданного типа

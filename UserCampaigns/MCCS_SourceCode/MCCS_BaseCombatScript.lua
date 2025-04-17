@@ -338,7 +338,7 @@ function UnitDeath(unit)
 end
 
 function OnSpellCast(data)
-  --print("on spell cast data: ", data)
+  print("on spell cast data: ", data)
   local s = string.spread(data)
   s.n = nil
   local delimeter_count = 0

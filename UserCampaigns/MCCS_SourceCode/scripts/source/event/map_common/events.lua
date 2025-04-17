@@ -37,10 +37,13 @@ function(day)
     if NewDayEvent.listeners_waiting[desc] then
       startThread(
       function ()
+        local desc = %desc
+        local func = %func
+        local day = %day
         while 1 do
           local listeners_done = 0
-          local listeners_done_needed = len(NewDayEvent.listeners_waiting[%desc])
-          for i, listener in NewDayEvent.listeners_waiting[%desc] do
+          local listeners_done_needed = len(NewDayEvent.listeners_waiting[desc])
+          for i, listener in NewDayEvent.listeners_waiting[desc] do
             if NewDayEvent.this_day_already_invoked_listeners[listener] then
               listeners_done = listeners_done + 1
             end
@@ -50,7 +53,7 @@ function(day)
           end
           sleep()
         end
-        startThread(NewDayEvent.RunHandler, %desc, %func, %day)
+        startThread(NewDayEvent.RunHandler, desc, func, day)
       end)
     else
       startThread(NewDayEvent.RunHandler, desc, func, day)
@@ -190,10 +193,13 @@ function(hero)
     if AddHeroEvent.listeners_waiting[desc] then
       startThread(
       function ()
+        local desc = %desc
+        local func = %func
+        local hero = %hero
         while 1 do
           local listeners_done = 0
-          local listeners_done_needed = len(AddHeroEvent.listeners_waiting[%desc])
-          for i, listener in AddHeroEvent.listeners_waiting[%desc] do
+          local listeners_done_needed = len(AddHeroEvent.listeners_waiting[desc])
+          for i, listener in AddHeroEvent.listeners_waiting[desc] do
             if AddHeroEvent.already_invoked_listeners[listener] then
               listeners_done = listeners_done + 1
             end
@@ -203,7 +209,7 @@ function(hero)
           end
           sleep()
         end
-        startThread(%func, %hero)
+        startThread(func, hero)
       end)
     else
       startThread(func, hero)
