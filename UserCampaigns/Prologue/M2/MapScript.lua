@@ -6,35 +6,36 @@
 -- discord : pegnoly#9113
 -- telegram : https://t.me/pegn0ly
 --------------------------------------------------------------------------------
+
 q_path = mainPath..'Quests/'
 
 DECORATIVE_PLAYERS = {}
 
 DIALOG_SCENES =
 {
-  START          = '/DialogScenes/M1/Begin/DialogScene.xdb#xpointer(/DialogScene)',
-  DUNGEON_GATES  = '/DialogScenes/M1/DungeonGates/DialogScene.xdb#xpointer(/DialogScene)',
-  WITCHES_RITUAL = '/DialogScenes/M1/WitchesRitual_RM/DialogScene.xdb#xpointer(/DialogScene)',
-  FINAL          = '/DialogScenes/M1/Final/DialogScene.xdb#xpointer(/DialogScene)'
+    START          = '/DialogScenes/M1/Begin/DialogScene.xdb#xpointer(/DialogScene)',
+    DUNGEON_GATES  = '/DialogScenes/M1/DungeonGates/DialogScene.xdb#xpointer(/DialogScene)',
+    WITCHES_RITUAL = '/DialogScenes/M1/WitchesRitual_RM/DialogScene.xdb#xpointer(/DialogScene)',
+    FINAL          = '/DialogScenes/M1/Final/DialogScene.xdb#xpointer(/DialogScene)'
 }
 
 ARENAS =
 {
-  MATRON_CHAMBERS = '/Arenas/CombatArena/M1/MatronChambers.(AdvMapTownCombat).xdb#xpointer(/AdvMapTownCombat)',
-  POST_1          = '/Maps/CombatArenas/M1/elf_post1.(AdvMapTown).xdb#xpointer(/AdvMapTown)',
-  POST_2          = '/Maps/CombatArenas/M1/elf_post2.(AdvMapTown).xdb#xpointer(/AdvMapTown)',
-  POST_3          = '/Maps/CombatArenas/M1/elf_post3.(AdvMapTown).xdb#xpointer(/AdvMapTown)',
+    MATRON_CHAMBERS = '/Arenas/CombatArena/M1/MatronChambers.(AdvMapTownCombat).xdb#xpointer(/AdvMapTownCombat)',
+    POST_1          = '/Maps/CombatArenas/M1/elf_post1.(AdvMapTown).xdb#xpointer(/AdvMapTown)',
+    POST_2          = '/Maps/CombatArenas/M1/elf_post2.(AdvMapTown).xdb#xpointer(/AdvMapTown)',
+    POST_3          = '/Maps/CombatArenas/M1/elf_post3.(AdvMapTown).xdb#xpointer(/AdvMapTown)',
 }
 
 COMBAT_LIGHTS =
 {
-  MORNING     = '/Lights/_(AmbientLight)/M1/WP_M1_Ground_dark_day.(AmbientLight).xdb#xpointer(/AmbientLight)',
-  DAY = '/Lights/_(AmbientLight)/M1/WP_M1_Mountain_day_fog.(AmbientLight).xdb#xpointer(/AmbientLight)',
-  NIGHT   = '/Lights/_(AmbientLight)/M1/WP_M1_Foggy_night.(AmbientLight).xdb#xpointer(/AmbientLight)',
-  --UGROUND = '/Lights/_(AmbientLight)/Scenes/Taiga_Forest_Fog.xdb#xpointer(/AmbientLight)',
-  UGROUND = '/Lights/_(AmbientLight)/M1/WP_M1_Uground_darkness.(AmbientLight).xdb#xpointer(/AmbientLight)',
-  --UGROUND = '/Lights/_(AmbientLight)/M1/WP_M1_Uground_fog.(AmbientLight).xdb#xpointer(/AmbientLight)',
-  CURRENT = ''
+    MORNING     = '/Lights/_(AmbientLight)/M1/WP_M1_Ground_dark_day.(AmbientLight).xdb#xpointer(/AmbientLight)',
+    DAY = '/Lights/_(AmbientLight)/M1/WP_M1_Mountain_day_fog.(AmbientLight).xdb#xpointer(/AmbientLight)',
+    NIGHT   = '/Lights/_(AmbientLight)/M1/WP_M1_Foggy_night.(AmbientLight).xdb#xpointer(/AmbientLight)',
+    --UGROUND = '/Lights/_(AmbientLight)/Scenes/Taiga_Forest_Fog.xdb#xpointer(/AmbientLight)',
+    UGROUND = '/Lights/_(AmbientLight)/M1/WP_M1_Uground_darkness.(AmbientLight).xdb#xpointer(/AmbientLight)',
+    --UGROUND = '/Lights/_(AmbientLight)/M1/WP_M1_Uground_fog.(AmbientLight).xdb#xpointer(/AmbientLight)',
+    CURRENT = ''
 }
 
 while not Quest do
@@ -147,3 +148,4 @@ startThread(Test)
 startThread(StartMap)
 StartDialogSceneInt(DIALOG_SCENES.START)
 UnblockGame()
+
