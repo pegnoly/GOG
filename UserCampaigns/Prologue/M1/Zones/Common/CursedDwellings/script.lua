@@ -155,7 +155,8 @@ zone_common_cursed_dwellings = {
         local dwell_type = zone_common_cursed_dwellings.dwells_types[object]
         startThread(
         function ()
-            for res_type, amount in zone_common_cursed_dwellings.dwells_purge_resource_amount[%dwell_type] do
+            local dwell_type = %dwell_type
+            for res_type, amount in zone_common_cursed_dwellings.dwells_purge_resource_amount[dwell_type] do
                 Resource.Change(%hero, res_type, -amount)
             end 
         end)
