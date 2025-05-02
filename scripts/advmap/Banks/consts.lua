@@ -10,14 +10,18 @@ BTD_BANK_ELEMENTAL_STOCKPILE = 7
 BTD_BANK_SUNKEN_TEMPLE = 8
 BTD_BANK_TREANT_THICKET = 9
 
----@alias BTDBankVariant
-BANK_VARIANT_EASY = 1
-BANK_VARIANT_MEDIUM = 2
-BANK_VARIANT_HARD = 3
-BANK_VARIANT_CRITICAL = 4
-BANK_VARIANT_BOSS = 5
+---@alias BTDBankDIFFICULTY
+BANK_DIFFICULTY_EASY = 1
+BANK_DIFFICULTY_MEDIUM = 2
+BANK_DIFFICULTY_HARD = 3
+BANK_DIFFICULTY_CRITICAL = 4
+BANK_DIFFICULTY_BOSS = 5
 
-while not BTD_BANK_TREANT_THICKET and BANK_VARIANT_BOSS do
+---@alias CreatureSlotType
+BANK_SLOT_TYPE_CREATURE_TIER = 0
+BANK_SLOT_TYPE_CONCRETE_CREATURE = 1 
+
+while not BTD_BANK_TREANT_THICKET and BANK_DIFFICULTY_BOSS do
     sleep()
 end
 
@@ -35,9 +39,9 @@ BTD_BANKS_NAMES = {
 }
 
 BTD_BANKS_DIFF_NAMES = {
-	[BANK_VARIANT_EASY] = "/scripts/advmap/Banks/Texts/guard_easy.txt",
-	[BANK_VARIANT_MEDIUM] = "/scripts/advmap/Banks/Texts/guard_medium.txt",
-	[BANK_VARIANT_HARD] = "/scripts/advmap/Banks/Texts/guard_hard.txt",
-    [BANK_VARIANT_CRITICAL] = "/scripts/advmap/Banks/Texts/guard_critical.txt",
-    [BANK_VARIANT_BOSS] = "/scripts/advmap/Banks/Texts/guard_boss.txt"
+	[BANK_DIFFICULTY_EASY] = "/scripts/advmap/Banks/Texts/guard_easy.txt",
+	[BANK_DIFFICULTY_MEDIUM] = "/scripts/advmap/Banks/Texts/guard_medium.txt",
+	[BANK_DIFFICULTY_HARD] = "/scripts/advmap/Banks/Texts/guard_hard.txt",
+    [BANK_DIFFICULTY_CRITICAL] = "/scripts/advmap/Banks/Texts/guard_critical.txt",
+    [BANK_DIFFICULTY_BOSS] = "/scripts/advmap/Banks/Texts/guard_boss.txt"
 }
