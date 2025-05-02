@@ -29,7 +29,7 @@ M2_Q_Generators =
       ['run_gen_02'] = nil,
       ['run_gen_03'] = nil,
       ['run_gen_04'] = nil
-    }
+    },
     -- ресурсы для восстановления генераторов
     resources_to_repair =
     {

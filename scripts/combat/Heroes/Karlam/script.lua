@@ -7,7 +7,9 @@ while not KARLAM_SPEC_STATE_DUPLICATED_THIS_TURN do
 end
 
 karlam_spec = {
-    heroes = {"Karlam"},
+    heroes = {
+        ["Karlam"] = 1
+    },
     [ATTACKER] = {
         magic_bond_target = ""
     },
@@ -18,7 +20,7 @@ karlam_spec = {
 }
 
 
-if contains(karlam_spec.heroes, GetHeroName(GetAttackerHero())) then
+if karlam_spec.heroes[GetHeroName(GetAttackerHero())] then
     EnableCinematicCamera(nil)
     AddCombatFunction(CombatFunctions.ON_SPELL_CAST, "karlam_spec_on_spell_cast",
     function (caster, spell, target)

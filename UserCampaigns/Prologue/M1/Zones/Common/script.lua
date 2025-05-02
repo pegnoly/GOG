@@ -6,13 +6,14 @@ ARTIFACT_UNICORN_BOW_PIXIE_SILK = 405
 
 zones_common = {
 
-    Load = 
-    function ()
+    Load = function ()
         doFile(zones_path.."Common/CursedDwellings/script.lua")
+        doFile(zones_path.."Start/script.lua")
     end,
 
     Init = function ()
         startThread(zone_common_cursed_dwellings.Init)
+        startThread(start_zone.Init)
     end
 
     -- GiveUnicornHornPartCallback = 

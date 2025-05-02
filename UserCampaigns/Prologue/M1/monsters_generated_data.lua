@@ -1,0 +1,20 @@
+GENERATABLE_STACKS = {
+	["GENERATABLE_STACK_10"] = {min_stacks = 1, max_stacks = 2, power = 5000},
+	["GENERATABLE_STACK_4"] = {min_stacks = 1, max_stacks = 2, power = 5000},
+	["GENERATABLE_STACK_17"] = {min_stacks = 1, max_stacks = 2, power = 5000},
+	["GENERATABLE_STACK_16"] = {min_stacks = 1, max_stacks = 2, power = 5000},
+	["GENERATABLE_STACK_3"] = {min_stacks = 1, max_stacks = 2, power = 5000},
+	["GENERATABLE_STACK_15"] = {min_stacks = 1, max_stacks = 2, power = 5000},
+	["GENERATABLE_STACK_12"] = {min_stacks = 1, max_stacks = 2, power = 5000},
+	["GENERATABLE_STACK_2"] = {min_stacks = 1, max_stacks = 2, power = 5000},
+	["GENERATABLE_STACK_7"] = {min_stacks = 1, max_stacks = 2, power = 5000},
+	["GENERATABLE_STACK_11"] = {min_stacks = 1, max_stacks = 2, power = 5000},
+	["GENERATABLE_STACK_14"] = {min_stacks = 1, max_stacks = 2, power = 5000},
+	["GENERATABLE_STACK_5"] = {min_stacks = 1, max_stacks = 2, power = 5000},
+	["GENERATABLE_STACK_1"] = {min_stacks = 1, max_stacks = 2, power = 5000},
+	["GENERATABLE_STACK_6"] = {min_stacks = 1, max_stacks = 2, power = 5000},
+	["GENERATABLE_STACK_13"] = {min_stacks = 1, max_stacks = 2, power = 5000},
+	["GENERATABLE_STACK_8"] = {min_stacks = 1, max_stacks = 2, power = 5000},
+	["GENERATABLE_STACK_9"] = {min_stacks = 1, max_stacks = 2, power = 5000},
+}
+

@@ -149,10 +149,13 @@ intrigue =
         -- иначе разворачивается неправильно
         startThread(
         function()
-            MoveHeroRealTime("Kelodin", %kx, %ky, %kz)
+            local kx = %kx 
+            local ky = %ky 
+            local kz = %kz
+            MoveHeroRealTime("Kelodin", kx, ky, kz)
             while 1 do
                 local x, y, z = GetObjectPosition("Kelodin")
-                if x == %kx and y == %ky and z == %kz then
+                if x == kx and y == ky and z == kz then
                     SetObjectRotation("Kelodin", 90)
                     break
                 end
@@ -164,10 +167,13 @@ intrigue =
         -- аналогично предыдущему
         startThread(
         function()
-            MoveHeroRealTime("Noellie", %nx, %ny, %nz)
+            local nx = %nx 
+            local ny = %ny 
+            local nz = %nz
+            MoveHeroRealTime("Noellie", nx, ny, nz)
             while 1 do
                 local x, y, z = GetObjectPosition("Noellie")
-                if x == %nx and y == %ny and z == %nz then
+                if x == nx and y == ny and z == nz then
                     SetObjectRotation("Noellie", 90)
                     break
                 end
@@ -264,7 +270,7 @@ intrigue =
         -- 3
         Trigger(REGION_ENTER_AND_STOP_TRIGGER, 'baal_fight_reg', 'intrigue.BaalFight')
         SetWarfogBehaviour(1, 1)
-    end
+    end,
 
     -- бой Баала с армией отступающей Ноэлли
     BaalFight =
@@ -333,7 +339,7 @@ intrigue =
             Touch.DisableObject('matron_chambers_portal_in')
             Touch.SetFunction('matron_chambers_portal_in', '_matron_portal', intrigue.MatronPortalEnter)
         end
-    end
+    end,
 
     -- логика анимаций фурий у кровавого алтаря
     FuryTrapAnimsThread =

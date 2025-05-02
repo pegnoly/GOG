@@ -4,7 +4,10 @@
 	<NameFileRef href="CampaignName.txt"/>
 	<FullNameFileRef href="FullCampaignName.txt"/>
 	<NameCommentFileRef href="CampaignSummary.txt"/>
-	<DependentCampaigns/>
+	<DependentCampaigns>
+		<Item href="/UserCampaigns/Prologue/campaign.xdb#xpointer(/Campaign)"/>
+		<Item href="/UserCampaigns/GameOfGods/campaign.xdb#xpointer(/Campaign)"/>
+	</DependentCampaigns>
 	<Missions>
 		<Item>
 			<NameFileRef href="MissionName.txt"/>

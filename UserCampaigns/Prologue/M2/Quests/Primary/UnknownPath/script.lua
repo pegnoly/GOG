@@ -172,8 +172,9 @@ unknown_path =
         for obelisk, portal in unknown_path.dark_obelisks do
             startThread(
             function()
-                Touch.DisableObject(%portal)
-                Touch.SetFunction(%portal, '_portal_close',
+                local portal = %portal
+                Touch.DisableObject(portal)
+                Touch.SetFunction(portal, '_portal_close',
                 function(hero, object)
                     ShowFlyingSign(unknown_path.path.text.."portal_closed_msg.txt", object, -1, 5.0)
                 end)
@@ -527,13 +528,14 @@ unknown_path =
             startThread(
             function()
                 local x, y = GetObjectPosition(%tree)
+                local info = %info
                 for i = 1, 5 + random(4) do
                     FX.Play('Treant_hit', %tree, '', 0.1 * Random.FromSelection(1, -1) * random(4), 0.1 * Random.FromSelection(1, -1) * random(4), 1)
                 end
                 sleep(5)
                 RemoveObject(%tree)
                 sleep()
-                CreateMonster('post_treant_'..%tree, %info[1], 1, x, y, GROUND, 3, 1, %info[2])
+                CreateMonster('post_treant_'..%tree, info[1], 1, x, y, GROUND, 3, 1, info[2])
                 while not IsObjectExists('post_treant_'..%tree) do
                     sleep()
                 end

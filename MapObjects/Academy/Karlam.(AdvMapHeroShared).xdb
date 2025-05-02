@@ -24,19 +24,19 @@
 	<FlyPassable>true</FlyPassable>
 	<AdventureSoundEffect/>
 	<RazedStatic/>
-	<Icon128 href="karlam_128.(Texture).xdb#xpointer(/Texture)"/>
+	<Icon128 href="/Textures/Icons/Heroes/Academy/Karlam_128.(Texture).xdb#xpointer(/Texture)"/>
 	<InternalName>Karlam</InternalName>
 	<Class>HERO_CLASS_WIZARD</Class>
-	<Specialization>HERO_SPEC_GREMLINS</Specialization>
+	<Specialization>HERO_SPEC_NONE</Specialization>
 	<PrimarySkill>
 		<Mastery>MASTERY_BASIC</Mastery>
 		<SkillID>HERO_SKILL_ARTIFICIER</SkillID>
 	</PrimarySkill>
-	<SpecializationNameFileRef href="karlam_spec_name.txt"/>
-	<SpecializationDescFileRef href="karlam_spec_desc.txt"/>
-	<SpecializationIcon href="karlam_spec.(Texture).xdb#xpointer(/Texture)"/>
-	<FaceTexture href="karlam_128.(Texture).xdb#xpointer(/Texture)"/>
-	<FaceTextureSmall href="karlam_64.(Texture).xdb#xpointer(/Texture)"/>
+	<SpecializationNameFileRef href="/Text/Game/Heroes/Specializations/Academy/MarkOfFate/Name.txt"/>
+	<SpecializationDescFileRef href="/Text/Game/Heroes/Specializations/Academy/MarkOfFate/Description.txt"/>
+	<SpecializationIcon href="/Textures/Icons/Heroes/Academy/Karlam_spec.(Texture).xdb#xpointer(/Texture)"/>
+	<FaceTexture href="/Textures/Icons/Heroes/Academy/Karlam_128.(Texture).xdb#xpointer(/Texture)"/>
+	<FaceTextureSmall href="/Textures/Icons/Heroes/Academy/Karlam_64.(Texture).xdb#xpointer(/Texture)"/>
 	<HeroCharacterArena href="/Characters/Heroes/Zehir.(Character).xdb#xpointer(/Character)"/>
 	<HeroCharacterArenaMelee/>
 	<HeroCharacterAdventure href="/Characters/Heroes/Zehir_LOD.(Character).xdb#xpointer(/Character)"/>
@@ -44,16 +44,17 @@
 	<CombatVisual href="/GameMechanics/CreatureVisual/Heroes/Wizard.xdb#xpointer(/CreatureVisual)"/>
 	<TownType>TOWN_ACADEMY</TownType>
 	<Editable>
-		<NameFileRef href="karlam_name.txt"/>
-		<BiographyFileRef href="karlam_bio.txt"/>
-		<Offence>3</Offence>
-		<Defence>2</Defence>
-		<Spellpower>4</Spellpower>
-		<Knowledge>4</Knowledge>
+		<NameFileRef href="/Text/Game/Heroes/Persons/Academy/Karlam/Name.txt"/>
+		<BiographyFileRef href="/Text/Game/Heroes/Persons/Academy/Karlam/Bio.txt"/>
+		<Offence>1</Offence>
+		<Defence>1</Defence>
+		<Spellpower>2</Spellpower>
+		<Knowledge>3</Knowledge>
 		<skills/>
 		<perkIDs/>
 		<spellIDs>
 			<Item>SPELL_MAGIC_FIST</Item>
+			<Item>SPELL_ABILITY_UNSUMMON</Item>
 		</spellIDs>
 		<Ballista>false</Ballista>
 		<FirstAidTent>false</FirstAidTent>

@@ -133,7 +133,10 @@ if not GetDefenderHero() then
         AddCombatFunction(CombatFunctions.DEFENDER_CREATURE_DEATH, "greater_elementals_default_death_event",
         function (creature)
             local type = GetCreatureType(creature)
-            if list_iterator.Any({CREATURE_OBSIDIAN_ELEMENTAL, CREATURE_BLAZE_ELEMENTAL, CREATURE_STORM_ELEMENTAL, CREATURE_ICE_ELEMENTAL}, function (e) return %type == e end) then
+            if list_iterator.Any(
+                {CREATURE_OBSIDIAN_ELEMENTAL, CREATURE_BLAZE_ELEMENTAL, CREATURE_STORM_ELEMENTAL, CREATURE_ICE_ELEMENTAL}, 
+                function (e) local type = %type return type == e end
+            ) then
                 if great_elementals.last_unit == GetAttackerHero() then
                     great_elementals.elem_killed_on_hero_turn = 1
                     return

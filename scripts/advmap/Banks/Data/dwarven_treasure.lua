@@ -1,0 +1,19 @@
+while not BTD_BANK_DWARVEN_TREASURE and BTD_BANKS_DATA do
+	sleep()
+end
+
+BTD_BANKS_DATA[BTD_BANK_DWARVEN_TREASURE] = {
+	recharges_count = -1,
+	recharge_timer = 14,
+	morale_loss = 0,
+	luck_loss = 0,
+	generation_chances = {
+		[BANK_DIFFICULTY_EASY] = 20,
+		[BANK_DIFFICULTY_MEDIUM] = 20,
+		[BANK_DIFFICULTY_HARD] = 20,
+		[BANK_DIFFICULTY_CRITICAL] = 20,
+		[BANK_DIFFICULTY_BOSS] = 20,
+	},
+	variants = {
+	}
+}

@@ -9,7 +9,7 @@ MainQ =
 {
 	name = "MAIN_QUEST",
 	path = q_path.."Prim/Main/",
-	dialog_path = q_path.."Prim/Main/Dialogs/"
+	dialog_path = q_path.."Prim/Main/Dialogs/",
 
 	Init =
 	function()

@@ -4,7 +4,7 @@ c2m2_r_mystery_keepers = {
 
     path = {
         names = GetMapDataPath().."Regions/MysteryKeepersRegion/Npc/Names",
-    }
+    },
 
     Init = function ()
         Touch.DisableMonster(C2M2_NPC_TARSHAD, DISABLED_INTERACT, 0, c2m2_r_mystery_keepers.path.names.."tarshad.txt")

@@ -1,3 +1,6 @@
 MiniDialog.Paths["C1M1_DIALOG_03"] = "UserCampaigns/Prologue/M1/Zones/Start/Dialogs/WitchDialog"
 MiniDialog.Paths["C1M1_DIALOG_04"] = "UserCampaigns/Prologue/M1/Zones/Start/Dialogs/WitchDialogBaseRepeat"
 MiniDialog.Paths["C1M1_DIALOG_05"] = "UserCampaigns/Prologue/M1/Zones/Start/Dialogs/WitchAshaTear"
+MiniDialog.Paths["C1M1_DIALOG_06"] = "UserCampaigns/Prologue/M1/Quests/Primary/KillBaal/Dialogs/SeerFirst"
+MiniDialog.Paths["C1M1_DIALOG_07"] = "UserCampaigns/Prologue/M1/Quests/Primary/KillBaal/Dialogs/SeerSecond"
+MiniDialog.Paths["C1M1_DIALOG_08"] = "UserCampaigns/Prologue/M1/Quests/Primary/AshaTear/Dialogs/SeerTalk"

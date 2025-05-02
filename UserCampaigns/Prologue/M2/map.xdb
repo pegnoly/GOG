@@ -2194,6 +2194,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapMonster)" id="item_CDFF7D8D-54D9-4674-BE80-C86EF0745342">
@@ -2236,6 +2240,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapStatic)" id="item_5F6B7B39-A092-4084-BBA5-4246C1A8DE29">
@@ -3931,6 +3939,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapMonster)" id="item_53DE9183-FFF0-429D-845E-04FE47B01696">
@@ -3980,6 +3992,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapStatic)" id="item_A413F81D-08F7-4B94-8AF3-F9A77819B21D">
@@ -4275,6 +4291,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapMonster)" id="item_35CAF5C1-3325-4F64-8367-934A36AE2B2D">
@@ -4317,6 +4337,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapStatic)" id="item_7326D79C-F13F-491D-A1AB-D93F6903758C">
@@ -8149,6 +8173,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapStatic)" id="item_F2E4321D-F46C-4216-848E-2EB66073A6D8">
@@ -10017,6 +10045,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapMonster)" id="item_009379B0-9DB7-452D-89FB-79951CB415C3">
@@ -10059,6 +10091,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapMonster)" id="item_760E593D-8373-4E24-92D2-273731F1CFAF">
@@ -10101,6 +10137,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapMonster)" id="item_9EBDA7F2-BD33-4D9D-8A40-31C54B719A17">
@@ -10143,6 +10183,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapMonster)" id="item_07E2D3E0-A441-40F6-8BDB-D700040E9780">
@@ -10185,6 +10229,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapMonster)" id="item_AE09F0EA-3636-4E63-A610-C7AAEE44B95A">
@@ -10227,6 +10275,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapStatic)" id="item_5B0F28B6-C0F8-4D1C-88A9-2C7C49D6E2F0">
@@ -10287,6 +10339,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapStatic)" id="item_86131A5E-2347-4DC3-B702-FBB2B8E61A42">
@@ -10720,6 +10776,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapMonster)" id="item_4CABC109-3703-4C56-959E-EB01FF537B3A">
@@ -10762,6 +10822,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapStatic)" id="item_ECA4D55B-3966-47AD-8F9E-5071D30BD34D">
@@ -10930,6 +10994,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapMonster)" id="item_D999200A-2ABB-4D83-B108-96431FD49F78">
@@ -10972,6 +11040,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapMonster)" id="item_E88422B0-C2EF-4FB4-B3B2-7D01D76DBC78">
@@ -11014,6 +11086,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapStatic)" id="item_2753E5AC-57D4-4DD6-94CB-34DB7390268A">
@@ -11356,6 +11432,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapMonster)" id="item_BD71D980-785B-4C49-827D-8C849352F186">
@@ -11398,6 +11478,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapMonster)" id="item_D00C6965-3EE5-4DC3-B0BF-C78DC10BB65B">
@@ -11440,6 +11524,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapMonster)" id="item_FE47583B-562B-4B61-B36D-304EADCE62F4">
@@ -11482,6 +11570,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapMonster)" id="item_0F4F41BF-B97D-43EB-A58C-DEE13CD823CF">
@@ -11524,6 +11616,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapMonster)" id="item_0BE107D7-4529-44EC-BA56-96051DA45CB3">
@@ -11566,6 +11662,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapMonster)" id="item_8A4FB97E-318F-41F2-9DF2-92AA8C9EFD49">
@@ -11608,6 +11708,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapMonster)" id="item_98FBD8CC-AE33-4972-951D-F421814C7C48">
@@ -11650,6 +11754,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapBuilding)" id="item_533CF688-EA69-42EE-94C9-783CB64DCC48">
@@ -12051,6 +12159,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapStatic)" id="item_82224D88-5148-4DFF-9474-39B6B4EA5B69">
@@ -12448,6 +12560,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapStatic)" id="item_CE1B62E8-0A85-4A0F-9A43-921B9684711A">
@@ -14771,6 +14887,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapStatic)" id="item_BB6029FC-D76C-43F3-8DF7-0664618750A6">
@@ -15546,6 +15666,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapStatic)" id="item_8F02AD04-86C8-4B7D-A3E3-55A9588ED72B">
@@ -19159,6 +19283,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapMonster)" id="item_375C0648-1754-4CB8-B5B2-5B580EDE3680">
@@ -19201,6 +19329,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapStatic)" id="item_F613D7B2-3522-49AE-ACBB-96E78A2EBF36">
@@ -21913,6 +22045,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapStatic)" id="item_CA46400B-434B-4422-BDE8-BC76E159D10A">
@@ -22831,6 +22967,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapMonster)" id="item_CBB409C3-5D5E-498B-AA72-83BA473F2178">
@@ -22873,6 +23013,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapMonster)" id="item_EE96ED35-F2E1-42C6-BDBC-87FA92F0DBCF">
@@ -22915,6 +23059,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapMonster)" id="item_76686C9D-74A5-4C67-BB05-366251488D39">
@@ -22957,6 +23105,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapMonster)" id="item_69AACECB-15B3-4B71-8FB6-7FBBA3C02820">
@@ -22999,6 +23151,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapMonster)" id="item_E839AA8F-A2BD-48F2-8669-77BB9B49B146">
@@ -23041,6 +23197,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapMonster)" id="item_1345F5F2-AEDF-4C84-A029-AFA6D493D366">
@@ -23083,6 +23243,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapMonster)" id="item_C92289EB-BE8A-45D7-86ED-872F0AC47B56">
@@ -23125,6 +23289,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapMonster)" id="item_2A6A2223-F8E6-43DC-9BFF-816CF2D79445">
@@ -23167,6 +23335,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapMonster)" id="item_9DA7AF59-B429-4DFE-803C-6EC24F6C78FC">
@@ -23209,6 +23381,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapMonster)" id="item_920120F2-9305-4C91-A7BC-151DDFEF47B9">
@@ -23251,6 +23427,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapMonster)" id="item_A9B05AAD-659A-4503-9263-74CC047310D2">
@@ -23293,6 +23473,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapMonster)" id="item_C7A88F6C-A02D-4A96-8DAF-CBFAF07BBBFE">
@@ -23335,6 +23519,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapTreasure)" id="item_CF63224A-8016-4B66-A1DC-AB9790CD07A8">
@@ -24176,6 +24364,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapStatic)" id="item_76177F8C-657A-422B-8292-ABE721E818F2">
@@ -24398,6 +24590,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapStatic)" id="item_9FD0AB23-FB96-4A59-95C2-A72DDE1548D1">
@@ -24806,6 +25002,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapStatic)" id="item_20923F1B-06DA-4406-AAD9-2B96A3E3B28B">
@@ -25972,6 +26172,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapTent)" id="item_DCBC4190-ED28-45AA-9035-D2F132F88F9F">
@@ -27129,6 +27333,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapTreasure)" id="item_AC48996D-E889-4445-BC92-00F34471849E">
@@ -27532,6 +27740,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapStatic)" id="item_543BD274-EEB4-4DC5-A045-B04C03F559AE">
@@ -27939,6 +28151,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapStatic)" id="item_316C3CB7-46BC-4C22-9753-069D8E7F9E5A">
@@ -29157,6 +29373,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapBuilding)" id="item_20B917CC-E97F-4F7D-BA44-E4F26874C73A">
@@ -29554,6 +29774,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapStatic)" id="item_A3FBDEC7-67F5-4FE9-8141-EB71FFB84A29">
@@ -30262,6 +30486,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapStatic)" id="item_BC4AE85D-C011-4B52-9B4B-1E21CEC27F52">
@@ -30561,6 +30789,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapMonster)" id="item_954263AE-2B6C-430F-9353-2AAF00CDF25E">
@@ -30603,6 +30835,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapTreasure)" id="item_7F30DAAC-49CB-4E8F-894E-180E222C618C">
@@ -30967,6 +31203,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapTreasure)" id="item_E8E9EC12-29BC-4FAB-ADA9-CCDED3DB1611">
@@ -31585,6 +31825,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapBuilding)" id="item_6DF426AD-F8C0-443A-AD19-4EEEBDDD2B56">
@@ -32524,6 +32768,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapStatic)" id="item_E147ECCF-629A-4132-B3EF-815A182C4151">
@@ -33106,6 +33354,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapStatic)" id="item_41A14560-B02D-4A74-8160-B2A1C164815E">
@@ -33554,6 +33806,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapStatic)" id="item_1C8517C4-9D97-4DA9-A12E-4C38B853C87F">
@@ -33650,6 +33906,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapStatic)" id="item_80BF1E88-08DB-4A99-9F51-F4EBE630A6AB">
@@ -33805,6 +34065,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapStatic)" id="item_3F02C254-73D2-4386-84AD-60DE7B33490C">
@@ -35318,6 +35582,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapStatic)" id="item_59C0A208-C7E2-4628-9E6C-A7CDC00F947E">
@@ -36135,6 +36403,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapStatic)" id="item_938B1F6C-CEA5-40EB-9D76-92A991B680CB">
@@ -36663,6 +36935,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapStatic)" id="item_20B8F338-CFB3-49CF-8892-2633A08AC8C7">
@@ -38187,6 +38463,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapMonster)" id="item_D6E4D77E-369D-41EA-8466-6FF2DB47427F">
@@ -38229,6 +38509,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapMonster)" id="item_8D7B4B96-CA2F-4CF0-95CA-EB62631AB9E7">
@@ -38271,6 +38555,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapMonster)" id="item_CDC5A9F6-209C-40A1-8937-E7B2EC341F1D">
@@ -38313,6 +38601,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapStatic)" id="item_C03EFB31-32F0-404B-BD3D-F972EF40D6D8">
@@ -38499,6 +38791,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapStatic)" id="item_9E223FF0-F874-4C7C-A2A7-EAF6269B4B79">
@@ -40679,6 +40975,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapStatic)" id="item_0B5E7899-FD4F-4472-A45C-B03E1E81EAB0">
@@ -41048,6 +41348,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapStatic)" id="item_A017DF17-CBA3-49EB-ACB4-5E30D95D4750">
@@ -41365,6 +41669,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapStatic)" id="item_CE96FBC7-E9A9-412A-B76F-762DFEAB994E">
@@ -42523,6 +42831,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapGarrison)" id="item_C89D32E0-9805-4BB2-BD5A-56FC17E7BB62">
@@ -42680,6 +42992,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapMonster)" id="item_AF353C5A-6A56-4B72-A051-41125967A82A">
@@ -42722,6 +43038,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapMonster)" id="item_1D6474FC-51AC-448E-9650-579DC6C8CEB0">
@@ -42764,6 +43084,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapMonster)" id="item_40F9DC4F-8A1D-4193-AFAB-9B5CFBA54C1E">
@@ -42806,6 +43130,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapStatic)" id="item_6D0F2981-B1EA-4527-96D5-43A892D39591">
@@ -43316,6 +43644,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapStatic)" id="item_764E9D3E-C68C-4CAE-A500-C1DB1862739C">
@@ -43502,6 +43834,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapShrine)" id="item_1FA20F1A-CD99-404B-8802-C7DB42A3BB54">
@@ -44027,6 +44363,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapTreasure)" id="item_1AB7CAA8-9C5D-4E9D-9621-EAA8D3FE861D">
@@ -44933,6 +45273,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapHillFort)" id="item_6DCE1460-FD49-4E64-8C41-08EAA8CDE0A8">
@@ -45032,6 +45376,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapStatic)" id="item_677C2924-7AD0-45E8-ABED-39538A303576">
@@ -46261,8 +46609,8 @@
 		<Item href="#n:inline(AdvMapGarrison)" id="item_0F0A93F8-319D-4EB7-B310-107EF44FA095">
 			<AdvMapGarrison>
 				<Pos>
-					<x>52</x>
-					<y>28</y>
+					<x>51</x>
+					<y>29</y>
 					<z>0</z>
 				</Pos>
 				<Rot>1.5708</Rot>
@@ -46429,6 +46777,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapStatic)" id="item_D1F964F9-0537-45B4-A079-A11C0E5BBD2A">
@@ -46489,6 +46841,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapStatic)" id="item_99855124-5B75-4BA1-BDDC-AB9E0374E720">
@@ -47460,6 +47816,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapMonster)" id="item_A0523D7D-4FD0-4C50-B59D-8E4F5B33642A">
@@ -47502,6 +47862,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapTreasure)" id="item_E4E77D3F-DB35-48D4-BCB4-3D0C81847132">
@@ -47621,6 +47985,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapMonster)" id="item_DB028D42-DE01-4762-81A9-E8C01F807139">
@@ -47663,6 +48031,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapMonster)" id="item_166B82A5-CA61-4249-8F67-AF44C788CA9B">
@@ -47705,6 +48077,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapMonster)" id="item_C3EF088A-8D08-4348-AC76-C59FF40F2762">
@@ -47747,6 +48123,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapStatic)" id="item_99182FCB-CDEF-4475-A637-5C454E65278B">
@@ -47987,6 +48367,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapBuilding)" id="item_9113B9EC-1AEB-4DD9-8C7E-CAF62D910396">
@@ -48383,6 +48767,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapTreasure)" id="item_8E17AEEB-ABE5-4776-98B9-0E5CF8DB7B16">
@@ -49871,6 +50259,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapStatic)" id="item_4AF20E07-18A8-45FB-AB2F-B303357566F3">
@@ -50027,6 +50419,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapMonster)" id="item_BF7F4041-C487-4299-A96E-868D9359CAFD">
@@ -50069,6 +50465,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapTreasure)" id="item_8E96B838-BFDD-49E5-BDDD-8A839EED94F9">
@@ -50219,6 +50619,10 @@
 				<MultipleMonstersNameFileRef href=""/>
 				<RacesRandomGroupID>0</RacesRandomGroupID>
 				<relationsOverrides/>
+				<RuntimeGenerated>true</RuntimeGenerated>
+				<GeneratedStacksMin>1</GeneratedStacksMin>
+				<GeneratedStacksMax>2</GeneratedStacksMax>
+				<TotalPower>5000</TotalPower>
 			</AdvMapMonster>
 		</Item>
 		<Item href="#n:inline(AdvMapStatic)" id="item_10168C2E-6B81-4F10-8EF3-1C8FA98E6F26">
@@ -52941,7 +53345,7 @@
 			<StartHero/>
 			<HeroInTown>false</HeroInTown>
 			<ReserveHeroes>
-				<Item href="#n:inline(AdvMapHero)" id="item_D8250BD6-5745-42CB-8AB5-9ABE10B6A2E0">
+				<Item href="#n:inline(AdvMapHero)" id="item_P1_H1">
 					<AdvMapHero>
 						<Pos>
 							<x>0</x>
@@ -52999,7 +53403,7 @@
 						<BannedRaces/>
 					</AdvMapHero>
 				</Item>
-				<Item href="#n:inline(AdvMapHero)" id="item_94EB24F3-F837-4EEE-8126-BBD3BCC2E4A2">
+				<Item href="#n:inline(AdvMapHero)" id="item_P1_H2">
 					<AdvMapHero>
 						<Pos>
 							<x>0</x>
@@ -53057,7 +53461,7 @@
 						<BannedRaces/>
 					</AdvMapHero>
 				</Item>
-				<Item href="#n:inline(AdvMapHero)" id="item_15D52FD3-7E7B-41B2-8FA8-54F56FDFFDF6">
+				<Item href="#n:inline(AdvMapHero)" id="item_P1_H3">
 					<AdvMapHero>
 						<Pos>
 							<x>0</x>
@@ -53148,7 +53552,7 @@
 			<StartHero/>
 			<HeroInTown>false</HeroInTown>
 			<ReserveHeroes>
-				<Item href="#n:inline(AdvMapHero)" id="item_2F8E5BF6-6518-472E-A734-18741719B061">
+				<Item href="#n:inline(AdvMapHero)" id="item_P2_H1">
 					<AdvMapHero>
 						<Pos>
 							<x>0</x>
@@ -53160,7 +53564,7 @@
 						<Name/>
 						<CombatScript/>
 						<pointLights/>
-						<Shared href="/MapObjects/Dungeon/NewHeroes/Noellie/Noellie.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
+						<Shared href="/MapObjects/Dungeon/Noelli.(AdvMapHeroShared).xdb#xpointer(/AdvMapHeroShared)"/>
 						<PlayerID>PLAYER_2</PlayerID>
 						<Experience>1</Experience>
 						<armySlots>
@@ -53238,7 +53642,7 @@
 						<BannedRaces/>
 					</AdvMapHero>
 				</Item>
-				<Item href="#n:inline(AdvMapHero)" id="item_7883A94E-1CEE-40DA-A53D-915AC1D671FF">
+				<Item href="#n:inline(AdvMapHero)" id="item_P2_H2">
 					<AdvMapHero>
 						<Pos>
 							<x>0</x>
@@ -53291,7 +53695,7 @@
 						<BannedRaces/>
 					</AdvMapHero>
 				</Item>
-				<Item href="#n:inline(AdvMapHero)" id="item_ABB867FD-0977-45B2-B9F9-8DE9C71F2A26">
+				<Item href="#n:inline(AdvMapHero)" id="item_P2_H3">
 					<AdvMapHero>
 						<Pos>
 							<x>0</x>
@@ -53344,7 +53748,7 @@
 						<BannedRaces/>
 					</AdvMapHero>
 				</Item>
-				<Item href="#n:inline(AdvMapHero)" id="item_BFBED4E5-8A88-4544-9993-A08B661BC6C8">
+				<Item href="#n:inline(AdvMapHero)" id="item_P2_H4">
 					<AdvMapHero>
 						<Pos>
 							<x>0</x>
@@ -53397,7 +53801,7 @@
 						<BannedRaces/>
 					</AdvMapHero>
 				</Item>
-				<Item href="#n:inline(AdvMapHero)" id="item_FBA7C699-9324-4B93-BEB5-F7BA95DD0160">
+				<Item href="#n:inline(AdvMapHero)" id="item_P2_H5">
 					<AdvMapHero>
 						<Pos>
 							<x>0</x>
@@ -53488,7 +53892,7 @@
 			<StartHero/>
 			<HeroInTown>false</HeroInTown>
 			<ReserveHeroes>
-				<Item href="#n:inline(AdvMapHero)" id="item_339CFA1B-3FE7-401B-AA56-6F91CC8D2FDC">
+				<Item href="#n:inline(AdvMapHero)" id="item_P3_H1">
 					<AdvMapHero>
 						<Pos>
 							<x>0</x>
@@ -53572,7 +53976,7 @@
 						<BannedRaces/>
 					</AdvMapHero>
 				</Item>
-				<Item href="#n:inline(AdvMapHero)" id="item_0030C971-21D0-41BC-90B6-138A83776EEA">
+				<Item href="#n:inline(AdvMapHero)" id="item_P3_H2">
 					<AdvMapHero>
 						<Pos>
 							<x>0</x>
@@ -53625,7 +54029,7 @@
 						<BannedRaces/>
 					</AdvMapHero>
 				</Item>
-				<Item href="#n:inline(AdvMapHero)" id="item_0180AF25-7768-4E19-A131-AFEFA8053475">
+				<Item href="#n:inline(AdvMapHero)" id="item_P3_H3">
 					<AdvMapHero>
 						<Pos>
 							<x>0</x>
@@ -53678,7 +54082,7 @@
 						<BannedRaces/>
 					</AdvMapHero>
 				</Item>
-				<Item href="#n:inline(AdvMapHero)" id="item_0560DB69-67D9-46F3-8A0E-C9D06693606B">
+				<Item href="#n:inline(AdvMapHero)" id="item_P3_H4">
 					<AdvMapHero>
 						<Pos>
 							<x>0</x>
@@ -53731,7 +54135,7 @@
 						<BannedRaces/>
 					</AdvMapHero>
 				</Item>
-				<Item href="#n:inline(AdvMapHero)" id="item_3A806CF5-CF73-4A07-A413-E80959028907">
+				<Item href="#n:inline(AdvMapHero)" id="item_P3_H5">
 					<AdvMapHero>
 						<Pos>
 							<x>0</x>

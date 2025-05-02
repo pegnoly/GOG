@@ -53,12 +53,17 @@
 		<skills/>
 		<perkIDs>
 			<Item>HERO_SKILL_MULTISHOT</Item>
+			<Item>HERO_SKILL_IMBUE_ARROW</Item>
 		</perkIDs>
-		<spellIDs/>
+		<spellIDs>
+			<Item>SPELL_MAGIC_ARROW</Item>
+		</spellIDs>
 		<Ballista>false</Ballista>
 		<FirstAidTent>false</FirstAidTent>
 		<AmmoCart>false</AmmoCart>
-		<FavoriteEnemies/>
+		<FavoriteEnemies>
+			<Item>CREATURE_SKELETON</Item>
+		</FavoriteEnemies>
 		<TalismanLevel>0</TalismanLevel>
 	</Editable>
 	<ArrowButtonState>0</ArrowButtonState>

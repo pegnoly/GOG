@@ -46,7 +46,8 @@ moriton_zone = {
                         GiveExp(_hero, exp_diff)
                         startThread(
                         function ()
-                            while GetHeroStat(%_hero, STAT_EXPERIENCE) ~= %final_exp do
+                            local hero = %_hero
+                            while GetHeroStat(hero, STAT_EXPERIENCE) ~= %final_exp do
                                 sleep()
                             end
                             sleep()
