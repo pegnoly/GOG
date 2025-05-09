@@ -2,6 +2,6 @@
 <AdvMapObjectLink>
 	<Link href="/MapObjects/Stronghold/Untamed_Cyclop.(AdvMapMonsterShared).xdb#xpointer(/AdvMapMonsterShared)"/>
 	<RndGroup/>
-	<IconFile/>
+	<IconFile>Icons\Generated\MapObjects\_(AdvMapObjectLink)\Monsters\NCF\GOG\UntamedCyclop.(AdvMapObjectLink)-icon.tga</IconFile>
 	<HideInEditor>false</HideInEditor>
 </AdvMapObjectLink>
