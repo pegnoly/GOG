@@ -4,45 +4,16 @@ DWELLING_PURGE_STATE_DONE = 2
 
 zone_common_cursed_dwellings = {
 
+    path = zones_path.."Common/CursedDwellings/",
     dwells_types = {},
     dwells_purge_states = {},
     dwells_type_counts = {},
 
-    armies_power = {
-        ["FAIRIE_TREE"] = {
-            [1] = {base = 32000, grow = 2400},
-            [2] = {base = 28500, grow = 2400},
-            [3] = {base = 26000, grow = 2500}
-        },
-        ["WOOD_GUARD_QUARTERS"] = {
-            [1] = {base = 35000, grow = 3000},
-            [2] = {base = 33500, grow = 3100},
-            [3] = {base = 32000, grow = 2800},
-            [4] = {base = 34000, grow = 3000}
-        },
-        ["HIGH_CABINS"] = {
-            [1] = {base = 38000, grow = 3500},
-            [2] = {base = 36500, grow = 3350},
-            [3] = {base = 35000, grow = 3800},
-            [4] = {base = 36000, grow = 3000},
-            [5] = {base = 34000, grow = 3400}
-        },
-        ["PRESERVE_MILITARY_POST"] = {
-            [1] = {base = 45000, grow = 4000},
-            [2] = {base = 46500, grow = 4350},
-            [3] = {base = 45000, grow = 4100},
-            [4] = {base = 46000, grow = 3700},
-            [5] = {base = 44000, grow = 4400},
-            [6] = {base = 40000, grow = 5000},
-            [7] = {base = 42000, grow = 4100}
-        }
-    },
-
     dwells_count_armies_coef = {
-        ["FAIRIE_TREE"] = {base = 1.18, grow = 0.06},
-        ["WOOD_GUARD_QUARTERS"] = {base = 1.23, grow = 0.09},
-        ["HIGH_CABINS"] = {base = 1.28, grow = 0.12},
-        ["PRESERVE_MILITARY_POST"] = {base = 1.4, grow = 0.15}
+        ["FAIRIE_TREE"] = 0.4,
+        ["WOOD_GUARD_QUARTERS"] = 0.25,
+        ["HIGH_CABINS"] = 0.18,
+        ["PRESERVE_MILITARY_POST"] = 0.12
     },
 
     dwells_purge_resource_amount = {
@@ -52,9 +23,34 @@ zone_common_cursed_dwellings = {
         ["PRESERVE_MILITARY_POST"] = {[WOOD] = 20, [ORE] = 20, [CRYSTAL] = 9, [GEM] = 9, [SULFUR] = 9, [MERCURY] = 9}
     },
 
+    dwells_fight_data = {},
+
+    Load = 
+    function ()
+        doFile(zone_common_cursed_dwellings.path.."Fights/c1m1_cursed_dwells_t1.lua")
+        doFile(zone_common_cursed_dwellings.path.."Fights/c1m1_cursed_dwells_t2.lua")
+        doFile(zone_common_cursed_dwellings.path.."Fights/c1m1_cursed_dwells_t3.lua")
+        doFile(zone_common_cursed_dwellings.path.."Fights/c1m1_cursed_dwells_outpost.lua")
+
+        while not c1m1_cursed_dwells_outpost do
+            sleep()
+        end
+
+        zone_common_cursed_dwellings.dwells_fight_data["FAIRIE_TREE"] = c1m1_cursed_dwells_t1
+        zone_common_cursed_dwellings.dwells_fight_data["WOOD_GUARD_QUARTERS"] = c1m1_cursed_dwells_t2
+        zone_common_cursed_dwellings.dwells_fight_data["HIGH_CABINS"] = c1m1_cursed_dwells_t3
+        zone_common_cursed_dwellings.dwells_fight_data["PRESERVE_MILITARY_POST"] = c1m1_cursed_dwells_outpost
+    end,
+
     Init = 
     function ()
-        for _t, type in {"FAIRIE_TREE", "WOOD_GUARD_QUARTERS", "HIGH_CABINS", "PRESERVE_MILITARY_POST"} do
+        while not Touch do
+            sleep()
+        end
+        print("Running init cursed dwells")
+        for _t, type in {
+            "FAIRIE_TREE", "WOOD_GUARD_QUARTERS", "HIGH_CABINS", "PRESERVE_MILITARY_POST"
+        } do
             for _d, dwell in GetObjectNamesByType(type) do
                 if GetObjectOwner(dwell) == PLAYER_NONE then
                     Touch.DisableObject(dwell, DISABLED_INTERACT)
@@ -84,30 +80,12 @@ zone_common_cursed_dwellings = {
     InitDwellFight =
     function (hero, object)
         local dwell_type = zone_common_cursed_dwellings.dwells_types[object]
-        local dwell_type_count = zone_common_cursed_dwellings.dwells_type_counts[dwell_type]
-        local army = {}
-        for tier, army_info in zone_common_cursed_dwellings.armies_power[dwell_type] do
-            local coef_info = zone_common_cursed_dwellings.dwells_count_armies_coef[dwell_type]
-            local coef_value = dwell_type_count == 0 and 1 or (coef_info.base + coef_info.grow * initialDifficulty) * dwell_type_count
-            local actual_power = ceil((army_info.base + army_info.grow * initialDifficulty) * coef_value)
-            local units = list_iterator.Join(TIER_TABLES[TOWN_INFERNO][tier], TIER_TABLES[TOWN_NECROMANCY][tier])
-            local sorted_units = list_iterator.Filter(units, function (unit)
-                local chk = Creature.Params.IsUpgrade(unit)
-                return chk
-            end)
-            local actual_unit = Random.FromTable(sorted_units)
-            local actual_count = floor(actual_power / Creature.Params.Power(actual_unit))
-            army[actual_unit] = actual_count
+        local counts = zone_common_cursed_dwellings.dwells_type_counts[dwell_type]
+        local fight_data = FightGenerator.SetupNeutralsCombat(zone_common_cursed_dwellings.dwells_fight_data[dwell_type])
+        for i = 2, length(fight_data.stacks_info), 2 do
+            fight_data.stacks_info[i] = ceil(fight_data.stacks_info[i] * (1 + zone_common_cursed_dwellings.dwells_count_armies_coef[dwell_type] * counts))
         end
-        local actual_army, n = {}, 1
-        for creature, count in army do
-            if creature and count then
-                actual_army[n] = creature
-                actual_army[n + 1] = count
-                n = n + 2
-            end
-        end
-        if MCCS_StartCombat(hero, nil, len(army), actual_army, 1) then
+        if MCCS_StartCombat(hero, nil, fight_data.stacks_count, fight_data.stacks_info, 1) then
             zone_common_cursed_dwellings.dwells_type_counts[dwell_type] = zone_common_cursed_dwellings.dwells_type_counts[dwell_type] + 1
             zone_common_cursed_dwellings.dwells_purge_states[object] = DWELLING_PURGE_STATE_ARMY_DEFEATED
             while zone_common_cursed_dwellings.dwells_purge_states[object] ~= DWELLING_PURGE_STATE_ARMY_DEFEATED do
@@ -127,13 +105,13 @@ zone_common_cursed_dwellings = {
             count = count + 1
         end
         if MCCS_QuestionBox({zones_path.."Common/CursedDwellings/Texts/dwell_purge_question.txt";
-            res1 = res_values[1],  
-            res2 = res_values[2],    
-            res3 = res_values[3],    
-            res4 = res_values[4],    
-            res5 = res_values[5],    
-            res6 = res_values[6],    
-            res7 = res_values[7],      
+            res1 = res_values[1],
+            res2 = res_values[2],
+            res3 = res_values[3],
+            res4 = res_values[4],
+            res5 = res_values[5],
+            res6 = res_values[6],
+            res7 = res_values[7],
         }) then
             local flag = 1
             for res, amount in zone_common_cursed_dwellings.dwells_purge_resource_amount[dwell_type] do
