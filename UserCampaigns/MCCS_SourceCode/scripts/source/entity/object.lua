@@ -49,8 +49,8 @@ Object =
   --- Показывает объект игроку
   ---@param player PlayerID id игрока
   ---@param object string имя объекта
-  ---@param use_cam? boolean использовать камеру при показе
-  ---@param move_cam? boolean использовать перемещение камеры при показе
+  ---@param use_cam boolean использовать камеру при показе
+  ---@param move_cam boolean использовать перемещение камеры при показе
   function(player, object, use_cam, move_cam)
     errorHook(
     function()

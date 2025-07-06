@@ -1,6 +1,6 @@
 while not MCCS_CREATURE_GENERATED_TABLE do
     sleep()
-end
+  end
   
 Creature =
 {
@@ -301,6 +301,21 @@ Creature =
                 answer = CREATURE_FRAC_EVIL
             end
             return answer
+        end,
+
+        IsUpgrade =
+        function (creature)
+            errorHook(
+            function()
+                Creature.Params.Exception(%creature, "is_upgrade")
+            end)
+            local answer
+            if MCCS_CREATURE_GENERATED_TABLE[creature] then
+                answer = MCCS_CREATURE_GENERATED_TABLE[creature].is_upgrade
+            else
+                answer = MCCS_CREATURE_GENERATED_TABLE[GetCreatureType(creature)].is_upgrade
+            end
+            return answer
         end
     },
 
@@ -564,31 +579,16 @@ Creature =
             end
             local answer = TIER_TABLES[town][tier][pos]
             return answer
-        end,
-
-        IsUpgrade =
-        function (creature)
-            errorHook(
-            function()
-                Creature.Params.Exception(%creature, "is_upgrade")
-            end)
-            local answer
-            if MCCS_CREATURE_GENERATED_TABLE[creature] then
-                answer = MCCS_CREATURE_GENERATED_TABLE[creature].is_upgrade
-            else
-                answer = MCCS_CREATURE_GENERATED_TABLE[GetCreatureType(creature)].is_upgrade
-            end
-            return answer
         end
     },
-    
+
     Selection = 
     {
-        RandomFromTier = 
+        RandomFromTier =
         ---Возвращает случайное существо указанного уровня из города
         ---@param town TownType id города
         ---@param tier integer уровень существа
-        ---@return creature CreatureID id существа
+        ---@return CreatureID creature id существа
         function (town, tier)
             local tiers = TIER_TABLES[town][tier]
             local answer = Random.FromTable(tiers)
@@ -603,6 +603,21 @@ Creature =
         function (town, tier)
             local tiers = TIER_TABLES[town][tier]
             local answer = Random.FromTable_IgnoreValue(tiers[1], tiers)
+            return answer
+        end,
+
+        FromTownsAndTiers =
+        ---Возвращает список существ, которые
+        ---@param towns TownType []
+        ---@param tiers number []
+        function (towns, tiers)
+            local answer, n = {}, 0
+            for creature, info in MCCS_CREATURE_GENERATED_TABLE do
+                if contains(tiers, info.tier) and contains(towns, info.town) then
+                    answer[n] = creature
+                    n = n + 1
+                end
+            end
             return answer
         end
     }

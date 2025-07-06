@@ -1,9 +1,8 @@
 list_iterator = {
     Any =
-    ---comment
     ---@param table table Таблица, для которой проверяется условие
     ---@param predicate function Условие
-    ---@return ok boolean Хотя бы для одного элемента выполняется условие?
+    ---@return nil|1 ok Хотя бы для одного элемента выполняется условие?
     function (table, predicate)
         --print("Iterator any: table - ", table)
         local result = nil
@@ -18,10 +17,9 @@ list_iterator = {
     end,
 
     All = 
-    ---comment
     ---@param table table Таблица, для которой проверяется условие
     ---@param predicate function Условие
-    ---@return ok boolean Условие выполняется для всех элементов?
+    ---@return nil|1 ok Условие выполняется для всех элементов?
     function (table, predicate)
         for k, v in table do
             if not predicate(v) then
@@ -35,9 +33,9 @@ list_iterator = {
     ---comment
     ---@param table table Таблица для фильтра значений
     ---@param predicate function Условие
-    ---@return t table Таблица отфильтрованных значений
+    ---@return table t Таблица отфильтрованных значений
     function (table, predicate)
-        local t, n = {}, 0
+        local t, n = {}, 1
         for k, v in table do 
             if predicate(v) then
                 t[n] = v
@@ -58,5 +56,37 @@ list_iterator = {
             n = n + 1
         end
         return t1
+    end,
+
+    MaxBy = 
+    function (t, predicate)
+        local current_max_value = math.nan
+        local current_answer
+        for k, v in t do
+            if k and v then
+                local value = predicate(v)
+                if value and value > current_max_value then
+                    current_max_value = value
+                    current_answer = v
+                end
+            end 
+        end
+        return current_answer
+    end,
+
+    MinBy = 
+    function (t, predicate)
+        local current_min_value = math.huge
+        local current_answer
+        for k, v in t do
+            if k and v then
+                local value = predicate(v)
+                if value and value < current_min_value then
+                    current_min_value = value
+                    current_answer = v
+                end 
+            end
+        end
+        return current_answer
     end
 }

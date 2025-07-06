@@ -1,4 +1,5 @@
 consoleCmd('console_size 10000')
+doFile('/scripts/source/iterators/list.lua')
 doFile('/scripts/source/3rdparty/lualib.lua')
 doFile("/scripts/source/common/global/consts.lua")
 doFile("/scripts/source/common/random.lua")

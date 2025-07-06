@@ -36,7 +36,7 @@ Animation =
   ---@param action AnimationActionType тип проигрывания
   ---@param start_delay number стартовая задержка перед проигрыванием
   ---@param play_period number задержка между проигрываниями
-  ---@param is_random_delay boolean использовать конкретную задержку или случайное число из этого промежутка
+  ---@param is_random_delay 1|nil использовать конкретную задержку или случайное число из этого промежутка
   function(group, anims, cond, action, start_delay, play_period, is_random_delay)
     cond = cond or PLAY_CONDITION_SINGLEPLAY
     action = action or NON_ESSENTIAL
@@ -51,11 +51,11 @@ Animation =
       for i, actor in Animation.Groups[group].actors do
         startThread(
         function()
+          local group = %group
           local actor = %actor
           local anims = %anims 
-          local group = $group
           local region = Animation.Groups[group].region 
-          local action = %action
+          local action = %action 
           local start_delay = %start_delay 
           local play_period = %play_period 
           local is_random_delay = %is_random_delay
@@ -74,11 +74,11 @@ Animation =
       for i, actor in Animation.Groups[group].actors do
         startThread(
         function()
+          local group = %group
           local actor = %actor
           local anims = %anims 
-          local group = $group
           local region = Animation.Groups[group].region 
-          local action = %action
+          local action = %action 
           local start_delay = %start_delay 
           local play_period = %play_period 
           local is_random_delay = %is_random_delay

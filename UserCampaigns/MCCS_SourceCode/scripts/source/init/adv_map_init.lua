@@ -32,6 +32,8 @@ doFile('/scripts/source/dialog/dialog.lua')
 doFile('/scripts/source/dialog/mini_dialog.lua')
 doFile('/scripts/source/event/touch/touch.lua')
 doFile('/scripts/source/event/map_common/events.lua')
+sleep()
+doFile('/scripts/source/iterators/list.lua')
 
 while not MapLoadingEvent do 
 	sleep()
@@ -97,7 +99,8 @@ function CommonMapLoadingThread()
   end)
   --
   MapLoadingEvent.Invoke()
-  startThread(CustomAbility.Init)
+  startThread(CustomAbility.EnableHeroAbility)
+  startThread(CustomAbility.EnableArtifactAbility)
   --
   sleep(10)
   --

@@ -95,7 +95,7 @@ end
 
 --- Позволяет включать и выключать взаимодействие интерактивного объекта с героем стандартным образом
 ---@param object string скриптовое имя объекта
----@param is_enabled 1 | nil 1 - включить, nil - выключить
+---@param is_enabled 1|nil 1 - включить, nil - выключить
 function SetObjectEnabled(object, is_enabled)
 end
 
@@ -290,7 +290,7 @@ function SetGameVar(name, value)
 end
 
 --- Останавливает работу текущего потока исполнения на указанное время. Время задается в игровых сегментах
----@param num integer длительность остановки в сегментах
+---@param num integer? длительность остановки в сегментах
 function sleep(num)
 end
 

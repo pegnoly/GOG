@@ -214,7 +214,7 @@ FX =
     else
       actual_effect = '/Effects/_(Effect)/'..FX.Effects[effect]..'.xdb#xpointer(/Effect)'
     end
-    print('effect: ', actual_effect)
+    --print('effect 2: ', actual_effect)
     tag = tag or ''
     x = x or 0
     y = y or 0

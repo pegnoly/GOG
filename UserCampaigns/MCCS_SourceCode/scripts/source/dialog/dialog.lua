@@ -32,10 +32,12 @@ Dialog =
     ---@param player PlayerID id игрока, для которого открывается диалог
     NewDialog =
     function(dialog, hero, player)
+        print("Trying to open dialog ", dialog, " for hero ", hero, " of player ", player)
         local new_dialog = {}
         for k, v in dialog do
             new_dialog[k] = v
         end
+        print("Error somewhere in assigment...")
         Dialog.Open(new_dialog, hero, player)
     end,
 
@@ -48,12 +50,18 @@ Dialog =
         return answer
     end,
 
+    GetActiveHeroForPlayer = 
+    function (player)
+        local answer = Dialog.active_hero_for_player[player]
+        return answer
+    end,
+
     Open =
     function(dialog, hero, player)
         Dialog.active_dialog_for_player[player] = dialog
         Dialog.active_hero_for_player[player] = hero
         Dialog.active_dialog_for_player[player].Open(player)
-        --print(hero, ' in Open()')
+        print(hero, ' in Open()')
     end,
 
     Action =
@@ -77,20 +85,21 @@ Dialog =
                 else
                     options[ans_num] = path..msg
                 end
-                print('<color=red>Dialog: <color=green>option: ', ans_num, ', msg: ', options[ans_num])
+                --print('<color=red>Dialog: <color=green>option: ', ans_num, ', msg: ', options[ans_num])
             end
         end
-        print('<color=red>Dialog: <color=green>icon is ', icon)
-        print('<color=red>Dialog: <color=green>main text is ', path..curr_options[state][0])
+        --print('<color=red>Dialog: <color=green>icon is ', icon)
+        --print('<color=red>Dialog: <color=green>main text is ', path..curr_options[state][0])
         Dialog.answer_for_player[player] = 6
-        while not GetCurrentPlayer() == player do
-            sleep()
-        end
+        -- while not GetCurrentPlayer() == player do
+        --     sleep()
+        -- end
         TalkBoxForPlayers(GetPlayerFilter(player), icon, nil,
                         path..curr_options[state][0], nil,
                         'Dialog.Callback', 1,
                         path..title..'.txt',
-                        path..select..'.txt', 0,
+                        path..select..'.txt', 
+                        0,
                         options[1],
                         options[2],
                         options[3],
@@ -116,7 +125,7 @@ Dialog =
             end
         end
         next_state = perform_func(player, state, ans, next_state)
-        print("next state is ", next_state)
+        --print("next state is ", next_state)
         if next_state == 0 then
             return
         else

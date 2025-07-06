@@ -16,7 +16,7 @@ CustomAbility.Hero.MainDialog =
   path = '/Text/CustomAbility/Main/',
   icon = '/Textures/Interface/Cartographer/Face_Texture.xdb#xpointer(/Texture)',
   title = 'hero_title',
-  select_text = '',
+  select_text = 'hero_select',
   
   perform_func =
   function(player, curr_state, answer, next_state)
@@ -28,22 +28,33 @@ CustomAbility.Hero.MainDialog =
   
   Reset =
   function(player)
+    --print("Reseting current dialog...")
     for i, option in Dialog.GetActiveDialogForPlayer(player).options do
       option = nil
     end
-    Dialog.GetActiveDialogForPlayer(player).options[1] = {[0] = '/Text/CustomAbility/Main/hero_main.txt';}
+    --print("Success")
+    Dialog.GetActiveDialogForPlayer(player).options[1] = {[0] = 'Text/CustomAbility/Main/hero_main.txt';}
+    --print("Options reseted...")
   end,
   
   Open =
   function(player)
+    local hero = Dialog.GetActiveHeroForPlayer(player)
+    --print("Opening hero custom dialog...")
     Dialog.Reset(player)
+    --print("Reseted correctly")
     local n = 1
+    --print("Checking predef answers...")
     for answer, info in CustomAbility.Hero.DialogPredefAnswers do
-      if CustomAbility.Hero.AbilitiesByHero[Dialog.GetActiveHeroForPlayer(player)][answer] then
+      --print("Ability info: ", info)
+      if CustomAbility.Hero.AbilitiesByHero[hero][answer] then
+         --print("Hero has this ability")
          Dialog.SetPredefAnswer(Dialog.GetActiveDialogForPlayer(player), 1, n, info)
+         --print("It is added to dialog correctly")
          n = n + 1
       end
     end
+    --print("Ready to action")
     Dialog.Action(player)
   end
 }

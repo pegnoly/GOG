@@ -33,13 +33,9 @@ function table.pack(...)
 end
 
 function table.unpack(t, i, j)
-	--print("t: ", t)
 	i = (i or 1) - 1
-	--print("i: ", i) 
 	j = j or table.getn(t)
-	--print("j: ", j)
 	local n = j-i
-	--print("n: ", n)
 	if n <= 0 then
 		return
 	elseif n == 1 then
@@ -1025,6 +1021,47 @@ function string.match(s, pattern, i)
 	until i > st.n
 	return nil
 end
+
+-- do
+-- 	local env = {}
+-- 	env.incs = {n=16; 1391376, 463792, 198768, 86961, 33936, 13776, 4592, 1968, 861, 336, 112, 48, 21, 7, 3, 1}
+
+-- 	function env.lt(a, b)
+-- 		return a < b
+-- 	end
+	
+-- 	function env.bg(a, b)
+-- 		return a > b
+-- 	end
+
+-- 	function env.sort(t, n, before)
+-- 		for a=1,%env.incs.n do
+-- 			local h = %env.incs[a]
+-- 			local i = h + 1
+-- 			while i <= n do
+-- 				local v = t[i]
+-- 				for j = i - h, 1, -h do
+-- 					local testval = t[j]
+-- 					if not before(v, testval) then break end
+-- 					t[i] = testval
+-- 					i = j
+-- 				end
+-- 				t[i] = v
+-- 				i = i + 1
+-- 			end
+-- 		end
+-- 		return t
+-- 	end
+
+-- 	function table.sort(t, before, n)
+-- 		n = n or table.getn(t)
+-- 		if not before or before == "<" then before = %env.lt
+-- 		elseif before == ">" then before = %env.bg
+-- 		end
+-- 		%env.sort(t, n, before)
+-- 		return t
+-- 	end
+-- end
 
 local default_state = {
 	{1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0},
