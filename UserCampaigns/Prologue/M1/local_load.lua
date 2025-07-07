@@ -1,1 +1,0 @@
-doFile(GetMapDataPath().."Heroes/Umino/script.lua")
