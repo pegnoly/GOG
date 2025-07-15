@@ -23,7 +23,7 @@ end
 ---@param x number координата X
 ---@param y number координата Y
 ---@param floor MapLevel уровень карты
----@param is_unique number? значение 1 выключает общие запреты передвижения камеры, значение 0 - включает передвижение камеры обратно
+---@param is_unique number значение 1 выключает общие запреты передвижения камеры, значение 0 - включает передвижение камеры обратно
 function DeployReserveHero(name, x, y, floor, is_unique)
 end
 

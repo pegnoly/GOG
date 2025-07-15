@@ -11,7 +11,7 @@ function SetAIHeroFleeControl(hero)
 end
 
 --- Устанавливает приоритет объекта для всех героев AI игрока
----@param object string скриптовое имя цели
+---@param object object string скриптовое имя цели
 ---@param player PlayerID id ии-игрока
 ---@param priority integer уровень приоритета цели(от -1 до 2)
 function SetAIPlayerAttractor(object, player, priority)
@@ -95,7 +95,7 @@ end
 
 --- Позволяет включать и выключать взаимодействие интерактивного объекта с героем стандартным образом
 ---@param object string скриптовое имя объекта
----@param is_enabled boolean 1 - включить, nil - выключить
+---@param is_enabled 1|nil 1 - включить, nil - выключить
 function SetObjectEnabled(object, is_enabled)
 end
 
@@ -157,7 +157,8 @@ end
 ---@param player PlayerID id игрока
 ---@param type ResourceType тип ресурса
 ---@param amount integer число ресурса
-function SetPlayerResource(player, type, amount)
+---@param flag any если указан, то интерфейс игры отобразит получение ресурса
+function SetPlayerResource(player, type, amount, flag)
 end
 
 --- Устанавливает стартовое количество ресурсов у игрока
@@ -227,7 +228,7 @@ end
 --- Инициирует осаду города
 ---@param hero string скриптовое имя героя
 ---@param town string скриптовое имя города
----@param arena string? путь к файлу арены(по умолчанию отсутствует, что означает, что бой будет на стандартной городской)
+---@param arena string путь к файлу арены(по умолчанию отсутствует, что означает, что бой будет на стандартной городской)
 function SiegeTown(hero, town, arena)
 end
 
@@ -290,19 +291,17 @@ function SetGameVar(name, value)
 end
 
 --- Останавливает работу текущего потока исполнения на указанное время. Время задается в игровых сегментах
----@param num? integer длительность остановки в сегментах
+---@param num integer? длительность остановки в сегментах
 function sleep(num)
-    num = num or 1
 end
 
 --- Извлекает квадратный корень из числа
 ---@param n number число
 ---@return number res квадратный корень
 function sqrt(n)
-    return 1
 end
 
 --- Запускает функцию в новом потоке исполнения
 ---@param func function функция
-function startThread(func)
+function startThread(func, ...)
 end

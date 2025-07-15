@@ -29,7 +29,7 @@ end
 ---@param x number координата X
 ---@param y number координата Y
 ---@param floor MapLevel уровень карты
----@return 1|nil can_move передвижение возможно/нет
+---@return nil|1 can_move передвижение возможно/нет
 function CanMoveHero(hero, x, y, floor)
     local can_move = nil
     return can_move
@@ -47,6 +47,14 @@ end
 ---@param amount integer число ресурса
 ---@param hero string скриптовое имя героя
 function ChangeResource(res_type, amount, hero)
+end
+
+--- Checks if given value is presented in table
+---@param table table table to check
+---@param value any value to check
+---@return 1|nil is_contained is value in the table
+function contains(table, value)
+    return 1
 end
 
 --- Позволяет управлять особыми умениями указанного героя, посредством триггера
@@ -141,7 +149,6 @@ end
 ---@param n number число
 ---@return integer res ближайшее целое число
 function ceil(n)
-    return 1
 end
 
 --- Очищает от текста предназначенный для вывода tutorial-сообщений элемент

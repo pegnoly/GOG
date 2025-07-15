@@ -1,7 +1,9 @@
+doFile('/scripts/source/iterators/list.lua')
+
 UNIT_COUNT_GENERATION_MODE_POWER_BASED = 0
 UNIT_COUNT_GENERATION_MODE_RAW = 1
 
-while not UNIT_COUNT_GENERATION_MODE_POWER_BASED and not UNIT_COUNT_GENERATION_MODE_RAW do
+while not UNIT_COUNT_GENERATION_MODE_POWER_BASED and not UNIT_COUNT_GENERATION_MODE_RAW and not list_iterator do
     sleep()
 end
 
@@ -48,6 +50,7 @@ FightGenerator = {
         local stacks_data, n = {}, 1
         for i, stack_type in data.stack_count_generation_logic do
             local creature = data.army_getters[i]()
+            print("Got creature: ", creature)
             local count
             if stack_type == UNIT_COUNT_GENERATION_MODE_POWER_BASED then
                 local stack_power = data.army_base_count_data[i][diff]
@@ -79,9 +82,11 @@ FightGenerator = {
         end
         local possible_arts, n = {}, 1
         for _, arts in data.optional_artifacts do
-            for art in arts do 
-                possible_arts[n] = art
-                n = n + 1
+            for i, art in arts do 
+                if art ~= "," then
+                    possible_arts[n] = art
+                    n = n + 1 
+                end
             end
         end
         while 1 do
@@ -89,6 +94,7 @@ FightGenerator = {
                 function (art)
                     local used_slots = %used_slots
                     local weight = %weight
+                    local artifacts_data = %artifacts_data
                     local slot = Art.Params.Slot(art)
                     if used_slots[slot] then
                         return nil
@@ -106,6 +112,7 @@ FightGenerator = {
             local slot = Art.Params.Slot(art)
             used_slots[slot] = 1
             possible_arts = artifacts
+            weight = weight - Art.Params.Cost(art)
             sleep()
         end
         return { stacks_data = stacks_data, artifacts_data = artifacts_data}
