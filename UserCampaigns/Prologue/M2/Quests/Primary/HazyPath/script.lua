@@ -1,5 +1,8 @@
 
 c1m2_hazy_path = {
+
+    --#region Data
+
     name = "HAZY_PATH",
     path = {
         main = "UserCampaigns/Prologue/M2/Quests/Primary/HazyPath",
@@ -23,6 +26,8 @@ c1m2_hazy_path = {
 
     loiren_enabled = nil,
     posts_visited_by_loiren = 0,
+    loiren_current_dest_point = "loiren_dest_point1",
+    loiren_waiting = nil,
 
     ossir_levels = {
         [DIFFICULTY_EASY] = 4,
@@ -38,6 +43,13 @@ c1m2_hazy_path = {
         [DIFFICULTY_HEROIC] = 9
     },
 
+    loiren_levels = {
+        [DIFFICULTY_EASY] = 5,
+        [DIFFICULTY_NORMAL] = 7,
+        [DIFFICULTY_HARD] = 9,
+        [DIFFICULTY_HEROIC] = 11
+    },
+
     dark_obelisks_map = {
         ["first_dark_obelisk"] = "first_dark_portal",
         ["second_dark_obelisk"] = "second_dark_portal",
@@ -46,6 +58,10 @@ c1m2_hazy_path = {
     },
 
     dark_obelisks_used = 0,
+
+    --#endregion
+
+    --#region Setup
 
     Load =
     function ()
@@ -58,8 +74,185 @@ c1m2_hazy_path = {
 
     Init =
     function ()
+        startThread(c1m2_hazy_path.SetupOssir)
+        startThread(c1m2_hazy_path.SetupLinaas)
+        startThread(c1m2_hazy_path.InitLoiren)
+        startThread(c1m2_hazy_path.InitPosts)
+        startThread(c1m2_hazy_path.InitObelisks)
+    end,
+
+    SetupOssir =
+    function ()
+        doFile(c1m2_hazy_path.path.main.."/Fights/c1m2_hazy_path_second_garrison.lua")
+        DeployReserveHero("Ossir", RegionToPoint("hazy_path_ossir_point"))
+        while not (IsObjectExists("Ossir") and c1m2_hazy_path_second_garrison) do
+            sleep()
+        end
+        local fight_data = FightGenerator.GenerateHeroSetupData(c1m2_hazy_path_second_garrison)
+        startThread(FightGenerator.ProcessHeroSetup, "Ossir", fight_data)
+        GiveExp("Ossir", Levels[c1m2_hazy_path.ossir_levels[initialDifficulty]])
+        EnableHeroAI("Ossir", nil)
+    end,
+
+    SetupLinaas =
+    function ()
+        doFile(c1m2_hazy_path.path.main.."/Fights/c1m2_hazy_path_third_garrison.lua")
+        DeployReserveHero("Linaas", RegionToPoint("hazy_path_ving_point"))
+        while not (IsObjectExists("Linaas") and c1m2_hazy_path_third_garrison) do
+            sleep()
+        end
+        local fight_data = FightGenerator.GenerateHeroSetupData(c1m2_hazy_path_third_garrison)
+        startThread(FightGenerator.ProcessHeroSetup, "Linaas", fight_data)
+        GiveExp("Linaas", Levels[c1m2_hazy_path.linaas_levels[initialDifficulty]])
+        EnableHeroAI("Linaas", nil)
+    end,
+
+    --#endregion
+
+    --#region Loiren logic
+
+    InitLoiren =
+    function ()
+        for i = 1, 6 do
+            Trigger(REGION_ENTER_WITHOUT_STOP_TRIGGER, "loiren_dest_point"..i, "c1m2_hazy_path.ProcessLoirenDestPoint")
+        end
+
+        for i = 1,2 do
+            SetRegionBlocked("ai_block"..i, 1, PLAYER_3)
+        end
+    end,
+
+    PrepareLoirenArrival =
+    function ()
+        Trigger(REGION_ENTER_AND_STOP_TRIGGER, "enable_loiren_region", "c1m2_hazy_path.SetupLoirenArrival")
+    end,
+
+    SetupLoirenArrival =
+    function (_, region)
+        Trigger(REGION_ENTER_AND_STOP_TRIGGER, region, nil)
+        startThread(c1m2_hazy_path.EnableLoiren)
+    end,
+
+    EnableLoiren =
+    function ()
+        c1m2_hazy_path.loiren_enabled = 1
+        --
+        doFile(c1m2_hazy_path.path.main.."/Fights/loiren_fight_data.lua")
+        local hero = initialDifficulty == DIFFICULTY_HEROIC and "Loiren_Heroic" or "Loiren"
+        DeployReserveHero(hero, RegionToPoint("loiren_spawn_point"))
+        while not (IsObjectExists(hero) and loiren_fight_data) do
+            sleep()
+        end
+        local fight_data = FightGenerator.GenerateHeroSetupData(loiren_fight_data)
+        FightGenerator.ProcessHeroSetup(hero, fight_data)
+        sleep(10)
+        local base_level = hero == "Loiren" and 3 or 5
+        if GetHeroCreatures(hero, CREATURE_GRAND_ELF) ~= 0 then
+            GiveHeroSkill(hero, PERK_MASTER_OF_ICE)
+            base_level = base_level + 1
+            if initialDifficulty == DIFFICULTY_HEROIC then
+                sleep()
+                GiveHeroSkill(hero, NECROMANCER_FEAT_DEADLY_COLD)
+                base_level = base_level + 1
+            end
+        elseif GetHeroCreatures(hero, CREATURE_SHARP_SHOOTER) ~= 0 then
+            GiveHeroSkill(hero, PERK_MASTER_OF_FIRE)
+            base_level = base_level + 1
+            if initialDifficulty == DIFFICULTY_HEROIC then
+                sleep()
+                GiveHeroSkill(hero, RANGER_FEAT_SOIL_BURN)
+                base_level = base_level + 1
+            end
+        end
+        WarpHeroExp(hero, base_level)
+        sleep(10)
+        if base_level < c1m2_hazy_path.loiren_levels[initialDifficulty] then -- weird but only way to give correct level considering base perks
+            GiveExp(hero, Levels[c1m2_hazy_path.loiren_levels[initialDifficulty]] - Levels[base_level])
+            sleep()
+            WarpHeroExp(hero, Levels[c1m2_hazy_path.loiren_levels[initialDifficulty]])
+        end
+        sleep()
+        startThread(c1m2_hazy_path.LoirenMovementThread, hero)
+    end,
+
+    LoirenMovementThread =
+    function (hero)
+        while IsHeroAlive(hero) do
+            while not IsPlayerCurrent(PLAYER_3) do
+                sleep()
+            end
+            local kx, ky, kf = GetObjectPosition("Karlam")
+            if CanMoveHero(hero, kx, ky, kf) then
+                print"Can move to Karlam"
+                if c1m2_hazy_path.loiren_waiting then
+                    c1m2_hazy_path.loiren_waiting = nil
+                    EnableHeroAI(hero, 1)
+                end
+                MoveHeroRealTime(hero, kx, ky, kf)
+            else
+                if not c1m2_hazy_path.loiren_waiting then
+                    local x, y, f = RegionToPoint(c1m2_hazy_path.loiren_current_dest_point)
+                    MoveHero(hero, x, y, f)
+                end
+            end
+            sleep()
+        end
+    end,
+
+    ProcessLoirenDestPoint =
+    function (hero, region)
+        if hero == "Loiren" or hero == "Loiren_Heroic" then
+            local x, y, f = GetObjectPosition("Karlam")
+            if not CanMoveHero(hero, x, y, f) then
+                if region == "loiren_dest_point1" then
+                    SetObjectPosition(hero, 42, 30, GROUND, 0) -- move through first post enter garrison
+                    c1m2_hazy_path.loiren_current_dest_point = "loiren_dest_point2"
+                    sleep()
+                    MoveHeroRealTime(hero, RegionToPoint(c1m2_hazy_path.loiren_current_dest_point))
+                    return
+                end
+                if region == "loiren_dest_point2" then
+                    SetObjectPosition(hero, 52, 29, GROUND, 0) -- move through first post exit garrison
+                    c1m2_hazy_path.loiren_current_dest_point = "loiren_dest_point3"
+                    sleep()
+                    MoveHeroRealTime(hero, RegionToPoint(c1m2_hazy_path.loiren_current_dest_point))
+                    return
+                end
+                if region == "loiren_dest_point4" then
+                    SetObjectPosition(hero, 87, 29, GROUND, 0) -- move through second post enter garrison
+                    c1m2_hazy_path.loiren_current_dest_point = "loiren_dest_point5"
+                    sleep()
+                    MoveHeroRealTime(hero, RegionToPoint(c1m2_hazy_path.loiren_current_dest_point))
+                    return
+                end
+                if region == "loiren_dest_point5" then
+                    SetObjectPosition(hero, 86, 70, GROUND, 0) -- move through second post enter garrison
+                    c1m2_hazy_path.loiren_current_dest_point = "loiren_dest_point6"
+                    sleep()
+                    MoveHeroRealTime(hero, RegionToPoint(c1m2_hazy_path.loiren_current_dest_point))
+                    return
+                end
+                if region ~= "loiren_dest_point6" then
+                    EnableHeroAI(hero, nil)
+                    c1m2_hazy_path.loiren_waiting = 1
+                    Trigger(REGION_ENTER_WITHOUT_STOP_TRIGGER, region, nil)
+                    if region == "loiren_dest_point3" then
+                        c1m2_hazy_path.loiren_current_dest_point = "loiren_dest_point4"
+                    end
+                end
+            end
+        end
+    end,
+
+    --#endregion
+
+    --#region Elf posts logic
+
+    InitPosts =
+    function ()
         Trigger(REGION_ENTER_AND_STOP_TRIGGER, "first_garrison_enter", "c1m2_hazy_path.EnterFirstPost")
         Trigger(REGION_ENTER_AND_STOP_TRIGGER, "second_garrison_enter", "c1m2_hazy_path.EnterSecondPost")
+        Trigger(REGION_ENTER_AND_STOP_TRIGGER, "third_garrison_enter", "c1m2_hazy_path.EnterThirdPost")
 
         RemoveObjectCreatures("c1m2_post_town", CREATURE_PIXIE, 9999)
         Trigger(OBJECT_CAPTURE_TRIGGER, "c1m2_post_town", "c1m2_hazy_path.CapturePost")
@@ -73,10 +266,117 @@ c1m2_hazy_path = {
             Touch.DisableMonster(object, DISABLED_ATTACK, 0)
         end
         Animation.NewGroup("second_garrison_units", c1m2_hazy_path.second_garrison_units)
+    end,
 
-        startThread(c1m2_hazy_path.SetupOssir)
-        startThread(c1m2_hazy_path.SetupLinaas)
+    CapturePost =
+    function (_, new_owner, _, object)
+        if new_owner == PLAYER_1 then
+            SetObjectOwner(object, PLAYER_NONE)
+        end
+    end,
 
+    EnterFirstPost =
+    function (hero, region)
+        Trigger(REGION_ENTER_AND_STOP_TRIGGER, region, nil)
+        if hero == "Karlam" then
+            for i = 1, 2 do
+                UpgradeTownBuilding("c1m2_post_town", TOWN_BUILDING_FORT)
+            end
+            local stacks_data = FightGenerator.GenerateStacksData(c1m2_hazy_path_first_garrison)
+            FightGenerator.ProcessObjectSetup("c1m2_post_town", stacks_data)
+            sleep()
+            if MCCS_SiegeTown(hero, "c1m2_post_town") then
+                Animation.PlayGroup("first_garrison_units", {"death"}, Animation.PLAY_CONDITION_SINGLEPLAY, ONESHOT_STILL)
+                sleep(75)
+                Object.RemoveTable(c1m2_hazy_path.first_garrison_units)
+            end
+            DestroyTownBuildingToLevel("c1m2_post_town", TOWN_BUILDING_FORT, 0)
+            if not c1m2_hazy_path.loiren_enabled then
+                startThread(c1m2_hazy_path.EnableLoiren)
+            end
+            return
+        end
+        --
+        if hero == "Loiren" or hero == "Loiren_Heroic" then
+            Object.Show(PLAYER_1, hero, 1)
+            c1m2_hazy_path.posts_visited_by_loiren = c1m2_hazy_path.posts_visited_by_loiren + 1
+            Object.RemoveTable(c1m2_hazy_path.first_garrison_units)
+            Hero.CreatureInfo.AddByTier(hero,
+                TOWN_PRESERVE, 1, 10 * defaultDifficulty,
+                TOWN_PRESERVE, 2, 5 * defaultDifficulty,
+                TOWN_PRESERVE, 3, 3 * defaultDifficulty,
+                TOWN_PRESERVE, 6, initialDifficulty
+            )
+        end
+    end,
+
+    EnterSecondPost =
+    function(hero, region)
+        Trigger(REGION_ENTER_AND_STOP_TRIGGER, region, nil)
+        if hero == "Karlam" then
+            for i = 1, 3 do
+                UpgradeTownBuilding("c1m2_post_town", TOWN_BUILDING_FORT)
+            end
+            local x, y, f = GetObjectPosition("c1m2_post_town")
+            SetObjectPosition("Ossir", x, y, f, 0)
+            sleep()
+            if MCCS_SiegeTown(hero, "c1m2_post_town") then
+                Animation.PlayGroup("second_garrison_units", {"death"}, Animation.PLAY_CONDITION_SINGLEPLAY, ONESHOT_STILL)
+                sleep(75)
+                Object.RemoveTable(c1m2_hazy_path.second_garrison_units)
+            end
+            DestroyTownBuildingToLevel("c1m2_post_town", TOWN_BUILDING_FORT, 0)
+            return
+        end
+
+        if hero == "Loiren" or hero == "Loiren_Heroic" then
+            Object.RemoveTable(c1m2_hazy_path.second_garrison_units)
+            RemoveObject("Ossir")
+            Hero.CreatureInfo.Add(hero, CREATURE_UNICORN, 2 + 2 * defaultDifficulty)
+            local grand_elves_count = GetHeroCreatures(hero, CREATURE_GRAND_ELF)
+            local sharp_shooters_count = GetHeroCreatures(hero, CREATURE_SHARP_SHOOTER)
+            if grand_elves_count ~= 0 then
+                Hero.CreatureInfo.Add(hero, CREATURE_SHARP_SHOOTER, grand_elves_count + ((random(5) + 1) * Random.FromSelection(1, -1)))
+                return
+            end
+            if sharp_shooters_count ~= 0 then
+                Hero.CreatureInfo.Add(hero, CREATURE_GRAND_ELF, sharp_shooters_count + ((random(5) + 1) * Random.FromSelection(1, -1)))
+                return
+            end
+        end
+    end,
+
+    EnterThirdPost =
+    function (hero, region)
+        Trigger(REGION_ENTER_AND_STOP_TRIGGER, region, nil)
+        if hero == "Karlam" then
+            BlockGame()
+            sleep(30)
+            MoveHeroRealTime("Linaas", 86, 69, GROUND)
+            sleep(5)
+            SetObjectPosition("Linaas", 86, 68, GROUND, 0)
+            sleep()
+            MoveHeroRealTime("Linaas", GetObjectPosition(hero))
+            return
+        end
+        if hero == "Loiren" or hero == "Loiren_Heroic" then
+            RemoveObject("Linaas")
+            Hero.CreatureInfo.AddByTier(
+                hero,
+                TOWN_PRESERVE, 1, 10 + 12 * defaultDifficulty,
+                TOWN_PRESERVE, 2, 7 + 8 * defaultDifficulty,
+                TOWN_PRESERVE, 6, defaultDifficulty
+            )
+            return
+        end
+    end,
+
+    --#endregion
+
+    --#region Dark obelisks logic
+
+    InitObelisks =
+    function ()
         for obelisk, portal in c1m2_hazy_path.dark_obelisks_map do
             Touch.DisableObject(obelisk, DISABLED_INTERACT, c1m2_hazy_path.path.text.."obelisk_name.txt", c1m2_hazy_path.path.text.."obelisk_desc.txt")
             Touch.DisableObject(portal, DISABLED_INTERACT)
@@ -118,99 +418,7 @@ c1m2_hazy_path = {
             Npc.PrioritizeInteraction(obelisk, "second_dialog")
             Touch.SetFunction(obelisk, "touch", c1m2_hazy_path.TouchDarkObelisk)
             Touch.SetFunction(portal, "touch", c1m2_hazy_path.TouchDarkPortal)
-            print("Setting up obelisk: ", obelisk)
-        end
-    end,
-
-    SetupOssir =
-    function ()
-        doFile(c1m2_hazy_path.path.main.."/Fights/c1m2_hazy_path_second_garrison.lua")
-        DeployReserveHero("Ossir", RegionToPoint("hazy_path_ossir_point"))
-        while not (IsObjectExists("Ossir") and c1m2_hazy_path_second_garrison) do
-            sleep()
-        end
-        local fight_data = FightGenerator.GenerateHeroSetupData(c1m2_hazy_path_second_garrison)
-        startThread(FightGenerator.ProcessHeroSetup, "Ossir", fight_data)
-        GiveExp("Ossir", Levels[c1m2_hazy_path.ossir_levels[initialDifficulty]])
-        EnableHeroAI("Ossir", nil)
-    end,
-
-    SetupLinaas =
-    function ()
-        doFile(c1m2_hazy_path.path.main.."/Fights/c1m2_hazy_path_third_garrison.lua")
-        DeployReserveHero("Linaas", RegionToPoint("hazy_path_ving_point"))
-        while not (IsObjectExists("Linaas") and c1m2_hazy_path_third_garrison) do
-            sleep()
-        end
-        local fight_data = FightGenerator.GenerateHeroSetupData(c1m2_hazy_path_third_garrison)
-        startThread(FightGenerator.ProcessHeroSetup, "Linaas", fight_data)
-        GiveExp("Linaas", Levels[c1m2_hazy_path.linaas_levels[initialDifficulty]])
-        EnableHeroAI("Linaas", nil)
-    end,
-
-    SetupLoiren =
-    function ()
-        c1m2_hazy_path.loiren_enabled = 1
-    end,
-
-    CapturePost =
-    function (previous_owner, new_owner, hero, object)
-        if new_owner == PLAYER_1 then
-            SetObjectOwner(object, PLAYER_NONE)
-        end
-    end,
-
-    EnterFirstPost =
-    function (hero, region)
-        Trigger(REGION_ENTER_AND_STOP_TRIGGER, region, nil)
-        if hero == "Karlam" then
-            for i = 1, 2 do
-                UpgradeTownBuilding("c1m2_post_town", TOWN_BUILDING_FORT)
-            end
-            local stacks_data = FightGenerator.GenerateStacksData(c1m2_hazy_path_first_garrison)
-            FightGenerator.ProcessObjectSetup("c1m2_post_town", stacks_data)
-            sleep()
-            if MCCS_SiegeTown(hero, "c1m2_post_town") then
-                Animation.PlayGroup("first_garrison_units", {"death"}, Animation.PLAY_CONDITION_SINGLEPLAY, ONESHOT_STILL)
-                sleep(75)
-                Object.RemoveTable(c1m2_hazy_path.first_garrison_units)
-            end
-            DestroyTownBuildingToLevel("c1m2_post_town", TOWN_BUILDING_FORT, 0)
-            if not c1m2_hazy_path.loiren_enabled then
-
-            end
-            return
-        end
-        --
-        if hero == "Loiren" or hero == "Loiren_Heroic" then
-            Object.Show(PLAYER_1, hero, 1)
-            c1m2_hazy_path.posts_visited_by_loiren = c1m2_hazy_path.posts_visited_by_loiren + 1
-            Hero.CreatureInfo.AddByTier(hero,
-                TOWN_PRESERVE, 1, 10 * defaultDifficulty,
-                TOWN_PRESERVE, 2, 5 * defaultDifficulty,
-                TOWN_PRESERVE, 3, 3 * defaultDifficulty,
-                TOWN_PRESERVE, 6, initialDifficulty
-            )
-        end
-    end,
-
-    EnterSecondPost =
-    function(hero, region)
-        Trigger(REGION_ENTER_AND_STOP_TRIGGER, region, nil)
-        if hero == "Karlam" then
-            for i = 1, 3 do
-                UpgradeTownBuilding("c1m2_post_town", TOWN_BUILDING_FORT)
-            end
-            local x, y, f = GetObjectPosition("c1m2_post_town")
-            SetObjectPosition("Ossir", x, y, f, 0)
-            sleep()
-            if MCCS_SiegeTown(hero, "c1m2_post_town") then
-                Animation.PlayGroup("second_garrison_units", {"death"}, Animation.PLAY_CONDITION_SINGLEPLAY, ONESHOT_STILL)
-                sleep(75)
-                Object.RemoveTable(c1m2_hazy_path.second_garrison_units)
-            end
-            DestroyTownBuildingToLevel("c1m2_post_town", TOWN_BUILDING_FORT, 0)
-            return
+            -- print("Setting up obelisk: ", obelisk)
         end
     end,
 
@@ -266,18 +474,25 @@ c1m2_hazy_path = {
             end
         )
         c1m2_hazy_path.dark_obelisks_used = c1m2_hazy_path.dark_obelisks_used + 1
+
+        if object == "first_dark_obelisk" then
+            startThread(c1m2_hazy_path.PrepareLoirenArrival)
+        end
+
         Npc.FinishInteraction("use")
     end,
 
     InformObeliskAlreadyUsed =
-    function (hero, object)
+    function (_, _)
         MessageBox(c1m2_hazy_path.path.text.."obelisk_already_used.txt")
         Npc.FinishInteraction("already_used")
     end,
 
     TryUseDarkPortal =
-    function (hero, object)
+    function (_, _)
         MessageBox(c1m2_hazy_path.path.text.."cant_use_portal.txt")
         Npc.FinishInteraction("use")
-    end
+    end,
+
+    --#endregion
 }
