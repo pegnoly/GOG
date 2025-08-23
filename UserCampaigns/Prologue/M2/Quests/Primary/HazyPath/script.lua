@@ -57,6 +57,109 @@ c1m2_hazy_path = {
         ["fourth_dark_obelisk"] = "fourth_dark_portal"
     },
 
+    dark_obelisk_creatures_to_sacrifice_counts = {
+        [CREATURE_GREMLIN] = 13,
+        [CREATURE_MAGI] = 3,
+        [CREATURE_RAKSHASA] = 1
+    },
+
+    dark_obelisk_exp_to_sacrifice_percent = 0.15,
+
+    dark_obelisk_dialog = {
+        state = 1,
+        path = "UserCampaigns/Prologue/M2/Quests/Primary/HazyPath/Texts/",
+        icon = '/'..Creature.Params.Icon(CREATURE_PEASANT),
+        title = "sacrifice_title",
+        select_text = '',
+        perform_func = 
+        function (player, _, _, next_state)
+            if next_state == 0 then
+                c1m2_hazy_path.current_obelisk_in_use = nil
+                return 0
+            end
+            local hero = Dialog.GetActiveHeroForPlayer(player)
+            if next_state == "use_hero_experience" then
+                startThread(c1m2_hazy_path.SacrificeExpForObelisk, hero)
+                return 0
+            end
+            startThread(c1m2_hazy_path.SacrificeCreatureForObelisk, hero, next_state)
+            return 0
+        end,
+
+        options = {},
+
+        Reset = 
+        function (player)
+            for i, option in Dialog.GetActiveDialogForPlayer(player).options do
+                option = nil
+            end
+        end,
+
+        Open = 
+        function (player)
+            Dialog.Reset(player)
+            local hero = Dialog.GetActiveHeroForPlayer(player)
+            local dialog = Dialog.GetActiveDialogForPlayer(player)
+            local n = 1
+            --
+            dialog.options[1] = {[0] = 'sacrifice_text.txt'}
+            --
+            local gremlins_count = 0
+            local gremlins = Hero.CreatureInfo.GetByTier(hero, TOWN_ACADEMY, 1)
+            if gremlins then
+                for _, creature in gremlins do
+                    gremlins_count = gremlins_count + GetHeroCreatures(hero, creature)
+                end
+            end
+            local mages_count = 0
+            local mages = Hero.CreatureInfo.GetByTier(hero, TOWN_ACADEMY, 4)
+            if mages then
+                for _, creature in mages do
+                    mages_count = mages_count + GetHeroCreatures(hero, creature)
+                end
+            end
+            local rakshasas_count = 0
+            local rakshasas = Hero.CreatureInfo.GetByTier(hero, TOWN_ACADEMY, 6)
+            if rakshasas then
+                for _, creature in rakshasas do
+                    rakshasas_count = rakshasas_count + GetHeroCreatures(hero, creature)
+                end
+            end
+            if gremlins_count >= c1m2_hazy_path.dark_obelisk_creatures_to_sacrifice_counts[CREATURE_GREMLIN] then
+                Dialog.SetAnswer(
+                    dialog, 1, n, 
+                    {dialog.path.."sacrifice_gremlins.txt"; count = c1m2_hazy_path.dark_obelisk_creatures_to_sacrifice_counts[CREATURE_GREMLIN]}, 
+                    CREATURE_GREMLIN, 1, 1
+                )
+                n = n + 1
+            end
+            if mages_count >= c1m2_hazy_path.dark_obelisk_creatures_to_sacrifice_counts[CREATURE_MAGI] then
+                Dialog.SetAnswer(
+                    dialog, 1, n, 
+                    {dialog.path.."sacrifice_mages.txt"; count = c1m2_hazy_path.dark_obelisk_creatures_to_sacrifice_counts[CREATURE_MAGI]}, 
+                    CREATURE_MAGI, 1, 1
+                )
+                n = n + 1
+            end
+            if rakshasas_count >= c1m2_hazy_path.dark_obelisk_creatures_to_sacrifice_counts[CREATURE_RAKSHASA] then
+                Dialog.SetAnswer(
+                    dialog, 1, n, 
+                    {dialog.path.."sacrifice_rakshasas.txt"; count = c1m2_hazy_path.dark_obelisk_creatures_to_sacrifice_counts[CREATURE_RAKSHASA]}, 
+                    CREATURE_RAKSHASA, 1, 1
+                )
+                n = n + 1
+            end
+            Dialog.SetAnswer(
+                dialog, 1, n, 
+                {dialog.path.."sacrifice_exp.txt"; count = ceil(c1m2_hazy_path.dark_obelisk_exp_to_sacrifice_percent * 100)}, 
+                "use_hero_experience", 1, 1
+            )
+            Dialog.Action(player)
+        end,
+    },
+
+    current_obelisk_in_use = nil,
+
     dark_obelisks_used = 0,
 
     --#endregion
@@ -453,6 +556,64 @@ c1m2_hazy_path = {
 
     UseDarkObelisk =
     function(hero, object)
+        c1m2_hazy_path.current_obelisk_in_use = object
+        Dialog.NewDialog(c1m2_hazy_path.dark_obelisk_dialog, hero, PLAYER_1)
+    end,
+
+    SacrificeCreatureForObelisk =
+    function (hero, selected_creature)
+        local creatures
+        if selected_creature == CREATURE_GREMLIN then
+            creatures = Hero.CreatureInfo.GetByTier(hero, TOWN_ACADEMY, 1)
+        elseif selected_creature == CREATURE_MAGI then
+            creatures = Hero.CreatureInfo.GetByTier(hero, TOWN_ACADEMY, 4)
+        elseif selected_creature == CREATURE_RAKSHASA then
+            creatures = Hero.CreatureInfo.GetByTier(hero, TOWN_ACADEMY, 6)
+        end
+        local counts = {}
+        for i, creature in creatures do
+            counts[creature] = GetHeroCreatures(hero, creature)
+        end
+        local creatures_left_to_remove = c1m2_hazy_path.dark_obelisk_creatures_to_sacrifice_counts[selected_creature]
+        while 1 do
+            local current_creature, current_lowest_count = -1, 10000
+            for creature, count in counts do
+                if creature and count then
+                    if count < current_lowest_count then
+                        current_creature = creature
+                        current_lowest_count = count
+                    end
+                end
+            end
+            if current_lowest_count >= creatures_left_to_remove then
+                Hero.CreatureInfo.Add(hero, current_creature, -creatures_left_to_remove)
+                break
+            else
+                counts[current_creature] = nil
+                creatures_left_to_remove = creatures_left_to_remove - current_lowest_count
+                Hero.CreatureInfo.Add(hero, current_creature, -current_lowest_count)
+            end
+        end
+        sleep(10)
+        FX.Play("Bloodlust", c1m2_hazy_path.current_obelisk_in_use)
+        sleep(30)
+        startThread(c1m2_hazy_path.UnlockPortal, hero, c1m2_hazy_path.current_obelisk_in_use)
+    end,
+
+    SacrificeExpForObelisk =
+    function (hero)
+        local exp_to_remove = ceil(GetHeroStat(hero, STAT_EXPERIENCE) * c1m2_hazy_path.dark_obelisk_exp_to_sacrifice_percent)
+        TakeAwayHeroExp(hero, exp_to_remove)
+        sleep(10)
+        FX.Play("Bloodlust", c1m2_hazy_path.current_obelisk_in_use)
+        sleep(20)
+        MessageQueue.AddMessage(PLAYER_1, {c1m2_hazy_path.path.text.."exp_removed.txt"; count = exp_to_remove}, hero, 5.0)
+        sleep(30)
+        startThread(c1m2_hazy_path.UnlockPortal, hero, c1m2_hazy_path.current_obelisk_in_use)
+    end,
+
+    UnlockPortal =
+    function (hero, object)
         local portal_to_unblock = c1m2_hazy_path.dark_obelisks_map[object]
         Object.Show(PLAYER_1, portal_to_unblock, 1, 1)
         sleep(100)
@@ -479,6 +640,7 @@ c1m2_hazy_path = {
             startThread(c1m2_hazy_path.PrepareLoirenArrival)
         end
 
+        c1m2_hazy_path.current_obelisk_in_use = nil
         Npc.FinishInteraction("use")
     end,
 
