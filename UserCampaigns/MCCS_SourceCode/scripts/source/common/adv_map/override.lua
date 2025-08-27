@@ -154,10 +154,10 @@ end
 ---@param enemy string|boolean герой-противник или nil, если нейтралы
 ---@param stack_count number число стеков
 ---@param stacks_info number[] таблица существ/численности
----@param is_diff_independed boolean зависит ли численность стеков от сложности
----@param script string|nil путь к скрипту/nil, если его нет
----@param arena string|nil путь к файлу арены/nil
----@param is_auto_combat boolean автобой/нет
+---@param is_diff_independed boolean? зависит ли численность стеков от сложности
+---@param script string|nil? путь к скрипту/nil, если его нет
+---@param arena string|nil? путь к файлу арены/nil
+---@param is_auto_combat boolean? автобой/нет
 ---@return boolean did_win победил ли в битве герой, который ее начал
 function MCCS_StartCombat(hero, enemy, stack_count, stacks_info, is_diff_independed, script, arena, is_auto_combat)
   local fight_ID = GetLastSavedCombatIndex()
@@ -188,6 +188,29 @@ function MCCS_StartCombat(hero, enemy, stack_count, stacks_info, is_diff_indepen
   StartCombat(hero, enemy, stack_count, args[1], args[2], args[3], args[4], args[5], args[6], args[7],
                                         args[8], args[9], args[10], args[11], args[12], args[13], args[14],
                                         args[15], args[16], args[17], args[18])
+  while GetLastSavedCombatIndex() == fight_ID do sleep() end
+  if floor_flag then
+    SetCombatLight(COMBAT_LIGHTS.CURRENT)
+  end
+  local result = IsHeroAlive(hero)
+  return result
+end
+
+--- Инициирует осаду города, возвращает исход осады
+---@param hero string скриптовое имя героя
+---@param town string скриптовое имя города
+---@param arena string? путь к файлу арены(по умолчанию отсутствует, что означает, что бой будет на стандартной городской)
+---@return 1|nil|boolean did_win результат осады
+function MCCS_SiegeTown(hero, town, arena)
+  arena = arena or nil
+  local fight_ID = GetLastSavedCombatIndex()
+  local floor_flag
+  -- если заданы соотв. параметры, может менять освещение на арене
+  if IsInDungeon(hero) and COMBAT_LIGHTS then
+    SetCombatLight(COMBAT_LIGHTS.UGROUND)
+    floor_flag = 1
+  end
+  SiegeTown(hero, town, arena)
   while GetLastSavedCombatIndex() == fight_ID do sleep() end
   if floor_flag then
     SetCombatLight(COMBAT_LIGHTS.CURRENT)

@@ -15,7 +15,7 @@ Animation =
 --- Добавляет новую анимгруппу
 ---@param name string имя группы
 ---@param actors table объекты, входящие в группу
----@param region string регион, связанный с группой
+---@param region string? регион, связанный с группой
   function(name, actors, region)
       region = region or ''
       Animation.Groups[name] = {actors = actors, region = region}
@@ -32,11 +32,11 @@ Animation =
   ---Проигрывает анимации для группы
   ---@param group string имя группы
   ---@param anims table таблица возможных анимаций
-  ---@param cond AnimationPlayCondition условие проигрывания
-  ---@param action AnimationActionType тип проигрывания
-  ---@param start_delay number стартовая задержка перед проигрыванием
-  ---@param play_period number задержка между проигрываниями
-  ---@param is_random_delay 1|nil использовать конкретную задержку или случайное число из этого промежутка
+  ---@param cond AnimationPlayCondition? условие проигрывания
+  ---@param action AnimationActionType? тип проигрывания
+  ---@param start_delay number? стартовая задержка перед проигрыванием
+  ---@param play_period number? задержка между проигрываниями
+  ---@param is_random_delay 1|nil? использовать конкретную задержку или случайное число из этого промежутка
   function(group, anims, cond, action, start_delay, play_period, is_random_delay)
     cond = cond or PLAY_CONDITION_SINGLEPLAY
     action = action or NON_ESSENTIAL

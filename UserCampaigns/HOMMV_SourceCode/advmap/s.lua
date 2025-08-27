@@ -20,8 +20,8 @@ end
 --- Меняет освещение на заданном уровне карты
 ---@param floor MapLevel уровень карты
 ---@param name string имя источника света в ресурсах карты
----@param fade boolean менять мгновенно(nil - по умолчанию), с задержкой(1)
----@param time integer время, за которое меняется освещение(1 по умолчанию)
+---@param fade boolean? менять мгновенно(nil - по умолчанию), с задержкой(1)
+---@param time integer? время, за которое меняется освещение(1 по умолчанию)
 function SetAmbientLight(floor, name, fade, time)
 end
 
@@ -123,7 +123,7 @@ end
 ---@param x number координата X
 ---@param y number координата Y
 ---@param floor MapLevel уровень карты(по умолчанию равен -1, что означает тот же уровень)
----@param fx integer Только для героев! Задаёт номер эффекта телепортации (-1 = по-умолчанию, 0 - выключен, 1 - warp, 2 - teleport, 3 - dimension door, 4 - town portal
+---@param fx integer? Только для героев! Задаёт номер эффекта телепортации (-1 = по-умолчанию, 0 - выключен, 1 - warp, 2 - teleport, 3 - dimension door, 4 - town portal
 function SetObjectPosition(obejct, x, y, floor, fx)
 end
 
@@ -192,8 +192,8 @@ end
 
 --- Устанавливает/снимает блокировку прохождения региона героями
 ---@param region string скриптовое имя региона
----@param is_blocked boolean 1 - блокировать/nil - нет
----@param player PlayerID id игрока(по умолчанию -1, для всех игроков)
+---@param is_blocked 1|nil 1 - блокировать/nil - нет
+---@param player PlayerID? id игрока(по умолчанию -1, для всех игроков)
 function SetRegionBlocked(region, is_blocked, player)
 end
 
@@ -228,7 +228,7 @@ end
 --- Инициирует осаду города
 ---@param hero string скриптовое имя героя
 ---@param town string скриптовое имя города
----@param arena string путь к файлу арены(по умолчанию отсутствует, что означает, что бой будет на стандартной городской)
+---@param arena string? путь к файлу арены(по умолчанию отсутствует, что означает, что бой будет на стандартной городской)
 function SiegeTown(hero, town, arena)
 end
 

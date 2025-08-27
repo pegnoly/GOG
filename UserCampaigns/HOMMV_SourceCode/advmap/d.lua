@@ -23,7 +23,7 @@ end
 ---@param x number координата X
 ---@param y number координата Y
 ---@param floor MapLevel уровень карты
----@param is_unique number значение 1 выключает общие запреты передвижения камеры, значение 0 - включает передвижение камеры обратно
+---@param is_unique number? значение 1 выключает общие запреты передвижения камеры, значение 0 - включает передвижение камеры обратно
 function DeployReserveHero(name, x, y, floor, is_unique)
 end
 
@@ -31,7 +31,7 @@ end
 ---@param town string скриптовое имя города
 ---@param building TownBuildingType id строения
 ---@param level integer уровень
----@param can_rebuild integer 1(по умолчанию) - можно восстановить до предыдущего уровня, 0 - новый уровень является предельным
+---@param can_rebuild integer? 1(по умолчанию) - можно восстановить до предыдущего уровня, 0 - новый уровень является предельным
 function DestroyTownBuildingToLevel(town, building, level, can_rebuild)
 end
 

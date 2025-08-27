@@ -1,6 +1,6 @@
 --- Выясняет, жив ли герой
 ---@param hero string скриптовое имя героя
----@return boolean alive жив герой/нет
+---@return 1|nil alive жив герой/нет
 function IsHeroAlive(hero)
 end
 

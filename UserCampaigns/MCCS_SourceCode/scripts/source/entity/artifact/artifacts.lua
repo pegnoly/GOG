@@ -190,7 +190,7 @@ Art =
         --- Обертка выдачи артефакта герою
         ---@param hero string имя героя
         ---@param art number id артефакта
-        ---@param bind_to_hero boolean привязывать к герою или нет
+        ---@param bind_to_hero 1|nil привязывать к герою или нет
         function(hero, art, bind_to_hero)
             errorHook(
             function()

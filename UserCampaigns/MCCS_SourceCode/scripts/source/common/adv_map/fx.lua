@@ -201,12 +201,12 @@ FX =
   ---Обертка над PlayVisualEffect, позволяет удобнее проигрывать эффекты
   ---@param effect string имя эффекта из FX.Effects
   ---@param object string объект, на котором будет проигран эффект
-  ---@param tag string скриптовое имя эффекта
-  ---@param x number смещение по оси x
-  ---@param y number смещение по оси y
-  ---@param z number смещение по оси z
-  ---@param rot number угол поворота эффекта
-  ---@param f MapLevel уровень карты
+  ---@param tag string? скриптовое имя эффекта
+  ---@param x number? смещение по оси x
+  ---@param y number? смещение по оси y
+  ---@param z number? смещение по оси z
+  ---@param rot number? угол поворота эффекта
+  ---@param f MapLevel? уровень карты
   function(effect, object, tag, x, y, z, rot, f)
     local actual_effect = string.spread(effect)[1]
     if actual_effect == '_' then
