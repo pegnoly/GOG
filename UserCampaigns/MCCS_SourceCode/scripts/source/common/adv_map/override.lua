@@ -151,14 +151,14 @@ end
 
 --- MCCS-адаптированный StartCombat
 ---@param hero string герой, начавший битву
----@param enemy string|boolean герой-противник или nil, если нейтралы
+---@param enemy string|nil герой-противник или nil, если нейтралы
 ---@param stack_count number число стеков
 ---@param stacks_info number[] таблица существ/численности
----@param is_diff_independed boolean? зависит ли численность стеков от сложности
+---@param is_diff_independed 1|nil? зависит ли численность стеков от сложности
 ---@param script string|nil? путь к скрипту/nil, если его нет
 ---@param arena string|nil? путь к файлу арены/nil
----@param is_auto_combat boolean? автобой/нет
----@return boolean did_win победил ли в битве герой, который ее начал
+---@param is_auto_combat 1|nil? автобой/нет
+---@return 1|nil did_win победил ли в битве герой, который ее начал
 function MCCS_StartCombat(hero, enemy, stack_count, stacks_info, is_diff_independed, script, arena, is_auto_combat)
   local fight_ID = GetLastSavedCombatIndex()
   local coef = diffCoeffs[defaultDifficulty]-- коэффициент сложности

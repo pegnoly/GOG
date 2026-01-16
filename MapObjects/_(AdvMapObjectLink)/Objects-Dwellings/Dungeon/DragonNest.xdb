@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AdvMapObjectLink>
+	<Link href="/MapObjects/Dungeon/DragonNest.xdb#xpointer(/AdvMapDwellingShared)"/>
+	<RndGroup/>
+	<IconFile>Icons\Generated\MapObjects\_(AdvMapObjectLink)\Objects-Dwellings\Dungeon\DragonNest-icon.tga</IconFile>
+	<HideInEditor>false</HideInEditor>
+</AdvMapObjectLink>

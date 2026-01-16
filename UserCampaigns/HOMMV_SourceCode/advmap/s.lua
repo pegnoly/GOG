@@ -11,7 +11,7 @@ function SetAIHeroFleeControl(hero)
 end
 
 --- Устанавливает приоритет объекта для всех героев AI игрока
----@param object object string скриптовое имя цели
+---@param object string string скриптовое имя цели
 ---@param player PlayerID id ии-игрока
 ---@param priority integer уровень приоритета цели(от -1 до 2)
 function SetAIPlayerAttractor(object, player, priority)
@@ -20,8 +20,8 @@ end
 --- Меняет освещение на заданном уровне карты
 ---@param floor MapLevel уровень карты
 ---@param name string имя источника света в ресурсах карты
----@param fade boolean? менять мгновенно(nil - по умолчанию), с задержкой(1)
----@param time integer? время, за которое меняется освещение(1 по умолчанию)
+---@param fade boolean менять мгновенно(nil - по умолчанию), с задержкой(1)
+---@param time integer время, за которое меняется освещение(1 по умолчанию)
 function SetAmbientLight(floor, name, fade, time)
 end
 
@@ -192,8 +192,8 @@ end
 
 --- Устанавливает/снимает блокировку прохождения региона героями
 ---@param region string скриптовое имя региона
----@param is_blocked 1|nil 1 - блокировать/nil - нет
----@param player PlayerID? id игрока(по умолчанию -1, для всех игроков)
+---@param is_blocked boolean 1 - блокировать/nil - нет
+---@param player PlayerID id игрока(по умолчанию -1, для всех игроков)
 function SetRegionBlocked(region, is_blocked, player)
 end
 
@@ -269,6 +269,13 @@ end
 function StartDialogScene(name, callback, save_name)
 end
 
+--- Запускает диалоговую сцену, при этом не блокирует основной поток игры(сомнительно:))
+---@param name string путь к файлу сцены
+---@param callback? string имя функции, которая будет запущена после закрытия сцены
+---@param save_name? string имя сохранения, которое будет сделано перед сценой
+function StartDialogSceneInt(name, callback, save_name)
+end
+
 --- Останавливает проигрывание зацикленного звука
 ---@param name string скриптовое имя источника звука
 function StopPlaySound(name)
@@ -299,6 +306,7 @@ end
 ---@param n number число
 ---@return number res квадратный корень
 function sqrt(n)
+    return -1
 end
 
 --- Запускает функцию в новом потоке исполнения

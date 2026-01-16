@@ -1,8 +1,8 @@
 --- Выясняет, есть ли у героя артефакт
 ---@param hero string скриптовое имя героя
 ---@param artefact ArtifactID id артефакта
----@param is_equipped boolean надет артефакт/нет
----@return boolean has имеется артефакт/нет
+---@param is_equipped? 1|nil надет артефакт/нет
+---@return 1|nil has имеется артефакт/нет
 function HasArtefact(hero, artefact, is_equipped)
 end
 
