@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<AdvMapObjectLink>
-	<Link href="/MapObjects/Orcs/WyvernCave.xdb#xpointer(/AdvMapDwellingShared)"/>
-	<RndGroup/>
-	<IconFile>Icons\Generated\MapObjects\_(AdvMapObjectLink)\Objects-Dwellings\Orcs\WyvernCave-icon.tga</IconFile>
-	<HideInEditor>false</HideInEditor>
-</AdvMapObjectLink>
