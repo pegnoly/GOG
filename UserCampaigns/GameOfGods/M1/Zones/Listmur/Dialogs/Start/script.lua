@@ -1,4 +1,4 @@
-MiniDialog.Sets["C2M1_DIALOG_1"] = {
+MiniDialog.Sets["C2M1_DIALOG_01"] = {
 	["0_main"] = {speaker = "Noellie", speaker_type = SPEAKER_TYPE_HERO},
 	["1_main"] = {speaker = "Karlam", speaker_type = SPEAKER_TYPE_HERO},
 	["2_main"] = {speaker = "Noellie", speaker_type = SPEAKER_TYPE_HERO},
@@ -7,5 +7,8 @@ MiniDialog.Sets["C2M1_DIALOG_1"] = {
 	["5_main"] = {speaker = "Karlam", speaker_type = SPEAKER_TYPE_HERO},
 	["6_main"] = {speaker = "Noellie", speaker_type = SPEAKER_TYPE_HERO},
 	["7_main"] = {speaker = "Karlam", speaker_type = SPEAKER_TYPE_HERO},
+	["8_main"] = {speaker = "Noellie", speaker_type = SPEAKER_TYPE_HERO},
+	["9_main"] = {speaker = "Karlam", speaker_type = SPEAKER_TYPE_HERO},
+	["10_main"] = {speaker = "Noellie", speaker_type = SPEAKER_TYPE_HERO},
 }
 
