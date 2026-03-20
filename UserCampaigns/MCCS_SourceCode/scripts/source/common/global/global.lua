@@ -43,7 +43,6 @@ function keys(t)
   return answer
 end
 
--- ���������� ����� ������� func
 function pcall(func, ...)
   local ans = {[1] = -1}
   startThread(
@@ -65,7 +64,6 @@ function pcall(func, ...)
   end
 end
 
--- ����������� ������ � ���������, ������� ����� ������� MessageBox'�� � �.�(RedHeavenHero)
 function rtext(message)
   local t = string.spread(message)
   local answer = {'Text/rawtext/message.txt'}

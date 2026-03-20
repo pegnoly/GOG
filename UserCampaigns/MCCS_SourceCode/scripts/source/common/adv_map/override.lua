@@ -61,8 +61,8 @@ qbox_answer_for_player = {
 do
   local oldQuestionBox = QuestionBox
   --- Адаптированный QuestionBox
-  ---@param msg string путь к сообщению
-  ---@return boolean is_ok было нажато ок/отмена
+  ---@param msg string | table путь к сообщению
+  ---@return 1|nil is_ok было нажато ок/отмена
   function MCCS_QuestionBox(msg)
     qbox_answer = -1
     %oldQuestionBox(msg, 'YesSingle', 'NoSingle')

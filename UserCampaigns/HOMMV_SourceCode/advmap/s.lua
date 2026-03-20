@@ -192,8 +192,8 @@ end
 
 --- Устанавливает/снимает блокировку прохождения региона героями
 ---@param region string скриптовое имя региона
----@param is_blocked boolean 1 - блокировать/nil - нет
----@param player PlayerID id игрока(по умолчанию -1, для всех игроков)
+---@param is_blocked 1|nil 1 - блокировать/nil - нет
+---@param player PlayerID? id игрока(по умолчанию -1, для всех игроков)
 function SetRegionBlocked(region, is_blocked, player)
 end
 

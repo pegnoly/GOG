@@ -23,6 +23,7 @@
 ---@field Concat IteratorConcatenator Преобразует элементы итератора в строку
 ---@field MaxBy IteratorSingleItemSelector Возвращает единственный элемент итератора, имеющий максимальное значение по заданному условию
 ---@field MinBy IteratorSingleItemSelector Возвращает единственный элемент итератора, имеющий минимальное значение по заданному условию
+---@field Chunks IteratorSelector 
 Iterator = {}
 
 ---@overload fun(items: any[]): Iterator
@@ -132,7 +133,9 @@ Iterator = function (items)
                 end).Collect()
                 sleep()
             end
-            return result
+            ---@type Iterator
+            local it = Iterator(result)
+            return it
         end,
 
         ---@param separator string
@@ -143,7 +146,7 @@ Iterator = function (items)
                 local stringified = v..""
                 if result ~= "" then
                     if stringified ~= "" then
-                        result = result..""..separator.." "..stringified
+                        result = result..""..separator..""..stringified
                     end
                 else
                     result = result..stringified
@@ -184,6 +187,37 @@ Iterator = function (items)
                 end
             end
             return current_answer
+        end,
+
+        ---@param chunk_amount number
+        ---@return Iterator
+        Chunks = function (chunk_amount)
+            local items = %items
+            local l = len(items)
+            if l <= chunk_amount then
+                local it = Iterator(items)
+                return it
+            end
+            local start_index = 1
+            local last_index = chunk_amount
+            local result, n = {}, 1
+            while 1 do
+                local t, t_n = {}, 1
+                for i = start_index, last_index do
+                    t[t_n] = items[i]
+                    t_n = t_n + 1
+                end
+                result[n] = t
+                n = n + 1
+                if last_index == l then
+                    break
+                end
+                start_index = start_index + chunk_amount
+                last_index = (last_index + chunk_amount) >= l and l or (last_index + chunk_amount)
+                sleep()
+            end
+            local it = Iterator(result)
+            return it
         end,
         
         Collect = function()
