@@ -37,6 +37,7 @@ BloodRitualDefinition = {}
 ---@class IncarnationRitualsContext
 ---@field relative_path string
 ---@field creature_per_tier_amount number[]
+---@field elementals_amount number
 ---@field hero_level? number
 ---@field level_needed? number
 ---@field blood_amount? number
@@ -45,7 +46,7 @@ bloody_rituals_spec = {
     heroes = {"Noellie"},
     path = "/scripts/advmap/Specs/BloodyRituals/",
     
-    current_blood_amount = 0,
+    current_blood_amount = 200,
     max_blood_amount = -1,
 
     base_blood_amount = 300,
@@ -63,42 +64,71 @@ bloody_rituals_spec = {
                 local result = {path; t1_amount = context.creature_per_tier_amount[1], t2_amount = context.creature_per_tier_amount[2]}
                 return result
             end,
-            ---@param context IncarnationRitualsContext
             option_desc_fn = function (path, context)
-                local blood = bloody_rituals_spec.current_blood_amount
-                local color = (context.hero_level >= context.level_needed and blood >= context.blood_amount) and 
-                    rtext("white", 1) or 
-                    rtext("grey", 1)
-                local result = {
-                    path; 
-                    -- option_color = color,
-                    use_condition = (context.hero_level >= context.level_needed) and 
-                        { context.relative_path.."blood_amount.txt"; amount = context.blood_amount} or
-                        { context.relative_path.."level_needed.txt"; level = context.level_needed }
-                }
+                local result = bloody_rituals_spec.CommonRitualOptionDescConstructor(path, context)
                 return result
             end
         },
-        -- [ELEMENTAL_CONFLUX_RITUAL] = {
-        --     blood_cost = 140,
-        --     level_needed = 1,
-        --     upgrade = 0
-        -- },
-        -- [BEAST_TAMING_RITUAL] = {
-        --     blood_cost = 250,
-        --     level_needed = 9,
-        --     upgrade = 0
-        -- },
-        -- [SECRET_COVEN_RITUAL] = {
-        --     blood_cost = 330,
-        --     level_needed = 16,
-        --     upgrade = 0
-        -- },
-        -- [DRAGON_CALLING_RITUAL] = {
-        --     blood_cost = 500,
-        --     level_needed = 25,
-        --     upgrade = 0
-        -- }
+        [ELEMENTAL_CONFLUX_RITUAL] = {
+            folder = "ElementalUnity",
+            blood_cost = 140,
+            level_needed = 1,
+            upgrade = 0,
+            ---@param context IncarnationRitualsContext
+            desc_fn = function (path, context)
+                local result = {path; amount = context.elementals_amount}
+                return result
+            end,
+            option_desc_fn = function (path, context)
+                local result = bloody_rituals_spec.CommonRitualOptionDescConstructor(path, context)
+                return result
+            end
+        },
+        [BEAST_TAMING_RITUAL] = {
+            folder = "BeastTaming",
+            blood_cost = 250,
+            level_needed = 9,
+            upgrade = 0,        
+            ---@param context IncarnationRitualsContext
+            desc_fn = function (path, context)
+                local result = {path; t3_amount = context.creature_per_tier_amount[3], t5_amount = context.creature_per_tier_amount[5]}
+                return result
+            end,
+            option_desc_fn = function (path, context)
+                local result = bloody_rituals_spec.CommonRitualOptionDescConstructor(path, context)
+                return result
+            end
+        },
+        [SECRET_COVEN_RITUAL] = {
+            folder = "SecretCoven",
+            blood_cost = 330,
+            level_needed = 16,
+            upgrade = 0,
+            ---@param context IncarnationRitualsContext
+            desc_fn = function (path, context)
+                local result = {path; t4_amount = context.creature_per_tier_amount[4], t6_amount = context.creature_per_tier_amount[6]}
+                return result
+            end,
+            option_desc_fn = function (path, context)
+                local result = bloody_rituals_spec.CommonRitualOptionDescConstructor(path, context)
+                return result
+            end
+        },
+        [DRAGON_CALLING_RITUAL] = {
+            folder = "DragonCalling",
+            blood_cost = 500,
+            level_needed = 25,
+            upgrade = 0,
+            ---@param context IncarnationRitualsContext
+            desc_fn = function (path, context)
+                local result = {path; t7_amount = context.creature_per_tier_amount[7]}
+                return result
+            end,
+            option_desc_fn = function (path, context)
+                local result = bloody_rituals_spec.CommonRitualOptionDescConstructor(path, context)
+                return result
+            end
+        }
     },
 
     Init = 
@@ -114,6 +144,29 @@ bloody_rituals_spec = {
             )
             startThread(custom_ability_common.UniqueAbilityUpdateThread, CUSTOM_ABILITY_BLOOD_RITUALS, hero)
         end
+    end,
+
+    CommonRitualOptionDescConstructor = 
+    ---@param path string
+    ---@param context IncarnationRitualsContext | any
+    ---@return table
+    function (path, context)
+        local blood = bloody_rituals_spec.current_blood_amount
+        local is_enabled = (context.hero_level >= context.level_needed and blood >= context.blood_amount) and 1 or nil
+        local color = is_enabled and 
+            '"/Text/Default/Colors/white.txt"' or 
+            '"/Text/Default/Colors/grey.txt"'
+        local result = {
+            path; 
+            option_color = color,
+            use_condition = (context.hero_level >= context.level_needed) and 
+                { context.relative_path.."blood_amount.txt"; amount = context.blood_amount, option_color = color} or
+                { context.relative_path.."level_needed.txt"; level = context.level_needed },
+            disable_reason = is_enabled and '"blank.txt"' or 
+                (context.hero_level < context.level_needed and 
+                    "'"..context.relative_path.."level_too_low.txt".."'" or "'"..context.relative_path.."not_enough_blood.txt".."'")
+        }
+        return result
     end,
 
     OpenRitualsMenu = 
@@ -136,7 +189,7 @@ bloody_rituals_menu_dialog = {
         local hero = Dialog.GetActiveHeroForPlayer(player)
         if next_state == 1 then
             Dialog.NewDialog(incarnation_rituals_menu_dialog, hero, player)
-            return -1
+            return 0
         end
         return next_state
     end,
@@ -203,9 +256,15 @@ incarnation_rituals_menu_dialog = {
             relative_path = bloody_rituals_spec.path,
             hero_level = GetHeroLevel(Dialog.GetActiveHeroForPlayer(player)),
             creature_per_tier_amount = {
-                [1] = 10,
-                [2] = 5
-            }
+                [1] = 8,
+                [2] = 6,
+                [3] = 5,
+                [4] = 4,
+                [5] = 3,
+                [6] = 2,
+                [7] = 1
+            },
+            elementals_amount = 5
         }
         local rituals_data = { nil, nil, nil, nil, nil }
         local index = 1
@@ -220,6 +279,7 @@ incarnation_rituals_menu_dialog = {
                 next_state = ritual,
                 is_custom_path = 1
             }
+            index = index + 1
         end
         dialog.options[dialog.state][0] = {
             bloody_rituals_spec.path.."rituals_list_text.txt";
