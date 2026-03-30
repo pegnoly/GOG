@@ -11,6 +11,8 @@ while not custom_ability_common do
     sleep()
 end
 
+--#region types
+
 CUSTOM_ABILITY_BLOOD_RITUALS = 9
 
 ---@alias BloodRitualType
@@ -25,11 +27,21 @@ BEAST_TAMING_RITUAL = 3
 SECRET_COVEN_RITUAL = 4
 DRAGON_CALLING_RITUAL = 5
 
+---@alias BloodRitualUpgradeType
+---|`LESSER_COVEN_GRADED_CREATURES`
+LESSER_SABBATH_GRADED_CREATURES = 1
+BEAST_TAMING_GRADED_CREATURES = 2
+SECRET_COVEN_GRADED_CREATURES = 3
+DRAGON_CALLING_GRADED_CREATURES = 4
+
 ---@class BloodRitualDefinition
 ---@field folder string
 ---@field blood_cost number
 ---@field level_needed number
----@field upgrade number
+---@field possible_upgrades? BloodRitualUpgradeType[] 
+---@field active_upgrades? BloodRitualUpgradeType[]
+---@field upgrade_level? number
+---@field text_variant number
 ---@field desc_fn fun(path: string, context: IncarnationRitualsContext | any): string | table
 ---@field option_desc_fn fun(path: string, context: IncarnationRitualsContext | any): string | table
 BloodRitualDefinition = {}
@@ -38,9 +50,14 @@ BloodRitualDefinition = {}
 ---@field relative_path string
 ---@field creature_per_tier_amount number[]
 ---@field elementals_amount number
+---@field active_upgrades? BloodRitualUpgradeType[]
 ---@field hero_level? number
 ---@field level_needed? number
 ---@field blood_amount? number
+
+--#endregion
+
+--#region data
 
 bloody_rituals_spec = {
     heroes = {"Noellie"},
@@ -58,7 +75,9 @@ bloody_rituals_spec = {
             folder = "LesserSabbath",
             blood_cost = 140,
             level_needed = 1,
-            upgrade = 0,
+            possible_upgrades = { LESSER_SABBATH_GRADED_CREATURES },
+            active_upgrades = {},
+            text_variant = 0,
             ---@param context IncarnationRitualsContext
             desc_fn = function (path, context)
                 local result = {path; t1_amount = context.creature_per_tier_amount[1], t2_amount = context.creature_per_tier_amount[2]}
@@ -73,7 +92,9 @@ bloody_rituals_spec = {
             folder = "ElementalUnity",
             blood_cost = 140,
             level_needed = 1,
-            upgrade = 0,
+            possible_upgrades = {},
+            active_upgrades = {},
+            text_variant = 0,
             ---@param context IncarnationRitualsContext
             desc_fn = function (path, context)
                 local result = {path; amount = context.elementals_amount}
@@ -88,7 +109,9 @@ bloody_rituals_spec = {
             folder = "BeastTaming",
             blood_cost = 250,
             level_needed = 9,
-            upgrade = 0,        
+            possible_upgrades = {},
+            active_upgrades = {},
+            text_variant = 0,      
             ---@param context IncarnationRitualsContext
             desc_fn = function (path, context)
                 local result = {path; t3_amount = context.creature_per_tier_amount[3], t5_amount = context.creature_per_tier_amount[5]}
@@ -103,7 +126,9 @@ bloody_rituals_spec = {
             folder = "SecretCoven",
             blood_cost = 330,
             level_needed = 16,
-            upgrade = 0,
+            possible_upgrades = {},
+            active_upgrades = {},
+            text_variant = 0,
             ---@param context IncarnationRitualsContext
             desc_fn = function (path, context)
                 local result = {path; t4_amount = context.creature_per_tier_amount[4], t6_amount = context.creature_per_tier_amount[6]}
@@ -118,7 +143,9 @@ bloody_rituals_spec = {
             folder = "DragonCalling",
             blood_cost = 500,
             level_needed = 25,
-            upgrade = 0,
+            possible_upgrades = {},
+            active_upgrades = {},
+            text_variant = 0,
             ---@param context IncarnationRitualsContext
             desc_fn = function (path, context)
                 local result = {path; t7_amount = context.creature_per_tier_amount[7]}
@@ -129,6 +156,71 @@ bloody_rituals_spec = {
                 return result
             end
         }
+    },
+
+    ---@type table<BloodRitualType, fun(hero: string, context: IncarnationRitualsContext)>
+    incarnation_rituals_activator = {
+        [LESSER_SABBATH_RITUAL] = function (hero, context)
+            FX.Play('Summon_balor', hero)
+            bloody_rituals_spec.current_blood_amount = bloody_rituals_spec.current_blood_amount - context.blood_amount
+            sleep(30)
+            if not contains(context.active_upgrades, LESSER_SABBATH_GRADED_CREATURES) then
+                Hero.CreatureInfo.Add(hero, CREATURE_SCOUT, context.creature_per_tier_amount[1], CREATURE_WITCH, context.creature_per_tier_amount[2])
+            else
+                for tier = 1, 2 do
+                    local base_creature = Hero.CreatureInfo.MaxUpgradedWithReturning(hero, TOWN_DUNGEON, tier) 
+                    Hero.CreatureInfo.Add(hero, base_creature, context.creature_per_tier_amount[tier])
+                end
+            end
+        end,
+
+        [ELEMENTAL_CONFLUX_RITUAL] = function (hero, context)
+            FX.Play('Summon_balor', hero)
+            bloody_rituals_spec.current_blood_amount = bloody_rituals_spec.current_blood_amount - context.blood_amount
+            sleep(30)
+            local elem_type = Random.FromSelection(CREATURE_WATER_ELEMENTAL, CREATURE_EARTH_ELEMENTAL, CREATURE_AIR_ELEMENTAL, CREATURE_FIRE_ELEMENTAL)
+            Hero.CreatureInfo.Add(hero, elem_type, context.elementals_amount)
+        end,
+
+        [BEAST_TAMING_RITUAL] = function (hero, context)
+            FX.Play('Summon_balor', hero)
+            bloody_rituals_spec.current_blood_amount = bloody_rituals_spec.current_blood_amount - context.blood_amount
+            sleep(30)
+            if not contains(context.active_upgrades, BEAST_TAMING_GRADED_CREATURES) then
+                Hero.CreatureInfo.Add(hero, CREATURE_MINOTAUR, context.creature_per_tier_amount[3], CREATURE_HYDRA, context.creature_per_tier_amount[5])
+            else
+                for _, tier in { 3, 5 } do
+                    local base_creature = Hero.CreatureInfo.MaxUpgradedWithReturning(hero, TOWN_DUNGEON, tier) 
+                    Hero.CreatureInfo.Add(hero, base_creature, context.creature_per_tier_amount[tier])
+                end
+            end
+        end,
+
+        [SECRET_COVEN_RITUAL] = function (hero, context)
+            FX.Play('Summon_balor', hero)
+            bloody_rituals_spec.current_blood_amount = bloody_rituals_spec.current_blood_amount - context.blood_amount
+            sleep(30)
+            if not contains(context.active_upgrades, SECRET_COVEN_GRADED_CREATURES)then
+                Hero.CreatureInfo.Add(hero, CREATURE_RIDER, context.creature_per_tier_amount[4], CREATURE_MATRON, context.creature_per_tier_amount[6])
+            else
+                for _, tier in { 4, 6 } do
+                    local base_creature = Hero.CreatureInfo.MaxUpgradedWithReturning(hero, TOWN_DUNGEON, tier) 
+                    Hero.CreatureInfo.Add(hero, base_creature, context.creature_per_tier_amount[tier])
+                end
+            end
+        end,
+
+        [DRAGON_CALLING_RITUAL] = function (hero, context)
+            FX.Play('Summon_balor', hero)
+            bloody_rituals_spec.current_blood_amount = bloody_rituals_spec.current_blood_amount - context.blood_amount
+            sleep(30)
+            if not contains(context.active_upgrades, DRAGON_CALLING_GRADED_CREATURES) then
+                Hero.CreatureInfo.Add(hero, CREATURE_SHADOW_DRAGON, context.creature_per_tier_amount[7])
+            else
+                local base_creature = Hero.CreatureInfo.MaxUpgradedWithReturning(hero, TOWN_DUNGEON, 7) 
+                Hero.CreatureInfo.Add(hero, base_creature, context.creature_per_tier_amount[7])
+            end
+        end
     },
 
     Init = 
@@ -174,7 +266,9 @@ bloody_rituals_spec = {
         Dialog.NewDialog(bloody_rituals_menu_dialog, hero, PLAYER_1)
     end
 }
+--#endregion
 
+--#region menu_dialog
 ---@type DialogDefinition
 bloody_rituals_menu_dialog = {
     path = "/scripts/advmap/Specs/BloodyRituals/",
@@ -229,7 +323,9 @@ bloody_rituals_menu_dialog = {
         Dialog.Action(player)
     end
 }
+--#endregion
 
+--#region incarnation_rituals_dialog
 ---@type DialogDefinition
 incarnation_rituals_menu_dialog = {
     path = "/scripts/advmap/Specs/BloodyRituals/",
@@ -237,7 +333,15 @@ incarnation_rituals_menu_dialog = {
     title = "summon_rituals",
     select_text = "",
     state = 1,
-    effect = function (player, state, answer, next_state)
+    effect = function (player, _state, _answer, next_state)
+        if IsNum(next_state) then
+            return next_state
+        end
+        ---@type { ritual_type: BloodRitualType, context: IncarnationRitualsContext }
+        local data = next_state
+        data.context.blood_amount = bloody_rituals_spec.incarnation_rituals_data[data.ritual_type].blood_cost
+        data.context.active_upgrades = bloody_rituals_spec.incarnation_rituals_data[data.ritual_type].active_upgrades
+        startThread(bloody_rituals_spec.incarnation_rituals_activator[data.ritual_type], Dialog.GetActiveHeroForPlayer(player), data.context)
         return 0
     end,
 
@@ -272,11 +376,12 @@ incarnation_rituals_menu_dialog = {
         for ritual, data in bloody_rituals_spec.incarnation_rituals_data do
             context.blood_amount = data.blood_cost
             context.level_needed = data.level_needed
-            rituals_data[index] = data.desc_fn(bloody_rituals_spec.path..data.folder.."/text_upg"..data.upgrade..".txt", context)
+            context.active_upgrades = data.active_upgrades
+            rituals_data[index] = data.desc_fn(bloody_rituals_spec.path..data.folder.."/text_upg"..data.text_variant..".txt", context)
             dialog.options[dialog.state][index] = {
                 answer = data.option_desc_fn(bloody_rituals_spec.path..data.folder.."/name", context),
                 is_enabled = 1,
-                next_state = ritual,
+                next_state = { ritual_type = ritual, context = context },
                 is_custom_path = 1
             }
             index = index + 1
@@ -292,5 +397,6 @@ incarnation_rituals_menu_dialog = {
         Dialog.Action(player)
     end
 }
+--#endregion
 
 startThread(bloody_rituals_spec.Init)
