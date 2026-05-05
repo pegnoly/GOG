@@ -1,7 +1,7 @@
----@alias DialogPerformFunc fun(player: PlayerID, state: any, answer: number, next_state: any): number
+---@alias DialogEffect fun(player: PlayerID, state: any, answer: number, next_state: any): number
 
 ---@class DialogOption
----@field answer string
+---@field answer string|table
 ---@field next_state any
 ---@field is_enabled 1|nil
 ---@field is_custom_path 1|nil
@@ -11,7 +11,7 @@ DialogOption = {}
 ---@field state any
 ---@field path string
 ---@field icon string
----@field perform_func DialogPerformFunc
+---@field effect DialogEffect
 ---@field title string
 ---@field select_text string
 ---@field options table<number, DialogOption[]>
@@ -24,6 +24,8 @@ Dialog =
     -- текущий активный диалог для игрока
     ---@type table<PlayerID, DialogDefinition>
     active_dialog_for_player = {},
+
+    string_to_parse = "",
 
     -- текущий герой, использующий диалог для конкретного игрока
     ---@type table<PlayerID, string>
@@ -92,6 +94,7 @@ Dialog =
     ---@param player PlayerID
     Action = function(player)
         local active_dialog = Dialog.GetActiveDialogForPlayer(player)
+        -- print("Dialog.Action called for dialog: ", active_dialog)
         ---@type DialogOption|nil[]
         local options = {nil, nil, nil, nil, nil}
         local ans_num = 0
@@ -101,17 +104,29 @@ Dialog =
                 local option = active_dialog.options[active_dialog.state][i]
                 if option.is_enabled then
                     ans_num = ans_num + 1
-                    if option.is_custom_path then
-                        options[ans_num] = option.answer
+                    if type(option.answer) == "string" then
+                        options[ans_num] = option.is_custom_path and option.answer..".txt" or active_dialog.path..option.answer..".txt"
                     else
-                        options[ans_num] = active_dialog.path..option.answer
+                        local t = option.is_custom_path and option.answer[1]..".txt" or active_dialog.path..option.answer[1]..".txt"
+                        local p = {}
+                        for k, v in option.answer do
+                            if k ~= 1 then
+                                table.push(p, ""..k.." = "..v) 
+                            end
+                        end
+                        ---@type Iterator
+                        local it = Iterator(p)
+                        local s = 'Dialog.string_to_parse = {"'..t..'"; '..it.Concat(", ")..'}'
+                        parse(s)()
+                        options[ans_num] = Dialog.string_to_parse
                     end
                 end
             end
         end
+        -- print("Dialog.Action called with options: ", options)
         Dialog.answer_for_player[player] = 6
         TalkBoxForPlayers(GetPlayerFilter(player), active_dialog.icon, nil,
-                        active_dialog.path..active_dialog.options[active_dialog.state][0], nil,
+                        active_dialog.path..active_dialog.options[active_dialog.state][0]..".txt", nil,
                         'Dialog.Callback', 1,
                         active_dialog.path..active_dialog.title..'.txt',
                         active_dialog.path..active_dialog.select_text..'.txt', 
@@ -144,7 +159,7 @@ Dialog =
                 end
             end
         end
-        next_state = active_dialog.perform_func(player, active_dialog.state, ans, next_state)
+        next_state = active_dialog.effect(player, active_dialog.state, ans, next_state)
         if next_state == 0 then
             return
         else
